@@ -186,7 +186,7 @@ New keywords must:
 
 - be additive  
 
-- not modify existing keyword behavior  
+- not modify existing keyword behavior (unless it is something like min_exclusive or max_exclusive. That would have to affect the min/max keyword. So this is one of the exceptions.)
 
 - include full test coverage  
 
