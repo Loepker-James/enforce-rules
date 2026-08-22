@@ -2,14 +2,13 @@
 name = "enforce-rules"
 version = "1.0.0"
 description = "Runtime rule validation for Python using dictionary-based constraints."
-readme = { file = "README.md" }
+readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
     { name = "Jake Loepker" },
     { name = "Microsoft Copilot (AI Assistant)", url = "https://copilot.microsoft.com" }
 ]
-
 
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -25,7 +24,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Utilities",
-    "Typing :: Typed",
+    "Typing :: Typed"
 ]
 
 [project.urls]
@@ -33,6 +32,7 @@ Homepage = "https://github.com/Loepker-James/enforce-rules"
 Issues = "https://github.com/Loepker-James/enforce-rules/issues"
 
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
 
