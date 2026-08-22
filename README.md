@@ -301,6 +301,7 @@ PATCH: fixes only, backwards-compatible
 
 Credits
 Microsoft Copilot — for helping me code it. It did a TON of the coding, and to be honest, I couldn't have made this project without it. It did ~~some~~ a lot of readme, in addition to it writing most of CONTRIBUTING.md
+
 Dad — for helping me along the journey.
 
 License Type: BSD 3-clause
