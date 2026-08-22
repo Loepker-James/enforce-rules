@@ -186,7 +186,7 @@ New keywords must:
 
 - be additive  
 
-- not modify existing keyword behavior (unless it is something like min_exclusive or max_exclusive. That would have to affect the min/max keyword. So this is one of the exceptions.)
+- not modify existing keyword behavior (unless it is the point of the keyword; e.g. min_exclusive and max_exclusive. For more clarification, please ask me)
 
 - include full test coverage  
 
@@ -229,7 +229,7 @@ This section documents internal decisions and guidelines for future maintainers.
 
 ### Design Principles
 - PER must remain fully backwards compatible.
-- All keywords must be additive; never modify existing keyword behavior.
+- All keywords must be additive; never modify existing keyword behavior. (Unless it is one of the exceptions seen earlier)
 - Error messages must be explicit and never silent.
 
 ### Roadmap
