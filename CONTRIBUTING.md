@@ -161,6 +161,10 @@ PER uses non-breaking semantic versioning:
 Major bumps do **not** imply breaking changes.
 
 
+Pull requests that add __version__, --version flags, or any version-exposing code
+will not be accepted. This project uses metadata-based versioning only.
+
+
 
 ---
 
