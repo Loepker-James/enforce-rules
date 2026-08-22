@@ -278,7 +278,7 @@ is_even(8)
 
 ```
 
-\### Documentation
+### Documentation
 
 * Added full keyword reference table to README
 * Clarified behavior of `must\_be\_true`
