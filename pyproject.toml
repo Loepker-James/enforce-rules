@@ -7,7 +7,7 @@ requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
     { name = "Jake Loepker" },
-    { name = "Microsoft Copilot (AI Assistant)", url = "https://copilot.microsoft.com" }
+    { name = "Microsoft Copilot (AI Assistant)" }
 ]
 
 classifiers = [
