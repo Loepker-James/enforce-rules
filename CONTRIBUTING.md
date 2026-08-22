@@ -1,0 +1,229 @@
+# Contributing to PER (Project Enforce Rules)
+
+
+
+Thank you for your interest in contributing to PER!  
+
+This project expands Python’s type system with runtime rule dictionaries and strict validation.  
+
+All contributions are welcome as long as they maintain full backwards compatibility.
+
+
+
+---
+
+
+
+## Introduction
+
+PER enforces dictionary-based rules at runtime using `validate(value, rules)`.  
+
+New keywords, improvements, tests, and documentation updates are encouraged.
+
+
+
+---
+
+
+
+## Code of Conduct
+
+Be respectful, constructive, and kind.  
+
+No harassment, discrimination, or hostile behavior will be tolerated.
+
+
+
+---
+
+
+
+## How to Propose Changes
+
+Before writing code, please open an Issue describing:
+
+
+
+- the problem  
+
+- the proposed solution  
+
+- any new keywords  
+
+- expected behavior  
+
+
+
+This ensures alignment with PER’s design philosophy.
+
+
+
+---
+
+
+
+## Development Setup
+
+1. Clone the repository  
+
+2. Install dependencies  
+
+3. Run the test suite  
+
+4. Make changes in a feature branch
+
+
+
+Commands:
+
+
+
+git clone <repo>
+
+cd enforce-rules
+
+python -m pip install -e .
+
+python -m unittest discover -s tests
+
+
+
+
+
+---
+
+
+
+## Coding Standards
+
+PER follows strict rules:
+
+
+
+- Type hints required everywhere  
+
+- `match/case` dispatch required in `validate()`  
+
+- Clear, descriptive error messages  
+
+- No silent failures  
+
+- No breaking changes  
+
+- No removal or renaming of existing keywords  
+
+- Keep code simple and readable
+
+
+
+---
+
+
+
+## Testing Requirements
+
+Every new keyword must include:
+
+
+
+- Valid test cases  
+
+- Invalid test cases  
+
+- Edge-case tests  
+
+- Tests for error messages
+
+
+
+All tests must pass before submitting a PR.
+
+
+
+---
+
+
+
+## Versioning Rules
+
+PER uses non-breaking semantic versioning:
+
+
+
+- **MAJOR** — new feature families  
+
+- **MINOR** — new keywords  
+
+- **PATCH** — bug fixes or internal improvements  
+
+
+
+Major bumps do **not** imply breaking changes.
+
+
+
+---
+
+
+
+## Backwards Compatibility
+
+PER guarantees full backwards compatibility.  
+
+Existing rule dictionaries, keyword meanings, and validator behaviors must never change.
+
+
+
+---
+
+
+
+## Adding New Keywords
+
+New keywords must:
+
+
+
+- be additive  
+
+- not modify existing keyword behavior  
+
+- include full test coverage  
+
+- include documentation updates  
+
+- include clear error messages  
+
+- follow the naming conventions of existing keywords
+
+
+
+---
+
+
+
+## Submitting Pull Requests
+
+1. Fork the repository  
+
+2. Create a feature branch  
+
+3. Make changes  
+
+4. Add tests  
+
+5. Update documentation  
+
+6. Ensure all tests pass  
+
+7. Submit a PR referencing the related Issue
+
+
+
+---
+
+
+
+## Maintainer Notes
+
+Reserved for maintainers to track internal decisions, roadmap items, and review guidelines.
