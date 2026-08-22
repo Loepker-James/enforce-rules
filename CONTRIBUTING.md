@@ -223,7 +223,27 @@ New keywords must:
 ---
 
 
-
 ## Maintainer Notes
 
-Reserved for maintainers to track internal decisions, roadmap items, and review guidelines.
+This section documents internal decisions and guidelines for future maintainers.
+
+### Design Principles
+- PER must remain fully backwards compatible.
+- All keywords must be additive; never modify existing keyword behavior.
+- Error messages must be explicit and never silent.
+
+### Roadmap
+- Add keyword: trim_whitespace
+- Add keyword: pattern_flags
+- Add keyword: element_unique
+
+### Review Guidelines
+- Reject PRs that introduce silent failures.
+- Reject PRs that change existing keyword semantics.
+- Require full test coverage for all new keywords.
+- Require documentation updates for all new features.
+
+### Internal Decisions
+- validate() uses match/case dispatch for clarity and maintainability.
+- Keyword names follow snake_case and must be descriptive.
+
