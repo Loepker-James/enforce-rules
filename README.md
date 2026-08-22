@@ -266,8 +266,11 @@ Minor Version Bumps
 Minor bumps occur when adding small keywords. Examples include:
 
 min_inclusive
+
 max_inclusive
+
 trim_whitespace
+
 pattern_flags
 
 These additions do not change the meaning of existing keywords, do not require users to modify rule files, and do not alter validator behavior. They are classified as minor updates.
@@ -279,8 +282,11 @@ Major Version Bumps
 Major bumps occur only when adding large new keyword families or entire new capability domains. Examples include:
 
 a full date-validation system
+
 a full numeric-range system
+
 a full conditional-rules system
+
 a full schema-level rule system
 
 These are major features, even though they remain fully backwards-compatible. Major bumps communicate that the release adds a significant new capability.
