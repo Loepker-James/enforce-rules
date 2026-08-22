@@ -43,6 +43,7 @@ Then use it like:
 from enforce_rules import validate
 ```
 Features
+
 1. Runtime enforcement of rule dictionaries
 2. Dictionary‑based rule definitions
 3. No extra objects required
@@ -61,9 +62,11 @@ If the value passes, PER returns the original value unchanged.
 This means validated values behave exactly like normal Python values.
 
 Keywords and Usage
+
 Below are all supported keywords.
 
 length
+
 The length of the object must be exactly this.
 
 ```python
@@ -71,60 +74,70 @@ lst = validate([1, 2, 3, 4, 5], {"length": 5})
 ```
 
 min_length
+
 Minimum length (inclusive).
 
 ```python
 lst = validate(['a', 'b', 'c', 'd', 'e'], {"min_length": 3})
 ```
 max_length
+
 Maximum length (inclusive).
 
 ```python
 lst = validate([1, 2, 3, 4, 5, 6], {"max_length": 7})
 ```
 min
+
 Minimum numeric value (inclusive).
 
 ```python
 number = validate(10, {"min": 0})
 ```
 max
+
 Maximum numeric value (inclusive).
 
 ```python
 number = validate(10, {"max": 20})
 ```
 allowed_values
+
 Similar to Literal; value must be one of the allowed values.
 
 ```python
 val = validate("a", {"allowed_values": ("a", "b", "c", "d")})
 ```
 invariant
+
 Value must be truthy.
 
 ```python
 val = validate((0 == 0), {"invariant": True})
 ```
 all_same
+
 All values in the collection must be the same.
 
 ```python
 numbers = validate([1, 1, 1], {"all_same": True})
 ```
 all_unique
+
 All values in the collection must be unique.
 
 ```python
 numbers = validate([1, 2, 3], {"all_unique": True})
 ```
 non_empty
+
 Collection must not be empty.
 
 ```python
 my_strings = validate(['a', 'b', 'c'], {"non_empty": True})
 ```
 no_nulls
+
 Collection must not contain None.
 
 ```python
@@ -132,6 +145,7 @@ my_things = validate([1, 2, 3, "a", "b", "c"], {"no_nulls": True})
 ```
 
 sorted
+
 List must be sorted (increasing or decreasing).
 
 ```python
@@ -139,42 +153,49 @@ numbers = validate([1, 5, 9], {"sorted": True})
 ```
 
 increasing
+
 List must be strictly increasing.
 
 ```python
 numbers = validate([1, 5, 9], {"increasing": True})
 ```
 decreasing
+
 List must be strictly decreasing.
 
 ```python
 numbers = validate([9, 5, 1], {"decreasing": True})
 ```
 sum_min
+
 Minimum sum of the collection (inclusive).
 
 ```python
 numbers = validate([10, 20, 30], {"sum_min": 50})
 ```
 sum_max
+
 Maximum sum of the collection (inclusive).
 
 ```python
 numbers = validate([10, 20, 30], {"sum_max": 70})
 ```
 element_min
+
 Minimum value for any element (inclusive).
 
 ```python
 numbers = validate([10, 20, 30], {"element_min": 5})
 ```
 element_max
+
 Maximum value for any element (inclusive).
 
 ```python
 numbers = validate([10, 20, 30], {"element_max": 40})
 ```
 regex
+
 String must match the regex.
 
 ```python
@@ -183,6 +204,7 @@ cat_or_dog = validate("cat", {"regex": "cat|dog"})
 
 
 must_be_true
+
 Custom rule: a function that returns True for allowed values.
 
 ```python
@@ -198,6 +220,7 @@ is_even(8)
 If enough people use a must_be_true lambda, it may become an added keyword in a later version
 
 Contributing
+
 Contributions are welcome. Please open an issue or pull request.
 When contributing, ensure backwards compatibility (you cannot remove keywords and/or features).
 
@@ -211,12 +234,15 @@ This project guarantees full backwards compatibility. Existing rule files, keywo
 
 Version Numbering
 -----------------
+
 This project uses a non-breaking semantic versioning model:
 
 MAJOR.MINOR.PATCH
 
 MAJOR = large new feature families
+
 MINOR = small additive keywords or enhancements
+
 PATCH = bug fixes or internal improvements
 
 Major bumps do not imply breaking changes. They only indicate that a significant new capability has been added.
