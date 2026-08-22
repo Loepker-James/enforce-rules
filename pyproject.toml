@@ -4,7 +4,7 @@ version = "1.0.0"
 description = "Runtime rule validation for Python using dictionary-based constraints."
 readme = { file = "README.md" }
 requires-python = ">=3.10"
-license = { file = "LICENSE", text = "BSD-3-Clause" }
+license = { file = "LICENSE" }
 authors = [
     { name = "Jake Loepker" },
     { name = "Microsoft Copilot (AI Assistant)", url = "https://copilot.microsoft.com" }
