@@ -1,10 +1,13 @@
 Project Enforce Rules
+
 Project Enforce Rules (or PER for short) expands the Python type system to allow more constraints.
 
 Version #
 ----------------
 MAJOR: 1
+
 MINOR: 0
+
 PATCH: 0
 
 If you need to catch up, you can see the full version history in the [CHANGELOG](CHANGELOG.md).
@@ -220,12 +223,16 @@ Major bumps do not imply breaking changes. They only indicate that a significant
 
 Major bumps always reset MINOR and PATCH to 0. For example:
 1.7.3 -> 2.0.0
+
 1.12.0 -> 2.0.0
+
 1.0.0 -> 2.0.0
 
 Minor bumps always reset PATCH to 0. For example:
 1.7.3 -> 1.8.0
+
 1.12.9 -> 1.13.0
+
 1.0.4 -> 1.1.0
 
 Minor Version Bumps
