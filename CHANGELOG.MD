@@ -291,6 +291,7 @@ is_even(8)
 
 ### Refactored
 * Type hints no longer use Any and use object instead.
+* Fixed incosistency in readme
 
 
 
