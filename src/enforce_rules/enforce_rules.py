@@ -1,4 +1,4 @@
-from typing import Any, Dict, Iterable, Callable, Sequence
+from typing import Dict, Iterable, Callable, Sequence
 import re
 
 
@@ -6,17 +6,17 @@ import re
 # VALIDATOR FUNCTIONS (DEFINED FIRST)
 # -----------------------------
 
-def _validate_length(value: Sequence[Any], expected: int) -> None:
+def _validate_length(value: Sequence, expected: int) -> None:
     if len(value) != expected:
         raise ValueError(f"Expected length {expected}, got {len(value)}")
 
 
-def _validate_min_length(value: Sequence[Any], expected: int) -> None:
+def _validate_min_length(value: Sequence, expected: int) -> None:
     if len(value) < expected:
         raise ValueError(f"Expected min length {expected}, got {len(value)}")
 
 
-def _validate_max_length(value: Sequence[Any], expected: int) -> None:
+def _validate_max_length(value: Sequence, expected: int) -> None:
     if len(value) > expected:
         raise ValueError(f"Expected max length {expected}, got {len(value)}")
 
@@ -31,50 +31,50 @@ def _validate_max(value: float | int, expected: float | int) -> None:
         raise ValueError(f"Expected value <= {expected}, got {value}")
 
 
-def _validate_allowed_values(value: Any, allowed: Iterable[Any]) -> None:
+def _validate_allowed_values(value: object, allowed: Iterable) -> None:
     if value not in allowed:
         raise ValueError(f"Value {value} not in allowed values {allowed}")
 
 
-def _validate_invariant(value: Any, expected: bool) -> None:
+def _validate_invariant(value: object, expected: bool) -> None:
     if expected and not value:
         raise ValueError("Invariant rule failed: value must be truthy")
 
 
-def _validate_all_same(value: Sequence[Any], expected: bool) -> None:
+def _validate_all_same(value: Sequence, expected: bool) -> None:
     if expected and len(set(value)) != 1:
         raise ValueError("All elements must be the same")
 
 
-def _validate_all_unique(value: Sequence[Any], expected: bool) -> None:
+def _validate_all_unique(value: Sequence, expected: bool) -> None:
     if expected and len(set(value)) != len(value):
         raise ValueError("All elements must be unique")
 
 
-def _validate_non_empty(value: Sequence[Any], expected: bool) -> None:
+def _validate_non_empty(value: Sequence, expected: bool) -> None:
     if expected and len(value) == 0:
         raise ValueError("Collection must not be empty")
 
 
-def _validate_no_nulls(value: Iterable[Any], expected: bool) -> None:
+def _validate_no_nulls(value: Iterable, expected: bool) -> None:
     if expected and any(v is None for v in value):
         raise ValueError("Collection must not contain None")
 
 
-def _validate_sorted(value: Sequence[Any], expected: bool) -> None:
+def _validate_sorted(value: Sequence, expected: bool) -> None:
     if expected:
         if value != sorted(value) and value != sorted(value, reverse=True):
             raise ValueError("List must be sorted increasing or decreasing")
 
 
-def _validate_increasing(value: Sequence[Any], expected: bool) -> None:
+def _validate_increasing(value: Sequence, expected: bool) -> None:
     if expected:
         for a, b in zip(value, value[1:]):
             if not (b > a):
                 raise ValueError("List must be strictly increasing")
 
 
-def _validate_decreasing(value: Sequence[Any], expected: bool) -> None:
+def _validate_decreasing(value: Sequence, expected: bool) -> None:
     if expected:
         for a, b in zip(value, value[1:]):
             if not (b < a):
@@ -103,13 +103,13 @@ def _validate_element_max(value: Iterable[float | int], expected: float | int) -
         raise ValueError(f"Elements must be <= {expected}")
 
 
-def _validate_regex(value: str, pattern: str, flags: Any) -> None:
+def _validate_regex(value: str, pattern: str, flags: object) -> None:
     compiled = re.compile(pattern, flags or 0)
     if not compiled.fullmatch(value):
         raise ValueError(f"Value '{value}' does not match regex '{pattern}'")
 
 
-def _validate_must_be_true(value: Any, func: Callable[[Any], bool]) -> None:
+def _validate_must_be_true(value: object, func: Callable[[object], bool]) -> None:
     if not func(value):
         raise ValueError("must_be_true rule failed")
 
