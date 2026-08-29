@@ -303,3 +303,13 @@ is_even(8)
 ### Fixed
 * Version numbering in [README](README.md)
 
+## 1.1.0 - Created on 8/29/2026
+
+### Changed
+* Uses re.search instead of re.fullmatch
+
+## 1.1.1 - Created on 8/29/2026
+
+###
+* Version numbering in [README](README.md)
+
