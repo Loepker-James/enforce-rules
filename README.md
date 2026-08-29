@@ -4,7 +4,9 @@ Project Enforce Rules (or PER for short) expands the Python type system to allow
 Version #
 ----------------
 MAJOR: 1
+
 MINOR: 0
+
 PATCH: 1
 
 If you need to catch up, you can see the full version history in the [CHANGELOG](CHANGELOG.md).
