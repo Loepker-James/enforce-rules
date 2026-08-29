@@ -105,7 +105,7 @@ def _validate_element_max(value: Iterable[float | int], expected: float | int) -
 
 def _validate_regex(value: str, pattern: str, flags: object) -> None:
     compiled = re.compile(pattern, flags or 0)
-    if not compiled.fullmatch(value):
+    if not compiled.search(value):
         raise ValueError(f"Value '{value}' does not match regex '{pattern}'")
 
 
