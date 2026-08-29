@@ -296,10 +296,10 @@ is_even(8)
 ## 1.0.2 - Created on 8/29/2026
 
 ### Refactored
-* Made newlines more visible for the readme on PyPI.
+* Made newlines more visible for the [README on PyPI](https://pypi.org/project/enforce-rules/)
 
 ## 1.0.3 - Created on 8/29/2026
 
 ### Fixed
-* Version numbering in readme
+* Version numbering in [README](README.md)
 
