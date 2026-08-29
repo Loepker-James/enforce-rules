@@ -237,9 +237,7 @@ This section documents internal decisions and guidelines for future maintainers.
 - Error messages must be explicit and never silent.
 
 ### Roadmap
-- Add keyword: trim_whitespace
-- Add keyword: pattern_flags
-- Add keyword: element_unique
+For roadmaps, you can usually look in issues. There I put everything I would want (and/or I think you would) there.
 
 ### Review Guidelines
 - Reject PRs that introduce silent failures.
