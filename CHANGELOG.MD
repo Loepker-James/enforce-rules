@@ -287,4 +287,10 @@ is_even(8)
 * Added Versioning Policy section in README
 
 
+## 1.0.1 - Created on 8/29/2026
+
+### Refactored
+* Type hints no longer use Any and use object instead.
+
+
 
