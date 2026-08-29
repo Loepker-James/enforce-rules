@@ -298,5 +298,8 @@ is_even(8)
 ### Refactored
 * Made newlines more visible for the readme on PyPI.
 
+## 1.0.3 - Created on 8/29/2026
 
+### Fixed
+* Version numbering in readme
 
