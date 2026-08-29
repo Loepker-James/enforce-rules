@@ -293,5 +293,10 @@ is_even(8)
 * Type hints no longer use Any and use object instead.
 * Fixed inconsistency in readme
 
+## 1.0.2 - Created on 8/29/2026
+
+### Refactored
+* Made newlines more visible for the readme on PyPI.
+
 
 
