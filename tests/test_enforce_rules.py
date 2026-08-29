@@ -1,6 +1,7 @@
 import unittest
 from typing import Any, Dict
 from enforce_rules import validate
+import re
 
 
 class TestValidate(unittest.TestCase):
@@ -170,6 +171,64 @@ class TestValidate(unittest.TestCase):
     def test_regex_invalid(self):
         with self.assertRaises(ValueError):
             validate("bird", {"regex": "cat|dog"})
+
+    # -----------------------------
+    # REGEX_FLAGS
+    # -----------------------------
+    def test_regex_flags_case_insensitive_valid(self):
+        self.assertEqual(
+            validate("Cat", {"regex": "cat", "regex_flags": re.I}),
+            "Cat"
+        )
+
+    def test_regex_flags_case_insensitive_invalid(self):
+        with self.assertRaises(ValueError):
+            validate("Dog", {"regex": "cat", "regex_flags": re.I})
+
+    def test_regex_flags_multiple_valid(self):
+        text = "Cat\nDog"
+        self.assertEqual(
+            validate(text, {"regex": "^cat", "regex_flags": re.I | re.M}),
+            text
+        )
+
+    def test_regex_flags_multiple_invalid(self):
+        with self.assertRaises(ValueError):
+            validate("bird", {"regex": "^cat", "regex_flags": re.I | re.M})
+
+    def test_regex_flags_change_behavior(self):
+        # Without flags, this should fail
+        with self.assertRaises(ValueError):
+            validate("CAT", {"regex": "cat"})
+
+        # With flags, it should pass
+        self.assertEqual(
+            validate("CAT", {"regex": "cat", "regex_flags": re.I}),
+            "CAT"
+        )
+
+    def test_regex_flags_with_alternation_valid(self):
+        self.assertEqual(
+            validate("DOG", {"regex": "cat|dog", "regex_flags": re.I}),
+            "DOG"
+        )
+
+    def test_regex_flags_with_alternation_invalid(self):
+        with self.assertRaises(ValueError):
+            validate("fish", {"regex": "cat|dog", "regex_flags": re.I})
+
+    def test_regex_flags_dotall_valid(self):
+        self.assertEqual(
+            validate("a\nb", {"regex": "a.b", "regex_flags": re.S}),
+            "a\nb"
+        )
+
+    def test_regex_flags_dotall_invalid(self):
+        # Without re.S, dot does NOT match newline
+        with self.assertRaises(ValueError):
+            validate("a\nb", {"regex": "a.b"})
+
+
 
     # -----------------------------
     # MUST BE TRUE
