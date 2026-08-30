@@ -179,7 +179,13 @@ String must match the regex.
 ```python
 cat_or_dog = validate("cat", {"regex": "cat|dog"})
 ```
+regex_flags 
+Turns out I didn't notice this in my code, until now. This is the regex flags
 
+```python
+from re import RegexFlag
+cat_or_dog = validate("cat", {"regex": "cat|dog", {"regex_flags": RegexFlag.I | RegexFlag.M | RegexFl
+```
 
 must_be_true
 Custom rule: a function that returns True for allowed values.
