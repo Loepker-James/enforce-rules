@@ -123,15 +123,15 @@ def _validate_after_date(value: datetime, reference: datetime) -> None:
     if not value > reference:
         raise ValueError(f"{value} must be before {reference}.")
         
-def validate_piece_color(value: Piece, color: bool) -> None:
+def _validate_piece_color(value: Piece, color: bool) -> None:
     if value.color is not color:
-       raise ValueError(f"{value}'s color is {'white' if value.color else 'black'} instead of {'white' if reference else 'black'}.")
+       raise ValueError(f"{value}'s color is {'white' if value.color else 'black'} instead of {'white' if color else 'black'}.")
         
-def validate_piece_type(value: Piece, piece_type: Literal[1, 2, 3, 4, 5, 6]) -> None:
+def _validate_piece_type(value: Piece, piece_type: Literal[1, 2, 3, 4, 5, 6]) -> None:
     if value.piece_type != piece_type:
-        raise ValueError(f"Value is not a {["pawn", "knight", "bishop", "rook", "queen", "king"][reference-1]}")
+        raise ValueError(f"Value is not a {["pawn", "knight", "bishop", "rook", "queen", "king"][piece_type-1]}")
 
-def validate_chess_symbol(value: Piece, symbol: Literal["p", "n", "b", "r", "q", "k", "P", "N", "B", "R", "Q", "K"]) -> None:
+def _validate_chess_symbol(value: Piece, symbol: Literal["p", "n", "b", "r", "q", "k", "P", "N", "B", "R", "Q", "K"]) -> None:
     if value.symbol() != symbol:
         raise ValueError(f"Value's symbol is not {symbol}")
 
