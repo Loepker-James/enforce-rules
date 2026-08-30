@@ -305,6 +305,8 @@ is_even(8)
 
 ## 1.1.0 - Created on 8/29/2026
 
+Anything involving regex with 1.0.x will be broken and you will need to change your syntax
+
 ### Changed
 * Regex uses re.search instead of re.fullmatch
 
