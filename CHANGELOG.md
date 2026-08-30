@@ -317,3 +317,8 @@ is_even(8)
 
 ### Added
 * internal type hint in regex
+
+## 1.1.3 - Created on 8/29/2026
+
+### Documentation
+* Made changelog visible even when viewing on sources other than GitHub
