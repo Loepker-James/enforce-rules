@@ -1,4 +1,5 @@
 Project Enforce Rules
+
 Project Enforce Rules (or PER for short) expands the Python type system to allow more constraints.
 
 Version #
@@ -242,7 +243,9 @@ This project uses a non-breaking semantic versioning model:
 MAJOR.MINOR.PATCH
 
 MAJOR = large new feature families
+
 MINOR = small additive keywords or enhancements
+
 PATCH = bug fixes or internal improvements
 
 Major bumps do not imply breaking changes. They only indicate that a significant new capability has been added.
@@ -282,8 +285,11 @@ Major Version Bumps
 Major bumps occur only when adding large new keyword families or entire new capability domains. Examples include:
 
 a full date-validation system
+
 a full numeric-range system
+
 a full conditional-rules system
+
 a full schema-level rule system
 
 These are major features, even though they remain fully backwards-compatible. Major bumps communicate that the release adds a significant new capability.
@@ -297,7 +303,9 @@ Patch bumps occur when fixing bugs, improving internal logic, optimizing perform
 Summary
 -------
 MAJOR: large new feature families, backwards-compatible, resets MINOR and PATCH to 0
+
 MINOR: small additive keywords, backwards-compatible
+
 PATCH: fixes only, backwards-compatible
 
 
