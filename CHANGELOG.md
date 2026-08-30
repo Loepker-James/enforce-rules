@@ -145,7 +145,7 @@ Collection must not contain None.
 
 ```python
 
-my_things = validate([1, 2, 3, "a", "b", "c"], {"no\_nulls": True})
+my_things = validate([1, 2, 3, "a", "b", "c"], {"no_nulls": True})
 
 ```
 
@@ -264,7 +264,7 @@ Custom rule: a function that returns True for allowed values.
 def is_even(x: int) -> bool:
     return x % 2 == 0
 
-even_number = validate(8, {"must\_be\_true": is\_even})
+even_number = validate(8, {"must_be_true": is_even})
 
 ```
 
