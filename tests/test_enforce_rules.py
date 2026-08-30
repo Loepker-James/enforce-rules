@@ -70,6 +70,78 @@ class TestValidate(unittest.TestCase):
     # -----------------------------
     # ALL SAME / ALL UNIQUE
     # -----------------------------
+    def test_all_same_valid(self):import unittest
+from typing import Any, Dict
+from enforce_rules import validate
+import re
+
+
+class TestValidate(unittest.TestCase):
+
+    # -----------------------------
+    # LENGTH RULES
+    # -----------------------------
+    def test_length_valid(self):
+        self.assertEqual(validate([1, 2, 3], {"length": 3}), [1, 2, 3])
+
+    def test_length_invalid(self):
+        with self.assertRaises(ValueError):
+            validate([1, 2], {"length": 3})
+
+    def test_min_length_valid(self):
+        self.assertEqual(validate([1, 2, 3], {"min_length": 2}), [1, 2, 3])
+
+    def test_min_length_invalid(self):
+        with self.assertRaises(ValueError):
+            validate([1], {"min_length": 2})
+
+    def test_max_length_valid(self):
+        self.assertEqual(validate([1, 2], {"max_length": 3}), [1, 2])
+
+    def test_max_length_invalid(self):
+        with self.assertRaises(ValueError):
+            validate([1, 2, 3, 4], {"max_length": 3})
+
+    # -----------------------------
+    # MIN / MAX
+    # -----------------------------
+    def test_min_valid(self):
+        self.assertEqual(validate(5, {"min": 3}), 5)
+
+    def test_min_invalid(self):
+        with self.assertRaises(ValueError):
+            validate(2, {"min": 3})
+
+    def test_max_valid(self):
+        self.assertEqual(validate(5, {"max": 10}), 5)
+
+    def test_max_invalid(self):
+        with self.assertRaises(ValueError):
+            validate(20, {"max": 10})
+
+    # -----------------------------
+    # ALLOWED VALUES
+    # -----------------------------
+    def test_allowed_values_valid(self):
+        self.assertEqual(validate("b", {"allowed_values": ("a", "b", "c")}), "b")
+
+    def test_allowed_values_invalid(self):
+        with self.assertRaises(ValueError):
+            validate("x", {"allowed_values": ("a", "b", "c")})
+
+    # -----------------------------
+    # INVARIANT
+    # -----------------------------
+    def test_invariant_valid(self):
+        self.assertTrue(validate(True, {"invariant": True}))
+
+    def test_invariant_invalid(self):
+        with self.assertRaises(ValueError):
+            validate(False, {"invariant": True})
+
+    # -----------------------------
+    # ALL SAME / ALL UNIQUE
+    # -----------------------------
     def test_all_same_valid(self):
         self.assertEqual(validate([1, 1, 1], {"all_same": True}), [1, 1, 1])
 
@@ -264,6 +336,54 @@ class TestValidate(unittest.TestCase):
         from datetime import datetime
         with self.assertRaises(ValueError):
             validate(datetime(1999, 8, 29), {"after_date": datetime(2000, 1, 1)})
+
+    # -----------------------------
+    # CHESS PIECE RULES
+    # -----------------------------
+
+    def test_piece_color_valid(self):
+        import chess
+        p = chess.Piece(chess.PAWN, chess.WHITE)
+        self.assertEqual(
+            validate(p, {"piece_color": chess.WHITE}),
+            p
+        )
+
+    def test_piece_color_invalid(self):
+        import chess
+        p = chess.Piece(chess.PAWN, chess.WHITE)
+        with self.assertRaises(ValueError):
+            validate(p, {"piece_color": chess.BLACK})
+
+    def test_piece_type_valid(self):
+        import chess
+        p = chess.Piece(chess.KNIGHT, chess.WHITE)
+        self.assertEqual(
+            validate(p, {"piece_type": chess.KNIGHT}),
+            p
+        )
+
+    def test_piece_type_invalid(self):
+        import chess
+        p = chess.Piece(chess.KNIGHT, chess.WHITE)
+        with self.assertRaises(ValueError):
+            validate(p, {"piece_type": chess.BISHOP})
+
+    def test_chess_symbol_valid(self):
+        import chess
+        p = chess.Piece(chess.ROOK, chess.BLACK)
+        # black rook → "r"
+        self.assertEqual(
+            validate(p, {"chess_symbol": "r"}),
+            p
+        )
+
+    def test_chess_symbol_invalid(self):
+        import chess
+        p = chess.Piece(chess.ROOK, chess.BLACK)
+        with self.assertRaises(ValueError):
+            validate(p, {"chess_symbol": "R"})  # uppercase is white rook
+
 
 
 
