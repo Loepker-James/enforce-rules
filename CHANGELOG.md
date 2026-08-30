@@ -331,9 +331,12 @@ Anything involving regex with 1.0.x will be broken and you will need to change y
 * Made newlines more visible in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
 
 ## 2.0.0 - Created on 8/30/2026
-
-### Fixed
-* Bugs involving regex flags that prevented the keyword from working
+For more info, please view [README for 2.0.0]
 
 ### Added
 * "before_date" and "after_date"
+
+## 2.0.1
+
+### Fixed
+* Bugs not letting "regex_flags" work
