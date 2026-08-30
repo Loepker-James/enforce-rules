@@ -1,7 +1,6 @@
 from typing import Dict, Iterable, Callable, Sequence, Literal, TypeVar
 import re
 from datetime import datetime
-from chess import Piece
 
 
 # -----------------------------
