@@ -1,6 +1,7 @@
 from typing import Dict, Iterable, Callable, Sequence, Literal, TypeVar
 import re
 from datetime import datetime
+from chess import Piece
 
 
 # -----------------------------
@@ -109,19 +110,30 @@ def _validate_regex(value: str, pattern: str, flags: object) -> None:
     if not compiled.search(value):
         raise ValueError(f"Value '{value}' does not match regex '{pattern}'")
 
-
-def _validate_must_be_true(value: object, func: Callable[[object], bool]) -> None:
+U = TypeVar("U")
+def _validate_must_be_true(value: U, func: Callable[[U], bool]) -> None:
     if not func(value):
         raise ValueError("must_be_true rule failed")
 
-def _validate_before_date(value: object, reference: object) -> None:
+def _validate_before_date(value: datetime, reference: datetime) -> None:
     if not value < reference:
         raise ValueError(f"{value} must be before {reference}.")
 
-def _validate_after_date(value: object, reference: object) -> None:
+def _validate_after_date(value: datetime, reference: datetime) -> None:
     if not value > reference:
         raise ValueError(f"{value} must be before {reference}.")
+        
+def validate_piece_color(value: Piece, color: bool) -> None:
+    if value.color is not color:
+       raise ValueError(f"{value}'s color is {'white' if value.color else 'black'} instead of {'white' if reference else 'black'}.")
+        
+def validate_piece_type(value: Piece, piece_type: Literal[1, 2, 3, 4, 5, 6]) -> None:
+    if value.piece_type != piece_type:
+        raise ValueError(f"Value is not a {["pawn", "knight", "bishop", "rook", "queen", "king"][reference-1]}")
 
+def validate_chess_symbol(value: Piece, symbol: Literal["p", "n", "b", "r", "q", "k", "P", "N", "B", "R", "Q", "K"]) -> None:
+    if value.symbol() != symbol:
+        raise ValueError(f"Value's symbol is not {symbol}")
 
 # -----------------------------
 # VALIDATE() — DEFINED LAST
@@ -178,7 +190,16 @@ def validate(value: T, rules: Dict[str, object]) -> T:
                 _validate_before_date(value, rule)
             case "after_date":
                 _validate_after_date(value, rule)
-            case x if x != "regex_flags":
+            case "piece_color":
+                _validate_piece_color(value, bool(rule))
+            case "piece_type":
+                _validate_piece_type(value, int(rule))
+            case "chess_symbol":
+                _validate_chess_symbol(value, str(rule))
+            case "regex_flags":
+                # intentionally ignored; handled by regex case
+                pass
+            case _:
                 raise ValueError(f"Unknown rule: {key}")
 
     return value
