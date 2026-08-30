@@ -7,7 +7,7 @@ MAJOR: 2
 
 MINOR: 0
 
-PATCH: 0
+PATCH: 1
 
 If you need to catch up, you can see the full version history in the [CHANGELOG](https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md).
 
@@ -490,6 +490,120 @@ cat_or_dog = validate("cat", {"regex": "cat|dog", {"regex_flags": RegexFlag.I | 
 must_be_true
 
 Custom rule: a function that returns True for allowed values.
+
+```python
+def is_even(x: int) -> bool:
+    return x % 2 == 0
+even_number = validate(8, {"must_be_true": is_even})
+```
+This calls:
+
+```python
+is_even(8)
+```
+If enough people use a must_be_true lambda, it may become an added keyword in a later version
+
+before_date
+
+Value must be strictly before the given datetime.
+Example: validate(datetime(1999, 8, 29), {"before_date": datetime(2000, 1, 1)})
+
+after_date
+
+Value must be strictly after the given datetime.
+Example: validate(datetime(2026, 8, 29), {"after_date": datetime(2000, 1, 1)})
+
+Contributing
+Contributions are welcome. Please open an issue or pull request.
+When contributing, ensure backwards compatibility (you cannot remove keywords and/or features).
+
+Please note, when using my module, that you will manually have to validate each time should you choose to mutate a variable.
+
+
+Versioning Policy
+-----------------
+
+This project guarantees full backwards compatibility. Existing rule files, keyword meanings, validator behaviors, and metadata formats will continue to work exactly as before. No update will ever break existing configurations.
+
+Version Numbering
+-----------------
+This project uses a non-breaking semantic versioning model:
+
+MAJOR.MINOR.PATCH
+
+MAJOR = large new feature families
+
+MINOR = small additive keywords or enhancements
+
+PATCH = bug fixes or internal improvements
+
+Major bumps do not imply breaking changes. They only indicate that a significant new capability has been added.
+
+Major bumps always reset MINOR and PATCH to 0. For example:
+1.7.3 -> 2.0.0
+
+1.12.0 -> 2.0.0
+
+1.0.0 -> 2.0.0
+
+Minor bumps always reset PATCH to 0. For example:
+1.7.3 -> 1.8.0
+
+1.12.9 -> 1.13.0
+
+1.0.4 -> 1.1.0
+
+Minor Version Bumps
+-------------------
+Minor bumps occur when adding small keywords. Examples include:
+
+min_inclusive
+
+max_inclusive
+
+trim_whitespace
+
+pattern_flags
+
+These additions do not change the meaning of existing keywords, do not require users to modify rule files, and do not alter validator behavior. They are classified as minor updates.
+
+Minor bumps always reset PATCH to 0
+
+Major Version Bumps
+-------------------
+Major bumps occur only when adding large new keyword families or entire new capability domains. Examples include:
+
+a full date-validation system
+
+a full numeric-range system
+
+a full conditional-rules system
+
+a full schema-level rule system
+
+These are major features, even though they remain fully backwards-compatible. Major bumps communicate that the release adds a significant new capability.
+
+Major bumps always reset MINOR and PATCH to 0.
+
+Patch Version Bumps
+-------------------
+Patch bumps occur when fixing bugs, improving internal logic, optimizing performance, correcting documentation, or adjusting error messages without changing meaning. Patch updates never add new keywords.
+
+Summary
+-------
+MAJOR: large new feature families, backwards-compatible, resets MINOR and PATCH to 0
+
+MINOR: small additive keywords, backwards-compatible
+
+PATCH: fixes only, backwards-compatible
+
+
+
+Credits
+Microsoft Copilot — for helping me code it. It did a TON of the coding, and to be honest, I couldn't have made this project without it. It did ~~some~~ a lot of readme, in addition to it writing most of CONTRIBUTING.md
+Dad — for helping me along the journey.
+
+License Type: BSD 3-clause
 
 ```python
 def is_even(x: int) -> bool:
