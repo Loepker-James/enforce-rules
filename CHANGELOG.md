@@ -324,3 +324,8 @@ Anything involving regex with 1.0.x will be broken and you will need to change y
 
 ### Documentation
 * Made changelog visible even when viewing on sources other than GitHub
+
+## 1.1.4 - Created on 8/30/2026
+
+### Documentation
+* Made newlines more visible in [README]
