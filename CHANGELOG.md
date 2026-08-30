@@ -337,7 +337,12 @@ Anything involving regex with 1.0.x will be broken and you will need to change y
 
 For more info on these keywords, please view [README for 2.0.0](https://pypi.org/project/enforce-rules/2.0.0)
 
-## 2.0.1
+## 2.0.1 - Created on 8/30/2026
 
 ### Fixed
 * Bugs not letting "regex_flags" work
+
+## 2.0.2 - Created on 8/30/2026
+
+### Documentation
+* Fixed [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
