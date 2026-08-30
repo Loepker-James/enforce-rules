@@ -70,7 +70,7 @@ Anything involving regex with 1.0.x will be broken and you will need to change y
 ### Added
 * "before_date" and "after_date"
 
-For more info on these keywords, please view [README for 2.0.0](https://pypi.org/project/enforce-rules/2.0.0)
+For more info on these keywords, please view [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
 
 ## 2.0.1 - Created on 8/30/2026
 
@@ -88,6 +88,19 @@ For more info on these keywords, please view [README for 2.0.0](https://pypi.org
 * Improved internal type hint in project
 
 ## 2.0.4 - Created on 8/30/2026
+
+### Fixed
+* Version number in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+
+## 3.0.0 - Created on 8/30/2026
+
+### Added
+* New chess themed keywords (more info in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md))
+
+### Documentation
+* Better type hints
+
+## 3.0.1 - Created on 8/30/2026
 
 ### Fixed
 * Version number in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
