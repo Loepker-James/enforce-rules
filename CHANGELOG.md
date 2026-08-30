@@ -310,6 +310,10 @@ is_even(8)
 
 ## 1.1.1 - Created on 8/29/2026
 
-###
+### Fixed
 * Version numbering in [README](README.md)
 
+## 1.1.2 - Created on 8/29/2026
+
+### Added
+* internal type hint in regex
