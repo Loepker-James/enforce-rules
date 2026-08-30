@@ -1,6 +1,7 @@
-from typing import Dict, Iterable, Callable, Sequence
+from typing import Dict, Iterable, Callable, Sequence, Literal, TypeVar
 import re
 from datetime import datetime
+from chess import Piece
 
 
 # -----------------------------
@@ -126,8 +127,8 @@ def _validate_after_date(value: object, reference: object) -> None:
 # -----------------------------
 # VALIDATE() — DEFINED LAST
 # -----------------------------
-
-def validate(value: Any, rules: Dict[str, Any]) -> Any:
+T = TypeVar("T")
+def validate(value: T, rules: Dict[str, object]) -> T:
     """
     Validate a value against a dictionary of rules.
     Returns the original value if valid, otherwise raises ValueError.
