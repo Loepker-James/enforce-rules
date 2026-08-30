@@ -103,4 +103,4 @@ For more info on these keywords, please view [README](https://github.com/Loepker
 ## 3.0.1 - Created on 8/30/2026
 
 ### Fixed
-* Version number in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+* Updated [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md) to version 3.0.1.
