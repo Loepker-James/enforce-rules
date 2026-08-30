@@ -7,7 +7,7 @@ MAJOR: 1
 
 MINOR: 1
 
-PATCH: 3
+PATCH: 4
 
 If you need to catch up, you can see the full version history in the [CHANGELOG](https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md).
 
@@ -63,6 +63,7 @@ Keywords and Usage
 Below are all supported keywords.
 
 length
+
 The length of the object must be exactly this.
 
 ```python
@@ -70,60 +71,70 @@ lst = validate([1, 2, 3, 4, 5], {"length": 5})
 ```
 
 min_length
+
 Minimum length (inclusive).
 
 ```python
 lst = validate(['a', 'b', 'c', 'd', 'e'], {"min_length": 3})
 ```
 max_length
+
 Maximum length (inclusive).
 
 ```python
 lst = validate([1, 2, 3, 4, 5, 6], {"max_length": 7})
 ```
 min
+
 Minimum numeric value (inclusive).
 
 ```python
 number = validate(10, {"min": 0})
 ```
 max
+
 Maximum numeric value (inclusive).
 
 ```python
 number = validate(10, {"max": 20})
 ```
 allowed_values
+
 Similar to Literal; value must be one of the allowed values.
 
 ```python
 val = validate("a", {"allowed_values": ("a", "b", "c", "d")})
 ```
 invariant
+
 Value must be truthy.
 
 ```python
 val = validate((0 == 0), {"invariant": True})
 ```
 all_same
+
 All values in the collection must be the same.
 
 ```python
 numbers = validate([1, 1, 1], {"all_same": True})
 ```
 all_unique
+
 All values in the collection must be unique.
 
 ```python
 numbers = validate([1, 2, 3], {"all_unique": True})
 ```
 non_empty
+
 Collection must not be empty.
 
 ```python
 my_strings = validate(['a', 'b', 'c'], {"non_empty": True})
 ```
 no_nulls
+
 Collection must not contain None.
 
 ```python
@@ -131,6 +142,7 @@ my_things = validate([1, 2, 3, "a", "b", "c"], {"no_nulls": True})
 ```
 
 sorted
+
 List must be sorted (increasing or decreasing).
 
 ```python
@@ -138,49 +150,57 @@ numbers = validate([1, 5, 9], {"sorted": True})
 ```
 
 increasing
+
 List must be strictly increasing.
 
 ```python
 numbers = validate([1, 5, 9], {"increasing": True})
 ```
 decreasing
+
 List must be strictly decreasing.
 
 ```python
 numbers = validate([9, 5, 1], {"decreasing": True})
 ```
 sum_min
+
 Minimum sum of the collection (inclusive).
 
 ```python
 numbers = validate([10, 20, 30], {"sum_min": 50})
 ```
 sum_max
+
 Maximum sum of the collection (inclusive).
 
 ```python
 numbers = validate([10, 20, 30], {"sum_max": 70})
 ```
 element_min
+
 Minimum value for any element (inclusive).
 
 ```python
 numbers = validate([10, 20, 30], {"element_min": 5})
 ```
 element_max
+
 Maximum value for any element (inclusive).
 
 ```python
 numbers = validate([10, 20, 30], {"element_max": 40})
 ```
 regex
+
 String must match the regex.
 
 ```python
 cat_or_dog = validate("cat", {"regex": "cat|dog"})
 ```
 regex_flags 
-Turns out I didn't notice this in my code, until now. This is the regex flags
+
+Turns out I didn't notice this in my code, until 1.1.0. This is the regex flags
 
 ```python
 from re import RegexFlag
@@ -188,6 +208,7 @@ cat_or_dog = validate("cat", {"regex": "cat|dog", {"regex_flags": RegexFlag.I | 
 ```
 
 must_be_true
+
 Custom rule: a function that returns True for allowed values.
 
 ```python
@@ -228,12 +249,16 @@ Major bumps do not imply breaking changes. They only indicate that a significant
 
 Major bumps always reset MINOR and PATCH to 0. For example:
 1.7.3 -> 2.0.0
+
 1.12.0 -> 2.0.0
+
 1.0.0 -> 2.0.0
 
 Minor bumps always reset PATCH to 0. For example:
 1.7.3 -> 1.8.0
+
 1.12.9 -> 1.13.0
+
 1.0.4 -> 1.1.0
 
 Minor Version Bumps
@@ -241,8 +266,11 @@ Minor Version Bumps
 Minor bumps occur when adding small keywords. Examples include:
 
 min_inclusive
+
 max_inclusive
+
 trim_whitespace
+
 pattern_flags
 
 These additions do not change the meaning of existing keywords, do not require users to modify rule files, and do not alter validator behavior. They are classified as minor updates.
