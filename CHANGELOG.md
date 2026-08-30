@@ -301,7 +301,7 @@ is_even(8)
 ## 1.0.3 - Created on 8/29/2026
 
 ### Fixed
-* Version numbering in [README](README.md)
+* Version numbering in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
 
 ## 1.1.0 - Created on 8/29/2026
 
@@ -313,7 +313,7 @@ Anything involving regex with 1.0.x will be broken and you will need to change y
 ## 1.1.1 - Created on 8/29/2026
 
 ### Fixed
-* Version numbering in [README](README.md)
+* Version numbering in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
 
 ## 1.1.2 - Created on 8/29/2026
 
@@ -328,4 +328,4 @@ Anything involving regex with 1.0.x will be broken and you will need to change y
 ## 1.1.4 - Created on 8/30/2026
 
 ### Documentation
-* Made newlines more visible in [README]
+* Made newlines more visible in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
