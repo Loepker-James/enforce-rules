@@ -1,5 +1,6 @@
 from typing import Dict, Iterable, Callable, Sequence
 import re
+from datetime import datetime
 
 
 # -----------------------------
@@ -113,6 +114,14 @@ def _validate_must_be_true(value: object, func: Callable[[object], bool]) -> Non
     if not func(value):
         raise ValueError("must_be_true rule failed")
 
+def _validate_before_date(value: object, reference: object) -> None:
+    if not value < reference:
+        raise ValueError(f"{value} must be before {reference}.")
+
+def _validate_after_date(value: object, reference: object) -> None:
+    if not value > reference:
+        raise ValueError(f"{value} must be before {reference}.")
+
 
 # -----------------------------
 # VALIDATE() — DEFINED LAST
@@ -165,7 +174,11 @@ def validate(value: Any, rules: Dict[str, Any]) -> Any:
                 _validate_regex(value, str(rule), rules.get("regex_flags"))
             case "must_be_true":
                 _validate_must_be_true(value, rule)
-            case _:
+            case "before_date":
+                _validate_before_date(value, rule)
+            case "after_date":
+                _validate_after_date(value, rule)
+            case x if x != "regex_flags":
                 raise ValueError(f"Unknown rule: {key}")
 
     return value
