@@ -228,6 +228,43 @@ class TestValidate(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate("a\nb", {"regex": "a.b"})
 
+    # -----------------------------
+    # BEFORE DATE / AFTER DATE
+    # -----------------------------
+    def test_before_date_valid(self):
+        from datetime import datetime
+        self.assertEqual(
+            validate(datetime(1999, 8, 29), {"before_date": datetime(2000, 1, 1)}),
+            datetime(1999, 8, 29)
+        )
+
+    def test_before_date_invalid_equal(self):
+        from datetime import datetime
+        with self.assertRaises(ValueError):
+            validate(datetime(2000, 1, 1), {"before_date": datetime(2000, 1, 1)})
+
+    def test_before_date_invalid_after(self):
+        from datetime import datetime
+        with self.assertRaises(ValueError):
+            validate(datetime(2001, 1, 1), {"before_date": datetime(2000, 1, 1)})
+
+    def test_after_date_valid(self):
+        from datetime import datetime
+        self.assertEqual(
+            validate(datetime(2026, 8, 29), {"after_date": datetime(2000, 1, 1)}),
+            datetime(2026, 8, 29)
+        )
+
+    def test_after_date_invalid_equal(self):
+        from datetime import datetime
+        with self.assertRaises(ValueError):
+            validate(datetime(2000, 1, 1), {"after_date": datetime(2000, 1, 1)})
+
+    def test_after_date_invalid_before(self):
+        from datetime import datetime
+        with self.assertRaises(ValueError):
+            validate(datetime(1999, 8, 29), {"after_date": datetime(2000, 1, 1)})
+
 
 
     # -----------------------------
