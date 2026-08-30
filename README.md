@@ -7,9 +7,9 @@ MAJOR: 1
 
 MINOR: 1
 
-PATCH: 2
+PATCH: 3
 
-If you need to catch up, you can see the full version history in the [CHANGELOG](CHANGELOG.md).
+If you need to catch up, you can see the full version history in the [CHANGELOG](https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md).
 
 It exists to let you use features Python doesn't already provide in the typing system — things you probably want, like min, max, length, all_same, and many more.
 
