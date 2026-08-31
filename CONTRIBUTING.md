@@ -190,7 +190,7 @@ New keywords must:
 
 - be additive  
 
-- not modify existing keyword behavior (unless it is the point of the keyword; e.g. min_exclusive and max_exclusive. For more clarification, please ask me)
+- not modify existing keyword behavior (unless it is the point of the keyword; e.g. min_exclusive and max_exclusive. For more clarification, please ask me in an issue. If you would ever like to contact me, put it in an issue and we will get it sorted out.)
 
 - include full test coverage  
 
