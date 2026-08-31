@@ -108,4 +108,4 @@ For more info on these keywords, please view [README](https://github.com/Loepker
 ## 3.0.2 - Created on 8/30/2026
 
 ### Fixed
-* [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md
+* [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
