@@ -70,7 +70,7 @@ Anything involving regex with 1.0.x will be broken and you will need to change y
 ### Added
 * "before_date" and "after_date"
 
-For more info on these keywords, please view [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+For more info on these keywords, please view [Datetime Issue](https://github.com/Loepker-James/enforce-rules/issues/6)
 
 ## 2.0.1 - Created on 8/30/2026
 
@@ -95,7 +95,7 @@ For more info on these keywords, please view [README](https://github.com/Loepker
 ## 3.0.0 - Created on 8/30/2026
 
 ### Added
-* New chess themed keywords (more info in [Chess Issue]())
+* New chess themed keywords (more info in [Chess Issue](https://github.com/Loepker-James/enforce-rules/issues/7))
 
 ### Documentation
 * Better type hints
