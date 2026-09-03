@@ -11,7 +11,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 * validate() function
-* Keywords (for more info please view [1.0.0 README](https://pypi.org/project/enforce-rules/1.0.0)
+* Keywords (for more info please view [1.0.0 README](https://pypi.org/project/enforce-rules/1.0.0))
 
 ### Documentation
 
@@ -95,7 +95,7 @@ For more info on these keywords, please view [README](https://github.com/Loepker
 ## 3.0.0 - Created on 8/30/2026
 
 ### Added
-* New chess themed keywords (more info in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md))
+* New chess themed keywords (more info in [Chess Issue]())
 
 ### Documentation
 * Better type hints
