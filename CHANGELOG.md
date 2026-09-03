@@ -71,7 +71,7 @@ Anything involving regex with 1.0.x will be broken and you will need to change y
 * "before_date"
 * "after_date"
 
-For more info on these keywords, please view [Datetime Issue](https://github.com/Loepker-James/enforce-rules/issues/6)
+For more info on these keywords, please view [Datetime Issue (#6)](https://github.com/Loepker-James/enforce-rules/issues/6)
 
 ## 2.0.1 - Created on 8/30/2026
 
@@ -96,7 +96,7 @@ For more info on these keywords, please view [Datetime Issue](https://github.com
 ## 3.0.0 - Created on 8/30/2026
 
 ### Added
-* New chess themed keywords (more info in [Chess Issue](https://github.com/Loepker-James/enforce-rules/issues/7))
+* New chess themed keywords (more info in [Chess Issue (#7)](https://github.com/Loepker-James/enforce-rules/issues/7))
 
 ### Documentation
 * Better type hints
@@ -114,7 +114,7 @@ For more info on these keywords, please view [Datetime Issue](https://github.com
 ## 3.1.0 - Created on 9/2/2026
 
 ### Added
-* "is_password" (for more info, please view [Password Issue](https://github.com/Loepker-James/enforce-rules/issues/1))
+* "is_password" (for more info, please view [Password Issue (#1)](https://github.com/Loepker-James/enforce-rules/issues/1))
 
 ### Refactored
 * Used collections.abc for some type-hints instead of typing
