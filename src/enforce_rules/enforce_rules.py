@@ -1,4 +1,5 @@
-from typing import Dict, Iterable, Callable, Sequence, Literal, TypeVar
+from typing import Dict, Callable, Literal, TypeVar
+from collections.abc import Iterable, Sequence, Container
 import re
 from datetime import datetime
 from chess import Piece
@@ -135,6 +136,36 @@ def _validate_chess_symbol(value: Piece, symbol: Literal["p", "n", "b", "r", "q"
     if value.symbol() != symbol:
         raise ValueError(f"Value's symbol is not {symbol}")
 
+def _validate_is_password(value: str, rule: bool) -> None:
+    if not rule:
+        return
+    try:
+        _validate_min_length(value, 8)
+    except ValueError:
+        raise ValueError("Password must be at least 8 characters.")
+    
+    if not any(char.isdigit() for char in value):
+        raise ValueError("Password must have at least one digit.")
+    
+    if not any(char.isupper() for char in value):
+        raise ValueError("Password must have at least one uppercase letter.")
+    
+    if not any(char.islower() for char in value):
+        raise ValueError("Password must have at least one lowercase letter.")
+
+    symbols: Container[str] = {
+        "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/",
+        ":", ";", "<", "=", ">", "?", "@",
+        "[", "\\", "]", "^", "_", "`",
+        "{", "|", "}", "~",
+    }
+    
+    def is_symbol(char: str) -> bool:
+        return char in symbols     
+    
+    if not any(is_symbol(char) for char in value):
+        raise ValueError("Password must have at least one symbol.")
+
 # -----------------------------
 # VALIDATE() — DEFINED LAST
 # -----------------------------
@@ -196,6 +227,8 @@ def validate(value: T, rules: Dict[str, object]) -> T:
                 _validate_piece_type(value, int(rule))
             case "chess_symbol":
                 _validate_chess_symbol(value, str(rule))
+            case "is_password":
+                _validate_is_password(value, rule)
             case "regex_flags":
                 # intentionally ignored; handled by regex case
                 pass
