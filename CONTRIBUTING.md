@@ -77,14 +77,21 @@ This ensures alignment with PER’s design philosophy.
 Commands:
 
 
-
+```git
 git clone <repo>
+```
 
+```dos
 cd enforce-rules
+```
 
-python -m pip install -e .
+```python
+python -m pip install -e
+```
 
+```python
 python -m unittest discover -s tests
+```
 
 
 
