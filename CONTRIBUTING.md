@@ -249,3 +249,5 @@ For roadmaps, you can usually look in issues. There I put everything I would wan
 - validate() uses match/case dispatch for clarity and maintainability.
 - Keyword names follow snake_case and must be descriptive.
 
+P.S. I will not create releases when I write new code, instead I publish to the main branch. If you wonder what a release does, please look in the [CHANGELOG]()
+
