@@ -68,7 +68,8 @@ Anything involving regex with 1.0.x will be broken and you will need to change y
 ## 2.0.0 - Created on 8/30/2026
 
 ### Added
-* "before_date" and "after_date"
+* "before_date"
+* "after_date"
 
 For more info on these keywords, please view [Datetime Issue](https://github.com/Loepker-James/enforce-rules/issues/6)
 
