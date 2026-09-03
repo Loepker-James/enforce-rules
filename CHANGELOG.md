@@ -110,3 +110,11 @@ For more info on these keywords, please view [Datetime Issue](https://github.com
 
 ### Fixed
 * [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+
+## 3.1.0 - Created on 9/2/2026
+
+### Added
+* "is_password" (for more info, please view [Password Issue](https://github.com/Loepker-James/enforce-rules/issues/1))
+
+### Refactored
+* Used collections.abc for some type-hints instead of typing
