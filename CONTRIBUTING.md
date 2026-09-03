@@ -81,9 +81,6 @@ Commands:
 git clone <repo>
 ```
 
-```dos
-cd enforce-rules
-```
 
 ```python
 python -m pip install -e
@@ -92,10 +89,6 @@ python -m pip install -e
 ```python
 python -m unittest discover -s tests
 ```
-
-
-
-
 
 ---
 
@@ -109,7 +102,7 @@ PER follows strict rules:
 
 - Type hints required everywhere  
 
-- `match/case` dispatch required in `validate()`  
+- ```match/case``` dispatch required in ```validate()```  
 
 - Clear, descriptive error messages  
 
