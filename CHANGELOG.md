@@ -11,7 +11,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 * validate() function
-* Keywords (for more info please view [1.0.0 README](https://pypi.org/project/enforce-rules/1.0.0))
+* Keywords (for more info please view [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md))
 
 ### Documentation
 
