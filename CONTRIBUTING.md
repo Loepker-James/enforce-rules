@@ -237,7 +237,15 @@ This section documents internal decisions and guidelines for future maintainers.
 - Error messages must be explicit and never silent.
 
 ### Roadmap
-For roadmaps, you can usually look in issues. There I put everything I would want (and/or I think you would) there.
+For roadmaps, you can usually look in issues. There I put everything I would want (and/or I think you would) there. For closed issues the format is:
+
+[Resolution type] (Issue Title) {Version Number}
+
+Example (for [Issue #1](https://github.com/Loepker-James/enforce-rules/issues/1)):
+
+```text
+[Resolved] (add "is_password") {3.1+}
+```
 
 ### Review Guidelines
 - Reject PRs that introduce silent failures.
