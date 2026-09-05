@@ -1,7 +1,7 @@
 # Security Policy
 
 ## Supported Versions
-Only the latest stable release receives security updates.
+None
 
 ## Reporting a Vulnerability
 Please report security issues privately using GitHub’s **Report a vulnerability** feature:
