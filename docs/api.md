@@ -4,6 +4,7 @@ This is the main function of the library. I will list what each keyword does, al
 then 1.0.0 is default).
 
 Value: The value being validated
+
 Rules: The rules for validation
 
 ## Supported Rules Dictionaries:
