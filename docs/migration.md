@@ -29,6 +29,7 @@ If you want to keep the old full‑match behavior, update your patterns to ancho
 
 Example:
 pattern = "^abc$"
+
 This behaves like the old fullmatch.
 
 Summary
