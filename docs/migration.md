@@ -28,10 +28,10 @@ validate("xabc", {"regex": "abc"}) #matches
 What you may need to change
 If you want to keep the old full‑match behavior, update your patterns to anchor them using ^ and $.
 
-Example:
-pattern = "^abc$"
+Example: pattern = "^abc$"
 
 This behaves like the old fullmatch.
 
-Summary
+Summary:
+
 Most users do not need to change anything. But if you depended on strict full‑string matching, you should update your patterns to include ^ and $.
