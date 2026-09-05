@@ -1,9 +1,7 @@
 # Design Document
 
 ## Purpose of This Document
-Explain that this file describes the internal architecture of the library.
-It covers design goals, rule organization, validator structure, and reasoning behind major decisions.
-It is not a tutorial or API reference.
+This is where you will get to learn the design behind the document. Why major decisions were made and many more
 
 ## High-Level Goals
 Describe the main goals of the project, such as simplicity, predictable behavior, dictionary-based rule definitions, and runtime validation.
@@ -14,14 +12,69 @@ Explain the top-level structure of the library.
 Describe how the validator, rule functions, and helper utilities are organized.
 Mention how rule keywords map to internal functions.
 
-## Rule System Design
-Explain why rules are represented as dictionary keys instead of classes or metadata objects.
-Describe how rule parameters are interpreted.
-Explain how new rules can be added.
+### Rule Categories
+The rule system is organized into categories based on the type of check each rule performs. Categorizing rules makes the validator easier to understand, easier to maintain, and easier to extend. Each category groups rules that operate on similar kinds of data or enforce similar constraints.
+
+* Length-Based Rules  
+  These rules operate on any value that has a length. They rely on the built-in len() function and enforce constraints related to size.  
+  Examples include: length, min_length, max_length, non_empty.  
+  These rules are grouped together because they all measure or require a specific length property.
+
+* Numeric Rules  
+  These rules operate on integers or floats. They enforce minimums, maximums, or numeric boundaries on values or collections.  
+  Examples include: min, max, sum_min, sum_max, element_min, element_max.  
+  They are grouped together because they all involve numeric comparison or numeric aggregation.
+
+* Collection Rules  
+  These rules operate on lists, tuples, sets, or any iterable. They inspect multiple elements and often compare them to each other.  
+  Examples include: all_same, all_unique, no_nulls, sorted, increasing, decreasing.  
+  They form a category because they validate relationships between elements rather than the value itself.
+
+* Membership Rules  
+  These rules check whether a value belongs to a predefined set of allowed options.  
+  Example: allowed_values.  
+  This category exists because membership checks are conceptually different from numeric or structural checks.
+
+* Boolean Activation Rules  
+  These rules activate only when their parameter is True. They behave like toggles that enable additional validation logic.  
+  Examples include: invariant, is_password.  
+  They are grouped together because their behavior depends entirely on a boolean flag.
+
+* Regex Rules  
+  These rules operate on strings using regular expressions. They validate patterns and allow optional flags to modify matching behavior.  
+  Examples include: regex, regex_flags.  
+  They form a category because they rely on Python’s regex engine and pattern matching semantics.
+
+* Datetime Rules  
+  These rules operate on datetime objects and enforce temporal ordering.  
+  Examples include: before_date, after_date.  
+  They are grouped together because they compare chronological relationships rather than numeric or structural ones.
+
+* Chess-Specific Rules  
+  These rules operate on python-chess Piece objects and validate chess-specific attributes.  
+  Examples include: piece_color, piece_type, chess_symbol.  
+  They form a category because they rely on external library types and domain-specific logic.
+
+* Custom Callable Rules  
+  These rules allow user-defined validation logic through a function.  
+  Example: must_be_true.  
+  This category exists to support arbitrary validation conditions that do not fit into any other category.
+
+Categorizing rules in this way ensures that similar rules behave consistently, makes the validator easier to extend with new rule types, and helps users understand which rules apply to which kinds of data. New categories can be added in future versions as the rule system expands.
+
 
 ### Rule Mapping
-Explain how rule names map to internal functions.
-Describe how the validator looks up rule logic.
+The validator looks up rule logic by calling
+
+```python
+_validate_keyword_name(value, rule_value) #rule_value might be type coerced.
+```
+
+when you write
+
+```python
+validate(value, {"keyword_name": rule_value})
+```
 
 ### Rule Categories
 Explain the different categories of rules:
@@ -38,7 +91,7 @@ Describe why they are grouped this way.
 ## Validator Design
 Explain how validate(value, rules_dict) is structured internally.
 The rules loop over in a ```match/case``` loop. Then, calls the appropriate helper whose name is ```_validate_keyword_name```.
-If the helper fails, an [early exit]() is triggered. Else, it returns the value put in.
+If the helper fails, an [early exit](https://github.com/Loepker-James/enforce-rules/blob/main/docs/design.md#early-exit) is triggered. Else, it returns the value put in.
 
 ### Early Exit
 It stops at the first failure because python's errors do that. This is not really intent and more a positive side effect.
