@@ -170,6 +170,14 @@ Example: ```python
 import re
 {"regex": "abc", "regex_flags": re.I | re.M | re.X}```
 
+### must_be_true:
+
+Allowed types: Any
+
+Parameter: A function whose signature is ```Callable[[object], bool]```.
+
+Example: ```{"must_be_true": lambda x: x % 2 == 0}```
+
 ### before_date (Created in 2.0.0):
 
 Allowed types: datetime object
@@ -224,10 +232,3 @@ Allowed types: string
 Parameter: a boolean stating whether or not the condition will activate
 
 Example: ```{"is_password": True}```
-
-### must_be_true:
-Allowed types: Any
-
-Parameter: A function whose signature is ```Callable[[object], bool]```.
-
-Example: ```{"must_be_true": lambda x: x % 2 == 0}```
