@@ -134,3 +134,8 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 
 ### Documentation
 * Added links to [documentation](https://github.com/Loepker-James/enforce-rules/tree/main/docs) in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+
+## 3.1.4 - Created on 9/5/2026
+
+### Acknowledgments
+* Readded credits, for some reason I deleted them by mistake.
