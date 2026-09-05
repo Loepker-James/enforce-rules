@@ -129,3 +129,8 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 
 ### Documenation
 * Fixed [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md) version number
+
+## 3.1.3 - Created on 9/5/2026
+
+### Documentation
+* Added links to [documentation](https://github.com/Loepker-James/enforce-rules/tree/main/docs) in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
