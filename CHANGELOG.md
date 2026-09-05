@@ -16,7 +16,7 @@ All notable changes to this project will be documented in this file.
 ### Documentation
 
 * Added full keyword reference table to README
-* Clarified behavior of `must_be_true`
+* Clarified behavior of ```must_be_true```
 * Added examples for all keywords
 * Updated installation instructions
 * Added Versioning Policy section in README
@@ -118,3 +118,14 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 
 ### Refactored
 * Used collections.abc for some type-hints instead of typing
+
+
+## 3.1.1 - Created on 9/4/2026
+
+### Fixed
+* [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md) bug
+
+## 3.1.2 - Created on 9/4/2026
+
+### Documenation
+* Fixed [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md) version number
