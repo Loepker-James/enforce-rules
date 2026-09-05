@@ -1,7 +1,7 @@
 # Security Policy
 
 ## Supported Versions
-None
+None (currently)
 
 ## Reporting a Vulnerability
 Please report security issues privately using GitHub’s **Report a vulnerability** feature:
