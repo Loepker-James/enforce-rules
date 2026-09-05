@@ -13,8 +13,8 @@ Old vs New Examples
 Old (fullmatch):
 Only matches "abc" exactly.
 ```python
-validate("abc", {"regex": "abc"}) matches.
-validate("xabc", {"regex": "abc"}) does not match.
+validate("abc", {"regex": "abc"}) #matches
+validate("xabc", {"regex": "abc"}) #does not match
 ```
 
 New (search):
