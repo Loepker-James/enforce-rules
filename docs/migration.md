@@ -9,7 +9,8 @@ New behavior: The pattern only needs to appear somewhere inside the value.
 Why this matters
 If your rules relied on full‑string matching, they may now match more values than before.
 
-Old vs New Examples
+## Old vs New Examples
+
 Old (fullmatch):
 Only matches "abc" exactly.
 ```python
