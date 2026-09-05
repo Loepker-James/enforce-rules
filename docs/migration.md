@@ -1,4 +1,5 @@
-#Upgrading from 1.0.x to 1.1+
+# Upgrading from 1.0.x to 1.1+
+
 Version 1.1 changes how rule patterns are matched. Previously, patterns used re.fullmatch, which required the entire string to match the rule. Starting in 1.1, patterns use re.search, which allows partial matches.
 
 What changed
