@@ -236,6 +236,9 @@ This section documents internal decisions and guidelines for future maintainers.
 - All keywords must be additive; never modify existing keyword behavior. (Unless it is one of the exceptions seen earlier)
 - Error messages must be explicit and never silent.
 
+### Naming keyword helpers
+```_validate_keyword_name``` is the proper way to name a helper function for a keyword.
+
 ### Roadmap
 For roadmaps, you can usually look in issues. There I put everything I would want (and/or I think you would) there. For closed issues the format is:
 
