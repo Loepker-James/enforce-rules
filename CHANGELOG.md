@@ -2,6 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
+For change migration, go to [MIGRATION](https://github.com/Loepker-James/enforce-rules/blob/main/docs/migration.md)
 
 
 ## 1.0.0 - Created on 8/22/2026
