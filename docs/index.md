@@ -8,7 +8,7 @@ I wanted to share it with everyone. I wanted to make a difference, and this proj
 
 Project Enforce Rules exists because Python’s type system didn’t give me the constraints I needed.  
 I wanted stronger guarantees, more expressive rules, and a way to enforce them at type‑check time.  
-So I built this project to expand Python’s typing system with real, usable constraints.
+So I built this project to expand Python’s typing system with constraints.
 
 This started as a personal passion project, but once it worked, I realized other people could benefit from it too.  
 Now it’s a full library meant to help anyone who wants more power in their type hints.
