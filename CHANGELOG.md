@@ -29,7 +29,7 @@ If you're planning on upgrading, also check [MIGRATION](https://github.com/Loepk
 
 ### Refactored
 * Type hints no longer use Any and use object instead.
-* Fixed inconsistency in readme
+* Fixed inconsistency in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
 
 ## 1.0.2 - Created on 8/29/2026
 
@@ -43,12 +43,8 @@ If you're planning on upgrading, also check [MIGRATION](https://github.com/Loepk
 
 ## 1.1.0 - Created on 8/29/2026
 
-Anything involving regex with 1.0.x will be broken and you will need to change your syntax
-
 ### Changed
-* Regex uses re.search instead of re.fullmatch
-
-[How To Migrate For This Change](https://github.com/Loepker-James/enforce-rules/blob/main/docs/migration.md#upgrading-from-11--to-11)
+* Regex uses re.search instead of re.fullmatch ([How To Migrate For This Change](https://github.com/Loepker-James/enforce-rules/blob/main/docs/migration.md#upgrading-from-11--to-11))
 
 ## 1.1.1 - Created on 8/29/2026
 
