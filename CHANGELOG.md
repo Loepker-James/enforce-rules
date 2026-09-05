@@ -28,7 +28,7 @@ If you're planning on upgrading, also check [MIGRATION](https://github.com/Loepk
 ## 1.0.1 - Created on 8/29/2026
 
 ### Refactored
-* Type hints no longer use Any and use object instead.
+* Type hints no longer use ```Any``` and use ```object``` instead.
 * Fixed inconsistency in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
 
 ## 1.0.2 - Created on 8/29/2026
