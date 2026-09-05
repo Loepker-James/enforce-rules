@@ -45,6 +45,8 @@ Anything involving regex with 1.0.x will be broken and you will need to change y
 ### Changed
 * Regex uses re.search instead of re.fullmatch
 
+[How To Migrate For This Change](https://github.com/Loepker-James/enforce-rules/blob/main/docs/migration.md#upgrading-from-11--to-11)
+
 ## 1.1.1 - Created on 8/29/2026
 
 ### Fixed
