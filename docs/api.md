@@ -35,7 +35,7 @@ Example: ```{"max_length": 7}```
 
 ### min:
 
-Allowed types: float or int
+Allowed types: a number
 
 Parameter: a number
 
