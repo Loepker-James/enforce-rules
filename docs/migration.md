@@ -1,3 +1,7 @@
+# Migration
+
+Changes that break backwards compatibility go here, so you can update your code first.
+
 # Upgrading from 1.1- to 1.1+
 
 Version 1.1 changes how rule patterns are matched. Previously, patterns used re.fullmatch, which required the entire string to match the rule. Starting in 1.1, patterns use re.search, which allows partial matches.
