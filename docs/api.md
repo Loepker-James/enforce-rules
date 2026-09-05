@@ -166,9 +166,11 @@ Allowed types: All (this goes along with regex though, which requires a string)
 
 Parameter: The regex flags
 
-Example: ```python
+Example: 
+```python
 import re
-{"regex": "abc", "regex_flags": re.I | re.M | re.X}```
+{"regex": "abc", "regex_flags": re.I | re.M | re.X}
+```
 
 ### must_be_true:
 
@@ -184,9 +186,11 @@ Allowed types: datetime object
 
 Parameter: a datetime object
 
-Example: ```python
+Example: 
+```python
 from datetime import datetime
-{"before_date": datetime(2000, 1, 1)}```
+{"before_date": datetime(2000, 1, 1)}
+```
 
 ### after_date (Created in 2.0.0):
 
@@ -194,9 +198,11 @@ Allowed types: datetime object
 
 Parameter: a datetime object
 
-Example: ```python
+Example: 
+```python
 from datetime import datetime
-{"after_date": datetime(2000, 1, 1)}```
+{"after_date": datetime(2000, 1, 1)}
+```
 
 ### piece_color (Created in 3.0.0):
 
@@ -204,18 +210,22 @@ Allowed types: Piece object
 
 Parameter: chess.WHITE or chess.BLACK
 
-Example: ```python
+Example: 
+```python
 import chess
-{"piece_color": chess.WHITE}```
+{"piece_color": chess.WHITE}
+```
 
 ### piece_type (Created in 3.0.0):
 Allowed types: Piece object
 
 Parameter: Chess.PAWN, chess.KNIGHT, chess.BISHOP, chess.ROOK, chess.QUEEN, or chess.KING
 
-Example: ```python
+Example: 
+```python
 import chess
-{"piece_type": chess.KNIGHT}```
+{"piece_type": chess.KNIGHT}
+```
 
 ### chess_symbol (Created in 3.0.0):
 
