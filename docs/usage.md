@@ -21,7 +21,8 @@ validate(10, {"min": 0})
 ```
 This checks that the value is at least 0.
 
-Using Multiple Rules
+## Using Multiple Rules
+
 You can enforce several rules at once by adding more keys to the dictionary.
 
 ```python
