@@ -2,7 +2,7 @@
 
 Changes that break backwards compatibility go here, so you can update your code first.
 
-# Upgrading from 1.1- to 1.1+
+## Upgrading from 1.1- to 1.1+
 
 Version 1.1 changes how rule patterns are matched. Previously, patterns used re.fullmatch, which required the entire string to match the rule. Starting in 1.1, patterns use re.search, which allows partial matches.
 
@@ -13,7 +13,7 @@ New behavior: The pattern only needs to appear somewhere inside the value.
 Why this matters
 If your rules relied on full‑string matching, they may now match more values than before.
 
-## Old vs New Examples
+### Old vs New Examples
 
 Old (fullmatch):
 Only matches "abc" exactly.
