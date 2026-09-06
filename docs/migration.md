@@ -1,6 +1,7 @@
 # Migration
 
 Changes that break backwards compatibility go here, so you can update your code before you download it.
+Syntax deprecations are [here](https://github.com/Loepker-James/enforce-rules/blob/main/docs/deprecatioins.md).
 
 ## Upgrading from 1.1- to 1.1+
 
