@@ -12,7 +12,7 @@ Contributors must treat others with courtesy. Disagreements are allowed, but dis
 Feedback should focus on improving the project. Criticism must be actionable, specific, and delivered without insults or sarcasm.
 
 ### §2.3 Follow Project Rules
-Contributors must follow maintainer instructions, repository guidelines, and established workflows. Ignoring rules disrupts development.
+Contributors must follow maintainer instructions, repository guidelines, and the steps in [CONTRIBUTING.md](https://github.com/Loepker-James/enforce-rules/blob/main/CONTRIBUTING.md). Ignoring rules disrupts development.
 
 ### §2.4 Stay On Topic
 Discussions should remain relevant to the project. Off-topic debates, personal tangents, or unrelated arguments slow progress.
