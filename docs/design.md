@@ -76,17 +76,6 @@ when you write
 validate(value, {"keyword_name": rule_value})
 ```
 
-### Rule Categories
-Explain the different categories of rules:
-* numeric rules
-* length-based rules
-* collection-based rules
-* regex rules
-* datetime rules
-* chess-specific rules
-* custom callable rules
-
-Describe why they are grouped this way.
 
 ## Validator Design
 Explain how validate(value, rules_dict) is structured internally.
@@ -122,12 +111,17 @@ after_2000 = validate(datetime(2001, 8, 29), {"after_date": datetime(2000, 1, 1)
 ## Chess Rule Design
 Chess rules (made in version 3.0.0, [See Chess Issue](https://github.com/Loepker-James/enforce-rules/issues/7)) were made because I just wanted to expand the domain of my module.
 It validates color by ensuring that ```piece.color == color```
+
 It validates type by ensuring that ```piece.piece_type == piece_type```
+
 It validate symbol by ensuring that ```piece.symbol() == symbol```
+
 If a check fails, as you know, a ```ValueError``` is raised.
 
 ## Password Rule Design
-Made in version 3.1.0, is_password checks to see if the value is a strong password. 
+Made in version 3.1.0, is_password checks to see if the value is a strong password. ([See Password Issue](https://github.com/Loepker-James/enforce-rules/issues/1)
+
+## Enforcement
 
 Checks:
 1. At least 8 characters
