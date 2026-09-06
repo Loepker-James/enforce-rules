@@ -18,7 +18,7 @@ There is **no guaranteed response time**, but I will review reports when I am ab
 
 ## Disclosure Expectations
 To protect users:
-- Do not open public issues for security problems.
+- Do not open public issues for security problems. (as stated in [§3.4 in Code Of Conduct](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md#34-leaking-exploits)
 - Do not share exploit details publicly.
 - Coordinate disclosure through the private report channel.
 
