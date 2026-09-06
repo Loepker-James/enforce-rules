@@ -40,10 +40,13 @@ Spam includes irrelevant messages, repeated posts, or attempts to derail convers
 ### §3.6 Trolling
 Trolling includes baiting, antagonizing, or intentionally causing conflict.
 
-### §3.7 Impersonation or Ban Evasion
-Pretending to be another contributor or creating new accounts to bypass moderation is prohibited.
+### §3.7 Impersonation
+Pretending to be another contributor / maintainer is prohibited.
 
-### §3.8 Disruption
+### §3.8 Ban Evasion
+Creating new accounts to bypass moderation is prohibited
+
+### §3.9 Disruption
 Actions intended to sabotage development—such as derailing issues, spreading misinformation, or intentionally breaking workflows—are not allowed.
 
 ## §4 Enforcement
