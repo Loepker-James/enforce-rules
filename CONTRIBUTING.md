@@ -13,7 +13,6 @@ All contributions are welcome as long as they maintain full backwards compatibil
 ---
 
 
-
 ## Introduction
 
 PER enforces dictionary-based rules at runtime using `validate(value, rules)`.  
@@ -28,9 +27,7 @@ New keywords, improvements, tests, and documentation updates are encouraged.
 
 ## Code of Conduct
 
-Be respectful, constructive, and kind.  
-
-No harassment, discrimination, or hostile behavior will be tolerated.
+[Code Of Conduct](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md)
 
 
 
