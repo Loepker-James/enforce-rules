@@ -18,11 +18,11 @@ If you're planning on upgrading, also check [MIGRATION](https://github.com/Loepk
 
 ### Documentation
 
-* Added full keyword reference table to README
+* Added full keyword reference table to [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
 * Clarified behavior of ```must_be_true```
 * Added examples for all keywords
 * Updated installation instructions
-* Added Versioning Policy section in README
+* Added Versioning Policy section in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
 
 
 ## 1.0.1 - Created on 8/29/2026
