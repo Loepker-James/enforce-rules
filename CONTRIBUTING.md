@@ -223,9 +223,6 @@ New keywords must:
 
 ---
 
-## Enforcement
-Following the guidelines on this document is required under [§2.3 of the Code of Conduct](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md#23-follow-project-rules)
-
 ## Maintainer Notes
 
 This section documents internal decisions and guidelines for future maintainers.
@@ -258,6 +255,10 @@ Example (for [Issue #1](https://github.com/Loepker-James/enforce-rules/issues/1)
 ### Internal Decisions
 - ```validate()``` uses match/case dispatch for clarity and maintainability.
 - Keyword names follow snake_case and must be descriptive.
+
+
+## Enforcement
+Following the guidelines on this document is required under [§2.3 of the Code of Conduct](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md#23-follow-project-rules)
 
 P.S. I will not create releases when I write new code, instead I publish to the main branch. If you wonder what a release does, please look in the [CHANGELOG](https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md)
 
