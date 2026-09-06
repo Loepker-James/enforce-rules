@@ -138,5 +138,5 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 
 ## 3.1.4 - Created on 9/5/2026
 
-### Acknowledgments
+### Added
 * Readded credits, for some reason I deleted them by mistake.
