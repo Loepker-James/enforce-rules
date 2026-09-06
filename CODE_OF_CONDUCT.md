@@ -34,13 +34,16 @@ Discriminatory language targeting race, gender, sexuality, nationality, disabili
 ### §3.4 Leaking Exploits
 Posting harmful code, vulnerabilities, or exploit details publicly is not allowed. Use GitHub’s private reporting tools instead.
 
-### §3.5 Spam or Trolling
-Spam includes irrelevant messages, repeated posts, or attempts to derail conversations. Trolling includes baiting, antagonizing, or intentionally causing conflict.
+### §3.5 Spam
+Spam includes irrelevant messages, repeated posts, or attempts to derail conversations. 
 
-### §3.6 Impersonation or Ban Evasion
+### §3.6 Trolling
+Trolling includes baiting, antagonizing, or intentionally causing conflict.
+
+### §3.7 Impersonation or Ban Evasion
 Pretending to be another contributor or creating new accounts to bypass moderation is prohibited.
 
-### §3.7 Disruption
+### §3.8 Disruption
 Actions intended to sabotage development—such as derailing issues, spreading misinformation, or intentionally breaking workflows—are not allowed.
 
 ## §4 Enforcement
