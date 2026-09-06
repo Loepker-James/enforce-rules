@@ -153,8 +153,6 @@ I saw no point as to why you can't use metadata objects.
 
 ## Future Plans
 Here are some things (in addition to issues, that would be great improvements).
-* optional type-system integration
-* optional plugin support
 * improved error messages
 * additional rule categories
 * performance improvements
