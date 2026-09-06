@@ -29,7 +29,7 @@ Harassment includes insults, personal attacks, repeated unwanted contact, or att
 Any form of threat—technical, personal, or social—is prohibited. This includes coercion, blackmail, or fear-based pressure.
 
 ### §3.3 Hate Speech
-Discriminatory language targeting race, gender, sexuality, nationality, disability, or religion is strictly forbidden.
+Discriminatory language targeting race, gender, sexuality, nationality, disability, religion, or any other personal beliefs is strictly forbidden.
 
 ### §3.4 Leaking Exploits
 Posting harmful code, vulnerabilities, or exploit details publicly is not allowed. Use GitHub’s private reporting tools instead.
