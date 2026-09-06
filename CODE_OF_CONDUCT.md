@@ -6,7 +6,7 @@ This project aims to maintain a respectful, safe, and productive environment for
 ## §2 Expected Behavior
 
 ### §2.1 Respect
-Contributors must treat others with courtesy. Disagreements are acceptable, but disrespect, hostility, or dismissive behavior is not.
+Contributors must treat others with courtesy. Disagreements are allowed, but disrespect, hostility, or dismissive behavior is not.
 
 ### §2.2 Constructive Feedback
 Feedback should focus on improving the project. Criticism must be actionable, specific, and delivered without insults or sarcasm.
