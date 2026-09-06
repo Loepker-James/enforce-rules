@@ -44,7 +44,7 @@ Trolling includes baiting, antagonizing, or intentionally causing conflict.
 Pretending to be another contributor / maintainer is prohibited.
 
 ### §3.8 Ban Evasion
-Creating new accounts to bypass moderation is prohibited
+Creating new accounts to bypass moderation is prohibited.
 
 ### §3.9 Disruption
 Actions intended to sabotage development—such as derailing issues, spreading misinformation, or intentionally breaking workflows—are not allowed.
