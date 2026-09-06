@@ -95,7 +95,7 @@ Describe how this affects rule behavior.
 Mention that this change was introduced in version 1.1.
 
 ## Datetime Rule Design
-before_date and after_date are the datetime made in 2.0.0. For more info, [See Datetime Issue](https://github.com/Loepker-James/enforce-rules/issues/6).
+before_date and after_date are the datetime made in 2.0.0. For more info, [See Datetime Issue (#6)](https://github.com/Loepker-James/enforce-rules/issues/6).
 before_date works by ensuring that the value is before rule_value. after_date is similar to before_date but ensures the value is after instead of before. Here is some sample usage:
 
 ```python
@@ -109,7 +109,7 @@ after_2000 = validate(datetime(2001, 8, 29), {"after_date": datetime(2000, 1, 1)
 ```
 
 ## Chess Rule Design
-Chess rules (made in version 3.0.0, [See Chess Issue](https://github.com/Loepker-James/enforce-rules/issues/7)) were made because I just wanted to expand the domain of my module.
+Chess rules (made in version 3.0.0, [See Chess Issue (#7)](https://github.com/Loepker-James/enforce-rules/issues/7)) were made because I just wanted to expand the domain of my module.
 It validates color by ensuring that ```piece.color == color```
 
 It validates type by ensuring that ```piece.piece_type == piece_type```
@@ -119,7 +119,7 @@ It validate symbol by ensuring that ```piece.symbol() == symbol```
 If a check fails, as you know, a ```ValueError``` is raised.
 
 ## Password Rule Design
-Made in version 3.1.0, is_password checks to see if the value is a strong password. ([See Password Issue](https://github.com/Loepker-James/enforce-rules/issues/1)
+Made in version 3.1.0, is_password checks to see if the value is a strong password. ([See Password Issue (#1)](https://github.com/Loepker-James/enforce-rules/issues/1)
 
 ## Enforcement
 
