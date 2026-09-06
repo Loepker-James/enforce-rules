@@ -236,7 +236,9 @@ This section documents internal decisions and guidelines for future maintainers.
 ```_validate_keyword_name``` is the proper way to name a helper function for a keyword.
 
 ### Roadmap
-For roadmaps, you can usually look in issues. There I put everything I would want (and/or I think you would) there. For closed issues the format is:
+For roadmaps, you can usually look in issues. There I put everything I would want (and/or I think you would) there. If it has the prefix [Category], then it is a category containing appropriate issues. Like a folder for issues.
+
+For closed issues the format is:
 
 [Resolution type] (Issue Title) {Version Number}
 
