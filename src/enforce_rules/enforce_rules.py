@@ -1,4 +1,4 @@
-from typing import Dict, Callable, Literal, TypeVar
+from typing import Dict, Callable, Literal, TypeVar, Final
 from collections.abc import Iterable, Sequence, Container
 import re
 from datetime import datetime
@@ -170,7 +170,7 @@ def _validate_is_password(value: str, rule: bool) -> None:
 # VALIDATE() — DEFINED LAST
 # -----------------------------
 T = TypeVar("T")
-def validate(value: T, rules: Dict[str, object]) -> T:
+def validate(value: Final[T], rules: Dict[str, object]) -> T:
     """
     Validate a value against a dictionary of rules.
     Returns the original value if valid, otherwise raises ValueError.
