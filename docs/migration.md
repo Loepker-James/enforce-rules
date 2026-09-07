@@ -43,7 +43,6 @@ Summary:
 Most users do not need to change anything. But if you depended on strict full‑string matching, you should update your patterns to include ^ and $.
 
 ## Upgrading to 3.1.5 --- DONT
-Upgrading to 3.1.5 — DONT
 Version 3.1.5 should be skipped.
 This release shipped with a missing internal import, which caused the validator to raise errors immediately on startup. Because the module could not fully load, no rules validated correctly.
 
