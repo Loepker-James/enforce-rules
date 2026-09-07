@@ -90,9 +90,7 @@ I use ```ValueError``` for all failures because each failure means the **value**
 Error messages vary by rule due to how I felt like writing it and to give details on the failure.
 
 ## Regex Design
-Explain the decision to use re.search instead of re.fullmatch.
-Describe how this affects rule behavior.
-Mention that this change was introduced in version 1.1.
+Starting in the first minor bump ever (1.1.0), I decided to switch from ```re.fullmatch``` to ```re.search``` because it would be easy to migrate and would allow more patterns to be matched.
 
 ## Datetime Rule Design
 before_date and after_date are the datetime made in 2.0.0. For more info, [See Datetime Issue (#6)](https://github.com/Loepker-James/enforce-rules/issues/6).
