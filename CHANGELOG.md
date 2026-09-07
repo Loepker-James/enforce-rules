@@ -146,3 +146,8 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 
 ### Refactored
 * Used ```typing.Final``` in ```validate()``` for better type hinting
+
+## 3.1.6 - Created on 9/8/2026
+
+### Refactord
+* Used a comment instead of ```typing.Final```. Also, 3.1.5 does not work.
