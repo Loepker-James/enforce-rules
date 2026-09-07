@@ -58,11 +58,13 @@ Users upgrading to this version will encounter immediate crashes, making migrati
 
 ### Required user actions
 * Do not install 3.1.5.
-* If you already installed it, downgrade immediately to 3.1.4, the previous stable version.
+* If you already installed it, downgrade immediately to **any stable version in the 3.1.x line**, specifically **3.1.0 through 3.1.4**.  
+  These versions all share the same working validator code.
 * No rule changes are required — the issue is internal, not user-facing.
-* After downgrading to 3.1.4, validation will work normally again.
+* After downgrading to a stable 3.1.x version, validation will work normally again.
 
 ### Summary
 3.1.5 contains a missing import that prevents the validator from running.
-Skip this version and upgrade directly from 3.1.4 to the next stable release.
+Skip this version and upgrade directly from a stable 3.1.x release to the next working version.
+
 
