@@ -140,3 +140,9 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 
 ### Added
 * Readded credits, for some reason I deleted them by mistake.
+
+
+## 3.1.5 - Created on 9/7/2026
+
+### Refactored
+* Used ```typing.Final``` in ```validate()``` for better type hinting
