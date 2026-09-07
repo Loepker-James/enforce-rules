@@ -260,7 +260,7 @@ Example (for [Issue #1](https://github.com/Loepker-James/enforce-rules/issues/1)
 
 
 ## Enforcement
-Following the guidelines on this document is required under [§2.3 of the Code of Conduct](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md#23-follow-project-rules)
+Following the guidelines on this document is required under [§2.3 of the Code of Conduct (Follow Project Rules)](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md#23-follow-project-rules), which requires contributors to obey project guidelines.
 
 
 ## P.S.
