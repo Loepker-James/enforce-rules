@@ -8,11 +8,14 @@ Syntax deprecations are [here](https://github.com/Loepker-James/enforce-rules/bl
 
 Version 1.1 changes how rule patterns are matched. Previously, patterns used re.fullmatch, which required the entire string to match the rule. Starting in 1.1, patterns use re.search, which allows partial matches.
 
-What changed
+### What changed
+
 Old behavior: The entire value had to match the pattern.
+
 New behavior: The pattern only needs to appear somewhere inside the value.
 
-Why this matters
+### Why this matters
+
 If your rules relied on full‑string matching, they may now match more values than before.
 
 ### Old vs New Examples
@@ -47,11 +50,13 @@ Most users do not need to change anything. But if you depended on strict full‑
 Version 1.1+ introduced a change to how rule patterns are matched.  
 If you need to return to the 1.1- series, you must revert any patterns that rely on the newer partial‑match behavior.
 
-What changed
+### What changed
+
 Old behavior (1.1-): The entire value must match the pattern.  
 New behavior (1.1+): The pattern only needs to appear somewhere inside the value.
 
-Why this matters
+### Why this matters
+
 If you wrote rules expecting partial matches, they will behave differently — or fail — when running under 1.1-.  
 The older validator only supports full‑string matching.
 
