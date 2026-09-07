@@ -44,30 +44,25 @@ Most users do not need to change anything. But if you depended on strict full‑
 
 ## Upgrading to 3.1.5 --- DONT
 Version 3.1.5 should be skipped.
-This release shipped with a missing internal import, which caused the validator to raise errors immediately on startup. Because the module could not fully load, no rules validated correctly.
+This release shipped with a missing internal import, which causes the validator to raise an error immediately on startup. Because the module cannot fully load, no rules validate at all.
 
-What went wrong
-A required internal import was accidentally removed.
+### What went wrong
+* A required internal import was accidentally removed.
+* The validator fails during initialization.
+* Any call to validate() never occurs because Python raises an error before the function is reached.
+* No rules are parsed or executed.
 
-The validator failed during initialization.
+### Why this matters
+Since the validator cannot start, 3.1.5 is unusable.
+Users upgrading to this version will encounter immediate crashes, making migration impossible.
 
-Any call to validate() or load_rules() raised an exception before processing input.
+### Required user actions
+* Do not install 3.1.5.
+* If you already installed it, downgrade immediately to 3.1.4, the previous stable version.
+* No rule changes are required — the issue is internal, not user-facing.
+* After downgrading to 3.1.4, validation will work normally again.
 
-No rule files could be parsed or executed.
+### Summary
+3.1.5 contains a missing import that prevents the validator from running.
+Skip this version and upgrade directly from 3.1.4 to the next stable release.
 
-Why this matters
-Since the validator could not start, 3.1.5 is unusable.
-Users upgrading to this version would encounter immediate crashes, making migration impossible.
-
-Required user actions
-Do not install 3.1.5.
-
-If you already installed it, downgrade immediately to the previous stable version.
-
-No rule changes are required — the issue was internal, not user‑facing.
-
-After downgrading, validation will work normally again.
-
-Summary
-3.1.5 contained a missing import that prevented the validator from running.
-Skip this version and upgrade directly to the next stable release.
