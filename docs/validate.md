@@ -1,6 +1,6 @@
 ```validate()``` checks a value against a set of rules.
 
-Rule dictionaries work by writing a keyword, then a rule value attached to it. For more information look in [api.md](https://github.com/Loepker-James/enforce-rules/blob/main/docs/api.md).
+Rule dictionaries work by writing a keyword, then a rule value attached to it. For more information, look in [api.md](https://github.com/Loepker-James/enforce-rules/blob/main/docs/api.md).
 
 The validator does these steps for each rule.
 
