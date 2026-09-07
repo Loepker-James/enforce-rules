@@ -142,12 +142,12 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 * Readded credits, for some reason I deleted them by mistake.
 
 
-## 3.1.5 - Created on 9/7/2026
+## 3.1.5 - Created on 9/7/2026 (Note: This version is broken.)
 
 ### Refactored
 * Used ```typing.Final``` in ```validate()``` for better type hinting
 
 ## 3.1.6 - Created on 9/8/2026
 
-### Refactord
+### Refactored
 * Used a comment instead of ```typing.Final```. Also, 3.1.5 does not work.
