@@ -42,6 +42,47 @@ Summary:
 
 Most users do not need to change anything. But if you depended on strict full‑string matching, you should update your patterns to include ^ and $.
 
+## Downgrading from 1.1+ to 1.1-
+
+Version 1.1+ introduced a change to how rule patterns are matched.  
+If you need to return to the 1.1- series, you must revert any patterns that rely on the newer partial‑match behavior.
+
+What changed
+Old behavior (1.1-): The entire value must match the pattern.  
+New behavior (1.1+): The pattern only needs to appear somewhere inside the value.
+
+Why this matters
+If you wrote rules expecting partial matches, they will behave differently — or fail — when running under 1.1-.  
+The older validator only supports full‑string matching.
+
+### Examples of what to revert
+
+1.1+ (search):
+```python
+validate("xabc", {"regex": "abc"}) #matches in 1.1+
+```
+
+1.1- (fullmatch):
+```python
+validate("xabc", {"regex": "abc"}) #does not match in 1.1-
+```
+
+### What you may need to change
+If your rules depend on partial substring matching, do not downgrade.  
+The 1.1- series only supports full‑match behavior, so any rule relying on search‑style matching will stop working.
+
+If your rules depend on full‑string matching, you must remove any ^ and $ anchors you added for 1.1+.  
+The older 1.1- validator already performs full‑match checks, so anchored patterns are unnecessary.
+
+### Example (downgrade‑safe)
+pattern = "abc"
+
+This restores the original 1.1‑ full‑match behavior without relying on 1.1+ anchors.
+
+### Summary
+If your rules rely on partial matching, you should not downgrade to 1.1-.  
+If your rules rely on full‑match semantics, remove ^ and $ anchors so the 1.1‑ validator behaves normally.
+
 ## Upgrading to 3.1.5 --- DONT
 Version 3.1.5 should be skipped.
 This release shipped with a missing internal import, which causes the validator to raise an error immediately on startup. Because the module cannot fully load, no rules validate at all.
