@@ -89,7 +89,7 @@ This restores the original 1.1‑ full‑match behavior without relying on 1.1+ 
 
 ### Summary
 If your rules rely on partial matching, you should not downgrade to 1.1-.  
-If your rules rely on full‑match semantics, remove ^ and $ anchors so the 1.1‑ validator behaves normally.
+If your rules rely on full‑match semantics, remove ^ and $ anchors so you're using proper 1.1- api.
 
 ## Upgrading to 3.1.5 --- DONT
 Version 3.1.5 should be skipped.
