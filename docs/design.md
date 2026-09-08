@@ -19,6 +19,22 @@ The *validator* is the central entry point. It receives a value and a dictionary
 
 Rule keywords are resolved through a mapping table that connects each keyword to its corresponding internal function. This allows new rules to be added or existing rules to be modified without changing the validator loop.
 
+## Convenience Wrapper (Version 3.2):
+
+Version 3.2 introduces a small convenience helper named ```is_valid()```. It provides a boolean‑returning interface on top of the existing ```validate()``` function. This helper is designed for users who prefer a simple True/False result instead of catching exceptions.
+
+The implementation is intentionally minimal:
+
+```python
+def is_valid(value: object, rules: Dict[str, object]) -> bool:
+    try:
+        validate(value, rules)
+        return True
+    except:
+        return False
+```
+        
+This wrapper does not modify the validator loop or introduce new rule logic. It simply calls validate() and converts any validation failure into False. The feature aligns with the library’s goals of simplicity and predictable behavior while offering an alternative interface for users who want boolean validation.
 
 ### Rule Categories
 The rule system is organized into categories based on the type of check each rule performs. Categorizing rules makes the validator easier to understand, easier to maintain, and easier to extend. Each category groups rules that operate on similar kinds of data or enforce similar constraints.
