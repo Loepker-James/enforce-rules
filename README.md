@@ -5,9 +5,9 @@ Version #
 ----------------
 MAJOR: 3
 
-MINOR: 1
+MINOR: 2
 
-PATCH: 6
+PATCH: 0
 
 If you need to catch up, you can see the full version history in the [CHANGELOG](https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md).
 
