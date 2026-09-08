@@ -11,9 +11,7 @@ Rules: The rules for validation
 
 ### length:
 
-Allowed types: anything that has a length
-
-Parameter: integer length
+Function signature: ```def _validate_length(value: Sequence, expected: int) -> None:```
 
 Example: ```{"length": 5}```
 
