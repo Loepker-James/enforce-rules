@@ -156,7 +156,12 @@ Note any [README](https://github.com/Loepker-James/enforce-rules/blob/main/READM
 ### Refactored
 * Used ```typing.Final``` in ```validate()``` for better type hinting
 
-## 3.1.6 - Created on 9/8/2026
+## 3.1.6 - Created on 9/7/2026
 
 ### Refactored
 * Used a comment instead of ```typing.Final```. Also, 3.1.5 does not work.
+
+## 3.2.0 - Created on 9/8/2026
+
+### Addded
+* ```is_valid()```
