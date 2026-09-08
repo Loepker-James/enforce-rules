@@ -36,7 +36,7 @@ validate("abc", {"regex": "abc"}) #matches
 validate("xabc", {"regex": "abc"}) #matches
 ```
 
-## What you may need to change
+### What you may need to change
 
 If you want to keep the old full‑match behavior, update your patterns to anchor them using ^ and $.
 
