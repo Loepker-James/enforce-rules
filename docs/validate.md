@@ -4,7 +4,7 @@ Rule dictionaries work by writing a keyword, then a rule value attached to it. F
 
 The validator does these steps for each rule.
 
-1. Puts your key in a match/case loop.
+1. Puts your key in a ```match/case``` loop.
 2. Calls the corresponding helper with rule value and the value to be validated
 3. The helper may raise an error.
 4. If none of the helpers raise errors, return the value.
