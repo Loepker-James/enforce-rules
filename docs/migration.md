@@ -21,6 +21,7 @@ If your rules relied on full‑string matching, they may now match more values t
 ### Old vs New Examples
 
 Old (fullmatch):
+
 Only matches "abc" exactly.
 ```python
 validate("abc", {"regex": "abc"}) #matches
@@ -28,13 +29,15 @@ validate("xabc", {"regex": "abc"}) #does not match
 ```
 
 New (search):
+
 Matches if "abc" appears anywhere.
 ```python
 validate("abc", {"regex": "abc"}) #matches
 validate("xabc", {"regex": "abc"}) #matches
 ```
 
-What you may need to change
+## What you may need to change
+
 If you want to keep the old full‑match behavior, update your patterns to anchor them using ^ and $.
 
 Example: pattern = "^abc$"
