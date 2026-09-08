@@ -237,3 +237,10 @@ def validate(value: T, rules: Dict[str, object]) -> T:
                 raise ValueError(f"Unknown rule: {key}")
 
     return value
+    
+def is_valid(value: object, rules: Dict[str, object]) -> bool:
+    try:
+        validate(value, rules)
+        return True
+    except:
+        return False
