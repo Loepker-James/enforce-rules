@@ -46,6 +46,7 @@ If you're planning on upgrading, also check [MIGRATION](https://github.com/Loepk
 ### Changed
 * Regex uses re.search instead of re.fullmatch 
 
+
 * [How To Migrate For This Change (If Upgrading To)](https://github.com/Loepker-James/enforce-rules/blob/main/docs/migration.md#upgrading-from-11--to-11)
 * [How To Migrate For This Change (If Downgrading From)](https://github.com/Loepker-James/enforce-rules/blob/main/docs/migration.md#downgrading-from-11-to-11-)
 
