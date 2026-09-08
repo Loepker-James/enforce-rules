@@ -142,13 +142,20 @@ If any of the checks fail, a ```ValueError``` is raised.
 must_be_true lets you make your own rules. The rule value you pass in should be ```Callable[[object], bool]```
 
 ## Extensibility
-New rules can be added if an issue is opened about it and/or many people are using it as a must_be_true rule. Then, the program will do this.
+New rules can be added if an issue is opened about it and/or many people are using it as a must_be_true rule. 
+When you do a must_be_true, the program will do this.
 
 ```python
 U = TypeVar("U")
 def _validate_must_be_true(value: U, func: Callable[[U], bool]) -> None:
     if not func(value):
         raise ValueError("must_be_true rule failed")
+```
+
+when you write
+
+```python
+validate(value, {"must_be_true": func})
 ```
 
 As you can see, if the function returns a falsy value, a ```ValueError``` is raised. Else, the check passes.
