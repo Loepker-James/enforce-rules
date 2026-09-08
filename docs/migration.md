@@ -91,7 +91,7 @@ This restores the original 1.1‑ full‑match behavior without relying on 1.1+ 
 If your rules rely on partial matching, you should not downgrade to 1.1-.  
 If your rules rely on full‑match semantics, remove ^ and $ anchors so you're using proper 1.1- api.
 
-## Upgrading to 3.1.5 --- DONT
+## Upgrading/Downgrading to 3.1.5 --- DONT
 Version 3.1.5 should be skipped.
 This release shipped with a missing internal import, which causes the validator to raise an error immediately on startup. Because the module cannot fully load, no rules validate at all.
 
