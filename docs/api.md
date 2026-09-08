@@ -181,7 +181,7 @@ Parameter: A function whose signature is ```Callable[[object], bool]```.
 
 Example: ```{"must_be_true": lambda x: x % 2 == 0}```
 
-### before_date (Created in 2.0.0):
+### before_date (Created in 2):
 
 Allowed types: datetime object
 
@@ -193,7 +193,7 @@ from datetime import datetime
 {"before_date": datetime(2000, 1, 1)}
 ```
 
-### after_date (Created in 2.0.0):
+### after_date (Created in 2):
 
 Allowed types: datetime object
 
@@ -205,7 +205,7 @@ from datetime import datetime
 {"after_date": datetime(2000, 1, 1)}
 ```
 
-### piece_color (Created in 3.0.0):
+### piece_color (Created in 3):
 
 Allowed types: Piece object
 
@@ -217,7 +217,7 @@ import chess
 {"piece_color": chess.WHITE}
 ```
 
-### piece_type (Created in 3.0.0):
+### piece_type (Created in 3):
 Allowed types: Piece object
 
 Parameter: Chess.PAWN, chess.KNIGHT, chess.BISHOP, chess.ROOK, chess.QUEEN, or chess.KING
@@ -228,7 +228,7 @@ import chess
 {"piece_type": chess.KNIGHT}
 ```
 
-### chess_symbol (Created in 3.0.0):
+### chess_symbol (Created in 3):
 
 Allowed types: Piece object
 
@@ -236,10 +236,27 @@ Parameter: a string representing the piece's symbol
 
 Example: ```{"chess_symbol": "r"})```
 
-### is_password (Created in 3.1.0):
+### is_password (Created in 3.1):
 
 Allowed types: string
 
 Parameter: a boolean stating whether or not the condition will activate
 
 Example: ```{"is_password": True}```
+
+
+
+# is_valid(value, rules) (Created in 3.2):
+is_valid is a simple helper function added in version 3.2.0.
+It provides a boolean‑based interface for validation by wrapping the main validate() function.
+
+```python
+def is_valid(value: object, rules: Dict[str, object]) -> bool:
+    try:
+        validate(value, rules)
+        return True
+    except:
+        return False
+```
+This function returns True when validation succeeds and False when any rule fails.
+It does not introduce new rule logic; it simply offers an alternative interface for users who prefer boolean validation instead of catching exceptions.
