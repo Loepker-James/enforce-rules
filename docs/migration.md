@@ -20,7 +20,7 @@ If your rules relied on full‑string matching, they may now match more values t
 
 ### Old vs New Examples
 
-Old (fullmatch):
+#### Old (fullmatch):
 
 Only matches "abc" exactly.
 ```python
@@ -28,7 +28,7 @@ validate("abc", {"regex": "abc"}) #matches
 validate("xabc", {"regex": "abc"}) #does not match
 ```
 
-New (search):
+#### New (search):
 
 Matches if "abc" appears anywhere.
 ```python
