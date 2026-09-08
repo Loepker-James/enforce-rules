@@ -143,7 +143,7 @@ must_be_true lets you make your own rules. The rule value you pass in should be 
 
 ## Extensibility
 New rules can be added if an issue is opened about it and/or many people are using it as a must_be_true rule. 
-When you do a must_be_true, the program will do this.
+When you do a must_be_true, the program will do this:
 
 ```python
 U = TypeVar("U")
