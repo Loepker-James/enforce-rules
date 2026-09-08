@@ -1,16 +1,24 @@
 # Design Document
 
 ## Purpose of This Document
-This is where you will get to learn the design behind the document. Why major decisions were made and many more
+This is where you will get to learn the design behind the document. Why major decisions were made and many more.
 
 ## High-Level Goals
-Describe the main goals of the project, such as simplicity, predictable behavior, dictionary-based rule definitions, and runtime validation.
-Mention that the design prioritizes clarity and ease of extension.
+The project focuses on *simplicity*, *predictable behavior*, and *dictionary-based rule definitions*. All validation is performed at runtime, allowing rules to be loaded, modified, or extended without changing application code. The system avoids hidden logic or surprising behavior, ensuring that rule outcomes remain consistent and easy to reason about.
+
+The design emphasizes *clarity* and *ease of extension*. New rule types can be added without restructuring the validator, and existing rules follow a uniform pattern. This keeps the architecture stable and predictable across versions.
 
 ## Overall Architecture
-Explain the top-level structure of the library.
-Describe how the validator, rule functions, and helper utilities are organized.
-Mention how rule keywords map to internal functions.
+The library is organized into three main components: the validator, the rule functions, and the helper utilities.
+
+The *validator* is the central entry point. It receives a value and a dictionary of rules, then processes each rule in order. Each rule keyword maps directly to an internal function responsible for performing the check and returning success or raising an error.
+
+*Rule functions* are grouped by category (numeric, string, regex, datetime, chess-specific, and custom callable). Each function implements a single, well-defined behavior so the validator remains simple and predictable.
+
+*Helper utilities* support common tasks such as pattern compilation, type normalization, and error formatting.
+
+Rule keywords are resolved through a mapping table that connects each keyword to its corresponding internal function. This allows new rules to be added or existing rules to be modified without changing the validator loop.
+
 
 ### Rule Categories
 The rule system is organized into categories based on the type of check each rule performs. Categorizing rules makes the validator easier to understand, easier to maintain, and easier to extend. Each category groups rules that operate on similar kinds of data or enforce similar constraints.
