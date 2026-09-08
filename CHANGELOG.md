@@ -144,7 +144,7 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 ## 3.1.4 - Created on 9/5/2026
 
 ### Added
-* Readded credits, for some reason I deleted them by mistake.
+* Readded credits, for some reason I deleted them by mistake in 3.1.1. Note any [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md) in the 3.1.1-3.1.4 (excluding 3.1.4) range, credits will not appear.
 
 
 ## 3.1.5 - Created on 9/7/2026 (Note: This version is broken.)
