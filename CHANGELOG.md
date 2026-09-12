@@ -82,7 +82,7 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 ## 2.0.1 - Created on 8/30/2026
 
 ### Fixed
-* Bugs not letting "regex_flags" work
+* Bugs not letting "regex_flags" work (note: any version before this one will not support "regex_flags")
 
 ## 2.0.2 - Created on 8/30/2026
 
