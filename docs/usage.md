@@ -11,7 +11,7 @@ pip install enforce-rules
 
 ## Basic Usage
 
-The main function in this library is validate(value, rules_dict).
+The main function in this library is ```validate(value, rules_dict)```.
 You pass in a value and a dictionary describing the rules you want to enforce.
 
 Example:
