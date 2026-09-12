@@ -1,29 +1,81 @@
 # Design Document
 
 ## Purpose of This Document
-This is where you will get to learn the design behind the document. Why major decisions were made and many more.
+This document explains the internal architecture of the library, the reasoning behind major design decisions, and how rule validation is structured. It is not a tutorial or API reference. Instead, it describes why the system works the way it does and how maintainers should understand its design.
 
-## High-Level Goals
-The project focuses on *simplicity*, *predictable behavior*, and *dictionary-based rule definitions*. All validation is performed at runtime, allowing rules to be loaded, modified, or extended without changing application code. The system avoids hidden logic or surprising behavior, ensuring that rule outcomes remain consistent and easy to reason about.
+## High‑Level Goals
+The project focuses on simplicity, predictable behavior, and dictionary‑based rule definitions. All validation occurs at runtime, allowing rules to be added, removed, or modified without changing application code.
 
-The design emphasizes *clarity* and *ease of extension*. New rule types can be added without restructuring the validator, and existing rules follow a uniform pattern. This keeps the architecture stable and predictable across versions.
+Key goals:
+
+* predictable rule behavior
+* explicit control flow
+* easy extension
+* minimal abstraction
+* no hidden logic
+
+The system avoids complex metadata objects or class hierarchies. Instead, it uses a flexible rule dictionary and explicit dispatch logic.
 
 ## Overall Architecture
-The library is organized into three main components: the validator, the rule functions, and the helper utilities.
+The library consists of three main components:
 
-The *validator* is the central entry point. It receives a value and a dictionary of rules, then processes each rule in order. Each rule keyword maps directly to an internal function responsible for performing the check and returning success or raising an error.
+### Validator
+The `validate()` function is the central entry point. It receives:
 
-*Rule functions* are grouped by category (numeric, string, regex, datetime, chess-specific, and custom callable). Each function implements a single, well-defined behavior so the validator remains simple and predictable.
+* a value
+* a dictionary of rules
 
-*Helper utilities* support common tasks such as pattern compilation, type normalization, and error formatting.
+It loops through each rule and dispatches to the correct helper using `match/case`. Unknown rule names raise an error immediately.
 
-Rule keywords are resolved through a mapping table that connects each keyword to its corresponding internal function. This allows new rules to be added or existing rules to be modified without changing the validator loop.
+### Rule Functions
+Each rule is implemented as a helper function named:
 
-## Convenience Wrapper (Version 3.2):
+```python
+_validate_rule_name
+```
 
-Version 3.2 introduces a small convenience helper named ```is_valid()```. It provides a boolean‑returning interface on top of the existing ```validate()``` function. This helper is designed for users who prefer a simple True/False result instead of catching exceptions.
+These helpers are pure, isolated, and responsible for raising `ValueError` on failure.
 
-The implementation is intentionally minimal:
+### Helper Utilities
+Utilities support:
+
+* regex compilation
+* type normalization
+* error formatting
+* datetime comparison
+* chess‑specific logic
+
+## Rule Dictionary Design Philosophy
+The `ValidateDict` type is not a strict schema. It is a flexible “rule bag” used for pattern matching. Each key corresponds to a rule. Every key is optional. Different validations use different subsets. This flexibility is intentional.
+
+## Why It Is Not a Schema
+Large TypedDicts are often criticized when used as configuration objects. However, `ValidateDict` is not a configuration model — it is a dispatch table. TypedDict is used for documentation, autocomplete, and static analysis, not enforcement.
+
+Validators normalize types internally (for example, `int(rule)`), so strict typing is unnecessary.
+
+## Why match/case Is Used
+Python’s structural pattern matching is ideal for rule dispatch:
+
+* explicit rule handling
+* predictable control flow
+* easy extension
+* readable logic
+* partial dict matching
+
+Example:
+
+```python
+match key:
+    case "min":
+        _validate_min(value, rule)
+    ...
+    case "regex":
+        _validate_regex(value, str(rule), rules.get("regex_flags"))
+```
+
+
+## Convenience Wrapper (Version 3.2)
+Version 3.2 introduces `is_valid()`, a boolean wrapper around `validate()`:
 
 ```python
 def is_valid(value: object, rules: Dict[str, object]) -> bool:
@@ -33,133 +85,120 @@ def is_valid(value: object, rules: Dict[str, object]) -> bool:
     except:
         return False
 ```
-        
-This wrapper does not modify the validator loop or introduce new rule logic. It simply calls validate() and converts any validation failure into False. The feature aligns with the library’s goals of simplicity and predictable behavior while offering an alternative interface for users who want boolean validation.
-
-### Rule Categories
-The rule system is organized into categories based on the type of check each rule performs. Categorizing rules makes the validator easier to understand, easier to maintain, and easier to extend. Each category groups rules that operate on similar kinds of data or enforce similar constraints.
-
-* Length-Based Rules  
-  These rules operate on any value that has a length. They rely on the built-in len() function and enforce constraints related to size.  
-  Examples include: length, min_length, max_length, non_empty.  
-  These rules are grouped together because they all measure or require a specific length property.
-
-* Numeric Rules  
-  These rules operate on integers or floats. They enforce minimums, maximums, or numeric boundaries on values or collections.  
-  Examples include: min, max, sum_min, sum_max, element_min, element_max.  
-  They are grouped together because they all involve numeric comparison or numeric aggregation.
-
-* Collection Rules  
-  These rules operate on lists, tuples, sets, or any iterable. They inspect multiple elements and often compare them to each other.  
-  Examples include: all_same, all_unique, no_nulls, sorted, increasing, decreasing.  
-  They form a category because they validate relationships between elements rather than the value itself.
-
-* Membership Rules  
-  These rules check whether a value belongs to a predefined set of allowed options.  
-  Example: allowed_values.  
-  This category exists because membership checks are conceptually different from numeric or structural checks.
-
-* Boolean Activation Rules  
-  These rules activate only when their parameter is True. They behave like toggles that enable additional validation logic.  
-  Examples include: invariant, is_password.  
-  They are grouped together because their behavior depends entirely on a boolean flag.
-
-* Regex Rules  
-  These rules operate on strings using regular expressions. They validate patterns and allow optional flags to modify matching behavior.  
-  Examples include: regex, regex_flags.  
-  They form a category because they rely on Python’s regex engine and pattern matching semantics.
-
-* Datetime Rules  
-  These rules operate on datetime objects and enforce temporal ordering.  
-  Examples include: before_date, after_date.  
-  They are grouped together because they compare chronological relationships rather than numeric or structural ones.
-
-* Chess-Specific Rules  
-  These rules operate on python-chess Piece objects and validate chess-specific attributes.  
-  Examples include: piece_color, piece_type, chess_symbol.  
-  They form a category because they rely on external library types and domain-specific logic.
-
-* Custom Callable Rules  
-  These rules allow user-defined validation logic through a function.  
-  Example: must_be_true.  
-  This category exists to support arbitrary validation conditions that do not fit into any other category.
-
-Categorizing rules in this way ensures that similar rules behave consistently, makes the validator easier to extend with new rule types, and helps users understand which rules apply to which kinds of data. New categories can be added in future versions as the rule system expands.
 
 
-### Rule Mapping
-The validator looks up rule logic by calling
+This wrapper does not modify rule logic. It simply converts exceptions into boolean results.
 
+## Rule Categories
+Rules are grouped by behavior:
+
+### Length‑Based Rules
+Operate on values with `len()`.  
+Examples: `length`, `min_length`, `max_length`, `non_empty`.
+
+### Numeric Rules
+Operate on numbers or numeric aggregates.  
+Examples: `min`, `max`, `sum_min`, `sum_max`, `element_min`, `element_max`.
+
+### Collection Rules
+Operate on iterables.  
+Examples: `all_same`, `all_unique`, `no_nulls`, `sorted`, `increasing`, `decreasing`.
+
+### Membership Rules
+Check membership.  
+Example: `allowed_values`.
+
+### Boolean Activation Rules
+Enabled only when their parameter is True.  
+Examples: `invariant`, `is_password`.
+
+### Regex Rules
+Pattern matching using `re.search`.  
+Examples: `regex`, `regex_flags`.
+
+### Datetime Rules
+Chronological comparisons.  
+Examples: `before_date`, `after_date`.
+
+### Chess‑Specific Rules
+Operate on python‑chess pieces.  
+Examples: `piece_color`, `piece_type`, `chess_symbol`.
+
+### Custom Callable Rules
+User‑defined logic.  
+Example: `must_be_true`.
+
+## Rule Mapping
+Rule names map directly to helper functions: ```validate_rule_name```
+
+Example:
 ```python
-_validate_keyword_name(value, rule_value) #rule_value might be type coerced.
+validate(20, {"min": 10})
 ```
 
-when you write
+calls
 
 ```python
-validate(value, {"keyword_name": rule_value})
+_validate_min(20, 10)
 ```
 
 
 ## Validator Design
-Explain how validate(value, rules_dict) is structured internally.
-The rules loop over in a ```match/case``` loop. Then, calls the appropriate helper whose name is ```_validate_keyword_name```.
-If the helper fails, an [early exit](https://github.com/Loepker-James/enforce-rules/blob/main/docs/design.md#early-exit) is triggered. Else, it returns the value put in.
+The validator loops through each rule:
+
+```python
+for key, rule in rules.items():
+    match key:
+...
+        case "min":
+            _validate_min(value, rule)
+...
+```
+
+
+Unknown keys raise: ```ValueError(f"Unknown rule: {key}")```
+
 
 ### Early Exit
-It stops at the first failure because python's errors do that. This is not really intent and more a positive side effect.
+Validation stops at the first failure because exceptions propagate immediately.
 
 ### Error Strategy
-I use ```ValueError``` for all failures because each failure means the **value** is invalid
-Error messages vary by rule due to how I felt like writing it and to give details on the failure.
+All failures raise `ValueError`. Messages vary by rule to provide context.
 
 ## Regex Design
-Starting in the first minor bump ever (1.1.0), I decided to switch from ```re.fullmatch``` to ```re.search``` because it would be easy to migrate and would allow more patterns to be matched.
+Starting in version 1.1.0, the validator switched from `re.fullmatch` to `re.search` to allow more flexible patterns.
 
 ## Datetime Rule Design
-before_date and after_date are the datetime made in 2.0.0. For more info, [See Datetime Issue (#6)](https://github.com/Loepker-James/enforce-rules/issues/6).
-before_date works by ensuring that the value is before rule_value. after_date is similar to before_date but ensures the value is after instead of before. Here is some sample usage:
+Version 2.0.0 introduced `before_date` and `after_date`.
+
+Examples:
 
 ```python
-from datetime import datetime
-before_2000 = validate(datetime(1999, 8, 29), {"before_date": datetime(2000, 1, 1)})
+validate(datetime(1999, 8, 29), {"before_date": datetime(2000, 1, 1)})
+validate(datetime(2001, 8, 29), {"after_date": datetime(2000, 1, 1)})
 ```
 
-```python
-from datetime import datetime
-after_2000 = validate(datetime(2001, 8, 29), {"after_date": datetime(2000, 1, 1)})
-```
 
 ## Chess Rule Design
-Chess rules (made in version 3.0.0, [See Chess Issue (#7)](https://github.com/Loepker-James/enforce-rules/issues/7)) were made because I just wanted to expand the domain of my module.
-It validates color by ensuring that ```piece.color == color```
+Version 3.0.0 added chess rules:
 
-It validates type by ensuring that ```piece.piece_type == piece_type```
-
-It validate symbol by ensuring that ```piece.symbol() == symbol```
-
-If a check fails, as you know, a ```ValueError``` is raised.
+* `piece_color` → `piece.color == rule_value`
+* `piece_type` → `piece.piece_type == rule_value`
+* `chess_symbol` → `piece.symbol() == rule_value`
 
 ## Password Rule Design
-Made in version 3.1.0, is_password checks to see if the value is a strong password. ([See Password Issue (#1)](https://github.com/Loepker-James/enforce-rules/issues/1)
+Version 3.1.0 added `is_password`, enforcing:
 
-## Enforcement
+1. length ≥ 8
+2. ≥ 1 digit
+3. ≥ 1 uppercase
+4. ≥ 1 lowercase
+5. ≥ 1 symbol
 
-Checks:
-1. At least 8 characters
-2. At least 1 digit
-3. At least 1 uppercase letter
-4. At least 1 lowercase letter
-5. At least 1 symbol
-
-If any of the checks fail, a ```ValueError``` is raised.
+Failures raise `ValueError`.
 
 ## Custom Callable Rule
-must_be_true lets you make your own rules. The rule value you pass in should be ```Callable[[object], bool]```
-
-## Extensibility
-New rules can be added if an issue is opened about it and/or many people are using it as a must_be_true rule. 
-When you do a must_be_true, the program will do this:
+`must_be_true` allows arbitrary validation:
 
 ```python
 U = TypeVar("U")
@@ -168,20 +207,29 @@ def _validate_must_be_true(value: U, func: Callable[[U], bool]) -> None:
         raise ValueError("must_be_true rule failed")
 ```
 
-when you write
 
-```python
-validate(value, {"must_be_true": func})
-```
+## Extensibility
+New rules can be added by:
 
-As you can see, if the function returns a falsy value, a ```ValueError``` is raised. Else, the check passes.
+* opening an issue
+* demonstrating common usage
+* adding a new `_validate_<rule>` helper
+* adding a new `case "<rule>"` entry
+
+The system is intentionally easy to extend.
 
 ## Design Tradeoffs
-I chose dictionary based rules because I didn't want a metadata object. I didn't want complexity. 
-I saw no point as to why you can't use metadata objects.
+The project uses dictionary‑based rules because:
+
+* metadata objects add complexity
+* class hierarchies are unnecessary
+* dynamic rule sets are easier to express
+* match/case dispatch is explicit and predictable
 
 ## Future Plans
-Here are some things (in addition to issues, that would be great improvements).
-* improved error messages
-* additional rule categories
-* performance improvements
+Planned improvements:
+
+* better error messages
+* more rule categories
+* performance optimizations
+* potential plugin support
