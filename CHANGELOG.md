@@ -180,3 +180,8 @@ Note: any [README](https://github.com/Loepker-James/enforce-rules/blob/main/READ
 
 ### Refactored
 * Refined type hints
+
+## 3.2.4 - Created on 9/12/2026
+
+### Refactored
+* Used raw string instead of ```"\\"```
