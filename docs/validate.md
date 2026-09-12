@@ -148,4 +148,4 @@ Failure means the function returned False.
 
 
 ## Failure Behavior
-If any rule fails, the validator raises a ValueError. The exact error message depends on the rule. Some rules include the rule name and the failing value, while others only provide a short message. Validation stops immediately when a rule fails, and no additional rules are checked.
+If any rule fails, the validator raises a ```ValueError```. The exact error message depends on the rule. Some rules include the rule name and the failing value, while others only provide a short message. Validation stops immediately when a rule fails, and no additional rules are checked.
