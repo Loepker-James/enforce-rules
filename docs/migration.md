@@ -98,7 +98,7 @@ This release shipped with a missing internal import, which causes the validator 
 ### What went wrong
 * A required internal import was accidentally removed.
 * The validator fails during initialization.
-* Any call to validate() never occurs because Python raises an error before the function is reached.
+* Any call to ```validate()``` never occurs because Python raises an error before the function is reached.
 * No rules are parsed or executed.
 
 ### Why this matters
