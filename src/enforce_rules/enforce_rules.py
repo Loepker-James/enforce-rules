@@ -1,4 +1,4 @@
-from typing import Dict, Callable, Literal, TypeVar
+from typing import Dict, Callable, Literal, TypeVar, TypedDict, TypeAlias
 from collections.abc import Iterable, Sequence, Container
 import re
 from datetime import datetime
@@ -170,7 +170,37 @@ def _validate_is_password(value: str, rule: bool) -> None:
 # VALIDATE() — DEFINED LAST
 # -----------------------------
 T = TypeVar("T")
-def validate(value: T, rules: Dict[str, object]) -> T:
+Number: TypeAlias = int | float
+
+class ValidateDict(TypedDict, total=False):
+    length: int
+    min_length: int
+    max_length: int
+    min: Number
+    max: Number
+    allowed_values: Iterable
+    invariant: bool
+    all_same: bool
+    all_unique: bool
+    non_empty: bool
+    no_nulls: bool
+    sorted: bool
+    increasing: bool
+    decreasing: bool
+    sum_min: Number
+    sum_max: Number
+    element_min: Number
+    element_max: Number
+    regex: str
+    regex_flags: object
+    must_be_true: Callable[[object], bool]
+    before_date: datetime
+    after_date: datetime
+    piece_color: bool
+    piece_type: Literal[1, 2, 3, 4, 5, 6]
+    chess_symbol: Literal["p", "n", "b", "r", "q", "k", "P", "N", "B", "R", "Q", "K"]
+
+def validate(value: T, rules: ValidateDict) -> T:
     # Do not mutate value
     """
     Validate a value against a dictionary of rules.
