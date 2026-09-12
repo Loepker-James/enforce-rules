@@ -268,7 +268,7 @@ def validate(value: T, rules: ValidateDict) -> T:
 
     return value
     
-def is_valid(value: object, rules: Dict[str, object]) -> bool:
+def is_valid(value: object, rules: ValidateDict) -> bool:
     try:
         validate(value, rules)
         return True
