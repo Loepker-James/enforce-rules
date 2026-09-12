@@ -10,7 +10,7 @@ Version 1.1 changes how rule patterns are matched. Previously, patterns used ```
 
 ### What changed
 
-Old behavior (1-1).: The entire value had to match the pattern.
+Old behavior (1.1-): The entire value had to match the pattern.
 
 New behavior (1.1+): The pattern only needs to appear somewhere inside the value.
 
@@ -115,6 +115,6 @@ Users upgrading to this version will encounter immediate crashes, making migrati
 
 ### Summary
 3.1.5 contains a missing import that prevents the validator from running.
-Skip this version and upgrade directly from a stable 3.1.x release to the next working version.
+Skip this version and downgrade directly from a stable 3.1.x release to the next working version.
 
 
