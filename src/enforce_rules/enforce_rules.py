@@ -4,7 +4,7 @@ import re
 from datetime import datetime
 from chess import Piece
 
-
+Number: TypeAlias = int | float
 # -----------------------------
 # VALIDATOR FUNCTIONS (DEFINED FIRST)
 # -----------------------------
@@ -24,12 +24,12 @@ def _validate_max_length(value: Sequence, expected: int) -> None:
         raise ValueError(f"Expected max length {expected}, got {len(value)}")
 
 
-def _validate_min(value: float | int, expected: float | int) -> None:
+def _validate_min(value: Number, expected: Number) -> None:
     if value < expected:
         raise ValueError(f"Expected value >= {expected}, got {value}")
 
 
-def _validate_max(value: float | int, expected: float | int) -> None:
+def _validate_max(value: Number, expected: Number) -> None:
     if value > expected:
         raise ValueError(f"Expected value <= {expected}, got {value}")
 
@@ -84,24 +84,24 @@ def _validate_decreasing(value: Sequence, expected: bool) -> None:
                 raise ValueError("List must be strictly decreasing")
 
 
-def _validate_sum_min(value: Iterable[float | int], expected: float | int) -> None:
+def _validate_sum_min(value: Iterable[Number], expected: Number) -> None:
     total = sum(value)
     if total < expected:
         raise ValueError(f"Sum must be >= {expected}, got {total}")
 
 
-def _validate_sum_max(value: Iterable[float | int], expected: float | int) -> None:
+def _validate_sum_max(value: Iterable[Number], expected: Number) -> None:
     total = sum(value)
     if total > expected:
         raise ValueError(f"Sum must be <= {expected}, got {total}")
 
 
-def _validate_element_min(value: Iterable[float | int], expected: float | int) -> None:
+def _validate_element_min(value: Iterable[Number], expected: Number) -> None:
     if min(value) < expected:
         raise ValueError(f"Elements must be >= {expected}")
 
 
-def _validate_element_max(value: Iterable[float | int], expected: float | int) -> None:
+def _validate_element_max(value: Iterable[Number], expected: Number) -> None:
     if max(value) > expected:
         raise ValueError(f"Elements must be <= {expected}")
 
@@ -111,8 +111,8 @@ def _validate_regex(value: str, pattern: str, flags: object) -> None:
     if not compiled.search(value):
         raise ValueError(f"Value '{value}' does not match regex '{pattern}'")
 
-U = TypeVar("U")
-def _validate_must_be_true(value: U, func: Callable[[U], bool]) -> None:
+T = TypeVar("T")
+def _validate_must_be_true(value: T, func: Callable[[T], bool]) -> None:
     if not func(value):
         raise ValueError("must_be_true rule failed")
 
@@ -169,8 +169,6 @@ def _validate_is_password(value: str, rule: bool) -> None:
 # -----------------------------
 # VALIDATE() — DEFINED LAST
 # -----------------------------
-T = TypeVar("T")
-Number: TypeAlias = int | float
 
 class ValidateDict(TypedDict, total=False):
     length: int
