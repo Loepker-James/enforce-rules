@@ -185,3 +185,8 @@ Note: any [README](https://github.com/Loepker-James/enforce-rules/blob/main/READ
 
 ### Refactored
 * Used ```r"\"``` instead of ```"\\"```
+
+## 3.2.5 - Created on 9/12/2026
+
+### Documentation
+* Added headers in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
