@@ -42,7 +42,8 @@ validate("cat", {"min_length": 3})
 ## Regex Rule
 
 The regex rule checks whether a pattern appears in the value.
-Version 1.1+ uses re.search instead of re.fullmatch.
+
+Version 1.1+ uses ```re.search``` instead of ```re.fullmatch```.
 
 ```python
 validate("xabc", {"regex": "abc"})
