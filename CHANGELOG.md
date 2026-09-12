@@ -184,4 +184,4 @@ Note: any [README](https://github.com/Loepker-James/enforce-rules/blob/main/READ
 ## 3.2.4 - Created on 9/12/2026
 
 ### Refactored
-* Used raw string instead of ```"\\"```
+* Used ```r"\"``` instead of ```"\\"```
