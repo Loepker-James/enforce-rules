@@ -1,4 +1,4 @@
-# validate(value, rules)
+# ```validate(value, rules)```
 
 This is the main function of the library. I will list what each keyword does, allowed types, and version it was created in (if I didn't specify one, 
 then 1.0.0 is default).
