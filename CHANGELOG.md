@@ -170,3 +170,8 @@ Note: any [README](https://github.com/Loepker-James/enforce-rules/blob/main/READ
 
 ### Refactored
 * Added internal type hint in ```validate()```
+
+## 3.2.2 - Created on 9/11/2026
+
+### Refactored
+* Added internal type hint in ```is_valid()```
