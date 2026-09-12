@@ -10,9 +10,9 @@ Version 1.1 changes how rule patterns are matched. Previously, patterns used ```
 
 ### What changed
 
-Old behavior: The entire value had to match the pattern.
+Old behavior (1-1).: The entire value had to match the pattern.
 
-New behavior: The pattern only needs to appear somewhere inside the value.
+New behavior (1.1+): The pattern only needs to appear somewhere inside the value.
 
 ### Why this matters
 
@@ -55,7 +55,8 @@ If you need to return to the 1.1- series, you must revert any patterns that rely
 
 ### What changed
 
-Old behavior (1.1-): The entire value must match the pattern.  
+Old behavior (1.1-): The entire value must match the pattern.
+
 New behavior (1.1+): The pattern only needs to appear somewhere inside the value.
 
 ### Why this matters
