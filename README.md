@@ -7,7 +7,7 @@ MAJOR: 3
 
 MINOR: 2
 
-PATCH: 4
+PATCH: 5
 
 If you need to catch up, you can see the full version history in the [CHANGELOG](https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md).
 
@@ -64,7 +64,7 @@ This means validated values behave exactly like normal Python values.
 Keywords and Usage
 Below are all supported keywords.
 
-length
+## length
 
 The length of the object must be exactly this.
 
@@ -72,70 +72,70 @@ The length of the object must be exactly this.
 lst = validate([1, 2, 3, 4, 5], {"length": 5})
 ```
 
-min_length
+## min_length
 
 Minimum length (inclusive).
 
 ```python
 lst = validate(['a', 'b', 'c', 'd', 'e'], {"min_length": 3})
 ```
-max_length
+## max_length
 
 Maximum length (inclusive).
 
 ```python
 lst = validate([1, 2, 3, 4, 5, 6], {"max_length": 7})
 ```
-min
+## min
 
 Minimum numeric value (inclusive).
 
 ```python
 number = validate(10, {"min": 0})
 ```
-max
+## max
 
 Maximum numeric value (inclusive).
 
 ```python
 number = validate(10, {"max": 20})
 ```
-allowed_values
+## allowed_values
 
 Similar to Literal; value must be one of the allowed values.
 
 ```python
 val = validate("a", {"allowed_values": ("a", "b", "c", "d")})
 ```
-invariant
+## invariant
 
 Value must be truthy.
 
 ```python
 val = validate((0 == 0), {"invariant": True})
 ```
-all_same
+## all_same
 
 All values in the collection must be the same.
 
 ```python
 numbers = validate([1, 1, 1], {"all_same": True})
 ```
-all_unique
+## all_unique
 
 All values in the collection must be unique.
 
 ```python
 numbers = validate([1, 2, 3], {"all_unique": True})
 ```
-non_empty
+## non_empty
 
 Collection must not be empty.
 
 ```python
 my_strings = validate(['a', 'b', 'c'], {"non_empty": True})
 ```
-no_nulls
+## no_nulls
 
 Collection must not contain None.
 
@@ -143,7 +143,7 @@ Collection must not contain None.
 my_things = validate([1, 2, 3, "a", "b", "c"], {"no_nulls": True})
 ```
 
-sorted
+## sorted
 
 List must be sorted (increasing or decreasing).
 
@@ -151,7 +151,7 @@ List must be sorted (increasing or decreasing).
 numbers = validate([1, 5, 9], {"sorted": True})
 ```
 
-increasing
+## increasing
 
 List must be strictly increasing.
 
@@ -165,42 +165,42 @@ List must be strictly decreasing.
 ```python
 numbers = validate([9, 5, 1], {"decreasing": True})
 ```
-sum_min
+## sum_min
 
 Minimum sum of the collection (inclusive).
 
 ```python
 numbers = validate([10, 20, 30], {"sum_min": 50})
 ```
-sum_max
+## sum_max
 
 Maximum sum of the collection (inclusive).
 
 ```python
 numbers = validate([10, 20, 30], {"sum_max": 70})
 ```
-element_min
+## element_min
 
 Minimum value for any element (inclusive).
 
 ```python
 numbers = validate([10, 20, 30], {"element_min": 5})
 ```
-element_max
+## element_max
 
 Maximum value for any element (inclusive).
 
 ```python
 numbers = validate([10, 20, 30], {"element_max": 40})
 ```
-regex
+## regex
 
 String must match the regex.
 
 ```python
 cat_or_dog = validate("cat", {"regex": "cat|dog"})
 ```
-regex_flags 
+## regex_flags 
 
 Turns out I didn't notice this in my code, until 1.1.0. This is the regex flags
 
@@ -208,7 +208,7 @@ Turns out I didn't notice this in my code, until 1.1.0. This is the regex flags
 from re import RegexFlag
 cat_or_dog = validate("cat", {"regex": "cat|dog", {"regex_flags": RegexFlag.I | RegexFlag.M | RegexFlag.X
 ```
-before_date
+## before_date
 
 Value must be strictly before the given datetime.
 
@@ -216,14 +216,14 @@ Value must be strictly before the given datetime.
 validate(datetime(1999, 8, 29), {"before_date": datetime(2000, 1, 1)})
 ```
 
-after_date
+## after_date
 
 Value must be strictly after the given datetime.
 ```python
 validate(datetime(2026, 8, 29), {"after_date": datetime(2000, 1, 1)})
 ```
 
-piece_color
+## piece_color
 
 The piece must have this exact color.
 
@@ -231,7 +231,7 @@ The piece must have this exact color.
 import chess
 piece = validate(chess.Piece(chess.ROOK, chess.WHITE), {"piece_color": chess.WHITE})
 ```
-piece_type
+## piece_type
 
 The piece must be exactly this type (e.g., chess.KNIGHT, chess.ROOK).
 
@@ -239,7 +239,7 @@ The piece must be exactly this type (e.g., chess.KNIGHT, chess.ROOK).
 import chess
 piece = validate(chess.Piece(chess.KNIGHT, chess.WHITE), {"piece_type": chess.KNIGHT})
 ```
-chess_symbol
+## chess_symbol
 
 The piece’s symbol must match this string ("P", "n", "r", etc.).
 
@@ -248,7 +248,7 @@ import chess
 piece = validate(chess.Piece(chess.ROOK, chess.BLACK), {"chess_symbol": "r"})
 ```
 
-is_password
+## is_password
 
 The value must satisfy all password requirements when this is set to True.
 
@@ -264,7 +264,7 @@ Requirements (sorted):
 password = validate("Abcdef!1", {"is_password": True})
 ```
 
-must_be_true
+## must_be_true
 
 Custom rule: a function that returns True for allowed values.
 
