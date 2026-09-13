@@ -45,7 +45,7 @@ Failure means the value is too large.
 
 Checks that the value is one of the allowed options.
 
-Failure means the value is not present in the allowed list or tuple.
+Failure means the value is not present in the allowed iterable.
 
 ### invariant
 
