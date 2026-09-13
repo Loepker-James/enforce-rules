@@ -201,8 +201,7 @@ Failures raise `ValueError`.
 `must_be_true` allows arbitrary validation:
 
 ```python
-U = TypeVar("U")
-def _validate_must_be_true(value: U, func: Callable[[U], bool]) -> None:
+def _validate_must_be_true(value: T, func: Callable[[T], bool]) -> None:
     if not func(value):
         raise ValueError("must_be_true rule failed")
 ```
