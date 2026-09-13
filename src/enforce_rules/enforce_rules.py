@@ -266,7 +266,7 @@ def validate(value: T, rules: ValidateDict) -> T:
 
     return value
     
-def is_valid(value: object, rules: ValidateDict) -> bool:
+def is_valid(value: T, rules: ValidateDict) -> bool:
     try:
         validate(value, rules)
         return True
