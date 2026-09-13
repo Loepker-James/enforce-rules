@@ -78,7 +78,7 @@ match key:
 Version 3.2 introduces `is_valid()`, a boolean wrapper around `validate()`:
 
 ```python
-def is_valid(value: object, rules: Dict[str, object]) -> bool:
+def is_valid(value: T, rules: Dict[str, object]) -> bool:
     try:
         validate(value, rules)
         return True
