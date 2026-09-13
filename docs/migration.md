@@ -78,19 +78,21 @@ validate("xabc", {"regex": "abc"}) #does not match in 1.1-
 
 ### What you may need to change
 If your rules depend on partial substring matching, do not downgrade.  
-The 1.1- series only supports full‑match behavior, so any rule relying on search‑style matching will stop working.
+The 1.1‑ series only supports full‑match behavior, so any rule relying on search‑style matching must explicitly use `.*` or `.*?` around the pattern (for example: `.*abc.*`).  
+Without these wrappers, the older validator will treat the pattern as a full‑match and your partial‑match rule will stop working.
 
 If your rules depend on full‑string matching, you must remove any ^ and $ anchors you added for 1.1+.  
-The older 1.1- validator already performs full‑match checks, so anchored patterns are unnecessary.
+The older 1.1‑ validator already performs full‑match checks, so anchored patterns are unnecessary and you should use plain patterns (e.g., `abc` instead of `^abc$`).
 
 ### Example (downgrade‑safe)
 pattern = "abc"
 
-This restores the original 1.1‑ full‑match behavior without relying on 1.1+ anchors.
+This restores the original 1.1‑ full‑match behavior without relying on 1.1+ anchors or search‑style wrappers.
 
 ### Summary
-If your rules rely on partial matching, you should not downgrade to 1.1-.  
-If your rules rely on full‑match semantics, remove ^ and $ anchors so you're using proper 1.1- api.
+If your rules rely on partial matching, wrap your pattern with ```.*``` or ```.*?``` as needed, because 1.1‑ only supports full‑match semantics.  
+If your rules rely on full‑match semantics, remove ^ and $ anchors so you're using proper 1.1‑ API behavior.
+
 
 ## Upgrading/Downgrading to 3.1.5 --- DONT
 Version 3.1.5 should be skipped.
