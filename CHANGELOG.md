@@ -190,3 +190,13 @@ Note: any [README](https://github.com/Loepker-James/enforce-rules/blob/main/READ
 
 ### Documentation
 * Added headers in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+
+## 3.2.6 - Created on 9/12/2026
+This version was released without a recorded changelog entry.  
+The specific changes included in this release are no longer available.
+
+## 3.2.7 - Created on 9/12/2026
+
+### Refactored
+* Added internal type hint
+
