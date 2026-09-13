@@ -66,12 +66,12 @@ The older validator only supports full‑string matching.
 
 ### Examples of what to revert
 
-1.1+ (search):
+#### 1.1+ (search):
 ```python
 validate("xabc", {"regex": "abc"}) #matches in 1.1+
 ```
 
-1.1- (fullmatch):
+#### 1.1- (fullmatch):
 ```python
 validate("xabc", {"regex": "abc"}) #does not match in 1.1-
 ```
