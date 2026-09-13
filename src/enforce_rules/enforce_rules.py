@@ -191,7 +191,7 @@ class ValidateDict(TypedDict, total=False):
     element_max: Number
     regex: str
     regex_flags: object
-    must_be_true: Callable[[object], bool]
+    must_be_true: Callable[[T], bool]
     before_date: datetime
     after_date: datetime
     piece_color: bool
