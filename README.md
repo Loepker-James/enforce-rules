@@ -7,7 +7,7 @@ MAJOR: 3
 
 MINOR: 2
 
-PATCH: 5
+PATCH: 6
 
 If you need to catch up, you can see the full version history in the [CHANGELOG](https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md).
 
@@ -61,7 +61,8 @@ If the value passes, PER returns the original value unchanged.
 
 This means validated values behave exactly like normal Python values.
 
-Keywords and Usage
+# Keywords and Usage
+
 Below are all supported keywords.
 
 ## length
