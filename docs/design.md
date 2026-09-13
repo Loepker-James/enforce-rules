@@ -75,10 +75,10 @@ match key:
 
 
 ## Convenience Wrapper (Version 3.2)
-Version 3.2 introduces `is_valid()`, a boolean wrapper around `validate()`:
+Version 3.2 introduces `is_valid()`, a boolean wrapper around `validate()` (snippet will show latest version of function):
 
 ```python
-def is_valid(value: T, rules: Dict[str, object]) -> bool:
+def is_valid(value: T, rules: ValidateDict) -> bool:
     try:
         validate(value, rules)
         return True
