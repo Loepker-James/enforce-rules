@@ -171,7 +171,7 @@ Failure means the string does not meet one or more password criteria.
 
 Calls a user-provided function with the value.
 
-Failure means the function returned ```False```.
+Failure means the function returned a falsy value.
 
 
 ## Failure Behavior
