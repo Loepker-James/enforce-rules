@@ -19,5 +19,5 @@ Install them with:
     python -m pip install python-chess pydantic
 
 ## Notes
-- `python-chess` is required for board logic, move validation, and piece utilities.
-- `pydantic` is required for model validation, constrained types (e.g., PositiveInt), and structured configuration.
+- ```python-chess``` is required only for the ```chess.Piece``` type hint used in the code.
+- ```pydantic``` is required only for the ```PositiveInt``` type hint and other constrained types.
