@@ -1,0 +1,13 @@
+# CODEOWNERS file
+
+# Freeze governance and project‑rule files
+/CODE_OF_CONDUCT.md    @Loepker-James
+/CONTRIBUTING.md       @Loepker-James
+/dependencies.md       @Loepker-James
+/README.md             @Loepker-James
+
+# Freeze your main project code
+/enforce_rules/**      @Loepker-James
+
+# Freeze GitHub configuration files
+/.github/**            @Loepker-James
