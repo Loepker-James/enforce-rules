@@ -16,7 +16,9 @@ These are included with all standard Python installations.
 
 Install them with:
 
-    python -m pip install python-chess pydantic
+```bash
+python -m pip install python-chess pydantic
+```
 
 ## Notes
 - ```python-chess``` is required only for the ```chess.Piece``` type hint used in the code.
