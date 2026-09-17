@@ -167,6 +167,19 @@ Checks that the string meets password requirements when activated.
 
 Failure means the string does not meet one or more password criteria.
 
+#### Password Requirements
+
+When ```{"is_password": True}``` is enabled, the validator enforces the following criteria:
+
+1. Minimum length: the string must contain at least 8 characters.
+2. Uppercase requirement: the string must contain at least one uppercase letter (A–Z).
+3. Lowercase requirement: the string must contain at least one lowercase letter (a–z).
+4. Digit requirement: the string must contain at least one numeric digit (0–9).
+5. Symbol requirement: the string must contain at least one symbol from the allowed symbol set.
+
+A password that fails any of these checks will raise a ```ValueError``` indicating which requirement was not met.
+
+
 ### must_be_true
 
 Calls a user-provided function with the value.
