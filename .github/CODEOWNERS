@@ -7,7 +7,7 @@
 /README.md             @Loepker-James
 
 # Freeze your main project code
-/enforce_rules/**      @Loepker-James
+/src/enforce_rules/**    @Loepker-James
 
 # Freeze GitHub configuration files
 /.github/**            @Loepker-James
