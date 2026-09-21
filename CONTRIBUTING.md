@@ -159,7 +159,7 @@ Major bumps do **not** imply breaking changes.
 
 You should **never** bump a version **unless** you are changing one of these files:
 
-* [README.md](https://github.com/Loepker-James/enforce-rules/blob/main/README.md) (excluding the fact that you need to bump the vrsion in it when making a new one)
+* [README.md](https://github.com/Loepker-James/enforce-rules/blob/main/README.md) (excluding the fact that you need to bump the version in it when making a new one)
 * [LICENSE](https://github.com/Loepker-James/enforce-rules/blob/main/LICENSE) (which you should never change)
 * [pyrpoject.toml](https://github.com/Loepker-James/enforce-rules/blob/main/pyproject.toml) (excluding version bump, which is the only reason you'd need to change it)
 * [src/enforce_rules/\_\_init\_\_.py](https://github.com/Loepker-James/enforce-rules/tree/main/src/enforce_rules) (which you should never change)
