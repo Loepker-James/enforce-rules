@@ -55,7 +55,7 @@ Maintainers may take any of the following actions:
 * Hide or delete harmful content.
 * Block the user from the repository.
 * Report violations to GitHub Trust & Safety.
-* Remove contributions that violate this [Code of Conduct](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md).
+* Remove contributions that violate this [Code of Conduct](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md#code-of-conduct).
 
 ## §5 Reporting
 To report violations:
