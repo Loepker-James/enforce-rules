@@ -1,4 +1,4 @@
-# Code of Conduct
+  # Code of Conduct
 
 ## §1 Purpose
 This project aims to maintain a respectful, safe, and productive environment for all contributors.
@@ -55,7 +55,7 @@ Maintainers may take any of the following actions:
 * Hide or delete harmful content.
 * Block the user from the repository.
 * Report violations to GitHub Trust & Safety.
-* Remove contributions that violate this Code of Conduct.
+* Remove contributions that violate this [Code of Conduct](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md).
 
 ## §5 Reporting
 To report violations:
