@@ -22,7 +22,7 @@ python -m pip install python-chess pydantic
 
 # Notes
 * ```python-chess``` is required only for the ```chess.Piece``` type hint used in the code.
-* ```pydantic``` is required only for the ```PositiveInt``` type hint and other constrained types.
+* ```pydantic``` is required only for the ```PositiveInt``` type hint.
 
 # Test Dependencies
 
@@ -43,7 +43,7 @@ python -m pip install enforce-rules
 ```
 
 # Test Notes
-* unittest is used to structure and run the test cases.
-* typing is used for type annotations inside test files.
-* re is used for regex validation in test assertions.
-* enforce-rules is required because the test suite imports the main project.
+* ```unittest``` is used to structure and run the test cases.
+* ```typing``` is used for type annotations inside test files.
+* ```re``` is used for regex validation in test assertions.
+* ```enforce-rules``` is required because the test suite imports the main project.
