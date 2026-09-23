@@ -3,7 +3,8 @@
 Thank you for using this project. This document explains where to get help and what kinds of support are available.
 
 ## Asking Questions
-For general questions about using the project, please open a Discussion in the repository under the “Discussions” category.
+This project does not use GitHub Discussions.  
+For general questions, please open an Issue labeled “question”.
 
 ## Reporting Bugs
 If you believe you have found a bug, please open an Issue and include:
@@ -28,4 +29,4 @@ This project does not provide support for:
 - general programming help
 
 ## Supported Versions
-Support is provided for the latest release and the current development branch. Older versions may not receive fixes.
+Support is provided for the latest release and the current development branch.
