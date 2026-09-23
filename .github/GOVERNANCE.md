@@ -7,7 +7,7 @@ This document describes how this project is maintained and how decisions are mad
 ### Maintainer
 Maintainers are responsible for the direction and stability of the project.  
 Current maintainer(s):
-- @Loepker-James
+- ```@Loepker-James```
 
 ### Contributor
 Anyone who submits issues, pull requests, or participates in discussions.
