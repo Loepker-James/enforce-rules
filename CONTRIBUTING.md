@@ -1,4 +1,4 @@
-# Contributing to PER (Project Enforce Rules)5
+# Contributing to PER (Project Enforce Rules)
 
 
 
