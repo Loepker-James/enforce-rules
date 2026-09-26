@@ -140,12 +140,13 @@ New keywords must:
 ## CodeQL Notice (Security and Quality Tab)
 
 You may see a yellow “CodeQL is showing warnings” banner under the **Security and Quality** tab.  
-This is because I was experimenting with `.github/workflows/` and fell in a pit. It is not an error, a real warning, or problem.
+This is because I was experimenting with ```.github/workflows/``` and fell in a pit. It is not an error, a real warning, or problem.
 
 GitHub is still displaying this banner. Although this banner is being displayed, the project is fully functional, and contributors do not need to take any action regarding this notice.
 
+This taught me a valuable lesson: never experiment with important infrastructure directories unless you fully understand the cost. Contributors should avoid modifying `.github/workflows/` unless CodeQL explicitly approves the change.
+
 In short: the banner is harmless. Everything is working correctly.  
-The only change by maintainers is not to experiment with this directory at all — unless CodeQL explicitly approves.
 
 
 ---
@@ -188,8 +189,7 @@ Example:
 
 ## Enforcement
 
-Following the guidelines in this document is required under  
-[§2.3 of the Code of Conduct (Follow Project Rules)](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md#23-follow-project-rules).
+Following the guidelines in this document is required under [§2.3 of the Code of Conduct (Follow Project Rules)](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md#23-follow-project-rules).
 
 ---
 
