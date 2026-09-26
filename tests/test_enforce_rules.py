@@ -1,10 +1,10 @@
-import unittest
+from unittest import TestCase
 from typing import Any, Dict
 from enforce_rules import validate
 import re
 
 
-class TestValidate(unittest.TestCase):
+class TestValidate(TestCase):
 
     # -----------------------------
     # LENGTH RULES
