@@ -1,2 +1,2 @@
-python-chess
-pydantic
+python-chess>=1.11
+pydantic>=2
