@@ -8,11 +8,8 @@
 /README.md             @Loepker-James
 /SECURITY.md           @Loepker-James
 
-
-# Protect main project code
+# Protect code (main project and test)
 /src/enforce_rules/**    @Loepker-James
-
-# Protect tests
 /tests/**                @Loepker-James
 
 # Freeze GitHub configuration files
