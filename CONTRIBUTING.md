@@ -139,14 +139,15 @@ New keywords must:
 
 ## CodeQL Notice (Security and Quality Tab)
 
-You may see a yellow “CodeQL is enabled” banner under the **Security and Quality** tab.  
-This is normal and expected. It is not an error, warning, or problem.
+You may see a yellow “CodeQL is showing warnings” banner under the **Security and Quality** tab.  
+This is because I was experimenting with `.github/workflows/` and fell in a pit. It is not an error, a real warning, or problem.
 
-GitHub displays this banner whenever CodeQL is configured using the default setup.  
+GitHub is still displaying this banner.  
 The project is fully functional, and contributors do not need to take any action regarding this notice.
 
 In short: the banner is harmless. Everything is working correctly.  
-If you are curious, you can read more about **[CodeQL setup](ca://s?q=Explain_GitHub_CodeQL_setup)** or **[CodeQL modes](ca://s?q=Explain_GitHub_CodeQL_modes)**, but no changes are required from contributors.
+The only change by maintainers is not to experiment with this directory at all — unless CodeQL explicitly approves.
+
 
 ---
 
