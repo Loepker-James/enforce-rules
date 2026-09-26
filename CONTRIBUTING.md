@@ -142,8 +142,7 @@ New keywords must:
 You may see a yellow “CodeQL is showing warnings” banner under the **Security and Quality** tab.  
 This is because I was experimenting with `.github/workflows/` and fell in a pit. It is not an error, a real warning, or problem.
 
-GitHub is still displaying this banner.  
-The project is fully functional, and contributors do not need to take any action regarding this notice.
+GitHub is still displaying this banner. Although this banner is being displayed, the project is fully functional, and contributors do not need to take any action regarding this notice.
 
 In short: the banner is harmless. Everything is working correctly.  
 The only change by maintainers is not to experiment with this directory at all — unless CodeQL explicitly approves.
