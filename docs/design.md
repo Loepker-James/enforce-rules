@@ -25,7 +25,7 @@ The `validate()` function is the central entry point. It receives:
 * a value
 * a dictionary of rules
 
-It loops through each rule and dispatches to the correct helper using `match/case`. Unknown rule names raise an error immediately.
+It loops through each rule and dispatches to the correct helper using ```match/case```. Unknown rule names raise an error immediately.
 
 ### Rule Functions
 Each rule is implemented as a helper function named:
@@ -34,7 +34,7 @@ Each rule is implemented as a helper function named:
 _validate_rule_name
 ```
 
-These helpers are pure, isolated, and responsible for raising `ValueError` on failure.
+These helpers are pure, isolated, and responsible for raising ```ValueError``` on failure.
 
 ### Helper Utilities
 Utilities support:
@@ -46,12 +46,12 @@ Utilities support:
 * chess‑specific logic
 
 ## Rule Dictionary Design Philosophy
-The `ValidateDict` type is not a strict schema. It is a flexible “rule bag” used for pattern matching. Each key corresponds to a rule. Every key is optional. Different validations use different subsets. This flexibility is intentional.
+The ```ValidateDict``` type is not a strict schema. It is a flexible “rule bag” used for pattern matching. Each key corresponds to a rule. Every key is optional. Different validations use different subsets. This flexibility is intentional.
 
 ## Why It Is Not a Schema
-Large TypedDicts are often criticized when used as configuration objects. However, `ValidateDict` is not a configuration model — it is a dispatch table. TypedDict is used for documentation, autocomplete, and static analysis, not enforcement.
+Large TypedDicts are often criticized when used as configuration objects. However, ```ValidateDict``` is not a configuration model — it is a dispatch table. TypedDict is used for documentation, autocomplete, and static analysis, not enforcement.
 
-Validators normalize types internally (for example, `int(rule)`), so strict typing is unnecessary.
+Validators normalize types internally (for example, ```int(rule)```), so strict typing is unnecessary.
 
 ## Why match/case Is Used
 Python’s structural pattern matching is ideal for rule dispatch:
