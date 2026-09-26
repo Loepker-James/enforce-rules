@@ -120,42 +120,44 @@ Users upgrading to this version will encounter immediate crashes, making migrati
 Skip this version and downgrade directly from a stable 3.1.x release to the next working version.
 
 
-## Raw String Ending With Single Backslash (3.2.4 → 3.2.10)
+## Raw String Ending With Single Backslash (3.2.4 → 3.2.9) — DONT
 
 A regression was introduced in **3.2.4** that caused Python to raise a syntax error whenever a raw string ended with a single backslash.  
-This affected any expression of the form:
+Any literal of the form:
 
 ```
 r"\"
 ```
 
-Raw strings normally treat backslashes literally, but due to this regression, the final backslash incorrectly escaped the closing quote, causing Python to fail during parsing.
+would fail to parse.  
+Raw strings normally treat backslashes literally, but during this regression the final backslash incorrectly escaped the closing quote, causing Python to reject the entire file.
 
 ### What went wrong
-* A tokenizer regression incorrectly treated the final backslash in a raw string as an escape.
-* The parser rejected valid raw‑string literals ending with a single backslash.
-* Any module containing such a literal failed to import.
+* The tokenizer misinterpreted the final backslash in a raw string as an escape.  
+* The parser rejected otherwise valid raw‑string literals.  
+* Any module containing such a literal failed during import.  
 * Tools relying on raw‑string patterns (regex, DSLs, path literals) encountered unexpected syntax errors.
 
 ### Why this matters
-Since raw strings are commonly used for regex and DSL definitions, this regression caused:
+Since raw strings are widely used for regex and DSL definitions, this regression caused:
 * modules to fail at import time,
 * configuration files to break,
 * regex patterns to become unusable,
 * and any code relying on raw‑string terminators to crash immediately.
 
 ### Affected versions
-* **Broken:** 3.2.4 → 3.2.10  
-* **Fixed:** 3.2.11 and later
+* **Broken:** 3.2.4 → 3.2.9  
+* **Fixed:** 3.2.10 and later
 
 ### Required user actions
-* Avoid using raw strings that end with a single backslash in versions **3.2.4 through 3.2.10**.
-* If your project depends on such literals, upgrade immediately to **3.2.11+**.
-* No code changes are required — the issue was internal to the tokenizer.
+* Avoid raw strings that end with a single backslash in versions **3.2.4 through 3.2.9**.  
+* If your project depends on such literals, upgrade immediately to **3.2.10+**.  
+* No rule or code changes are required — the issue was internal to the tokenizer.  
 * After upgrading, raw strings will behave normally again.
 
 ### Summary
 A tokenizer regression in **3.2.4** caused raw strings ending with a single backslash to raise syntax errors.  
-This issue persisted through **3.2.10** and was fully resolved in **3.2.11**.  
+This issue persisted through **3.2.9** and was fully resolved in **3.2.10**.  
 Upgrade to a fixed version if your project relies on raw‑string terminators.
+
  
