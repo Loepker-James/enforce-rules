@@ -3,7 +3,7 @@ from collections.abc import Iterable, Sequence, Container
 import re
 from datetime import datetime
 from chess import Piece
-from pydantic import PositiveInt
+from pydantic import PositiveInt, validate_call
 
 Number: TypeAlias = int | float
 LengthType: TypeAlias = PositiveInt | Literal[0]
@@ -11,16 +11,17 @@ LengthType: TypeAlias = PositiveInt | Literal[0]
 # VALIDATOR FUNCTIONS (DEFINED FIRST)
 # -----------------------------
 
+@validate_call
 def _validate_length(value: Sequence, expected: LengthType) -> None:
     if len(value) != expected:
         raise ValueError(f"Expected length {expected}, got {len(value)}")
 
-
+@validate_call
 def _validate_min_length(value: Sequence, expected: LengthType) -> None:
     if len(value) < expected:
         raise ValueError(f"Expected min length {expected}, got {len(value)}")
 
-
+@validate_call
 def _validate_max_length(value: Sequence, expected: LengthType) -> None:
     if len(value) > expected:
         raise ValueError(f"Expected max length {expected}, got {len(value)}")
