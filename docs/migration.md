@@ -122,42 +122,42 @@ Skip this version and downgrade directly from a stable 3.1.x release to the next
 
 ## Raw String Ending With Single Backslash (3.2.4 → 3.2.9) — DONT
 
-A regression was introduced in **3.2.4** that caused Python to raise a syntax error whenever a raw string ended with a single backslash.  
-Any literal of the form:
+A mistake was introduced in **3.2.4** where a raw string was written ending with a single backslash:
 
 ```
 r"\"
 ```
 
-would fail to parse.  
-Raw strings normally treat backslashes literally, but during this regression the final backslash incorrectly escaped the closing quote, causing Python to reject the entire file.
+This is not valid Python syntax.  
+Raw strings cannot end with a single backslash because the backslash escapes the closing quote, causing Python to raise a syntax error before the module can load.
 
 ### What went wrong
-* The tokenizer misinterpreted the final backslash in a raw string as an escape.  
-* The parser rejected otherwise valid raw‑string literals.  
-* Any module containing such a literal failed during import.  
-* Tools relying on raw‑string patterns (regex, DSLs, path literals) encountered unexpected syntax errors.
+* A raw string was incorrectly written with a trailing backslash.  
+* Python treated the final backslash as escaping the closing quote.  
+* The module failed during import because the file could not be parsed.  
+* Any tool or rule depending on this file never executed because Python stopped before reaching user code.
 
 ### Why this matters
-Since raw strings are widely used for regex and DSL definitions, this regression caused:
-* modules to fail at import time,
-* configuration files to break,
-* regex patterns to become unusable,
-* and any code relying on raw‑string terminators to crash immediately.
+Since the module cannot import, this mistake causes:
+* immediate syntax errors,
+* broken configuration files,
+* failed initialization,
+* and any rule or validator depending on the file to never run.
 
 ### Affected versions
 * **Broken:** 3.2.4 → 3.2.9  
-* **Fixed:** 3.2.10 and later
+* **Fixed:** 3.2.10 and later  
+  (The mistake was removed and the file now contains valid syntax.)
 
 ### Required user actions
-* Avoid raw strings that end with a single backslash in versions **3.2.4 through 3.2.9**.  
-* If your project depends on such literals, upgrade immediately to **3.2.10+**.  
-* No rule or code changes are required — the issue was internal to the tokenizer.  
-* After upgrading, raw strings will behave normally again.
+* Avoid using versions **3.2.4 through 3.2.9**.  
+* If your project is in this line, please upgrade to **3.2.10+**.  
+* No rule changes are required — the issue was **external**, caused by an invalid raw‑string literal.  
+* After upgrading, the module will import normally again.
 
 ### Summary
-A tokenizer regression in **3.2.4** caused raw strings ending with a single backslash to raise syntax errors.  
-This issue persisted through **3.2.9** and was fully resolved in **3.2.10**.  
-Upgrade to a fixed version if your project relies on raw‑string terminators.
+An invalid raw‑string literal ending with a single backslash was introduced in **3.2.4**, causing Python to raise a syntax error.  
+This mistake persisted through **3.2.9** and was removed in **3.2.10**.  
+Upgrade to a fixed version if your project relies on this module.
 
  
