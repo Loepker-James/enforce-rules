@@ -216,3 +216,8 @@ Note: any [README](https://github.com/Loepker-James/enforce-rules/blob/main/READ
 ### Fixed
 * Bug made in 3.2.4 with raw string
 
+## 3.2.11 - Created on 9/26/2026
+
+### Refactored
+* Added ```validate_call``` decorator
+
