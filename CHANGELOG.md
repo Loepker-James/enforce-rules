@@ -7,7 +7,7 @@ For change migration, go to [MIGRATION](https://github.com/Loepker-James/enforce
 If you're planning on upgrading, also check [MIGRATION](https://github.com/Loepker-James/enforce-rules/blob/main/docs/migration.md) fully.
 
 
-## 1 - Created on 8/22/2026
+## 1.0.0 - Created on 8/22/2026
 
 
 
@@ -41,7 +41,7 @@ If you're planning on upgrading, also check [MIGRATION](https://github.com/Loepk
 ### Fixed
 * Version numbering in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
 
-## 1.1 - Created on 8/29/2026
+## 1.1.0 - Created on 8/29/2026
 
 ### Changed
 * Regex uses re.search instead of re.fullmatch 
@@ -71,7 +71,7 @@ If you're planning on upgrading, also check [MIGRATION](https://github.com/Loepk
 ### Documentation
 * Made newlines more visible in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
 
-## 2 - Created on 8/30/2026
+## 2.0.0 - Created on 8/30/2026
 
 ### Added
 * "before_date"
@@ -99,7 +99,7 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 ### Fixed
 * Version number in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
 
-## 3 - Created on 8/30/2026
+## 3.0.0 - Created on 8/30/2026
 
 ### Added
 * New chess themed keywords (more info in [Chess Issue (#7)](https://github.com/Loepker-James/enforce-rules/issues/7))
@@ -117,7 +117,7 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 ### Fixed
 * [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
 
-## 3.1 - Created on 9/2/2026
+## 3.1.0 - Created on 9/2/2026
 
 ### Added
 * "is_password" (for more info, please view [Password Issue (#1)](https://github.com/Loepker-James/enforce-rules/issues/1))
@@ -161,7 +161,7 @@ Note: any [README](https://github.com/Loepker-James/enforce-rules/blob/main/READ
 ### Refactored
 * Used a comment instead of ```typing.Final```. Also, 3.1.5 does not work.
 
-## 3.2 - Created on 9/8/2026
+## 3.2.0 - Created on 9/8/2026
 
 ### Addded
 * ```is_valid()```
