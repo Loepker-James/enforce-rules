@@ -21,7 +21,6 @@ jobs:
       - uses: github/codeql-action/init@v3
         with:
           languages: python
+          paths: src/enforce_rules
 
       - uses: github/codeql-action/analyze@v3
-
-
