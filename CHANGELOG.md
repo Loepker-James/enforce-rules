@@ -211,3 +211,8 @@ Note: any [README](https://github.com/Loepker-James/enforce-rules/blob/main/READ
 ### Refactored
 * Added internal type hint
 
+## 3.2.10 - Created on 9/25/2026
+
+### Fixed
+* Bug made in 3.2.4 with raw string
+
