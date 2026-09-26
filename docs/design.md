@@ -20,7 +20,7 @@ The system avoids complex metadata objects or class hierarchies. Instead, it use
 The library consists of three main components:
 
 ### Validator
-The `validate()` function is the central entry point. It receives:
+The ```validate()``` function is the central entry point. It receives:
 
 * a value
 * a dictionary of rules
@@ -75,7 +75,7 @@ match key:
 
 
 ## Convenience Wrapper (Version 3.2)
-Version 3.2 introduces `is_valid()`, a boolean wrapper around `validate()` (snippet will show latest version of function):
+Version 3.2 introduces ```is_valid()```, a boolean wrapper around ```validate()``` (snippet will show latest version of function):
 
 ```python
 def is_valid(value: T, rules: ValidateDict) -> bool:
@@ -93,40 +93,40 @@ This wrapper does not modify rule logic. It simply converts exceptions into bool
 Rules are grouped by behavior:
 
 ### Length‑Based Rules
-Operate on values with `len()`.  
-Examples: `length`, `min_length`, `max_length`, `non_empty`.
+Operate on values with ```len()```.  
+Examples: ```length```, ```min_length```, ```max_length```, ```non_empty```.
 
 ### Numeric Rules
 Operate on numbers or numeric aggregates.  
-Examples: `min`, `max`, `sum_min`, `sum_max`, `element_min`, `element_max`.
+Examples: ```min```, ```max```, ```sum_min```, ```sum_max```, ```element_min```, ```element_max```.
 
 ### Collection Rules
 Operate on iterables.  
-Examples: `all_same`, `all_unique`, `no_nulls`, `sorted`, `increasing`, `decreasing`.
+Examples: ```all_same```, ```all_unique```, ```no_nulls```, ```sorted```, ```increasing```, ```decreasing```.
 
 ### Membership Rules
 Check membership.  
-Example: `allowed_values`.
+Example: ```allowed_values```.
 
 ### Boolean Activation Rules
 Enabled only when their parameter is True.  
-Examples: `invariant`, `is_password`.
+Examples: ```invariant```, ```is_password```.
 
 ### Regex Rules
-Pattern matching using `re.search`.  
-Examples: `regex`, `regex_flags`.
+Pattern matching using ```re.search```.  
+Examples: ```regex```, ```regex_flags```.
 
 ### Datetime Rules
 Chronological comparisons.  
-Examples: `before_date`, `after_date`.
+Examples: ```before_date```, ```after_date```.
 
 ### Chess‑Specific Rules
 Operate on python‑chess pieces.  
-Examples: `piece_color`, `piece_type`, `chess_symbol`.
+Examples: ```piece_color```, ```piece_type```, ```chess_symbol```.
 
 ### Custom Callable Rules
 User‑defined logic.  
-Example: `must_be_true`.
+Example: ```must_be_true```.
 
 ## Rule Mapping
 Rule names map directly to helper functions: ```validate_rule_name```
@@ -163,13 +163,13 @@ Unknown keys raise: ```ValueError(f"Unknown rule: {key}")```
 Validation stops at the first failure because exceptions propagate immediately.
 
 ### Error Strategy
-All failures raise `ValueError`. Messages vary by rule to provide context.
+All failures raise ```ValueError```. Messages vary by rule to provide context.
 
 ## Regex Design
-Starting in version 1.1.0, the validator switched from `re.fullmatch` to `re.search` to allow more flexible patterns.
+Starting in version 1.1.0, the validator switched from ```re.fullmatch``` to ```re.search``` to allow more flexible patterns.
 
 ## Datetime Rule Design
-Version 2.0.0 introduced `before_date` and `after_date`.
+Version 2.0.0 introduced ```before_date``` and ```after_date```.
 
 Examples:
 
@@ -182,12 +182,12 @@ validate(datetime(2001, 8, 29), {"after_date": datetime(2000, 1, 1)})
 ## Chess Rule Design
 Version 3.0.0 added chess rules:
 
-* `piece_color` → `piece.color == rule_value`
-* `piece_type` → `piece.piece_type == rule_value`
-* `chess_symbol` → `piece.symbol() == rule_value`
+* ```piece_color``` → ```piece.color == rule_value```
+* ```piece_type``` → ```piece.piece_type == rule_value```
+* ```chess_symbol``` → ```piece.symbol() == rule_value```
 
 ## Password Rule Design
-Version 3.1.0 added `is_password`, enforcing:
+Version 3.1.0 added ```is_password```, enforcing:
 
 1. length ≥ 8
 2. ≥ 1 digit
@@ -195,10 +195,10 @@ Version 3.1.0 added `is_password`, enforcing:
 4. ≥ 1 lowercase
 5. ≥ 1 symbol
 
-Failures raise `ValueError`.
+Failures raise ```ValueError```.
 
 ## Custom Callable Rule
-`must_be_true` allows arbitrary validation:
+```must_be_true``` allows arbitrary validation:
 
 ```python
 def _validate_must_be_true(value: T, func: Callable[[T], bool]) -> None:
@@ -212,8 +212,8 @@ New rules can be added by:
 
 * opening an issue
 * demonstrating common usage
-* adding a new `_validate_<rule>` helper
-* adding a new `case "<rule>"` entry
+* adding a new ```_validate_<rule>``` helper
+* adding a new ```case "<rule>"``` entry
 
 The system is intentionally easy to extend.
 
