@@ -14,11 +14,12 @@ These are included with all standard Python installations.
 * ```python-chess```
 * ```pydantic```
 
-Install them with:
+Download the raw [```requirements.txt```](https://github.com/Loepker-James/enforce-rules/blob/main/requirements.txt) file, then install dependencies by giving pip the full path to the file:
 
 ```bash
-python -m pip install python-chess pydantic
+python -m pip install -r /path/to/requirements.txt
 ```
+
 
 # Notes
 * ```python-chess``` is required only for the ```chess.Piece``` type hint used in the code.
