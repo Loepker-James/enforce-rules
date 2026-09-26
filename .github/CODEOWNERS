@@ -9,8 +9,11 @@
 /SECURITY.md           @Loepker-James
 
 
-# Freeze your main project code
+# Protect main project code
 /src/enforce_rules/**    @Loepker-James
+
+# Protect tests
+/tests/**                @Loepker-James
 
 # Freeze GitHub configuration files
 /.github/**            @Loepker-James
