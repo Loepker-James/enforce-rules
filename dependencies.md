@@ -11,8 +11,8 @@ This project requires the following Python modules to run:
 These are included with all standard Python installations.
 
 # External modules (installation required)
-* ```python-chess```
-* ```pydantic```
+* ```python-chess``` (1.11+)
+* ```pydantic``` (2+)
 
 Download the raw [```requirements.txt```](https://github.com/Loepker-James/enforce-rules/blob/main/requirements.txt) file, then install dependencies by giving pip the full path to the file:
 
@@ -35,7 +35,7 @@ These modules are required only for running the test suite:
 * ```re```
 
 # External test modules (installation required)
-* ```enforce-rules```
+* ```enforce-rules``` (newest verseion)
 
 Install test dependencies with:
 
