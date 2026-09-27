@@ -12,5 +12,8 @@
 /src/enforce_rules/**    @Loepker-James
 /tests/**                @Loepker-James
 
+# Freeze CodeQL rules
+/codeql-custom-queries/** @Loepker-James
+
 # Freeze GitHub configuration files
 /.github/**            @Loepker-James
