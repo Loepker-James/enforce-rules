@@ -3,10 +3,10 @@ from collections.abc import Iterable, Sequence, Container
 import re
 from datetime import datetime
 from chess import Piece
-from pydantic import PositiveInt, validate_call
+from pydantic import Field, validate_call
 
 Number: TypeAlias = int | float
-LengthType: TypeAlias = PositiveInt | Literal[0]
+LengthType: TypeAlias = Annotated[int, Field(ge=0)]
 # -----------------------------
 # VALIDATOR FUNCTIONS (DEFINED FIRST)
 # -----------------------------
