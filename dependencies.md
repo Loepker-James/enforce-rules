@@ -23,7 +23,7 @@ python -m pip install -r /path/to/requirements.txt
 
 # Notes
 * ```python-chess``` is required only for the ```chess.Piece``` type hint used in the code.
-* ```pydantic``` is only for the ```PositiveInt``` type hint and ```validate_call``` decorator.
+* ```pydantic``` is only for the ```Field``` metadata object and ```validate_call``` decorator.
 
 # Test Dependencies
 
