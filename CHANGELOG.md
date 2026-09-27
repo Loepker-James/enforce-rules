@@ -221,3 +221,8 @@ Note: any [README](https://github.com/Loepker-James/enforce-rules/blob/main/READ
 ### Refactored
 * Added ```validate_call``` decorator
 
+## 3.2.12 - Created on 9/27/2026
+
+### Refactored
+* Used ```Field``` instead of ```PositiveInt``` for ```LengthType``` type hint
+
