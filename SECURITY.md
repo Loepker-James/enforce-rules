@@ -4,7 +4,7 @@
 Only the latest stable release receives security updates.
 
 ## Reporting a Vulnerability
-Please report security issues privately using GitHub’s **Report a vulnerability** feature:
+Please report security issues or license violations privately using GitHub’s **Report a vulnerability** feature:
 
 1. Open the repository’s **Security** tab.
 2. Click **Report a vulnerability**.
