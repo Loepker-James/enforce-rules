@@ -7,7 +7,7 @@
 /requirements.txt      @Loepker-James
 /README.md             @Loepker-James
 /SECURITY.md           @Loepker-James
-.gitignore             @Loepker-James
+/.gitignore            @Loepker-James
 
 # Protect code (main project and test)
 /src/enforce_rules/**    @Loepker-James
