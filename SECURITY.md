@@ -4,13 +4,32 @@
 Only the latest stable release receives security updates.
 
 ## Reporting a Vulnerability
-Please report security issues or license violations privately using GitHub’s **Report a vulnerability** feature:
+Please report security issues privately using GitHub’s **Report a vulnerability** feature:
 
 1. Open the repository’s **Security** tab.
 2. Click **Report a vulnerability**.
 3. Provide a clear description and, if possible, a proof of concept.
 
 This is the only supported method for reporting security issues.
+
+## Reporting License Violations or Fake Endorsements
+
+If you see **ANYONE**:
+- using my name to endorse their product,
+- implying I approve their project,
+- misrepresenting affiliation,
+- violating the BSD-3 non-endorsement clause,
+- impersonating me,
+- or distributing misleading forks,
+
+Please report it privately through a **GitHub Private Security Advisory**.
+
+Include:
+- the URL(s) where the violation appears,
+- screenshots if possible,
+- a short description of what happened.
+
+License violations are sensitive and must not be reported through public issues.
 
 ## Response Commitment
 This project is maintained by a single developer.
