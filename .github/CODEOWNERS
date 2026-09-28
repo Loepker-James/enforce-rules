@@ -14,7 +14,7 @@
 /tests/**                @Loepker-James
 
 # Freeze CodeQL rules
-/codeql-custom-queries/**   @Loepker-James
+/codeql-custom-queries/**  @Loepker-James
 
 # Freeze GitHub configuration files
 /.github/**            @Loepker-James
