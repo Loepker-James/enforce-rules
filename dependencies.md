@@ -14,7 +14,7 @@ These are included with all standard Python installations.
 * ```python-chess``` (1.11+)
 * ```pydantic``` (2+)
 
-Download the raw [```requirements.txt```](https://github.com/Loepker-James/enforce-rules/blob/main/requirements.txt) file, then install dependencies by giving pip the full path to the file:
+Download the raw [```requirements.txt```](requirements.txt) file, then install dependencies by giving pip the full path to the file:
 
 ```bash
 python -m pip install -r /path/to/requirements.txt
