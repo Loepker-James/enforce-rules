@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 This file should not be updated by contriubtors.
 
-For change migration, go to [MIGRATION](docs/migration.md)
+For change migration, go to [MIGRATION](docs/migration.md).
 
 If you're planning on upgrading, also check [MIGRATION](docs/migration.md) fully.
 
