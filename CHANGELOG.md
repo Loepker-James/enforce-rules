@@ -77,7 +77,7 @@ If you're planning on upgrading, also check [MIGRATION](docs/migration.md) fully
 * "before_date"
 * "after_date"
 
-For more info on these keywords, please view [Datetime Issue (#6)](Loepker-James/enforce-rules#6)
+For more info on these keywords, please view [Datetime Issue (#6)](https://github.com/Loepker-James/enforce-rules/issues/6)
 
 ## 2.0.1 - Created on 8/30/2026
 
@@ -102,7 +102,7 @@ For more info on these keywords, please view [Datetime Issue (#6)](Loepker-James
 ## 3.0.0 - Created on 8/30/2026
 
 ### Added
-* New chess themed keywords (more info in [Chess Issue (#7)](Loepker-James/enforce-rules#7))
+* New chess themed keywords (more info in [Chess Issue (#7)](https://github.com/Loepker-James/enforce-rules/issues/7))
 
 ### Documentation
 * Better type hints
@@ -120,7 +120,7 @@ For more info on these keywords, please view [Datetime Issue (#6)](Loepker-James
 ## 3.1.0 - Created on 9/2/2026
 
 ### Added
-* "is_password" (for more info, please view [Password Issue (#1)](Loepker-James/enforce-rules#1))
+* "is_password" (for more info, please view [Password Issue (#1)](https://github.com/Loepker-James/enforce-rules/issues/1))
 
 ### Refactored
 * Used collections.abc for some type-hints instead of typing
