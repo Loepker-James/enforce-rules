@@ -40,7 +40,7 @@ To protect users:
 - Do not open public issues for security problems nor share exploit details publicly
 - Coordinate disclosure through the private report channel.
  
-Opening public issues for security problems is prohibited under [§3.4 in Code of Conduct (Leaking Exploits)](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md#34-leaking-exploits), which requires all security concerns to be reported privately.
+Opening public issues for security problems is prohibited under [§3.4 in Code of Conduct (Leaking Exploits)](CODE_OF_CONDUCT.md#34-leaking-exploits), which requires all security concerns to be reported privately.
 
 Thank you for helping keep this project secure.
 
