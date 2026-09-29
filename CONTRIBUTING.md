@@ -15,7 +15,7 @@ New keywords, improvements, tests, and documentation updates are encouraged.
 
 ## Code of Conduct
 
-See the [Code of Conduct](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md).
+See the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ---
 
