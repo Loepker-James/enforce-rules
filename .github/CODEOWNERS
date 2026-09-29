@@ -2,6 +2,7 @@
 
 # Freeze governance and project‑rule files
 /CODE_OF_CONDUCT.md    @Loepker-James
+/CHANGELOG.md          @Loepker-James
 /CONTRIBUTING.md       @Loepker-James
 /dependencies.md       @Loepker-James
 /requirements.txt      @Loepker-James
