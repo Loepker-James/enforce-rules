@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
-For change migration, go to [MIGRATION](https://github.com/Loepker-James/enforce-rules/blob/main/docs/migration.md)
+For change migration, go to [MIGRATION](docs/migration.md)
 
-If you're planning on upgrading, also check [MIGRATION](https://github.com/Loepker-James/enforce-rules/blob/main/docs/migration.md) fully.
+If you're planning on upgrading, also check [MIGRATION](docs/migration.md) fully.
 
 
 ## 1.0.0 - Created on 8/22/2026
@@ -14,32 +14,32 @@ If you're planning on upgrading, also check [MIGRATION](https://github.com/Loepk
 ### Added
 
 * validate() function
-* Original Keywords (for more info please view [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md))
+* Original Keywords (for more info please view [README](README.md))
 
 ### Documentation
 
-* Added full keyword reference table to [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+* Added full keyword reference table to [README](README.md)
 * Clarified behavior of ```must_be_true```
 * Added examples for all keywords
 * Updated installation instructions
-* Added Versioning Policy section in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+* Added Versioning Policy section in [README](README.md)
 
 
 ## 1.0.1 - Created on 8/29/2026
 
 ### Refactored
 * Type hints no longer use ```Any``` and use ```object``` instead.
-* Fixed inconsistency in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+* Fixed inconsistency in [README](README.md)
 
 ## 1.0.2 - Created on 8/29/2026
 
 ### Refactored
-* Made newlines more visible for the [README on PyPI](https://pypi.org/project/enforce-rules/)
+* Made newlines more visible for the [README on PyPI](https://pypi.org/project/enforce-rules)
 
 ## 1.0.3 - Created on 8/29/2026
 
 ### Fixed
-* Version numbering in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+* Version numbering in [README](README.md)
 
 ## 1.1.0 - Created on 8/29/2026
 
@@ -48,13 +48,13 @@ If you're planning on upgrading, also check [MIGRATION](https://github.com/Loepk
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-* [How To Migrate For This Change (If Upgrading To)](https://github.com/Loepker-James/enforce-rules/blob/main/docs/migration.md#upgrading-from-11--to-11)
-* [How To Migrate For This Change (If Downgrading From)](https://github.com/Loepker-James/enforce-rules/blob/main/docs/migration.md#downgrading-from-11-to-11-)
+* [How To Migrate For This Change (If Upgrading To)](docs/migration.md#upgrading-from-11--to-11)
+* [How To Migrate For This Change (If Downgrading From)](docs/migration.md#downgrading-from-11-to-11-)
 
 ## 1.1.1 - Created on 8/29/2026
 
 ### Fixed
-* Version numbering in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+* Version numbering in [README](README.md)
 
 ## 1.1.2 - Created on 8/29/2026
 
@@ -69,7 +69,7 @@ If you're planning on upgrading, also check [MIGRATION](https://github.com/Loepk
 ## 1.1.4 - Created on 8/30/2026
 
 ### Documentation
-* Made newlines more visible in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+* Made newlines more visible in [README](README.md)
 
 ## 2.0.0 - Created on 8/30/2026
 
@@ -77,7 +77,7 @@ If you're planning on upgrading, also check [MIGRATION](https://github.com/Loepk
 * "before_date"
 * "after_date"
 
-For more info on these keywords, please view [Datetime Issue (#6)](https://github.com/Loepker-James/enforce-rules/issues/6)
+For more info on these keywords, please view [Datetime Issue (#6)](Loepker-James/enforce-rules#6)
 
 ## 2.0.1 - Created on 8/30/2026
 
@@ -87,7 +87,7 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 ## 2.0.2 - Created on 8/30/2026
 
 ### Documentation
-* Fixed [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+* Fixed [README](README.md)
 
 ## 2.0.3 - Created on 8/30/2026
 
@@ -97,12 +97,12 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 ## 2.0.4 - Created on 8/30/2026
 
 ### Fixed
-* Version number in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+* Version number in [README](README.md)
 
 ## 3.0.0 - Created on 8/30/2026
 
 ### Added
-* New chess themed keywords (more info in [Chess Issue (#7)](https://github.com/Loepker-James/enforce-rules/issues/7))
+* New chess themed keywords (more info in [Chess Issue (#7)](Loepker-James/enforce-rules#7))
 
 ### Documentation
 * Better type hints
@@ -110,17 +110,17 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 ## 3.0.1 - Created on 8/30/2026
 
 ### Fixed
-* Updated [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md) to version 3.0.1.
+* Updated [README](README.md) to version 3.0.1.
 
 ## 3.0.2 - Created on 8/30/2026
 
 ### Fixed
-* [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+* [README](README.md)
 
 ## 3.1.0 - Created on 9/2/2026
 
 ### Added
-* "is_password" (for more info, please view [Password Issue (#1)](https://github.com/Loepker-James/enforce-rules/issues/1))
+* "is_password" (for more info, please view [Password Issue (#1)](Loepker-James/enforce-rules#1))
 
 ### Refactored
 * Used collections.abc for some type-hints instead of typing
@@ -129,17 +129,17 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 ## 3.1.1 - Created on 9/4/2026
 
 ### Fixed
-* [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md) bug
+* [README](README.md) bug
 
 ## 3.1.2 - Created on 9/4/2026
 
 ### Documenation
-* Fixed [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md) version number
+* Fixed [README](README.md) version number
 
 ## 3.1.3 - Created on 9/5/2026
 
 ### Documentation
-* Added links to [documentation](https://github.com/Loepker-James/enforce-rules/tree/main/docs) in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+* Added links to [documentation](docs/) in [README](README.md)
 
 ## 3.1.4 - Created on 9/5/2026
 
@@ -148,7 +148,7 @@ For more info on these keywords, please view [Datetime Issue (#6)](https://githu
 
 --------------------------------------------------------------------------
 
-Note: any [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md) in the 3.1.1-3.1.4 (excluding 3.1.4) range, credits will not appear.
+Note: any [README](README.md) in the 3.1.1-3.1.4 (excluding 3.1.4) range, credits will not appear.
 
 
 ## 3.1.5 - Created on 9/7/2026 (Note: This version is broken.)
@@ -189,12 +189,12 @@ Note: any [README](https://github.com/Loepker-James/enforce-rules/blob/main/READ
 ## 3.2.5 - Created on 9/12/2026
 
 ### Documentation
-* Added headers in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+* Added headers in [README](README.md)
 
 ## 3.2.6 - Created on 9/12/2026
 
 ### Documentation
-* Added header in [README](https://github.com/Loepker-James/enforce-rules/blob/main/README.md)
+* Added header in [README](README.md)
 
 ## 3.2.7 - Created on 9/12/2026
 
