@@ -193,7 +193,7 @@ from datetime import datetime
 {"before_date": datetime(2000, 1, 1)}
 ```
 
-### after_date (Created in 2):
+### after_date (Created in 2.0.0):
 
 Allowed types: datetime object
 
@@ -205,7 +205,7 @@ from datetime import datetime
 {"after_date": datetime(2000, 1, 1)}
 ```
 
-### piece_color (Created in 3):
+### piece_color (Created in 3.0.0):
 
 Allowed types: Piece object
 
@@ -217,7 +217,7 @@ import chess
 {"piece_color": chess.WHITE}
 ```
 
-### piece_type (Created in 3):
+### piece_type (Created in 3.0.0):
 Allowed types: Piece object
 
 Parameter: Chess.PAWN, chess.KNIGHT, chess.BISHOP, chess.ROOK, chess.QUEEN, or chess.KING
@@ -228,7 +228,7 @@ import chess
 {"piece_type": chess.KNIGHT}
 ```
 
-### chess_symbol (Created in 3):
+### chess_symbol (Created in 3.0.0):
 
 Allowed types: Piece object
 
@@ -236,7 +236,7 @@ Parameter: a string representing the piece's symbol
 
 Example: ```{"chess_symbol": "r"})```
 
-### is_password (Created in 3.1):
+### is_password (Created in 3.1.0):
 
 Allowed types: string
 
@@ -246,7 +246,7 @@ Example: ```{"is_password": True}```
 
 
 
-# is_valid(value, rules) (Created in 3.2):
+# is_valid(value, rules) (Created in 3.2.0):
 is_valid is a simple helper function added in version 3.2.0.
 It provides a boolean‑based interface for validation by wrapping the main validate() function.
 
