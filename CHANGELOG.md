@@ -76,8 +76,8 @@ If you're planning on upgrading, also check [MIGRATION](docs/migration.md) fully
 ## 2.0.0 - Created on 8/30/2026
 
 ### Added
-* "before_date"
-* "after_date"
+* ```"before_date"```
+* ```"after_date"```
 
 For more info on these keywords, please view [Datetime Issue (#6)](https://github.com/Loepker-James/enforce-rules/issues/6)
 
