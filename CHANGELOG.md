@@ -46,7 +46,7 @@ If you're planning on upgrading, also check [MIGRATION](docs/migration.md) fully
 ## 1.1.0 - Created on 8/29/2026
 
 ### Changed
-* ```regex``` keyword uses re.search instead of re.fullmatch 
+* ```"regex"``` keyword uses re.search instead of re.fullmatch 
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
