@@ -1,230 +1,295 @@
-# Changelog
+## Changelog
+All notable changes to this project are documented in this file.
+This file should not be updated by contributors.
 
-All notable changes to this project will be documented in this file.
+For migration instructions, see [MIGRATION](docs/migration.md).
+If you are upgrading, read the migration guide fully.
 
-This file should not be updated by contriubtors.
+---
 
-For change migration, go to [MIGRATION](docs/migration.md).
-
-If you're planning on upgrading, also check [MIGRATION](docs/migration.md) fully.
-
-
-## 1.0.0 - Created on 8/22/2026
-
-
+## 1.0.0 — Created on 2026‑08‑22
 
 ### Added
-
-* validate() function
-* Original Keywords (for more info please view [README](README.md))
+- validate() function
+- Original keywords (see README)
 
 ### Documentation
+- Added full keyword reference table to README
+- Clarified behavior of must_be_true
+- Added examples for all keywords
+- Updated installation instructions
+- Added Versioning Policy section to README
 
-* Added full keyword reference table to [README](README.md)
-* Clarified behavior of ```must_be_true```
-* Added examples for all keywords
-* Updated installation instructions
-* Added Versioning Policy section in [README](README.md)
+---
 
-
-## 1.0.1 - Created on 8/29/2026
-
-### Refactored
-* Type hints no longer use ```Any``` and use ```object``` instead.
-* Fixed inconsistency in [README](README.md)
-
-## 1.0.2 - Created on 8/29/2026
+## 1.0.1 — Created on 2026‑08‑29
 
 ### Refactored
-* Made newlines more visible for the [README on PyPI](https://pypi.org/project/enforce-rules)
+- Type hints now use object instead of Any
+- Fixed inconsistency in README
 
-## 1.0.3 - Created on 8/29/2026
+---
+
+## 1.0.2 — Created on 2026‑08‑29
+
+### Documentation
+- Improved newline visibility for README on PyPI
+
+---
+
+## 1.0.3 — Created on 2026‑08‑29
 
 ### Fixed
-* Version numbering in [README](README.md)
+- Version numbering in README
 
-## 1.1.0 - Created on 8/29/2026
+---
+
+## 1.1.0 — Created on 2026‑08‑29
 
 ### Changed
-* ```"regex"``` keyword uses re.search instead of re.fullmatch 
+- "regex" keyword now uses re.search instead of re.fullmatch
 
----------------------------------------------------------------------------------------------------------------------------------------
+### Migration
+- See:
+  - docs/migration.md#upgrading-from-11--to-11
+  - docs/migration.md#downgrading-from-11-to-11-
 
-* [How To Migrate For This Change (If Upgrading To)](docs/migration.md#upgrading-from-11--to-11)
-* [How To Migrate For This Change (If Downgrading From)](docs/migration.md#downgrading-from-11-to-11-)
+---
 
-## 1.1.1 - Created on 8/29/2026
+## 1.1.1 — Created on 2026‑08‑29
 
 ### Fixed
-* Version numbering in [README](README.md)
+- Version numbering in README
 
-## 1.1.2 - Created on 8/29/2026
+---
+
+## 1.1.2 — Created on 2026‑08‑29
 
 ### Added
-* internal type hint in regex
+- Internal type hint for regex
 
-## 1.1.3 - Created on 8/29/2026
+---
 
-### Documentation
-* Made changelog visible even when viewing on sources other than GitHub
-
-## 1.1.4 - Created on 8/30/2026
+## 1.1.3 — Created on 2026‑08‑29
 
 ### Documentation
-* Made newlines more visible in [README](README.md)
+- Made changelog visible on sources other than GitHub
 
-## 2.0.0 - Created on 8/30/2026
+---
+
+## 1.1.4 — Created on 2026‑08‑30
+
+### Documentation
+- Improved newline visibility in README
+
+---
+
+## 2.0.0 — Created on 2026‑08‑30
 
 ### Added
-* ```"before_date"```
-* ```"after_date"```
+- "before_date"
+- "after_date"
+  (See Datetime Issue #6)
 
-For more info on these keywords, please view [Datetime Issue (#6)](https://github.com/Loepker-James/enforce-rules/issues/6)
+---
 
-## 2.0.1 - Created on 8/30/2026
+## 2.0.1 — Created on 2026‑08‑30
 
 ### Fixed
-* Bugs not letting "regex_flags" work (note: any version before this one will not support "regex_flags")
+- Bugs preventing "regex_flags" from working  
+  (Any version before this does not support "regex_flags")
 
-## 2.0.2 - Created on 8/30/2026
+---
+
+## 2.0.2 — Created on 2026‑08‑30
 
 ### Documentation
-* Fixed [README](README.md)
+- Fixed README
 
-## 2.0.3 - Created on 8/30/2026
+---
+
+## 2.0.3 — Created on 2026‑08‑30
 
 ### Refactored
-* Improved internal type hint in project
+- Improved internal type hints
 
-## 2.0.4 - Created on 8/30/2026
+---
+
+## 2.0.4 — Created on 2026‑08‑30
 
 ### Fixed
-* Version number in [README](README.md)
+- Version number in README
 
-## 3.0.0 - Created on 8/30/2026
+---
+
+## 3.0.0 — Created on 2026‑08‑30
 
 ### Added
-* New chess themed keywords (more info in [Chess Issue (#7)](https://github.com/Loepker-James/enforce-rules/issues/7))
+- New chess‑themed keywords (see Chess Issue #7)
 
 ### Documentation
-* Better type hints
+- Improved type hints
 
-## 3.0.1 - Created on 8/30/2026
+---
 
-### Fixed
-* Updated [README](README.md) to version 3.0.1.
-
-## 3.0.2 - Created on 8/30/2026
+## 3.0.1 — Created on 2026‑08‑30
 
 ### Fixed
-* [README](README.md)
+- Updated README to version 3.0.1
 
-## 3.1.0 - Created on 9/2/2026
+---
+
+## 3.0.2 — Created on 2026‑08‑30
+
+### Fixed
+- README
+
+---
+
+## 3.1.0 — Created on 2026‑09‑02
 
 ### Added
-* "is_password" (for more info, please view [Password Issue (#1)](https://github.com/Loepker-James/enforce-rules/issues/1))
+- "is_password" (see Password Issue #1)
 
 ### Refactored
-* Used collections.abc for some type-hints instead of typing
+- Used collections.abc for certain type hints
 
+---
 
-## 3.1.1 - Created on 9/4/2026
+## 3.1.1 — Created on 2026‑09‑04
 
 ### Fixed
-* [README](README.md) bug
+- Bug in README
 
-## 3.1.2 - Created on 9/4/2026
+---
 
-### Documenation
-* Fixed [README](README.md) version number
-
-## 3.1.3 - Created on 9/5/2026
+## 3.1.2 — Created on 2026‑09‑04
 
 ### Documentation
-* Added links to [documentation](docs/) in [README](README.md)
+- Fixed version number in README
 
-## 3.1.4 - Created on 9/5/2026
+---
+
+## 3.1.3 — Created on 2026‑09‑05
+
+### Documentation
+- Added links to docs/ in README
+
+---
+
+## 3.1.4 — Created on 2026‑09‑05
 
 ### Added
-* Readded credits, for some reason I deleted them by mistake in 3.1.1. 
+- Re‑added credits (accidentally removed in 3.1.1)
 
---------------------------------------------------------------------------
+### Note
+- Any README in versions 3.1.1–3.1.4 (except 3.1.4) will not show credits.
 
-Note: any [README](README.md) in the 3.1.1-3.1.4 (excluding 3.1.4) range, credits will not appear.
+---
 
-
-## 3.1.5 - Created on 9/7/2026 (Note: This version is broken.)
-
-### Refactored
-* Used ```typing.Final``` in ```validate()``` for better type hinting
-
-## 3.1.6 - Created on 9/7/2026
+## 3.1.5 — Created on 2026‑09‑07
+**Note: This version is broken.**
 
 ### Refactored
-* Used a comment instead of ```typing.Final```. Also, 3.1.5 does not work.
+- Used typing.Final in validate() for type hinting
 
-## 3.2.0 - Created on 9/8/2026
+---
 
-### Addded
-* ```is_valid()```
-
-## 3.2.1 - Created on 9/11/2026
+## 3.1.6 — Created on 2026‑09‑07
 
 ### Refactored
-* Added internal type hint in ```validate()```
+- Replaced typing.Final with a comment  
+- Fixes broken 3.1.5
 
-## 3.2.2 - Created on 9/11/2026
+---
+
+## 3.2.0 — Created on 2026‑09‑08
+
+### Added
+- is_valid()
+
+---
+
+## 3.2.1 — Created on 2026‑09‑11
 
 ### Refactored
-* Added internal type hint in ```is_valid()```
+- Added internal type hint in validate()
 
-## 3.2.3 - Created on 9/12/2026
+---
 
-### Refactored
-* Refined type hints
-
-## 3.2.4 - Created on 9/12/2026
+## 3.2.2 — Created on 2026‑09‑11
 
 ### Refactored
-* Used ```r"\"``` instead of ```"\\"```
+- Added internal type hint in is_valid()
 
-## 3.2.5 - Created on 9/12/2026
+---
+
+## 3.2.3 — Created on 2026‑09‑12
+
+### Refactored
+- Refined type hints
+
+---
+
+## 3.2.4 — Created on 2026‑09‑12
+
+### Refactored
+- Used r"\" instead of "\\\\"
+
+---
+
+## 3.2.5 — Created on 2026‑09‑12
 
 ### Documentation
-* Added headers in [README](README.md)
+- Added headers in README
 
-## 3.2.6 - Created on 9/12/2026
+---
+
+## 3.2.6 — Created on 2026‑09‑12
 
 ### Documentation
-* Added header in [README](README.md)
+- Added header in README
 
-## 3.2.7 - Created on 9/12/2026
+---
 
-### Refactored
-* Added internal type hint
-
-## 3.2.8 - Created on 9/13/2026
+## 3.2.7 — Created on 2026‑09‑12
 
 ### Refactored
-* Added internal type hint
+- Added internal type hint
 
-## 3.2.9 - Created on 9/13/2026
+---
+
+## 3.2.8 — Created on 2026‑09‑13
 
 ### Refactored
-* Added internal type hint
+- Added internal type hint
 
-## 3.2.10 - Created on 9/25/2026
+---
+
+## 3.2.9 — Created on 2026‑09‑13
+
+### Refactored
+- Added internal type hint
+
+---
+
+## 3.2.10 — Created on 2026‑09‑25
 
 ### Fixed
-* Bug made in 3.2.4 with raw string
+- Raw string bug introduced in 3.2.4
 
-## 3.2.11 - Created on 9/26/2026
+---
+
+## 3.2.11 — Created on 2026‑09‑26
+
+### Added
+- validate_call decorator
+
+---
+
+## 3.2.12 — Created on 2026‑09‑27
 
 ### Refactored
-* Added ```validate_call``` decorator
+- Used Field instead of PositiveInt for LengthType type hint
 
-## 3.2.12 - Created on 9/27/2026
-
-### Refactored
-* Used ```Field``` instead of ```PositiveInt``` for ```LengthType``` type hint
 
