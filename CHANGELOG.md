@@ -292,4 +292,7 @@ If you are upgrading, read the migration guide fully.
 ### Refactored
 - Used Field instead of PositiveInt for LengthType type hint
 
+## 3.12.13 - Created on 2026-10-02
 
+### Fixed
+- Added requirements.txt in tarball
