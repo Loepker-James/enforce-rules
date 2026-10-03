@@ -292,18 +292,18 @@ If you are upgrading, read the migration guide fully.
 ### Refactored
 - Used Field instead of PositiveInt for LengthType type hint
 
-## 3.12.13 - Created on 2026-10-02
+## 3.12.13 — Created on 2026-10-02
 
 ### Fixed
 - Added requirements.txt in tarball (failed)
 
-## 3.12.14 - Created on 2026-10-02
+## 3.12.14 — Created on 2026-10-02
 
 ### Fixed
 - Added dependency installation line in [README](README.md)
 - Added dependencies in [pyproject.toml](pyproject.toml)
 
-## 3.12.15 - Created on 2026-10-02
+## 3.12.15 — Created on 2026-10-02
 
 ### Added
 - Added Claude in credits
