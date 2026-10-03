@@ -11,11 +11,15 @@
 /.gitignore            @Loepker-James
 
 # Protect code (main project and test)
-/src/enforce_rules/**    @Loepker-James
-/tests/**                @Loepker-James
+/src/enforce_rules/*.py    @Loepker-James
+/tests/**                  @Loepker-James
+
 
 # Freeze CodeQL rules
 /codeql-custom-queries/**  @Loepker-James
 
 # Freeze GitHub configuration files
-/.github/**            @Loepker-James
+/.github/**               @Loepker-James
+
+# Freeze py.typed
+/src/enforce_rules/py.typed
