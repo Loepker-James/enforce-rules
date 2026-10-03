@@ -14,8 +14,8 @@ This started as a personal passion project, but once it worked, I realized other
 Now it’s a full library meant to help anyone who wants more power in their type hints.
 
 ## Documentation
-- [Usage Guide](https://github.com/Loepker-James/enforce-rules/blob/main/docs/usage.md)
-- [API Reference](https://github.com/Loepker-James/enforce-rules/blob/main/docs/api.md)
-- [Deprecations](https://github.com/Loepker-James/enforce-rules/blob/main/docs/deprecations.md)
-- [Migration Guide](https://github.com/Loepker-James/enforce-rules/blob/main/docs/migration.md)
-- [Design](https://github.com/Loepker-James/enforce-rules/blob/main/docs/design.md)
+- [Usage Guide](usage.md)
+- [API Reference](api.md)
+- [Deprecations](deprecations.md)
+- [Migration Guide](migration.md)
+- [Design](design.md)
