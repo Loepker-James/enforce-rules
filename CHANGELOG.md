@@ -310,3 +310,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ### Added
 - Claude in Credits
 - Dependency Line In [README](README.md)
+
+## 3.2.17 — Created on 2026-10-03
+### Added
+- [py.typed](src/enforce_rules/py.typed)
