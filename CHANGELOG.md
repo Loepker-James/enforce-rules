@@ -321,4 +321,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 
 ## 3.2.19 — Created on 2026-10-03
 ### Fixed
-- Bugs preventing usability
+- Issues that prevent Python 3.10 from working
+
+### Changed
+- Required python version number in [pyproject.toml](pyproject.toml)
