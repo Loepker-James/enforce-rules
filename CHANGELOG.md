@@ -89,7 +89,8 @@ If you are upgrading, read the migration guide fully.
 ### Added
 - "before_date"
 - "after_date"
-  (See [Datetime Issue #6](Loepker-James/enforce-rules#6))
+
+  (See [Datetime Issue #6](issues/6))
 
 ---
 
