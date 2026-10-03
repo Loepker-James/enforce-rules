@@ -1,9 +1,13 @@
 [project]
 name = "enforce-rules"
-version = "3.2.13"
+version = "3.2.15"
 description = "Runtime rule validation for Python using dictionary-based constraints."
 readme = "README.md"
 requires-python = ">=3.10"
+dependencies = [
+    "python-chess>=1.11",
+    "pydantic>=2",
+]
 license = { file = "LICENSE" }
 authors = [
     { name = "Jake Loepker" },
@@ -35,5 +39,6 @@ Copilot = "https://copilot.microsoft.com"
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
 
 
