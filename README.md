@@ -168,7 +168,7 @@ List must be strictly increasing.
 ```python
 numbers = validate([1, 5, 9], {"increasing": True})
 ```
-decreasing
+## decreasing
 
 List must be strictly decreasing.
 
