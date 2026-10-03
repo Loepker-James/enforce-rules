@@ -1,6 +1,6 @@
 [project]
 name = "enforce-rules"
-version = "3.2.15"
+version = "3.2.16"
 description = "Runtime rule validation for Python using dictionary-based constraints."
 readme = "README.md"
 requires-python = ">=3.10"
