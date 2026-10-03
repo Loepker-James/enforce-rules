@@ -300,10 +300,12 @@ If you are upgrading, read the migration guide fully.
 ## 3.12.14 — Created on 2026-10-02
 
 ### Fixed
-- Added dependency installation line in [README](README.md)
 - Added dependencies in [pyproject.toml](pyproject.toml)
 
 ## 3.12.15 — Created on 2026-10-02
+Nothing. I wanted to add something but it turns out I didn't add it.
+
+## 3.12.16 — Created on 2026-10-03
 
 ### Added
-- Added Claude in credits
+- Claude in Credits
