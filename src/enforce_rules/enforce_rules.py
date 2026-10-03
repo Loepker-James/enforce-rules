@@ -7,7 +7,7 @@ from pydantic import Field, validate_call
 from string import punctuation
 
 Number: TypeAlias = int | float
-LengthType: TypeAlias = Annotated[int, Field(ge=0)
+LengthType: TypeAlias = Annotated[int, Field(ge=0)]
 
 _PIECE_NAMES = ("pawn", "knight", "bishop", "rook", "queen", "king") 
 
