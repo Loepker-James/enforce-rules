@@ -309,3 +309,4 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 
 ### Added
 - Claude in Credits
+- Dependency Line In [README](README.md)
