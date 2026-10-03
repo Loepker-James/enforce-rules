@@ -1,4 +1,4 @@
-from unittest import TestCase
+from unittest import TestCase, main
 from typing import Any, Dict
 from enforce_rules import validate
 import re
@@ -363,4 +363,4 @@ class TestValidate(TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    main()
