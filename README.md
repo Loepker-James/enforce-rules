@@ -7,7 +7,7 @@ MAJOR: 3
 
 MINOR: 2
 
-PATCH: 15
+PATCH: 16
 
 If you need to catch up, you can see the full version history in the [CHANGELOG](https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md).
 
@@ -43,6 +43,15 @@ Then use it like:
 ```python
 from enforce_rules import validate
 ```
+
+Dependencies
+------------
+When installed with pip, dependencies are installed automatically in 3.2.15+.
+
+If you are using an earlier version, or running from the source tarball, install them with:
+
+pip install "python-chess>=1.11" "pydantic>=2"
+
 Features
 1. Runtime enforcement of rule dictionaries
 2. Dictionary‑based rule definitions
