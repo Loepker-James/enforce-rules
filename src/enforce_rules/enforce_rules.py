@@ -4,6 +4,7 @@ import re
 from datetime import datetime
 from chess import Piece
 from pydantic import Field, validate_call
+from string import punctuation
 
 Number: TypeAlias = int | float
 LengthType: TypeAlias = Annotated[int, Field(ge=0)]
@@ -153,10 +154,12 @@ def _validate_chess_symbol(
 def _validate_is_password(value: str, rule: bool) -> None:
     if not rule:
         return
-    try:
-        _validate_min_length(value, 8)
-    except ValueError:
+
+    if len(value) < 8:
         raise ValueError("Password must be at least 8 characters.")
+
+    if not isinstance(value, str):
+        raise ValueError("Password must be a string.")
 
     if not any(char.isdigit() for char in value):
         raise ValueError("Password must have at least one digit.")
@@ -167,19 +170,8 @@ def _validate_is_password(value: str, rule: bool) -> None:
     if not any(char.islower() for char in value):
         raise ValueError("Password must have at least one lowercase letter.")
 
-    symbols: Container[str] = {
-        "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/",
-        ":", ";", "<", "=", ">", "?", "@",
-        "[", "\\", "]", "^", "_", "`",
-        "{", "|", "}", "~",
-    }
-
-    def is_symbol(char: str) -> bool:
-        return char in symbols
-
-    if not any(is_symbol(char) for char in value):
+    if not any(char in string.punctuation for char in value):
         raise ValueError("Password must have at least one symbol.")
-
 # -----------------------------
 # VALIDATE() — DEFINED LAST
 # -----------------------------
