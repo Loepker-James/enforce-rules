@@ -314,3 +314,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ## 3.2.17 — Created on 2026-10-03
 ### Added
 - [py.typed](src/enforce_rules/py.typed)
+
+## 3.2.18 — Created on 2026-10-03
+### Fixed
+- Required python version number in [pyproject.toml](pyproject.toml)
