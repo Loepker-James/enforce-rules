@@ -1,4 +1,4 @@
-  # Code of Conduc
+  # Code of Conduct
 
 ## §1 Purpose
 This project aims to maintain a respectful, safe, and productive environment for all contributors.
