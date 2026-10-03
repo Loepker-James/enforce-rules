@@ -1,9 +1,9 @@
 [project]
 name = "enforce-rules"
-version = "3.2.18"
+version = "3.2.19"
 description = "Runtime rule validation for Python using dictionary-based constraints."
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 dependencies = [
     "python-chess>=1.11",
     "pydantic>=2",
@@ -20,6 +20,8 @@ classifiers = [
     "License :: OSI Approved :: BSD License",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Pyhton :: 3.10",
+    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Topic :: Software Development",
