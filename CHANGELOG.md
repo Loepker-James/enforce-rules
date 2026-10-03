@@ -326,3 +326,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 
 ### Changed
 - Required python version number in [pyproject.toml](pyproject.toml)
+
+## 3.2.20 — Created on 2026-10-03
+### Fixed
+- [Tests](tests/)
