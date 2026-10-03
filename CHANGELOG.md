@@ -11,14 +11,14 @@ If you are upgrading, read the migration guide fully.
 
 ### Added
 - validate() function
-- Original keywords (see README)
+- Original keywords (see [README](README.md))
 
 ### Documentation
-- Added full keyword reference table to README
+- Added full keyword reference table to [README](README.md)
 - Clarified behavior of must_be_true
 - Added examples for all keywords
 - Updated installation instructions
-- Added Versioning Policy section to README
+- Added Versioning Policy section to [README](README.md)
 
 ---
 
@@ -26,14 +26,14 @@ If you are upgrading, read the migration guide fully.
 
 ### Refactored
 - Type hints now use object instead of Any
-- Fixed inconsistency in README
+- Fixed inconsistency in [README](README.md)
 
 ---
 
 ## 1.0.2 — Created on 2026‑08‑29
 
 ### Documentation
-- Improved newline visibility for README on PyPI
+- Improved newline visibility for [README on PyPI](pypi.org/project/enforce-rules)
 
 ---
 
@@ -51,15 +51,15 @@ If you are upgrading, read the migration guide fully.
 
 ### Migration
 - See:
-  - docs/migration.md#upgrading-from-11--to-11
-  - docs/migration.md#downgrading-from-11-to-11-
+  - [Guidelines For Upgrading To](docs/migration.md#upgrading-from-11--to-11)
+  - [Guidelines For Downgrading From](docs/migration.md#downgrading-from-11-to-11-)
 
 ---
 
 ## 1.1.1 — Created on 2026‑08‑29
 
 ### Fixed
-- Version numbering in README
+- Version numbering in [README](README.md)
 
 ---
 
@@ -89,7 +89,7 @@ If you are upgrading, read the migration guide fully.
 ### Added
 - "before_date"
 - "after_date"
-  (See Datetime Issue #6)
+  (See [Datetime Issue #6](https://github.com/Loepker-James/enforce-rules/issues/6))
 
 ---
 
@@ -159,14 +159,14 @@ If you are upgrading, read the migration guide fully.
 ## 3.1.1 — Created on 2026‑09‑04
 
 ### Fixed
-- Bug in README
+- Bug in [README](README.md)
 
 ---
 
 ## 3.1.2 — Created on 2026‑09‑04
 
 ### Documentation
-- Fixed version number in README
+- Fixed version number in [README](README.md)
 
 ---
 
@@ -183,7 +183,7 @@ If you are upgrading, read the migration guide fully.
 - Re‑added credits (accidentally removed in 3.1.1)
 
 ### Note
-- Any README in versions 3.1.1–3.1.4 (except 3.1.4) will not show credits.
+- Any [README](README.md) in versions 3.1.1–3.1.4 (except 3.1.4) will not show credits.
 
 ---
 
@@ -197,7 +197,7 @@ If you are upgrading, read the migration guide fully.
 
 ## 3.1.6 — Created on 2026‑09‑07
 
-### Refactored
+### Changed
 - Replaced typing.Final with a comment  
 - Fixes broken 3.1.5
 
@@ -234,14 +234,14 @@ If you are upgrading, read the migration guide fully.
 ## 3.2.4 — Created on 2026‑09‑12
 
 ### Refactored
-- Used r"\" instead of "\\\\"
+- Used r"\" instead of "\\"
 
 ---
 
 ## 3.2.5 — Created on 2026‑09‑12
 
 ### Documentation
-- Added headers in README
+- Added headers in [README](README.md)
 
 ---
 
@@ -276,7 +276,7 @@ If you are upgrading, read the migration guide fully.
 ## 3.2.10 — Created on 2026‑09‑25
 
 ### Fixed
-- Raw string bug introduced in 3.2.4
+- Raw string bug introduced in [3.2.4](CHANGELOG.md#324--created-on-20260912)
 
 ---
 
