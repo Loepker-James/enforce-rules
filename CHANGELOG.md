@@ -295,4 +295,9 @@ If you are upgrading, read the migration guide fully.
 ## 3.12.13 - Created on 2026-10-02
 
 ### Fixed
-- Added requirements.txt in tarball
+- Added requirements.txt in tarball (failed)
+
+## 3.12.14 - Created on 2026-10-02
+
+### Fixed
+- Added dependency installation line in [README](README.md)
