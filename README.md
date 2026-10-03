@@ -9,9 +9,9 @@ MINOR: 2
 
 PATCH: 19
 
-If you need to catch up, you can see the full version history in the [CHANGELOG](https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md).
+If you need to catch up, you can see the full version history in the [CHANGELOG](CHANGELOG.md).
 
-Documentation can be found [here](https://github.com/Loepker-James/enforce-rules/tree/main/docs).
+Documentation can be found [here](docs/).
 
 It exists to let you use features Python doesn't already provide in the typing system — things you probably want, like min, max, length, all_same, and many more.
 
