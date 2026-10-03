@@ -248,7 +248,7 @@ If you are upgrading, read the migration guide fully.
 ## 3.2.6 — Created on 2026‑09‑12
 
 ### Documentation
-- Added header in README
+- Added header in [README](README.md)
 
 ---
 
@@ -301,3 +301,9 @@ If you are upgrading, read the migration guide fully.
 
 ### Fixed
 - Added dependency installation line in [README](README.md)
+- Added dependencies in [pyproject.toml](pyproject.toml)
+
+## 3.12.15 - Created on 2026-10-02
+
+### Added
+- Added Claude in credits
