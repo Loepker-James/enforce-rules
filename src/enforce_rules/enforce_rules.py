@@ -1,4 +1,4 @@
-from typing import Dict, Callable, Literal, TypeVar, TypedDict, TypeAlias
+from typing import Annotated, Any, Callable, Literal, TypeVar, TypedDict, TypeAlias
 from collections.abc import Iterable, Sequence, Container
 import re
 from datetime import datetime
@@ -7,6 +7,9 @@ from pydantic import Field, validate_call
 
 Number: TypeAlias = int | float
 LengthType: TypeAlias = Annotated[int, Field(ge=0)]
+
+_PIECE_NAMES = ("pawn", "knight", "bishop", "rook", "queen", "king")
+
 # -----------------------------
 # VALIDATOR FUNCTIONS (DEFINED FIRST)
 # -----------------------------
@@ -69,7 +72,8 @@ def _validate_no_nulls(value: Iterable, expected: bool) -> None:
 
 def _validate_sorted(value: Sequence, expected: bool) -> None:
     if expected:
-        if value != sorted(value) and value != sorted(value, reverse=True):
+        items = list(value)
+        if items != sorted(items) and items != sorted(items, reverse=True):
             raise ValueError("List must be sorted increasing or decreasing")
 
 
@@ -115,6 +119,7 @@ def _validate_regex(value: str, pattern: str, flags: object) -> None:
         raise ValueError(f"Value '{value}' does not match regex '{pattern}'")
 
 T = TypeVar("T")
+
 def _validate_must_be_true(value: T, func: Callable[[T], bool]) -> None:
     if not func(value):
         raise ValueError("must_be_true rule failed")
@@ -125,17 +130,23 @@ def _validate_before_date(value: datetime, reference: datetime) -> None:
 
 def _validate_after_date(value: datetime, reference: datetime) -> None:
     if not value > reference:
-        raise ValueError(f"{value} must be before {reference}.")
-        
+        raise ValueError(f"{value} must be after {reference}.")
+
 def _validate_piece_color(value: Piece, color: bool) -> None:
     if value.color is not color:
-       raise ValueError(f"{value}'s color is {'white' if value.color else 'black'} instead of {'white' if color else 'black'}.")
-        
+        raise ValueError(
+            f"{value}'s color is {'white' if value.color else 'black'} "
+            f"instead of {'white' if color else 'black'}."
+        )
+
 def _validate_piece_type(value: Piece, piece_type: Literal[1, 2, 3, 4, 5, 6]) -> None:
     if value.piece_type != piece_type:
-        raise ValueError(f"Value is not a {["pawn", "knight", "bishop", "rook", "queen", "king"][piece_type-1]}")
+        raise ValueError(f"Value is not a {_PIECE_NAMES[piece_type - 1]}")
 
-def _validate_chess_symbol(value: Piece, symbol: Literal["p", "n", "b", "r", "q", "k", "P", "N", "B", "R", "Q", "K"]) -> None:
+def _validate_chess_symbol(
+    value: Piece,
+    symbol: Literal["p", "n", "b", "r", "q", "k", "P", "N", "B", "R", "Q", "K"],
+) -> None:
     if value.symbol() != symbol:
         raise ValueError(f"Value's symbol is not {symbol}")
 
@@ -146,13 +157,13 @@ def _validate_is_password(value: str, rule: bool) -> None:
         _validate_min_length(value, 8)
     except ValueError:
         raise ValueError("Password must be at least 8 characters.")
-    
+
     if not any(char.isdigit() for char in value):
         raise ValueError("Password must have at least one digit.")
-    
+
     if not any(char.isupper() for char in value):
         raise ValueError("Password must have at least one uppercase letter.")
-    
+
     if not any(char.islower() for char in value):
         raise ValueError("Password must have at least one lowercase letter.")
 
@@ -162,10 +173,10 @@ def _validate_is_password(value: str, rule: bool) -> None:
         "[", "\\", "]", "^", "_", "`",
         "{", "|", "}", "~",
     }
-    
+
     def is_symbol(char: str) -> bool:
-        return char in symbols     
-    
+        return char in symbols
+
     if not any(is_symbol(char) for char in value):
         raise ValueError("Password must have at least one symbol.")
 
@@ -194,12 +205,13 @@ class ValidateDict(TypedDict, total=False):
     element_max: Number
     regex: str
     regex_flags: object
-    must_be_true: Callable[[T], bool]
+    must_be_true: Callable[[Any], bool]
     before_date: datetime
     after_date: datetime
     piece_color: bool
     piece_type: Literal[1, 2, 3, 4, 5, 6]
     chess_symbol: Literal["p", "n", "b", "r", "q", "k", "P", "N", "B", "R", "Q", "K"]
+    is_password: bool
 
 def validate(value: T, rules: ValidateDict) -> T:
     # Do not mutate value
@@ -268,10 +280,10 @@ def validate(value: T, rules: ValidateDict) -> T:
                 raise ValueError(f"Unknown rule: {key}")
 
     return value
-    
+
 def is_valid(value: T, rules: ValidateDict) -> bool:
     try:
         validate(value, rules)
         return True
-    except:
+    except Exception:
         return False
