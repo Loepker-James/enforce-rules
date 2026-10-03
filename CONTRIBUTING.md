@@ -139,7 +139,7 @@ New keywords must:
 ## CodeQL Notice (Security and Quality Tab)
 
 You may see a yellow “CodeQL is showing warnings” banner under the **Security and Quality** tab.  
-This is because I used to have errors in my code. However, I have fixed them in [3.2.19](CHANGELOG.md##3219--created-on-2026-10-03).
+This is because I **used to** have errors in my code. However, I have fixed them in [3.2.19](CHANGELOG.md##3219--created-on-2026-10-03).
 
 GitHub is still displaying this banner. Although this banner is being displayed, the project is fully functional, and contributors do not need to take any action regarding this notice.
 
