@@ -334,3 +334,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ## 3.2.21 — Created on 2026-10-03
 ### Refactored
 - Rewrote _validate_is_password
+
+## 3.2.21 — Created on 2026‑10-03
+### Documentation
+- Added header in [README](README.md)
