@@ -97,9 +97,8 @@ You should **never** bump a version **unless** you are changing one of these fil
 - `README.md`  
 - `LICENSE`  
 - `pyproject.toml`  
-- `src/enforce_rules/__init__.py`  
-- `src/enforce_rules/enforce_rules.py`  
-
+- `src/enforce_rules/**`
+  
 Pull requests that add `__version__`, `--version` flags, or any version-exposing code will not be accepted.  
 This project uses metadata-based versioning only.
 
