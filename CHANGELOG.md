@@ -137,7 +137,7 @@ If you are upgrading, read the migration guide fully.
 ## 3.0.1 — Created on 2026‑08‑30
 
 ### Fixed
-- Updated README to version 3.0.1
+- Updated [README](README.md) to version 3.0.1
 
 ---
 
@@ -151,7 +151,7 @@ If you are upgrading, read the migration guide fully.
 ## 3.1.0 — Created on 2026‑09‑02
 
 ### Added
-- "is_password" (see Password Issue #1)
+- "is_password" (see [Password Issue #1](https://github.com/Loepker-James/enforce-rules/issues/1))
 
 ### Refactored
 - Used collections.abc for certain type hints
@@ -236,7 +236,7 @@ If you are upgrading, read the migration guide fully.
 ## 3.2.4 — Created on 2026‑09‑12
 
 ### Refactored
-- Used r"\" instead of "\\"
+- Used r"\\" instead of "\\\\"
 
 ---
 
