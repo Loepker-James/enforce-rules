@@ -335,6 +335,11 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ### Refactored
 - Rewrote _validate_is_password
 
-## 3.2.21 — Created on 2026‑10-03
+## 3.2.22 — Created on 2026‑10-03
 ### Documentation
 - Added header in [README](README.md)
+
+## 3.2.23 — Created on 2026‑10-04
+### Added
+- \_\_all\_\_
+- .pyi files
