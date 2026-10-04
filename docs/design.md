@@ -109,7 +109,7 @@ Check membership.
 Example: ```allowed_values```.
 
 ### Boolean Activation Rules
-Enabled only when their parameter is True.  
+Enabled only when their parameter is ```True```.  
 Examples: ```invariant```, ```is_password```.
 
 ### Regex Rules
