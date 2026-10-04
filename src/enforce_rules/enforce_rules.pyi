@@ -1,5 +1,4 @@
 from typing import TypeVar, Dict
-from collections.abc import Sequence, Iterable
 
 T = TypeVar("T")
 
