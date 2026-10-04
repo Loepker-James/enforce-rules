@@ -349,6 +349,6 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ### Removed
 - unused imports in .pyi files
 
-## 3.2.24 — Created on 2026‑10-04
+## 3.2.25 — Created on 2026‑10-04
 ### Fixed
 - added underscores in TypeVars in .pyi files
