@@ -343,3 +343,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ### Added
 - \_\_all\_\_
 - .pyi files
+
+## 3.2.24 — Created on 2026‑10-04
+### Removed
+- unused imports in .pyi files
