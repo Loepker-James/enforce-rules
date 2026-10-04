@@ -22,8 +22,6 @@
 # Freeze GitHub configuration files
 /.github/**                @Loepker-James
 
-# Freeze py.typed
-/src/enforce_rules/py.typed   @Loepker-James
-
-# Freeze type hints
+# Protect typing metadata
+/src/enforce_rules/py.typed            @Loepker-James
 /src/enforce_rules/enforce_rules.pyi   @Loepker-James
