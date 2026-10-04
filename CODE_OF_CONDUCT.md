@@ -66,10 +66,10 @@ Reports will be handled confidentially.
 
 ## §6 Consequences
 Violations may result in:
-* Content removal.
-* Temporary or permanent blocking from the project.
-* Escalation to GitHub Trust & Safety.
-* Removal of contributions that violate project rules.
+* Content removal
+* Temporary or permanent blocking from the project
+* Escalation to GitHub Trust & Safety
+* Removal of contributions that violate project rules
 
 Severe or repeated violations may lead to permanent removal from the community.
 
