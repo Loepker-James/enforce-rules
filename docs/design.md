@@ -82,7 +82,7 @@ def is_valid(value: T, rules: ValidateDict) -> bool:
     try:
         validate(value, rules)
         return True
-    except:
+    except Exception:
         return False
 ```
 
