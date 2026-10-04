@@ -1,6 +1,6 @@
 [project]
 name = "enforce-rules"
-version = "3.2.22"
+version = "3.2.23"
 description = "Runtime rule validation for Python using dictionary-based constraints."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -41,6 +41,6 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.package-data]
-enforce_rules = ["py.typed"]
+enforce_rules = ["py.typed", "*.pyi"]
 
 
