@@ -79,7 +79,7 @@ validate("xabc", {"regex": "abc"}) #does not match in 1.1-
 ### What you may need to change
 If your rules depend on partial substring matching, do not downgrade.  
 The 1.1‑ series only supports full‑match behavior, so any rule relying on search‑style matching must explicitly use ```.*``` or ```.*?``` around the pattern (for example: ```.*abc.*```).  
-Without these wrappers, the older validator will treat the pattern as a full‑match and your partial‑match rule will stop working.
+Without these wrappers, the older validator will treat the pattern as a full‑match, and your partial‑match rule will stop working.
 
 If your rules depend on full‑string matching, you must remove any ^ and $ anchors you added for 1.1+.  
 The older 1.1‑ validator already performs full‑match checks, so anchored patterns are unnecessary and you should use plain patterns (e.g., ```abc``` instead of ```^abc$```).
