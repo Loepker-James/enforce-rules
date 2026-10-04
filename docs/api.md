@@ -99,7 +99,7 @@ Example: ```{"no_nulls": True}```
 
 ### sorted:
 
-Allowed types: List/tuple/set (preferribly)
+Allowed types: A Sequence
 
 Parameter: A boolean stating whether or not the condition should activate
 
@@ -107,7 +107,7 @@ Example: ```{"sorted": True}```
 
 ### increasing:
 
-Allowed types: List/tuple/set (preferribly)
+Allowed types: A Sequence
 
 Parameter: A boolean stating whether or not the condition should activate
 
@@ -115,7 +115,7 @@ Example: ```{"increasing": True}```
 
 ### decreasing:
 
-Allowed types: List/tuple/set (preferribly)
+Allowed types: A Sequence
 
 Parameter: A boolean stating whether or not the condition should activate
 
