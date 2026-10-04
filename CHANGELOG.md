@@ -3,6 +3,7 @@ All notable changes to this project are documented in this file.
 This file should not be updated by contributors.
 
 For migration instructions, see [MIGRATION](docs/migration.md).
+
 If you are upgrading, read the migration guide fully.
 
 ---
