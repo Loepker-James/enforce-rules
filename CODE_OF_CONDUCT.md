@@ -1,7 +1,12 @@
-  # Code of Conduct
+# Code of Conduct
 
-## §1 Purpose
+## §1 General
+
+### §1.1 Purpose
 This project aims to maintain a respectful, safe, and productive environment for all contributors.
+
+### §1.2 Scope
+Every section and subsection of this [Code of Conduct](#code-of-conduct) is equally binding, regardless of how it is formatted or numbered. Headings are for navigation only and do not limit or change the text beneath them.
 
 ## §2 Expected Behavior
 
