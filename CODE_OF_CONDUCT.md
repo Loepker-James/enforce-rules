@@ -65,7 +65,7 @@ Getting another person to act on someone's behalf, or encouraging or coordinatin
 Altering, deleting, or fabricating content or evidence in a report, an appeal, or the project history is treated as a violation of this Code of Conduct.
 
 #### §3.10.5 Interpretation
-Maintainers decide whether behavior falls under §3.10 by considering what a reasonable reader would understand it to mean and the context in which it appeared. Following the letter of a rule while ignoring its purpose does not excuse a violation. A violation under §3.10 is treated as the same severity as the act it disguises.
+Maintainers decide whether behavior falls under §3.10 by considering what a reasonable reader would understand it to mean and the context in which it appeared. Following the letter of a rule while ignoring its purpose does not excuse a violation. A violation under [§3.10](#310-rewording-and-workarounds) is treated as the same severity as the act it disguises.
 
 Maintainers decide whether behavior falls under this section by considering what a reasonable reader would understand it to mean and the context in which it appeared. Intent to follow the letter of a rule while ignoring its purpose does not excuse a violation.
 
