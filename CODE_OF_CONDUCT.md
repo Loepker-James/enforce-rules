@@ -23,7 +23,7 @@ Contributors should use language that is welcoming and professional. Contributor
 ## §3 Unacceptable Behavior
 
 ### §3.1 Harassment
-Harassment includes insults, personal attacks, repeated unwanted contact, or attempts to provoke emotional distress.
+Harassment includes insults, personal attacks, repeated unwanted contact, publishing someone's private information (doxxing), or attempts to provoke emotional distress.
 
 ### §3.2 Threats or Intimidation
 Any form of threat—technical, personal, or social—is prohibited. This includes coercion, blackmail, or fear-based pressure.
@@ -107,7 +107,7 @@ Blocking is applied in steps, depending on severity and history:
 * **Second violation:** a temporary block of 30 days.
 * **Third violation:** a permanent block.
 
-Severe violations, such as harassment, threats, or doxxing, may skip these steps and result in an immediate permanent block.
+Severe violations are those under [§3.1 (Harassment)](#31-harassment), [§3.2 (Threats or Intimidation)](#32-threats-or-intimidation), [§3.3 (Hate Speech)](#33-hate-speech), and [§3.4 (Leaking Exploits)](#34-leaking-exploits), and any other violation maintainers judge to cause serious harm. These may skip the steps above and result in an immediate permanent block.
 
 ### §6.3 Escalation to GitHub Trust & Safety
 Serious violations may be [escalated to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
@@ -116,13 +116,13 @@ Serious violations may be [escalated to GitHub](https://docs.github.com/en/commu
 Contributions that violate project rules may be removed.
 
 ### §6.5 Record keeping
-Maintainers keep private records of Code of Conduct violations, including the date, what happened, and the action taken. These records are used to apply the steps in §6.2 consistently. They are not published, and they are shared only with other maintainers, GitHub, or as required by law.
+Maintainers keep private records of Code of Conduct violations, including the date, what happened, and the action taken. These records are used to apply the steps in [§6.2](#62-temporary-or-permanent-blocking) consistently. They are not published, and they are shared only with other maintainers, GitHub, or as required by law.
 
 #### §6.5.1 Reset Period
-A violation counts toward the steps in [§6.2](#62-temporary-or-permanent-blocking) for 365 days, starting on the date the violation occurred. If maintainers learn of it later, the date it occurred still controls, not the date it was found.
+The 365 days are counted from the date the most recent violation occurred. If maintainers learn of it later, the date it occurred still controls, not the date it was found.
 
 #### §6.5.2 Cleaning A Record
-Once 365 days pass with **NO NEW VIOLATION**, the person's earlier warnings and temporary blocks are reset and no longer count. A new violation during that period does not extend the period for the earlier ones, but it does count as the next step in [§6.2](#62-temporary-or-permanent-blocking) while they are still active.
+A person's earlier warnings and temporary blocks are reset only after 365 days with **NO NEW VIOLATION**. A new violation restarts the 365 days for the whole record, and all earlier violations count toward the steps in [§6.2](#62-temporary-or-permanent-blocking) until a full year passes without another.
 
 #### §6.5.3 Exceptions
 Records of severe violations and permanent blocks are never reset. See [§4.6](#46-limits-on-record-resets) for limits on resets.
