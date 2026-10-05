@@ -128,10 +128,10 @@ A person's earlier warnings and temporary blocks are reset only after 365 days w
 Records of severe violations and permanent blocks are never reset. See [§4.6](#46-limits-on-record-resets) for limits on resets.
 
 ### §6.6 Appeals
-A person who receives a warning, content removal, or block under this Code of Conduct may ask the maintainer to reconsider it.
+A person who receives a warning, content removal, or block under this [Code of Conduct](#code-of-conduct) may ask the maintainer to reconsider it.
 
 #### §6.6.1 How to appeal
-Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in §5.2. An appeal should name the section or sections involved and explain why the action was mistaken or too severe.
+Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in [§5.2](#52-report-to-the-maintainers). An appeal should name the section or sections involved and explain why the action was mistaken or too severe.
 
 #### §6.6.2 Review
 This project has one maintainer, so appeals are reviewed by the same person who made the decision. To reduce bias, the maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final.
@@ -144,3 +144,6 @@ A blocked user cannot contact the project through GitHub. A person who has been 
 
 #### §6.6.5 Reports about the maintainer
 Because the maintainer is the only reviewer, concerns about the maintainer's own conduct can be reported to GitHub under [§5.1](#51-report-abuse-on-github). GitHub applies its own rules to such reports, not this [Code of Conduct](#code-of-conduct).
+
+#### §6.6.6 Abusive appeals
+An appeal that is denied is not a violation. An appeal may be treated as a violation of [§3.9](#39-disruption), [§3.7](#37-impersonation), or [§3.8](#38-ban-evasion) only if it includes insults, threats, or harassment, repeats an argument after a final decision, is filed through an account other than the one that received the action, or relies on fabricated or altered evidence. The maintainer may close such an appeal without further response.
