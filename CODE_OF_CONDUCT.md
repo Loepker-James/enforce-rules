@@ -137,7 +137,7 @@ Appeals must be made within 14 days of the action, by replying where the action 
 This project has one maintainer, so appeals are reviewed by the same person who made the decision. To reduce bias, the maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final.
 
 #### §6.6.3 Effect on records
-An overturned action is removed from the record kept under [§6.5](#65-record-keeping) and does not count toward the steps in [§6.2](#62-temporary-or-permanent-blocking). Filing an appeal does not pause the action. One appeal is allowed per action, and repeated or abusive appeals may be treated as a violation of §3.9.
+An overturned action is removed from the record kept under [§6.5](#65-record-keeping) and does not count toward the steps in [§6.2](#62-temporary-or-permanent-blocking). Filing an appeal does not pause the action. One appeal is allowed per action, and repeated or abusive appeals may be treated as a violation of [§3.9](#39-disruption).
 
 #### §6.6.4 Blocked users
 A blocked user cannot contact the project through GitHub. A person who has been temporarily blocked may appeal after the block ends. Permanent blocks cannot be appealed through the repository.
