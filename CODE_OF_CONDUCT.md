@@ -126,3 +126,21 @@ A person's earlier warnings and temporary blocks are reset only after 365 days w
 
 #### §6.5.3 Exceptions
 Records of severe violations and permanent blocks are never reset. See [§4.6](#46-limits-on-record-resets) for limits on resets.
+
+### §6.6 Appeals
+A person who receives a warning, content removal, or block under this Code of Conduct may ask the maintainer to reconsider it.
+
+#### §6.6.1 How to appeal
+Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in §5.2. An appeal should name the section or sections involved and explain why the action was mistaken or too severe.
+
+#### §6.6.2 Review
+This project has one maintainer, so appeals are reviewed by the same person who made the decision. To reduce bias, the maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final.
+
+#### §6.6.3 Effect on records
+An overturned action is removed from the record kept under [§6.5](#65-record-keeping) and does not count toward the steps in [§6.2](#62-temporary-or-permanent-blocking). Filing an appeal does not pause the action. One appeal is allowed per action, and repeated or abusive appeals may be treated as a violation of §3.9.
+
+#### §6.6.4 Blocked users
+A blocked user cannot contact the project through GitHub. A person who has been temporarily blocked may appeal after the block ends. Permanent blocks cannot be appealed through the repository.
+
+#### §6.6.5 Reports about the maintainer
+Because the maintainer is the only reviewer, concerns about the maintainer's own conduct can be reported to GitHub under [§5.1](#51-report-abuse-on-github). GitHub applies its own rules to such reports, not this [Code of Conduct](#code-of-conduct).
