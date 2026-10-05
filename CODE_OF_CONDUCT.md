@@ -53,7 +53,7 @@ Actions intended to sabotage development—such as derailing issues, spreading m
 Maintainers may take any of the following actions:
 
 ### §4.1 Issue a warning
-A maintainer may privately or publicly warn a contributor whose behavior violates this [Code of Conduct](#1-purpose).
+A maintainer may privately or publicly warn a contributor whose behavior violates this [Code of Conduct](#code-of-conduct).
 
 ### §4.2 Hide or delete harmful content
 Comments, issues, pull requests, or other content that is harmful or abusive may be hidden or deleted.
@@ -65,7 +65,7 @@ A user who continues to violate this Code of Conduct may be blocked from the rep
 Serious violations may be [reported to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
 
 ### §4.5 Remove contributions that violate this Code of Conduct
-Contributions that violate this [Code of Conduct](#1-purpose) may be removed.
+Contributions that violate this [Code of Conduct](#code-of-conduct) may be removed.
 
 ### §4.6 Limits on record resets
 A record reset under [§6.5](#65-record-keeping) clears warnings and temporary blocks from the count in [§6.2](#62-temporary-or-permanent-blocking), but it does not erase the history. Maintainers may take a reset into account in the following cases:
@@ -87,7 +87,7 @@ Where available, use “Report to repository admins” on the content. Otherwise
 
 Include:
 
-* The section number or numbers of this [Code of Conduct](#1-purpose) that you believe were violated (for example, §2.1)
+* The section number or numbers of this [Code of Conduct](#code-of-conduct) that you believe were violated (for example, §2.1)
 * Links or screenshots of what happened
 * The date it occurred
 * A short description of the incident
@@ -98,7 +98,7 @@ Reports will be handled confidentially.
 Violations may result in:
 
 ### §6.1 Content removal
-Content that violates this [Code of Conduct](#1-purpose) may be removed.
+Content that violates this [Code of Conduct](#code-of-conduct) may be removed.
 
 ### §6.2 Temporary or permanent blocking
 Blocking is applied in steps, depending on severity and history:
