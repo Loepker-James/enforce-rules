@@ -49,6 +49,26 @@ Creating new accounts to bypass moderation is prohibited.
 ### §3.9 Disruption
 Actions intended to sabotage development—such as derailing issues, spreading misinformation, or intentionally breaking workflows—are not allowed.
 
+### §3.10 Rewording and Workarounds
+This Code of Conduct applies to the meaning and effect of what is said or done, not only to the exact words used. Doing something that any section of this Code of Conduct requires, prohibits, or limits is treated the same whether it is done directly or indirectly.
+
+#### §3.10.1 Rewording
+Synonyms, softer or indirect wording, coded language, misspellings, symbols, images, sarcasm, or "just joking" framing are treated the same as the direct version of what they say.
+
+#### §3.10.2 Splitting
+Dividing an act across several messages, posts, or accounts is treated as one act. Maintainers consider the messages together, including the order they were posted and any pattern between them, even if no single message would violate this Code of Conduct on its own.
+
+#### §3.10.3 Acting Through Others
+Getting another person to act on someone's behalf, or encouraging or coordinating others to do something prohibited, is treated as doing it directly.
+
+#### §3.10.4 Tampering with Evidence
+Altering, deleting, or fabricating content or evidence in a report, an appeal, or the project history is treated as a violation of this Code of Conduct.
+
+#### §3.10.5 Interpretation
+Maintainers decide whether behavior falls under §3.10 by considering what a reasonable reader would understand it to mean and the context in which it appeared. Following the letter of a rule while ignoring its purpose does not excuse a violation. A violation under §3.10 is treated as the same severity as the act it disguises.
+
+Maintainers decide whether behavior falls under this section by considering what a reasonable reader would understand it to mean and the context in which it appeared. Intent to follow the letter of a rule while ignoring its purpose does not excuse a violation.
+
 ## §4 Enforcement
 Maintainers may take any of the following actions:
 
