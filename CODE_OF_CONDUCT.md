@@ -53,7 +53,7 @@ Actions intended to sabotage development—such as derailing issues, spreading m
 Maintainers may take any of the following actions:
 
 ### §4.1 Issue a warning
-A maintainer may privately or publicly warn a contributor whose behavior violates this [Code of Conduct](#L1).
+A maintainer may privately or publicly warn a contributor whose behavior violates this [Code of Conduct](#1-purpose).
 
 ### §4.2 Hide or delete harmful content
 Comments, issues, pull requests, or other content that is harmful or abusive may be hidden or deleted.
@@ -65,10 +65,10 @@ A user who continues to violate this Code of Conduct may be blocked from the rep
 Serious violations may be [reported to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
 
 ### §4.5 Remove contributions that violate this Code of Conduct
-Contributions that violate this [Code of Conduct](#L1) may be removed.
+Contributions that violate this [Code of Conduct](#1-purpose) may be removed.
 
 ### §4.6 Limits on record resets
-A [record reset under §6.5](#L114) clears warnings and temporary blocks from the count in [§6.2](#62-temporary-or-permanent-blocking), but it does not erase the history. Maintainers may take a reset into account in the following cases:
+A record reset under [§6.5](#65-record-keeping) clears warnings and temporary blocks from the count in [§6.2](#62-temporary-or-permanent-blocking), but it does not erase the history. Maintainers may take a reset into account in the following cases:
 
 * **Pattern of behavior:** repeating a violation shortly after a reset, or spacing violations so that each falls in a different year, may be treated as a repeat violation instead of a first one.
 * **Severe violations:** records of severe violations, and of permanent blocks, are never reset.
@@ -82,8 +82,15 @@ To report violations:
 ### §5.1 Report abuse on GitHub
 Use GitHub’s “Report abuse” feature on the user’s profile.
 
-### §5.2 Open a private security report
-Open a private security report via the repository’s Security tab.
+### §5.2 Report to the maintainers
+Where available, use “Report to repository admins” on the content. Otherwise, open the repository’s **Security and quality** tab, click **Report a vulnerability**, and begin the title with “Code of Conduct report”.
+
+Include:
+
+* The section number or numbers of this [Code of Conduct](#1-purpose) that you believe were violated (for example, §2.1)
+* Links or screenshots of what happened
+* The date it occurred
+* A short description of the incident
 
 Reports will be handled confidentially.
 
@@ -91,7 +98,7 @@ Reports will be handled confidentially.
 Violations may result in:
 
 ### §6.1 Content removal
-Content that violates this [Code of Conduct](#L1) may be removed.
+Content that violates this [Code of Conduct](#1-purpose) may be removed.
 
 ### §6.2 Temporary or permanent blocking
 Blocking is applied in steps, depending on severity and history:
@@ -109,8 +116,13 @@ Serious violations may be [escalated to GitHub](https://docs.github.com/en/commu
 Contributions that violate project rules may be removed.
 
 ### §6.5 Record keeping
-Maintainers keep private records of Code of Conduct violations, including the date, what happened, and the action taken. These records are used to apply the steps in §6.2 consistently, so a repeated violation moves to the next step. They are not published, and they are shared only with other maintainers, GitHub, or as required by law.
+Maintainers keep private records of Code of Conduct violations, including the date, what happened, and the action taken. These records are used to apply the steps in §6.2 consistently. They are not published, and they are shared only with other maintainers, GitHub, or as required by law.
 
-Records of warnings and temporary blocks are kept for 12 months from the date of the incident. A temporary block or warning that is older than that no longer counts toward the steps in [§6.2](#62-temporary-or-permanent-blocking). Records of permanent blocks and of severe violations are kept as long as they are needed to enforce the block.
+#### §6.5.1 Reset Period
+A violation counts toward the steps in [§6.2](#62-temporary-or-permanent-blocking) for 365 days, starting on the date the violation occurred. If maintainers learn of it later, the date it occurred still controls, not the date it was found.
 
-Severe or repeated violations may lead to permanent removal from the community.
+#### §6.5.2 Cleaning A Record
+Once 365 days pass with **NO NEW VIOLATION**, the person's earlier warnings and temporary blocks are reset and no longer count. A new violation during that period does not extend the period for the earlier ones, but it does count as the next step in [§6.2](#62-temporary-or-permanent-blocking) while they are still active.
+
+#### §6.5.3 Exceptions
+Records of severe violations and permanent blocks are never reset. See [§4.6](#46-limits-on-record-resets) for limits on resets.
