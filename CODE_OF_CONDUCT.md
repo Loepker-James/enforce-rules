@@ -107,7 +107,7 @@ Blocking is applied in steps, depending on severity and history:
 * **Second violation:** a temporary block of 30 days.
 * **Third violation:** a permanent block.
 
-Severe violations are those under [§3.1 (Harassment)](#31-harassment), [§3.2 (Threats or Intimidation)](#32-threats-or-intimidation), [§3.3 (Hate Speech)](#33-hate-speech), and [§3.4 (Leaking Exploits)](#34-leaking-exploits), and any other violation maintainers judge to cause serious harm. These may skip the steps above and result in an immediate permanent block.
+Severe violations are those under [§3.1 (Harassment)](#31-harassment), [§3.2 (Threats or Intimidation)](#32-threats-or-intimidation), [§3.3 (Hate Speech)](#33-hate-speech), [§3.4 (Leaking Exploits)](#34-leaking-exploits), and any other violation maintainers judge to cause serious harm. These may skip the steps above and result in an immediate permanent block.
 
 ### §6.3 Escalation to GitHub Trust & Safety
 Serious violations may be [escalated to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
