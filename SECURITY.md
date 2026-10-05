@@ -29,7 +29,7 @@ Include:
 - screenshots if possible,
 - a short description of what happened.
 
-License violations are sensitive and must not be reported through public issues.
+License violations are sensitive, and they **cannot** be reported through public issues.
 
 ## Response Commitment
 This project is maintained by a single developer.
