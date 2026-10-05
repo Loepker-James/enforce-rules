@@ -53,7 +53,7 @@ Actions intended to sabotage development—such as derailing issues, spreading m
 Maintainers may take any of the following actions:
 
 ### §4.1 Issue a warning
-A maintainer may privately or publicly warn a contributor whose behavior violates this Code of Conduct.
+A maintainer may privately or publicly warn a contributor whose behavior violates this [Code of Conduct](#L1).
 
 ### §4.2 Hide or delete harmful content
 Comments, issues, pull requests, or other content that is harmful or abusive may be hidden or deleted.
@@ -62,24 +62,35 @@ Comments, issues, pull requests, or other content that is harmful or abusive may
 A user who continues to violate this Code of Conduct may be blocked from the repository.
 
 ### §4.4 Report violations to GitHub Trust & Safety
-Serious violations may be reported to GitHub Trust & Safety.
+Serious violations may be [reported to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
 
 ### §4.5 Remove contributions that violate this Code of Conduct
 Contributions that violate this [Code of Conduct](#L1) may be removed.
 
 ## §5 Reporting
 To report violations:
-* Use GitHub’s “Report abuse” feature on the user’s profile.
-* Or open a private security report via the repository’s Security tab.
+
+### §5.1 Report abuse on GitHub
+Use GitHub’s “Report abuse” feature on the user’s profile.
+
+### §5.2 Open a private security report
+Open a private security report via the repository’s Security tab.
 
 Reports will be handled confidentially.
 
 ## §6 Consequences
 Violations may result in:
-* Content removal
-* Temporary or permanent blocking from the project
-* Escalation to GitHub Trust & Safety
-* Removal of contributions that violate project rules
+
+### §6.1 Content removal
+Content that violates this [Code of Conduct](#L1) may be removed.
+
+### §6.2 Temporary or permanent blocking
+A user may be temporarily or permanently blocked from the project.
+
+### §6.3 Escalation to GitHub Trust & Safety
+Serious violations may be [escalated to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
+
+### §6.4 Removal of contributions
+Contributions that violate project rules may be removed.
 
 Severe or repeated violations may lead to permanent removal from the community.
-
