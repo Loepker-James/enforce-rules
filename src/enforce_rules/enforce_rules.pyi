@@ -1,6 +1,6 @@
 from typing import TypeVar, Dict
 
-_T = _TypeVar("_T")
+_T = TypeVar("_T")
 
 def validate(value: _T, rules: Dict[str, object]) -> _T: ...
 def is_valid(value: _T, rules: Dict[str, object]) -> _T: ...
