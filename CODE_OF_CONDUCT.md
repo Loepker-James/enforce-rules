@@ -51,11 +51,21 @@ Actions intended to sabotage development—such as derailing issues, spreading m
 
 ## §4 Enforcement
 Maintainers may take any of the following actions:
-* Issue a warning.
-* Hide or delete harmful content.
-* Block the user from the repository.
-* Report violations to GitHub Trust & Safety.
-* Remove contributions that violate this [Code of Conduct](#L1).
+
+### §4.1 Issue a warning
+A maintainer may privately or publicly warn a contributor whose behavior violates this Code of Conduct.
+
+### §4.2 Hide or delete harmful content
+Comments, issues, pull requests, or other content that is harmful or abusive may be hidden or deleted.
+
+### §4.3 Block the user from the repository
+A user who continues to violate this Code of Conduct may be blocked from the repository.
+
+### §4.4 Report violations to GitHub Trust & Safety
+Serious violations may be reported to GitHub Trust & Safety.
+
+### §4.5 Remove contributions that violate this Code of Conduct
+Contributions that violate this [Code of Conduct](#L1) may be removed.
 
 ## §5 Reporting
 To report violations:
