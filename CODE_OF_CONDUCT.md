@@ -143,7 +143,7 @@ A maintainer may privately or publicly warn a contributor whose behavior violate
 Comments, issues, pull requests, or other content that is harmful or abusive may be hidden or deleted.
 
 ### §4.3 Block the user from the repository
-A user who continues to violate this [Code of Conduct](#code-of-conduct) may be blocked from the repository. For specific numbers about blocking, see [§6.2 (Temporary or Permanent Blocking)](#62-temporary-or-permanent-blocking)
+A user who continues to violate this [Code of Conduct](#code-of-conduct) may be blocked from the repository. For specific numbers about blocking, see [§6.2 (Temporary or Permanent Blocking)](#62-temporary-or-permanent-blocking).
 
 ### §4.4 Report violations to GitHub Trust & Safety
 Serious violations may be [reported to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
