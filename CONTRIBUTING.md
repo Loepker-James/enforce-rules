@@ -92,7 +92,7 @@ PER uses non-breaking semantic versioning:
 
 Major bumps do **not** imply breaking changes.
 
-You should **never** bump a version **unless** you are changing one of these files:
+You should **only** bump a version **if** you are changing one of these files:
 
 - `README.md`  
 - `LICENSE`  
@@ -161,8 +161,7 @@ This section documents internal decisions and guidelines for future maintainers.
 `_validate_keyword_name` is the proper naming pattern for keyword helper functions.
 
 ### Roadmap
-Roadmaps are maintained in Issues.  
-Category prefixes group related issues (like folders).  
+Roadmaps are maintained in Issues.
 Closed issues follow the format:
 
 ```
@@ -186,11 +185,11 @@ Example:
 
 ## Enforcement
 
-Following the guidelines in this document is required under [§2.3 of the Code of Conduct (Follow Project Rules)](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md#23-follow-project-rules).
+Following the guidelines in this document is required under [§2.3 of the Code of Conduct (Follow Project Rules)](CODE_OF_CONDUCT.md#23-follow-project-rules).
 
 ---
 
 ## P.S.
 
 I do not create releases when writing new code; I publish directly to `main`.  
-For release history, see the [CHANGELOG](https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md).
+For release history, see the [CHANGELOG](CHANGELOG.md).
