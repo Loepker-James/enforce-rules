@@ -31,7 +31,7 @@
   - [§4.2 Hide or delete harmful content](#42-hide-or-delete-harmful-content)
   - [§4.3 Block the user from the repository](#43-block-the-user-from-the-repository)
   - [§4.4 Report violations to GitHub Trust & Safety](#44-report-violations-to-github-trust--safety)
-  - [§4.5 Remove contributions that violate this Code of Conduct](#45-remove-contributions-that-violate-this-code-of-conduct)
+  - [§4.5 Remove contributions that violate this [Code of Conduct](#code-of-conduct)](#45-remove-contributions-that-violate-this-code-of-conduct)
   - [§4.6 Limits on record resets](#46-limits-on-record-resets)
 - [§5 Reporting](#5-reporting)
   - [§5.1 Report abuse on GitHub](#51-report-abuse-on-github)
@@ -58,6 +58,7 @@
   - [§7.3 Same process for everyone](#73-no-favoritism)
   - [§7.4 No misuse of enforcement](#74-no-misuse-of-enforcement)
   - [§7.5 Maintainer violations](#75-maintainer-violations)
+  - [§7.6 Accusations Against Maintainers](#76-accusations-against-maintainers)
 
 ## §1 General
 
@@ -114,7 +115,7 @@ Creating new accounts to bypass moderation is prohibited.
 Actions intended to sabotage development—such as derailing issues, spreading misinformation, or intentionally breaking workflows—are not allowed.
 
 ### §3.10 Rewording and Workarounds
-This [Code of Conduct](#code-of-conduct) applies to the meaning and effect of what is said or done, not only to the exact words used. Doing something that any section of this Code of Conduct requires, prohibits, or limits is treated the same whether it is done directly or indirectly.
+This [Code of Conduct](#code-of-conduct) applies to the meaning and effect of what is said or done, not only to the exact words used. Doing or not something that any section of this [Code of Conduct](#code-of-conduct) requires, prohibits, or limits is treated the same whether it is done directly or indirectly.
 
 #### §3.10.1 Rewording
 Synonyms, softer or indirect wording, coded language, misspellings, symbols, images, sarcasm, or "just joking" framing are treated the same as the direct version of what they say.
@@ -126,7 +127,7 @@ Dividing an act across several messages, posts, or accounts is treated as a sing
 Getting another person to act on someone's behalf, or encouraging or coordinating others to do something prohibited, is treated as doing it directly.
 
 #### §3.10.4 Tampering with Evidence
-Altering, deleting, or fabricating content or evidence in a report, an appeal, or the project history is treated as a violation of this Code of Conduct.
+Altering, deleting, or fabricating content or evidence in a report, an appeal, or the project history is treated as a violation of this [Code of Conduct](#code-of-conduct).
 
 #### §3.10.5 Interpretation
 Maintainers decide whether behavior falls under [§3.10 Rewording and Workarounds](#310-rewording-and-workarounds) by considering what a reasonable reader would understand it to mean and the context in which it appeared. Following the letter of a rule while ignoring its purpose does not excuse a violation. A violation under [§3.10 Rewording and Workarounds](#310-rewording-and-workarounds) is treated as the same severity as the act it disguises.
@@ -200,7 +201,7 @@ Serious violations may be [escalated to GitHub](https://docs.github.com/en/commu
 Contributions that violate project rules may be removed.
 
 ### §6.5 Record keeping
-Maintainers keep private records of Code of Conduct violations, including the date, what happened, and the action taken. These records are used to apply the steps in [§6.2 (Temporary or Permanent Blocking)](#62-temporary-or-permanent-blocking) consistently. They are not published, and they are shared only with other maintainers, GitHub, or as required by law.
+Maintainers keep private records of [Code of Conduct](#code-of-conduct) violations, including the date, what happened, and the action taken. These records are used to apply the steps in [§6.2 (Temporary or Permanent Blocking)](#62-temporary-or-permanent-blocking) consistently. They are not published, and they are shared only with other maintainers, GitHub, or as required by law.
 
 #### §6.5.1 Reset Period
 The 365 days are counted from the date the most recent violation occurred. If maintainers learn of it later, the date it occurred still controls, not the date it was found.
@@ -221,7 +222,7 @@ Appeals must be made within 14 days of the action, by replying where the action 
 This project has one maintainer, so appeals are reviewed by the same person who made the decision. To reduce bias, the maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final.
 
 #### §6.6.3 Effect on records
-An overturned action is removed from the record kept under [§6.5 (Record Keeping)](#65-record-keeping) and does not count toward the steps in [§6.2 (Temporary or Permanent Block)](#62-temporary-or-permanent-blocking). Filing an appeal does not pause the action. One appeal is allowed per action, and repeated or abusive appeals may be treated as a violation of [§3.9 (Disruption)](#39-disruption).
+An overturned action is removed from the record kept under [§6.5 (Record Keeping)](#65-record-keeping) and does not count toward the steps in [§6.2 (Temporary or Permanent Block)](#62-temporary-or-permanent-blocking). Filing an appeal does not pause the action. **ONE** appeal is allowed per action, and repeated or abusive appeals may be treated as a violation of [§3.9 (Disruption)](#39-disruption).
 
 #### §6.6.4 Blocked users
 A blocked user cannot contact the project through GitHub. A person who has been temporarily blocked may appeal after the block ends. Permanent blocks cannot be appealed through the repository.
@@ -230,10 +231,10 @@ A blocked user cannot contact the project through GitHub. A person who has been 
 Because the maintainer is the only reviewer, concerns about the maintainer's own conduct can be reported to GitHub under [§5.1 (Report Abuse on Github)](#51-report-abuse-on-github). GitHub applies its own rules to such reports, not this [Code of Conduct](#code-of-conduct).
 
 #### §6.6.6 Abusive appeals
-An appeal that is denied is not a violation. An appeal may be treated as a violation of [§3.9 (Disruption)](#39-disruption), [§3.7 (Impersonation)](#37-impersonation), or [§3.8 (Ban Evasion)](#38-ban-evasion) only if it includes insults, threats, or harassment, repeats an argument after a final decision, is filed through an account other than the one that received the action, or relies on fabricated or altered evidence. The maintainer may close such an appeal without further response.
+An appeal that is denied is not automatically a violation. An appeal may be treated as a violation of [§3.9 (Disruption)](#39-disruption), [§3.7 (Impersonation)](#37-impersonation), or [§3.8 (Ban Evasion)](#38-ban-evasion) only if it includes insults, threats, or harassment, repeats an argument after a final decision, is filed through an account other than the one that received the action, or relies on fabricated or altered evidence. The maintainer may close such an appeal without further response.
 
 ## §7 Maintainer Accountability
-This Code of Conduct applies to maintainers in the same way it applies to everyone else. Maintainers hold themselves to the standards in [§2 (Expected Behavior)](#2-expected-behavior) and [§3 (Unacceptable Behavior)](#3-unacceptable-behavior) when they review contributions, answer issues, and enforce this document.
+This [Code of Conduct](#code-of-conduct) applies to maintainers in the same way it applies to everyone else. Maintainers hold themselves to the standards in [§2 (Expected Behavior)](#2-expected-behavior) and [§3 (Unacceptable Behavior)](#3-unacceptable-behavior) when they review contributions, answer issues, and enforce this document.
 
 ### §7.1 Pause before enforcing
 When a maintainer is personally involved in a dispute, for example as the target of an insult, they wait at least 24 hours before taking any action under [§4 (Enforcement)](#4-enforcement) other than hiding content that is an immediate threat or an exposure of private information. In those cases, a warning under [§4.1 (Issue A Warning)](#41-issue-a-warning) is preferred over a block.
@@ -251,7 +252,7 @@ Enforcement tools are not used to end technical disagreements, silence polite cr
 If a maintainer violates this [Code of Conduct](#code-of-conduct), they correct it by editing or removing the content, and acknowledging the problem to the person affected. Violations that cannot be settled this way can be reported to GitHub under [§5.1 (Report abuse on GitHub](#51-report-abuse-on-github), as described in [§6.6.5 (Reports About the Maintainer)](#665-reports-about-the-maintainer).
 
 ### §7.6 Accusations Against Maintainers
-A claim that a maintainer violated this [Code of Conduct](#code-of-conduct) and/or failed to follow [§7 (Maintainer Accountability](#7-maintainer-accountability) should include:
+A claim that a maintainer violated this [Code of Conduct](#code-of-conduct) and/or failed to follow [§7 (Maintainer Accountability)](#7-maintainer-accountability) should include:
 
 * The section(s) said to be violated
 * Links or screenshots of the content involved
