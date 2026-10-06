@@ -1,5 +1,64 @@
 # Code of Conduct
 
+## Contents
+- [§1 General](#1-general)
+  - [§1.1 Purpose](#11-purpose)
+  - [§1.2 Scope](#12-scope)
+- [§2 Expected Behavior](#2-expected-behavior)
+  - [§2.1 Respect](#21-respect)
+  - [§2.2 Constructive Feedback](#22-constructive-feedback)
+  - [§2.3 Follow Project Rules](#23-follow-project-rules)
+  - [§2.4 Stay On Topic](#24-stay-on-topic)
+  - [§2.5 Inclusive Language](#25-inclusive-language)
+- [§3 Unacceptable Behavior](#3-unacceptable-behavior)
+  - [§3.1 Harassment](#31-harassment)
+  - [§3.2 Threats or Intimidation](#32-threats-or-intimidation)
+  - [§3.3 Hate Speech](#33-hate-speech)
+  - [§3.4 Leaking Exploits](#34-leaking-exploits)
+  - [§3.5 Spam](#35-spam)
+  - [§3.6 Trolling](#36-trolling)
+  - [§3.7 Impersonation](#37-impersonation)
+  - [§3.8 Ban Evasion](#38-ban-evasion)
+  - [§3.9 Disruption](#39-disruption)
+  - [§3.10 Rewording and Workarounds](#310-rewording-and-workarounds)
+    - [§3.10.1 Rewording](#3101-rewording)
+    - [§3.10.2 Splitting](#3102-splitting)
+    - [§3.10.3 Acting Through Others](#3103-acting-through-others)
+    - [§3.10.4 Tampering with Evidence](#3104-tampering-with-evidence)
+    - [§3.10.5 Interpretation](#3105-interpretation)
+- [§4 Enforcement](#4-enforcement)
+  - [§4.1 Issue a warning](#41-issue-a-warning)
+  - [§4.2 Hide or delete harmful content](#42-hide-or-delete-harmful-content)
+  - [§4.3 Block the user from the repository](#43-block-the-user-from-the-repository)
+  - [§4.4 Report violations to GitHub Trust & Safety](#44-report-violations-to-github-trust--safety)
+  - [§4.5 Remove contributions that violate this Code of Conduct](#45-remove-contributions-that-violate-this-code-of-conduct)
+  - [§4.6 Limits on record resets](#46-limits-on-record-resets)
+- [§5 Reporting](#5-reporting)
+  - [§5.1 Report abuse on GitHub](#51-report-abuse-on-github)
+  - [§5.2 Report to the maintainers](#52-report-to-the-maintainers)
+- [§6 Consequences](#6-consequences)
+  - [§6.1 Content removal](#61-content-removal)
+  - [§6.2 Temporary or permanent blocking](#62-temporary-or-permanent-blocking)
+  - [§6.3 Escalation to GitHub Trust & Safety](#63-escalation-to-github-trust--safety)
+  - [§6.4 Removal of contributions](#64-removal-of-contributions)
+  - [§6.5 Record keeping](#65-record-keeping)
+    - [§6.5.1 Reset Period](#651-reset-period)
+    - [§6.5.2 Cleaning A Record](#652-cleaning-a-record)
+    - [§6.5.3 Exceptions](#653-exceptions)
+  - [§6.6 Appeals](#66-appeals)
+    - [§6.6.1 How to appeal](#661-how-to-appeal)
+    - [§6.6.2 Review](#662-review)
+    - [§6.6.3 Effect on records](#663-effect-on-records)
+    - [§6.6.4 Blocked users](#664-blocked-users)
+    - [§6.6.5 Reports about the maintainer](#665-reports-about-the-maintainer)
+    - [§6.6.6 Abusive appeals](#666-abusive-appeals)
+- [§7 Maintainer Accountability](#7-maintainer-accountability)
+  - [§7.1 Pause before enforcing](#71-pause-before-enforcing)
+  - [§7.2 Cite the rule](#72-cite-the-rule)
+  - [§7.3 Same process for everyone](#73-no-favoritism)
+  - [§7.4 No misuse of enforcement](#74-no-misuse-of-enforcement)
+  - [§7.5 Maintainer violations](#75-maintainer-violations)
+
 ## §1 General
 
 ### §1.1 Purpose
@@ -172,3 +231,21 @@ Because the maintainer is the only reviewer, concerns about the maintainer's own
 
 #### §6.6.6 Abusive appeals
 An appeal that is denied is not a violation. An appeal may be treated as a violation of [§3.9](#39-disruption), [§3.7](#37-impersonation), or [§3.8](#38-ban-evasion) only if it includes insults, threats, or harassment, repeats an argument after a final decision, is filed through an account other than the one that received the action, or relies on fabricated or altered evidence. The maintainer may close such an appeal without further response.
+
+## §7 Maintainer Accountability
+This Code of Conduct applies to maintainers in the same way it applies to everyone else. Maintainers hold themselves to the standards in [§2](#2-expected-behavior) and [§3](#3-unacceptable-behavior) when they review contributions, answer issues, and enforce this document.
+
+### §7.1 Pause before enforcing
+When a maintainer is personally involved in a dispute, for example as the target of an insult, they wait at least 24 hours before taking any action under [§4](#4-enforcement) other than hiding content that is an immediate threat or an exposure of private information. In those cases, a warning under [§4.1](#41-issue-a-warning) is preferred over a block.
+
+### §7.2 Cite the rule
+Every enforcement action names the section or sections that were violated and links to the content involved. Maintainers do not act on a general impression of someone's attitude.
+
+### §7.3 No Favoritism
+Maintainers apply the steps in [§6.2](#62-temporary-or-permanent-blocking), the record rules in [§6.5](#65-record-keeping), and the appeal rules in [§6.6](#66-appeals) in the same way regardless of who is involved, including friends, frequent contributors, and critics.
+
+### §7.4 No misuse of enforcement
+Enforcement tools are not used to end technical disagreements, silence polite criticism of the project or its maintainer, or settle personal conflicts. Declining a contribution on technical grounds is a review decision and is not an action under this [Code of Conduct](#code-of-conduct).
+
+### §7.5 Maintainer violations
+If a maintainer violates this [Code of Conduct](#code-of-conduct), they correct it by editing or removing the content, and acknowledging the problem to the person affected. Violations that cannot be settled this way can be reported to GitHub under [§5.1](#51-report-abuse-on-github), as described in [§6.6.5](#665-reports-about-the-maintainer).
