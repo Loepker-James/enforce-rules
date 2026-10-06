@@ -31,7 +31,7 @@
   - [§4.2 Hide or delete harmful content](#42-hide-or-delete-harmful-content)
   - [§4.3 Block the user from the repository](#43-block-the-user-from-the-repository)
   - [§4.4 Report violations to GitHub Trust & Safety](#44-report-violations-to-github-trust--safety)
-  - [§4.5 Remove contributions that violate this [Code of Conduct](#code-of-conduct)](#45-remove-contributions-that-violate-this-code-of-conduct)
+  - [§4.5 Remove contributions that violate this Code of Conduct](#45-remove-contributions-that-violate-this-code-of-conduct)
   - [§4.6 Limits on record resets](#46-limits-on-record-resets)
 - [§5 Reporting](#5-reporting)
   - [§5.1 Report abuse on GitHub](#51-report-abuse-on-github)
