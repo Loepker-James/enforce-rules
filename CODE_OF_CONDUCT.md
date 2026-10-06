@@ -120,7 +120,7 @@ This [Code of Conduct](#code-of-conduct) applies to the meaning and effect of wh
 Synonyms, softer or indirect wording, coded language, misspellings, symbols, images, sarcasm, or "just joking" framing are treated the same as the direct version of what they say.
 
 #### §3.10.2 Splitting
-Dividing an act across several messages, posts, or accounts is treated as one act. Maintainers consider the messages together, including the order they were posted and any pattern between them, even if no single message would violate this Code of Conduct on its own.
+Dividing an act across several messages, posts, or accounts is treated as a single act. Maintainers consider the messages together, including the order they were posted and any pattern(s) between them, even if no single message would violate this [Code of Conduct](#code-of-conduct) on its own.
 
 #### §3.10.3 Acting Through Others
 Getting another person to act on someone's behalf, or encouraging or coordinating others to do something prohibited, is treated as doing it directly.
@@ -134,7 +134,7 @@ Maintainers decide whether behavior falls under [§3.10 Rewording and Workaround
 Maintainers decide whether behavior falls under this section by considering what a reasonable reader would understand it to mean and the context in which it appeared. Intent to follow the letter of a rule while ignoring its purpose does not excuse a violation.
 
 ## §4 Enforcement
-Maintainers may take any of the following actions:
+Maintainers may take any of the following actions in §4.1 to §4.5:
 
 ### §4.1 Issue a warning
 A maintainer may privately or publicly warn a contributor whose behavior violates this [Code of Conduct](#code-of-conduct).
@@ -143,7 +143,7 @@ A maintainer may privately or publicly warn a contributor whose behavior violate
 Comments, issues, pull requests, or other content that is harmful or abusive may be hidden or deleted.
 
 ### §4.3 Block the user from the repository
-A user who continues to violate this Code of Conduct may be blocked from the repository.
+A user who continues to violate this [Code of Conduct](#code-of-conduct) may be blocked from the repository. For specific numbers about blocking, see [§6.2 (Temporary or Permanent Blocking)](#62-temporary-or-permanent-blocking)
 
 ### §4.4 Report violations to GitHub Trust & Safety
 Serious violations may be [reported to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
