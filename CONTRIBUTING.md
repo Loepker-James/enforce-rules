@@ -15,7 +15,7 @@ New keywords, improvements, tests, and documentation updates are encouraged.
 
 ## Code of Conduct
 
-By participating in this project, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md). To report unacceptable behavior, see [§5 in the Code of Conduct](CODE_OF_CONDUCT.md#5-reporting).
+By participating in this project, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md). To report unacceptable behavior, see the [reporting section](CODE_OF_CONDUCT.md#5-reporting).
 
 ---
 
