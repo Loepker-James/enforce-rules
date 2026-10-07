@@ -7,7 +7,7 @@ MAJOR: 3
 
 MINOR: 2
 
-PATCH: 27
+PATCH: 28
 
 If you need to catch up, you can see the full version history in the [CHANGELOG](CHANGELOG.md).
 
