@@ -81,7 +81,7 @@ If you are upgrading, read the migration guide fully.
 ## 1.1.4 — Created on 2026‑08‑30
 
 ### Documentation
-- Improved newline visibility in README
+- Improved newline visibility in [README](README.md)
 
 ---
 
