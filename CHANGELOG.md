@@ -357,4 +357,11 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ### Added
 - [MANIFEST.in](MANIFEST.in)
 - [requirements.txt](requirements.txt) in tarball
-- [CONTRIBUTING.md](CONTRIBUTING.md) in tarball
+- [CHANGELOG](#changelog) in tarball
+
+## 3.2.27 — Created on 2026‑10-07
+### Removed
+- [CHANGELOG](#changelog) in tarball
+
+### Added
+- Links to [CHANGELOG](#changelog) in [pyproject.toml](pyproject.toml)
