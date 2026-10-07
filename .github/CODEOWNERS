@@ -9,7 +9,10 @@
 /README.md             @Loepker-James
 /SECURITY.md           @Loepker-James
 /.gitignore            @Loepker-James
+
+# Protect build files
 /pyproject.toml        @Loepker-James
+/MANIFEST.in           @Loepker-James
 
 # Protect code (main project and test)
 /src/enforce_rules/*.py    @Loepker-James
