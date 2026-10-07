@@ -71,7 +71,9 @@ This project aims to maintain a respectful, safe, and productive environment for
 Every section and subsection of this [Code of Conduct](#code-of-conduct) is equally binding, regardless of how it is formatted or numbered. Headings are for navigation only and do not limit or change the text beneath them.
 
 ### §1.3 Changes
-Maintainers may change this Code of Conduct. A change takes effect on the date it is published and applies only to behavior that occurs on or after that date. Behavior before that date is judged under the version that was in effect at the time. The version history is available in the repository's commit history.
+Maintainers may change this Code of Conduct. Every section that existed on the day the first contributor joined the project (<date>) has been in effect since that day. A section added after that day shows the date it was added, in the form *(Added YYYY-MM-DD)*, and a section whose meaning is changed shows *(Amended YYYY-MM-DD: a one-line summary of the change)*.
+
+A new or amended section takes effect on the date shown and applies only to behavior on or after that date. Earlier behavior is judged under the rules that were in effect when it happened.
 
 ## §2 Expected Behavior
 
