@@ -173,7 +173,7 @@ A record reset under [§6.5 (Record Keeping)](#65-record-keeping) clears warning
 
 * **Pattern of behavior:** repeating a violation shortly after a reset, or spacing violations so that each falls in a different year, may be treated as a repeat violation instead of a first one.
 * **Severe violations:** records of severe violations, and of permanent blocks, are never reset.
-* **Evasion:** a reset does not apply to a person who evaded enforcement under [§3.11](#311-evading-enforcement), such as by using another account during a block.
+* **Evasion:** a reset does not apply to a person who evaded enforcement under [§3.11 (Evading Enforcement)](#311-evading-enforcement), such as by using another account during a block.
 
 Maintainers decide whether a pattern exists and may apply any action in §4.1 to §4.5.
 
