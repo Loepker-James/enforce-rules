@@ -127,7 +127,7 @@ If you are upgrading, read the migration guide fully.
 ## 3.0.0 — Created on 2026‑08‑30
 
 ### Added
-- New chess‑themed keywords (see Chess Issue #7)
+- New chess‑themed keywords (see [Chess Issue #7](https://github.com/Loepker-James/enforce-rules/issues/7))
 
 ### Documentation
 - Improved type hints
