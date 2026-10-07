@@ -352,3 +352,9 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ## 3.2.25 — Created on 2026‑10-04
 ### Fixed
 - added underscores in TypeVars in .pyi files
+
+## 3.2.26 — Created on 2026‑10-06
+### Added
+- [MANIFEST.in](MANIFEST.in)
+- [requirements.txt](requirements.txt) in tarball
+- [CONTRIBUTING.md](CONTRIBUTING.md) in tarball
