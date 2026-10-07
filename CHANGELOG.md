@@ -365,3 +365,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 
 ### Added
 - Links to [CHANGELOG](#changelog) in [pyproject.toml](pyproject.toml)
+
+## 3.2.27 — Created on 2026‑10-07
+### Added
+- Added classifier in [pyproject.toml](pyproject.toml)
