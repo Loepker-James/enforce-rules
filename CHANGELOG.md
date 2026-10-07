@@ -34,7 +34,7 @@ If you are upgrading, read the migration guide fully.
 ## 1.0.2 — Created on 2026‑08‑29
 
 ### Documentation
-- Improved newline visibility for [README on PyPI](pypi.org/project/enforce-rules)
+- Improved newline visibility for [README on PyPI](https://pypi.org/project/enforce-rules)
 
 ---
 
