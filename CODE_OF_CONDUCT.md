@@ -18,7 +18,7 @@
   - [§3.5 Spam](#35-spam)
   - [§3.6 Trolling](#36-trolling)
   - [§3.7 Impersonation](#37-impersonation)
-  - [§3.8 Ban Evasion](#38-ban-evasion)
+  - [§3.8 Ban Evasion](#38-sockpuppeting)
   - [§3.9 Disruption](#39-disruption)
   - [§3.10 Rewording and Workarounds](#310-rewording-and-workarounds)
     - [§3.10.1 Rewording](#3101-rewording)
@@ -109,14 +109,14 @@ Trolling includes baiting, antagonizing, or intentionally causing conflict.
 ### §3.7 Impersonation
 Pretending to be another contributor / maintainer is prohibited.
 
-### §3.8 Ban Evasion
+### §3.8 Sockpuppeting
 Creating new accounts to bypass moderation is prohibited.
 
 ### §3.9 Disruption
 Actions intended to sabotage development—such as derailing issues, spreading misinformation, or intentionally breaking workflows—are not allowed.
 
 ### §3.10 Rewording and Workarounds
-This [Code of Conduct](#code-of-conduct) applies to the meaning and effect of what is said or done, not only to the exact words used. Doing or not something that any section of this [Code of Conduct](#code-of-conduct) requires, prohibits, or limits is treated the same whether it is done directly or indirectly.
+This [Code of Conduct](#code-of-conduct) applies to the meaning and effect of what is said or done, not only to the exact words used. Doing or not doing that any section of this [Code of Conduct](#code-of-conduct) requires, prohibits, or limits is treated the same whether it is done directly or indirectly.
 
 #### §3.10.1 Rewording
 Synonyms, softer or indirect wording, coded language, misspellings, symbols, images, sarcasm, or "just joking" framing are treated the same as the direct version of what they say.
@@ -136,13 +136,13 @@ Maintainers decide whether behavior falls under [§3.10 Rewording and Workaround
 Maintainers decide whether behavior falls under this section by considering what a reasonable reader would understand it to mean and the context in which it appeared. Intent to follow the letter of a rule while ignoring its purpose does not excuse a violation.
 
 ### §3.11 Evading Enforcement
-Evading or trying to evade an action taken under this Code of Conduct is prohibited. This includes:
+Evading or trying to evade an action taken under this [Code of Conduct](#code-of-conduct) is prohibited. This includes:
 
-* Returning through another account after a block, or continuing behavior that was warned about (see also [§3.8](#38-ban-evasion))
+* Returning through another account after a block, or continuing behavior that was warned about (see also [§3.8 (Sockpuppeting)](#38-sockpuppeting))
 * Repeating removed content, or continuing a prohibited behavior in another place, such as a new issue, a discussion, or a fork
 * Timing or spacing violations to take advantage of a record reset
 
-Evasion is a violation in itself, and maintainers may treat it as a repeat violation. A record reset does not apply to a person who evaded enforcement. See [§4.6](#46-limits-on-record-resets) for limits on resets.
+Evasion is a violation in itself, and maintainers may treat it as a repeat violation. A record reset does not apply to a person who evaded enforcement. See [§4.6 (Limits on Record Resets)](#46-limits-on-record-resets) for limits on resets.
 
 ## §4 Enforcement
 Maintainers may take any of the following actions in §4.1 to §4.5:
@@ -226,7 +226,7 @@ Records of severe violations and permanent blocks are never reset. See [§4.6 (L
 A person who receives a warning, content removal, or block under this [Code of Conduct](#code-of-conduct) may ask the maintainer to reconsider it.
 
 #### §6.6.1 How to appeal
-Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in [§5.2 (Report to The Maintainers)](#52-report-to-the-maintainers). An appeal should name the section or sections involved and explain why the action was mistaken or too severe.
+Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in [§5.2 (Report to The Maintainers)](#52-report-to-the-maintainers). An appeal should name the section(s) involved and explain why the action was mistaken or too severe.
 
 #### §6.6.2 Review
 This project has one maintainer, so appeals are reviewed by the same person who made the decision. To reduce bias, the maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final.
@@ -241,7 +241,7 @@ A blocked user cannot contact the project through GitHub. A person who has been 
 Because the maintainer is the only reviewer, concerns about the maintainer's own conduct can be reported to GitHub under [§5.1 (Report Abuse on Github)](#51-report-abuse-on-github). GitHub applies its own rules to such reports, not this [Code of Conduct](#code-of-conduct).
 
 #### §6.6.6 Abusive appeals
-An appeal that is denied is not automatically a violation. An appeal may be treated as a violation of [§3.9 (Disruption)](#39-disruption), [§3.7 (Impersonation)](#37-impersonation), or [§3.8 (Ban Evasion)](#38-ban-evasion) only if it includes insults, threats, or harassment, repeats an argument after a final decision, is filed through an account other than the one that received the action, or relies on fabricated or altered evidence. The maintainer may close such an appeal without further response.
+An appeal that is denied is not automatically a violation. An appeal may be treated as a violation of [§3.9 (Disruption)](#39-disruption), [§3.7 (Impersonation)](#37-impersonation), or [§3.8 (Sockpuppeting)](#38-sockpuppeting) only if it includes insults, threats, or harassment, repeats an argument after a final decision, is filed through an account other than the one that received the action, or relies on fabricated or altered evidence. The maintainer may close such an appeal without further response.
 
 ## §7 Maintainer Accountability
 This [Code of Conduct](#code-of-conduct) applies to maintainers in the same way it applies to everyone else. Maintainers hold themselves to the standards in [§2 (Expected Behavior)](#2-expected-behavior) and [§3 (Unacceptable Behavior)](#3-unacceptable-behavior) when they review contributions, answer issues, and enforce this document.
