@@ -26,6 +26,7 @@
     - [§3.10.3 Acting Through Others](#3103-acting-through-others)
     - [§3.10.4 Tampering with Evidence](#3104-tampering-with-evidence)
     - [§3.10.5 Interpretation](#3105-interpretation)
+  - [§3.11 Evading Enforcement](#311-evading-enforcement)
 - [§4 Enforcement](#4-enforcement)
   - [§4.1 Issue a warning](#41-issue-a-warning)
   - [§4.2 Hide or delete harmful content](#42-hide-or-delete-harmful-content)
@@ -134,6 +135,15 @@ Maintainers decide whether behavior falls under [§3.10 Rewording and Workaround
 
 Maintainers decide whether behavior falls under this section by considering what a reasonable reader would understand it to mean and the context in which it appeared. Intent to follow the letter of a rule while ignoring its purpose does not excuse a violation.
 
+### §3.11 Evading Enforcement
+Evading or trying to evade an action taken under this Code of Conduct is prohibited. This includes:
+
+* Returning through another account after a block, or continuing behavior that was warned about (see also [§3.8](#38-ban-evasion))
+* Repeating removed content, or continuing a prohibited behavior in another place, such as a new issue, a discussion, or a fork
+* Timing or spacing violations to take advantage of a record reset
+
+Evasion is a violation in itself, and maintainers may treat it as a repeat violation. A record reset does not apply to a person who evaded enforcement. See [§4.6](#46-limits-on-record-resets) for limits on resets.
+
 ## §4 Enforcement
 Maintainers may take any of the following actions in §4.1 to §4.5:
 
@@ -157,7 +167,7 @@ A record reset under [§6.5 (Record Keeping)](#65-record-keeping) clears warning
 
 * **Pattern of behavior:** repeating a violation shortly after a reset, or spacing violations so that each falls in a different year, may be treated as a repeat violation instead of a first one.
 * **Severe violations:** records of severe violations, and of permanent blocks, are never reset.
-* **Evasion:** a reset does not apply to a person who evaded enforcement, such as by using another account during a block.
+* **Evasion:** a reset does not apply to a person who evaded enforcement under [§3.11](#311-evading-enforcement), such as by using another account during a block.
 
 Maintainers decide whether a pattern exists and may apply any action in §4.1 to §4.5.
 
