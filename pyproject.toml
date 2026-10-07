@@ -1,6 +1,6 @@
-[project]
+[[project]
 name = "enforce-rules"
-version = "3.2.26"
+version = "3.2.28"
 description = "Runtime rule validation for Python using dictionary-based constraints."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -17,6 +17,7 @@ authors = [
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
+    "License :: OSI Approved",
     "License :: OSI Approved :: BSD License",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
@@ -43,5 +44,6 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.package-data]
 enforce_rules = ["py.typed", "*.pyi"]
+
 
 
