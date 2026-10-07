@@ -4,6 +4,7 @@
 - [§1 General](#1-general)
   - [§1.1 Purpose](#11-purpose)
   - [§1.2 Scope](#12-scope)
+  - [§1.3 Changes](#13-changes)
 - [§2 Expected Behavior](#2-expected-behavior)
   - [§2.1 Respect](#21-respect)
   - [§2.2 Constructive Feedback](#22-constructive-feedback)
@@ -69,6 +70,9 @@ This project aims to maintain a respectful, safe, and productive environment for
 ### §1.2 Scope
 Every section and subsection of this [Code of Conduct](#code-of-conduct) is equally binding, regardless of how it is formatted or numbered. Headings are for navigation only and do not limit or change the text beneath them.
 
+### §1.3 Changes
+Maintainers may change this Code of Conduct. A change takes effect on the date it is published and applies only to behavior that occurs on or after that date. Behavior before that date is judged under the version that was in effect at the time. The version history is available in the repository's commit history.
+
 ## §2 Expected Behavior
 
 ### §2.1 Respect
@@ -116,7 +120,7 @@ Creating new accounts to bypass moderation is prohibited.
 Actions intended to sabotage development—such as derailing issues, spreading misinformation, or intentionally breaking workflows—are not allowed.
 
 ### §3.10 Rewording and Workarounds
-This [Code of Conduct](#code-of-conduct) applies to the meaning and effect of what is said or done, not only to the exact words used. Doing or not doing that any section of this [Code of Conduct](#code-of-conduct) requires, prohibits, or limits is treated the same whether it is done directly or indirectly.
+This [Code of Conduct](#code-of-conduct) applies to the meaning and effect of what is said or done, not only to the exact words used. Doing or not doing anything that any section of this [Code of Conduct](#code-of-conduct) requires, prohibits, or limits is treated the same whether it is done directly or indirectly.
 
 #### §3.10.1 Rewording
 Synonyms, softer or indirect wording, coded language, misspellings, symbols, images, sarcasm, or "just joking" framing are treated the same as the direct version of what they say.
