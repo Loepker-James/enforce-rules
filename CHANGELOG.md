@@ -380,3 +380,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 
 ### Added
 - [\_\_init\_\_.pyi](src/enforce_rules/__init__.pyi)
+
+## 3.3.1  — Created on 2026‑10-08
+### Changed
+- Added precision to [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi)
