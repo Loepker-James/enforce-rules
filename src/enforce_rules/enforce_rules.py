@@ -156,7 +156,7 @@ def _validate_is_password(value: str, rule: bool) -> None:
         return
 
     if len(value) < 8:
-        raise ValueError("Password must be at least 8 characters.")
+        raise ValueError("Password must be at least eight characters.")
 
     if not isinstance(value, str):
         raise ValueError("Password must be a string.")
