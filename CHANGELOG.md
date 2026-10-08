@@ -382,5 +382,10 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 - [\_\_init\_\_.pyi](src/enforce_rules/__init__.pyi)
 
 ## 3.3.1  — Created on 2026‑10-08
+**Note: This version is broken.**
 ### Changed
 - Added precision to [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi)
+  
+## 3.3.2  — Created on 2026‑10-08
+### Fixed
+- [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi)
