@@ -144,7 +144,7 @@ Maintainers decide whether behavior falls under this section by considering what
 ### §3.11 Evading Enforcement
 Evading or trying to evade an action taken under this [Code of Conduct](#code-of-conduct) is prohibited. This includes:
 
-* Returning through another account after a block, or continuing behavior that was warned about (see also [§3.8 (Sockpuppeting)](#38-sockpuppeting))
+* Returning through another account after a block, or continuing behavior that was warned about (This means a violation of [§3.8 (Sockpuppeting)](#38-sockpuppeting) is a violation of [§3.11 (Evading Enforcement)](#311-evading-enforcement))
 * Repeating removed content, or continuing a prohibited behavior in another place, such as a new issue, a discussion, or a fork
 * Timing or spacing violations to take advantage of a record reset
 
