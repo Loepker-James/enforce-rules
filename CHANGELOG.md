@@ -373,3 +373,10 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ## 3.2.29 — Created on 2026‑10-07
 ### Added
 - Added classifier in [pyproject.toml](pyproject.toml)
+
+## 3.3.0 — Created on 2026‑10-07
+### Changed
+- [\_\_init\_\_.py](src/enforce_rules/__init__.py)
+
+### Added
+- [\_\_init\_\_.pyi](src/enforce_rules/__init__.pyi)
