@@ -1,4 +1,4 @@
-from typing import TypeVar, Dict, TypedDict
+from typing import TypeVar, Dict, TypedDict, Callable, Literal
 
 _T = TypeVar("_T")
 
@@ -6,8 +6,8 @@ class _ValidateDict(TypedDict, total=False):
     length: int
     min_length: int
     max_length: int
-    min: Number
-    max: Number
+    min: int | float
+    max: int | float
     allowed_values: Iterable
     invariant: bool
     all_same: bool
@@ -17,10 +17,10 @@ class _ValidateDict(TypedDict, total=False):
     sorted: bool
     increasing: bool
     decreasing: bool
-    sum_min: Number
-    sum_max: Number
-    element_min: Number
-    element_max: Number
+    sum_min: int | float
+    sum_max: int | float
+    element_min: int | float
+    element_max: int | float
     regex: str
     regex_flags: object
     must_be_true: Callable[[T], bool]
