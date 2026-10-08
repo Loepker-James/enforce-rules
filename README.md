@@ -5,9 +5,9 @@ Version #
 ----------------
 MAJOR: 3
 
-MINOR: 2
+MINOR: 3
 
-PATCH: 29
+PATCH: 0
 
 If you need to catch up, you can see the full version history in the [CHANGELOG](CHANGELOG.md).
 
