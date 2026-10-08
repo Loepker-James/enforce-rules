@@ -19,7 +19,7 @@
   - [§3.5 Spam](#35-spam)
   - [§3.6 Trolling](#36-trolling)
   - [§3.7 Impersonation](#37-impersonation)
-  - [§3.8 Ban Evasion](#38-sockpuppeting)
+  - [§3.8 Sockpuppeting](#38-sockpuppeting)
   - [§3.9 Disruption](#39-disruption)
   - [§3.10 Rewording and Workarounds](#310-rewording-and-workarounds)
     - [§3.10.1 Rewording](#3101-rewording)
