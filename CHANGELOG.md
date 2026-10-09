@@ -388,8 +388,12 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ### Fixed
 - [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi)
 
-## 3.3.3  — Created on 2026‑10-09f
+## 3.3.3  — Created on 2026‑10-09
 ### Added
 - classifier in [pyproject.toml](pyproject.toml)
 ### Changed
-- order of links in [pyproject.toml](pyproject.toml)
+- order of [links in pyproject.toml](pyproject.toml#L37)
+
+## 3.3.4  — Created on 2026‑10-09
+### Added
+- [links in pyproject.toml](pyproject.toml#L37)
