@@ -13,10 +13,11 @@
 /MANIFEST.in               @Loepker-James
 
 # Protect all code
-*.py                       @Loepker-James
+*.py                   @Loepker-James
 
 # Freeze CodeQL rules
-/codeql-custom-queries/**  @Loepker-James
+*.ql                   @Loepker-James
+qlpack.yml             @Loepker-James
 
 # Freeze GitHub configuration files
 /.github/**                @Loepker-James
