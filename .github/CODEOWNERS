@@ -14,10 +14,8 @@
 /pyproject.toml        @Loepker-James
 /MANIFEST.in           @Loepker-James
 
-# Protect code (main project and test)
-/src/enforce_rules/*.py    @Loepker-James
-/tests/**                  @Loepker-James
-
+# Protect all code
+*.py                      @Loepker-James
 
 # Freeze CodeQL rules
 /codeql-custom-queries/**  @Loepker-James
@@ -27,4 +25,4 @@
 
 # Protect typing metadata
 /src/enforce_rules/py.typed            @Loepker-James
-/src/enforce_rules/enforce_rules.pyi   @Loepker-James
+/src/enforce_rules/*.pyi               @Loepker-James
