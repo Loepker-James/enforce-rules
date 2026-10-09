@@ -4,7 +4,7 @@ Thank you for using this project. This document explains where to get help and w
 
 ## Asking Questions
 This project does not use GitHub Discussions.  
-For general questions, please follow the guidelines for opening questions in [FAQ.md](/docs/FAQ.md)
+For general questions, please follow the guidelines for [opening questions in FAQ.md](/docs/FAQ.md#how-do-i-ask-a-question)
 
 ## Reporting Bugs
 If you believe you have found a bug, please open an Issue and include:
