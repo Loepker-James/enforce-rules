@@ -178,7 +178,7 @@ Users upgrading to this version will encounter immediate crashes, making migrati
 ### Required user actions
 * Do not install 3.3.1.
 * If you already installed it, upgrade to **3.3.2**.  
-  These versions all share the same working validator code.
+  This version has the same working validator code.
 * No rule changes are required — the issue is internal, not user-facing.
 * After upgrading to 3.3.2 version, validation will work normally again.
 
