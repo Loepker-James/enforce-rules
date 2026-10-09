@@ -19,3 +19,4 @@ Now it’s a full library meant to help anyone who wants more power in their typ
 - [Deprecations](deprecations.md)
 - [Migration Guide](migration.md)
 - [Design](design.md)
+- [Frequently Asked Questions](FAQ.md)
