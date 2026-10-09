@@ -102,7 +102,7 @@ Major bumps do **not** imply breaking changes.
 You should **only** bump a version **if** you are changing one of these files:
 
 - `README.md`  
-- `LICENSE`  
+- `LICENSE` (which you should never change)
 - `pyproject.toml`  
 - `src/enforce_rules/**`
   
