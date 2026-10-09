@@ -11,7 +11,8 @@ dependencies = [
 license = { file = "LICENSE" }
 authors = [
     { name = "Jake Loepker" },
-    { name = "Microsoft Copilot (AI Assistant)" }
+    { name = "Microsoft Copilot (AI Assistant)" },
+    { name = "Claude (AI Assistant)"},
 ]
 
 classifiers = [
