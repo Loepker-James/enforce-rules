@@ -163,7 +163,7 @@ Upgrade to a fixed version if your project relies on this module.
 ## Upgrading/Downgrading to 3.3.1 --- DONT
 Version 3.3.1 should be skipped.
 
-This release shipped with a broken [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi), which causes mypy/pyright to raise an error immediately on startup or not function properly. Because the module cannot fully load, no rules validate at all.
+This release shipped with a broken [enforce_rules.pyi](/src/enforce_rules/enforce_rules.pyi), which causes mypy/pyright to raise an error immediately on startup or not function properly. Because the module cannot fully load, no rules validate at all.
 
 ### What went wrong
 * A required internal import was accidentally removed.
@@ -183,7 +183,7 @@ Users upgrading to this version will encounter immediate crashes, making migrati
 * After upgrading to 3.3.2 version, validation will work normally again.
 
 ### Summary
-3.3.1 contains a broken [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi) that prevents mypy/pyright from running properly.
+3.3.1 contains a broken [enforce_rules.pyi](/src/enforce_rules/enforce_rules.pyi) that prevents mypy/pyright from running properly.
 Skip this version and downgrade directly from a stable 3.1.x release to the next working version.
 
  
