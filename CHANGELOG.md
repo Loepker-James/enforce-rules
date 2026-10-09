@@ -409,3 +409,8 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ## 3.3.6  — Created on 2026‑10-09
 ### Fixed
 - [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi)
+
+## 3.3.7  — Created on 2026‑10-09
+### Changed
+- Used itertools.pairwise when needed
+
