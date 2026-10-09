@@ -1,6 +1,6 @@
 [project]
 name = "enforce-rules"
-version = "3.3.3"
+version = "3.3.4"
 description = "Runtime rule validation for Python using dictionary-based constraints."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -37,8 +37,10 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/Loepker-James/enforce-rules"
 Changelog = "https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md"
+"Code Of Conduct" = "https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md"
 Copilot = "https://copilot.microsoft.com"
 Issues = "https://github.com/Loepker-James/enforce-rules/issues"
+"Migration Guide" = "https://github.com/Loepker-James/enforce-rules/blob/main/docs/migration.md"
 
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
@@ -46,6 +48,9 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.package-data]
 enforce_rules = ["py.typed", "*.pyi"]
+
+
+
 
 
 
