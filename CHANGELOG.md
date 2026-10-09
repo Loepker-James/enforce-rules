@@ -278,7 +278,7 @@ If you are upgrading, read the migration guide fully.
 ## 3.2.10 — Created on 2026‑09‑25
 
 ### Fixed
-- Raw string bug introduced in [3.2.4](CHANGELOG.md#324--created-on-20260912)
+- Raw string bug introduced in [3.2.4](#324--created-on-20260912)
 
 ---
 
@@ -302,7 +302,7 @@ If you are upgrading, read the migration guide fully.
 ## 3.12.14 — Created on 2026-10-02
 
 ### Fixed
-- Added dependencies in [pyproject.toml](pyproject.toml)
+- A[dependencies in pyproject.toml](pyproject.toml#L7)
 
 ## 3.12.15 — Created on 2026-10-02
 Nothing. I wanted to add something but it turns out I didn't add it.
@@ -319,14 +319,14 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 
 ## 3.2.18 — Created on 2026-10-03
 ### Fixed
-- Required python version number in [pyproject.toml](pyproject.toml)
+- [Required python version number in pyproject.toml](pyproject.toml#L6)
 
 ## 3.2.19 — Created on 2026-10-03
 ### Fixed
 - Issues that prevent Python 3.10 from working
 
 ### Changed
-- Required python version number in [pyproject.toml](pyproject.toml)
+- [Required python version number in pyproject.toml](pyproject.toml#L6)
 
 ## 3.2.20 — Created on 2026-10-03
 ### Fixed
@@ -342,7 +342,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 
 ## 3.2.23 — Created on 2026‑10-04
 ### Added
-- \_\_all\_\_
+- [\_\_all\_\_](src/enforce_rules/__init__.py#L2)
 - .pyi files
 
 ## 3.2.24 — Created on 2026‑10-04
@@ -362,9 +362,8 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ## 3.2.27 — Created on 2026‑10-07
 ### Removed
 - [CHANGELOG](#changelog) in tarball
-
 ### Added
-- Links to [CHANGELOG](#changelog) in [pyproject.toml](pyproject.toml)
+- [Links to CHANGELOG in pyproject.toml](pyproject.toml#L39)
 
 ## 3.2.28 — Created on 2026‑10-07
 ### Added
@@ -377,7 +376,6 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ## 3.3.0 — Created on 2026‑10-07
 ### Changed
 - [\_\_init\_\_.py](src/enforce_rules/__init__.py)
-
 ### Added
 - [\_\_init\_\_.pyi](src/enforce_rules/__init__.pyi)
 
