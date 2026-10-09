@@ -302,7 +302,7 @@ If you are upgrading, read the migration guide fully.
 ## 3.12.14 — Created on 2026-10-02
 
 ### Fixed
-- [dependencies in pyproject.toml](pyproject.toml#L7)
+- dependencies in [pyproject.toml](pyproject.toml)
 
 ## 3.12.15 — Created on 2026-10-02
 Nothing. I wanted to add something but it turns out I didn't add it.
@@ -319,14 +319,14 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 
 ## 3.2.18 — Created on 2026-10-03
 ### Fixed
-- [Required python version number in pyproject.toml](pyproject.toml#L6)
+- Required python version number in [pyproject.toml](pyproject.toml)
 
 ## 3.2.19 — Created on 2026-10-03
 ### Fixed
 - Issues that prevent Python 3.10 from working
 
 ### Changed
-- [Required python version number in pyproject.toml](pyproject.toml#L6)
+- Required python version number in [pyproject.toml](pyproject.toml)
 
 ## 3.2.20 — Created on 2026-10-03
 ### Fixed
@@ -363,7 +363,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ### Removed
 - [CHANGELOG](#changelog) in tarball
 ### Added
-- [Links to CHANGELOG in pyproject.toml](pyproject.toml#L39)
+- Links to [CHANGELOG](#changelog) in [pyproject.toml](pyproject.toml)
 
 ## 3.2.28 — Created on 2026‑10-07
 ### Added
@@ -392,8 +392,8 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ### Added
 - classifier in [pyproject.toml](pyproject.toml)
 ### Changed
-- order of [links in pyproject.toml](pyproject.toml#L37)
+- order of [links in pyproject.toml](pyproject.toml#L38)
 
 ## 3.3.4  — Created on 2026‑10-09
 ### Added
-- [links in pyproject.toml](pyproject.toml#L37)
+- links in [pyproject.toml](pyproject.toml)
