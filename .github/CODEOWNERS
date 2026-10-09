@@ -12,7 +12,7 @@
 /pyproject.toml            @Loepker-James
 /MANIFEST.in               @Loepker-James
 
-# Protect all code
+# Protect all python code
 *.py                   @Loepker-James
 
 # Freeze CodeQL rules
