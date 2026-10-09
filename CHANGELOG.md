@@ -302,7 +302,7 @@ If you are upgrading, read the migration guide fully.
 ## 3.12.14 — Created on 2026-10-02
 
 ### Fixed
-- A[dependencies in pyproject.toml](pyproject.toml#L7)
+- [dependencies in pyproject.toml](pyproject.toml#L7)
 
 ## 3.12.15 — Created on 2026-10-02
 Nothing. I wanted to add something but it turns out I didn't add it.
