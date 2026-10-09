@@ -5,116 +5,7 @@ from datetime import datetime
 from chess import Piece
 from pydantic import Field, validate_call
 from string import punctuation
-
-Number: TypeAlias = int | float
-LengthType: TypeAlias = Annotated[int, Field(ge=0)]
-
-_PIECE_NAMES = ("pawn", "knight", "bishop", "rook", "queen", "king") 
-
-# -----------------------------
-# VALIDATOR FUNCTIONS (DEFINED FIRST)
-# -----------------------------
-
-@validate_call
-def _validate_length(value: Sequence, expected: LengthType) -> None:
-    if len(value) != expected:
-        raise ValueError(f"Expected length {expected}, got {len(value)}")
-
-@validate_call
-def _validate_min_length(value: Sequence, expected: LengthType) -> None:
-    if len(value) < expected:
-        raise ValueError(f"Expected min length {expected}, got {len(value)}")
-
-@validate_call
-def _validate_max_length(value: Sequence, expected: LengthType) -> None:
-    if len(value) > expected:
-        raise ValueError(f"Expected max length {expected}, got {len(value)}")
-
-
-def _validate_min(value: Number, expected: Number) -> None:
-    if value < expected:
-        raise ValueError(f"Expected value >= {expected}, got {value}")
-
-
-def _validate_max(value: Number, expected: Number) -> None:
-    if value > expected:
-        raise ValueError(f"Expected value <= {expected}, got {value}")
-
-
-def _validate_allowed_values(value: object, allowed: Iterable) -> None:
-    if value not in allowed:
-        raise ValueError(f"Value {value} not in allowed values {allowed}")
-
-
-def _validate_invariant(value: object, expected: bool) -> None:
-    if expected and not value:
-        raise ValueError("Invariant rule failed: value must be truthy")
-
-
-def _validate_all_same(value: Sequence, expected: bool) -> None:
-    if expected and len(set(value)) != 1:
-        raise ValueError("All elements must be the same")
-
-
-def _validate_all_unique(value: Sequence, expected: bool) -> None:
-    if expected and len(set(value)) != len(value):
-        raise ValueError("All elements must be unique")
-
-
-def _validate_non_empty(value: Sequence, expected: bool) -> None:
-    if expected and len(value) == 0:
-        raise ValueError("Collection must not be empty")
-
-
-def _validate_no_nulls(value: Iterable, expected: bool) -> None:
-    if expected and any(v is None for v in value):
-        raise ValueError("Collection must not contain None")
-
-
-def _validate_sorted(value: Sequence, expected: bool) -> None:
-    if expected:
-        items = list(value)
-        if items != sorted(items) and items != sorted(items, reverse=True):
-            raise ValueError("List must be sorted increasing or decreasing")
-
-
-def _validate_increasing(value: Sequence, expected: bool) -> None:
-    if expected:
-        for a, b in zip(value, value[1:]):
-            if not (b > a):
-                raise ValueError("List must be strictly increasing")
-
-
-def _validate_decreasing(value: Sequence, expected: bool) -> None:
-    if expected:
-        for a, b in zip(value, value[1:]):
-            if not (b < a):
-                raise ValueError("List must be strictly decreasing")
-
-
-def _validate_sum_min(value: Iterable[Number], expected: Number) -> None:
-    total = sum(value)
-    if total < expected:
-        raise ValueError(f"Sum must be >= {expected}, got {total}")
-
-
-def _validate_sum_max(value: Iterable[Number], expected: Number) -> None:
-    total = sum(value)
-    if total > expected:
-        raise ValueError(f"Sum must be <= {expected}, got {total}")
-
-
-def _validate_element_min(value: Iterable[Number], expected: Number) -> None:
-    if min(value) < expected:
-        raise ValueError(f"Elements must be >= {expected}")
-
-from typing import Annotated, Any, Callable, Literal, TypeVar, TypedDict, TypeAlias
-from collections.abc import Iterable, Sequence, Container
-import re
-from datetime import datetime
-from chess import Piece
-from pydantic import Field, validate_call
-from string import punctuation
+from itertools import pairwise
 
 Number: TypeAlias = int | float
 LengthType: TypeAlias = Annotated[int, Field(ge=0)]
@@ -190,14 +81,14 @@ def _validate_sorted(value: Sequence, expected: bool) -> None:
 
 def _validate_increasing(value: Sequence, expected: bool) -> None:
     if expected:
-        for a, b in zip(value, value[1:]):
+        for a, b in pairwise(value):
             if not (b > a):
                 raise ValueError("List must be strictly increasing")
 
 
 def _validate_decreasing(value: Sequence, expected: bool) -> None:
     if expected:
-        for a, b in zip(value, value[1:]):
+        for a, b in pairwise(value):
             if not (b < a):
                 raise ValueError("List must be strictly decreasing")
 
