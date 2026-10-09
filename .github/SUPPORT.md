@@ -7,7 +7,7 @@ This project does not use GitHub Discussions.
 For general questions, please follow the guidelines for [opening questions in FAQ.md](/docs/FAQ.md#how-do-i-ask-a-question)
 
 ## Reporting Bugs
-If you believe you have found a bug, please open an Issue via this [link](https://github.com/Loepker-James/enforce-rules/issues/new?labels=bug&title=Bug%3A) and include:
+If you believe you have found a bug, please open an Issue through this [link](https://github.com/Loepker-James/enforce-rules/issues/new?labels=bug&title=Bug%3A) and include:
 - a clear description of the problem
 - steps to reproduce it
 - expected behavior
