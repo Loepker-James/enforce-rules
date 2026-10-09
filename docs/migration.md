@@ -184,6 +184,6 @@ Users upgrading to this version will encounter immediate crashes, making migrati
 
 ### Summary
 3.3.1 contains a broken [enforce_rules.pyi](/src/enforce_rules/enforce_rules.pyi) that prevents mypy/pyright from running properly.
-Skip this version and downgrade directly from a stable 3.1.x release to the next working version.
+Skip this version and upgrade directly to 3.3.2.
 
  
