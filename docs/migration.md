@@ -160,10 +160,10 @@ An invalid raw‑string literal ending with a single backslash was introduced in
 This mistake persisted through **3.2.9** and was removed in **3.2.10**.  
 Upgrade to a fixed version if your project relies on this module.
 
-## Upgrading/Downgrading to 3.3.1 --- DONT
-Version 3.3.1 should be skipped.
+## Upgrading/Downgrading to 3.3.1-3.3.5 --- DONT
+Versions 3.3.1 to 3.3.5 should be skipped.
 
-This release shipped with a broken [enforce_rules.pyi](/src/enforce_rules/enforce_rules.pyi), which causes mypy/pyright to raise an error immediately on startup or not function properly. Because the module cannot fully load, no rules validate at all.
+These releases shipped with a broken [enforce_rules.pyi](/src/enforce_rules/enforce_rules.pyi), which causes mypy/pyright to raise an error immediately on startup or not function properly. Because the module cannot fully load, no rules validate at all.
 
 ### What went wrong
 * A required internal import was accidentally removed.
@@ -172,18 +172,18 @@ This release shipped with a broken [enforce_rules.pyi](/src/enforce_rules/enforc
 * No rules are parsed nor executed.
 
 ### Why this matters
-Since mypy/pyright cannot start, 3.3.1 is unusable.
+Since mypy/pyright cannot start, 3.3.1 to 3.3.5 is unusable.
 Users upgrading to this version will encounter immediate crashes, making migration impossible.
 
 ### Required user actions
-* Do not install 3.3.1.
-* If you already installed it, upgrade to **3.3.2**.  
+* Do not install any version in this range.
+* If you already installed it, upgrade to **3.3.6**.  
   This version has the same working validator code.
 * No rule changes are required — the issue is internal, not user-facing.
-* After upgrading to 3.3.2 version, validation will work normally again.
+* After upgrading to version 3.3.6, validation will work normally again.
 
 ### Summary
-3.3.1 contains a broken [enforce_rules.pyi](/src/enforce_rules/enforce_rules.pyi) that prevents mypy/pyright from running properly.
-Skip this version and upgrade directly to 3.3.2.
+3.3.1-3.3.5 contains a broken [enforce_rules.pyi](/src/enforce_rules/enforce_rules.pyi) that prevents mypy/pyright from running properly.
+Skip this version and upgrade directly to 3.3.6.
 
  
