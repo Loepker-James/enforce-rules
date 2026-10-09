@@ -11,11 +11,11 @@
 /.gitignore            @Loepker-James
 
 # Protect build files
-/pyproject.toml        @Loepker-James
-/MANIFEST.in           @Loepker-James
+/pyproject.toml            @Loepker-James
+/MANIFEST.in               @Loepker-James
 
 # Protect all code
-*.py                      @Loepker-James
+*.py                       @Loepker-James
 
 # Freeze CodeQL rules
 /codeql-custom-queries/**  @Loepker-James
