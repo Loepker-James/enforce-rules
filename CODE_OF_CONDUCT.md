@@ -238,7 +238,7 @@ Records of severe violations and permanent blocks are never reset. See [§4.6 (L
 A person who receives a warning, content removal, or block under this Code of Conduct may ask the maintainer to reconsider it.
 
 #### §6.6.1 How to appeal
-Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in [§5.2 (Report to The Maintainers)](#52-report-to-the-maintainers). An appeal should name the section(s) involved and explain why the action was mistaken or too severe.
+Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in [§5.2 (Report to The Maintainers)](#52-report-to-the-maintainers). For a block, the 14 days start on the day the block ends. An appeal should name the section or sections involved and explain why the action was mistaken or too severe.
 
 #### §6.6.2 Review
 This project has one maintainer, so appeals are reviewed by the same person who made the decision. The maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final. A violation by a person returning from a block of 365 days results in another block of 365 days, and may be reported to GitHub under [§4.4](#44-report-violations-to-github-trust--safety).
