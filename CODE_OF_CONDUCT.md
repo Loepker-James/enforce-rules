@@ -5,6 +5,7 @@
   - [§1.1 Purpose](#11-purpose)
   - [§1.2 Scope](#12-scope)
   - [§1.3 Changes](#13-changes)
+  - [§1.4 Notation](#14-notation)
 - [§2 Expected Behavior](#2-expected-behavior)
   - [§2.1 Respect](#21-respect)
   - [§2.2 Constructive Feedback](#22-constructive-feedback)
@@ -78,6 +79,9 @@ Every section and subsection of this Code of Conduct is equally binding, regardl
 
 ### §1.3 Changes
 Maintainers may change this Code of Conduct. Every section that existed on the day the first contributor joined the project (not yet) has been in effect since that day. A section added after that day shows the date it was added, in the form *(Added YYYY-MM-DD)*, and a section whose meaning is changed shows *(Amended YYYY-MM-DD: a one-line summary of the change)*. A new or amended section takes effect on the date shown and applies only to behavior on or after that date. Earlier behavior is judged under the rules that were in effect when it happened. No amendment may exempt any person nor role, including a maintainer, from a section of this Code of Conduct that applies to contributors; no amendment may lessen the steps in [§7.5](#75-maintainer-violations) for maintainers without a public explanation of the reason.
+
+### §1.4 Notation
+In this Code of Conduct, letters in parentheses attached to a word without a space mean that either form applies. "Pattern(s)" means one or more patterns, and "a(n)" means "a" or "an." Parentheses that are preceded by a space, such as an example or a section title, are ordinary asides and do not change the rule.
 
 ## §2 Expected Behavior
 
@@ -283,7 +287,7 @@ Maintainer violations are counted using the records and the 365-day period in §
 
 * **Second violation:** the maintainer takes no action under §4.1 to §4.5 for 30 days, except hiding content that is an immediate threat or an exposure of private information, and publishes a short note saying which section was violated and what will change.
 * **Third violation:** the maintainer permanently stops enforcement under §4.1 to §4.5, so conduct reports go to GitHub only; publishes a statement listing the sections violated and the dates; and releases only bug fixes and security fixes for 90 days.
-* **Fourth violation:** the maintainer publishes a final notice listing the sections violated and the dates, continues to release security fixes for 90 days, and then publishes a final release that works as before and states that the project is no longer maintained. The maintainer then archives the repository, does not unarchive it, and does not restart or continue the project, or a substantially similar one, under any name.
+* **Fourth violation:** the maintainer publishes a final notice listing the section(s) violated and the dates, continues to release security fixes for 90 days, and then publishes a final release that works as before and states that the project is no longer maintained. The maintainer then archives the repository, does not unarchive it, and does not restart or continue the project, or a substantially similar one, under any name.
 
 #### §7.5.4 Severe violations
 A violation by a maintainer under §3.1 to §3.4 may skip the steps in §7.5.3, in the same way as §6.2 for contributors.
