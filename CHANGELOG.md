@@ -379,38 +379,42 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ### Added
 - [\_\_init\_\_.pyi](src/enforce_rules/__init__.pyi)
 
-## 3.3.1  — Created on 2026‑10-08
+## 3.3.1 — Created on 2026‑10-08
 **Note: This version is broken.**
 ### Changed
 - Added precision to [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi)
   
-## 3.3.2  — Created on 2026‑10-08
+## 3.3.2 — Created on 2026‑10-08
 **Note: This version is broken.**
 ### Fixed
 - [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi)
 
-## 3.3.3  — Created on 2026‑10-09
+## 3.3.3 — Created on 2026‑10-09
 **Note: This version is broken.**
 ### Added
 - classifier in [pyproject.toml](pyproject.toml)
 ### Changed
 - order of links in [pyproject.toml](pyproject.toml)
 
-## 3.3.4  — Created on 2026‑10-09
+## 3.3.4 — Created on 2026‑10-09
 **Note: This version is broken.**
 ### Added
 - links in [pyproject.toml](pyproject.toml)
 
-## 3.3.5  — Created on 2026‑10-09
+## 3.3.5 — Created on 2026‑10-09
 **Note: This version is broken.**
 ### Added
 - Claude in [pyproject.toml](pyproject.toml)
 
-## 3.3.6  — Created on 2026‑10-09
+## 3.3.6 — Created on 2026‑10-09
 ### Fixed
 - [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi)
 
-## 3.3.7  — Created on 2026‑10-09
+## 3.3.7 — Created on 2026‑10-09
 ### Changed
 - Used itertools.pairwise when needed
+
+## 3.3.8 — Created on 2026‑10-10
+### Added
+- [.gitignore](.gitignore) in tarball
 
