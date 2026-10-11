@@ -75,9 +75,7 @@ This project aims to maintain a respectful, safe, and productive environment for
 Every section and subsection of this Code of Conduct is equally binding, regardless of how it is formatted or numbered. Headings are for navigation only and do not limit or change the text beneath them.
 
 ### §1.3 Changes
-Maintainers may change this Code of Conduct. Every section that existed on the day the first contributor joined the project (not yet) has been in effect since that day. A section added after that day shows the date it was added, in the form *(Added YYYY-MM-DD)*, and a section whose meaning is changed shows *(Amended YYYY-MM-DD: a one-line summary of the change)*.
-
-A new or amended section takes effect on the date shown and applies only to behavior on or after that date. Earlier behavior is judged under the rules that were in effect when it happened.
+Maintainers may change this Code of Conduct. Every section that existed on the day the first contributor joined the project (not yet) has been in effect since that day. A section added after that day shows the date it was added, in the form *(Added YYYY-MM-DD)*, and a section whose meaning is changed shows *(Amended YYYY-MM-DD: a one-line summary of the change)*. A new or amended section takes effect on the date shown and applies only to behavior on or after that date. Earlier behavior is judged under the rules that were in effect when it happened. No amendment may exempt any person or role, including a maintainer, from a section of this Code of Conduct that applies to contributors; no amendment may lessen the steps in [§7.5](#75-maintainer-violations) for maintainers without a public explanation of the reason.
 
 ## §2 Expected Behavior
 
@@ -94,7 +92,7 @@ Contributors must follow maintainer instructions, repository guidelines, and the
 Discussions should remain relevant to the project. Off-topic debates, personal tangents, or unrelated arguments slow progress.
 
 ### §2.5 Inclusive Language
-Contributors should use language that is welcoming and professional. Contributors should avoid slurs, exclusionary phrasing, or intentionally provocative wording.
+Contributors should use language that is welcoming and professional and should avoid slurs, exclusionary phrasing, or intentionally provocative wording.
 
 ## §3 Unacceptable Behavior
 
@@ -105,7 +103,7 @@ Harassment includes insults, personal attacks, repeated unwanted contact, publis
 Any form of threat—technical, personal, or social—is prohibited. This includes coercion, blackmail, or fear-based pressure.
 
 ### §3.3 Hate Speech
-Discriminatory language targeting race, gender, sexuality, nationality, disability, religion, or any other personal beliefs are strictly forbidden.
+Discriminatory language targeting race, gender, sexuality, nationality, disability, religion, or personal beliefs strictly forbidden.
 
 ### §3.4 Leaking Exploits
 Posting harmful code, vulnerabilities, or exploit details publicly is not allowed. Use GitHub’s private reporting tools instead.
@@ -132,7 +130,7 @@ This Code of Conduct applies to the meaning and effect of what is said or done, 
 Synonyms, softer or indirect wording, coded language, misspellings, symbols, images, sarcasm, or "just joking" framing are treated the same as the direct version of what they say.
 
 #### §3.10.2 Splitting
-Dividing an act across several messages, posts, or accounts is treated as a single act. Maintainers consider the messages together, including the order they were posted and any pattern(s) between them, even if no single message would violate this Code of Conduct on its own.
+Dividing an act across several messages, posts, or accounts is treated as a single act. Maintainers consider the messages together, including the order they were posted and any pattern or patterns between them, even if no single message would violate this Code of Conduct on its own.
 
 #### §3.10.3 Acting Through Others
 Getting another person to act on someone's behalf, or encouraging or coordinating others to do something prohibited, is treated as doing it directly.
@@ -192,8 +190,8 @@ Where available, use “Report to repository admins” on the content. Otherwise
 
 Include:
 
-* The section number(s) of this Code of Conduct that you believe were violated (for example, §2.1)
-* Links and/or screenshots of what happened
+* The section number or numbers of this Code of Conduct that you believe were violated (for example, §2.1 if you beleive the violator was disrespectful)
+* Links or screenshots of what happened
 * The date it occurred
 * A short description of the incident
 
@@ -236,10 +234,10 @@ Records of severe violations and permanent blocks are never reset. See [§4.6 (L
 A person who receives a warning, content removal, or block under this Code of Conduct may ask the maintainer to reconsider it.
 
 #### §6.6.1 How to appeal
-Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in [§5.2 (Report to The Maintainers)](#52-report-to-the-maintainers). An appeal should name the section(s) involved and explain why the action was mistaken or too severe.
+Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in [§5.2 (Report to The Maintainers)](#52-report-to-the-maintainers). An appeal should name the section or sections involved and explain why the action was mistaken or too severe.
 
 #### §6.6.2 Review
-This project has one maintainer, so appeals are reviewed by the same person who made the decision. To reduce bias, the maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final.
+This project has one maintainer, so appeals are reviewed by the same person who made the decision. The maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final.
 
 #### §6.6.3 Effect on records
 An overturned action is removed from the record kept under §6.5 and does not count toward the steps in §6.2. Filing an appeal does not pause the action. **ONE** appeal is allowed per action, and repeated or abusive appeals may be treated as a violation of §3.9 (Disruption).
@@ -278,16 +276,16 @@ Within 7 days of becoming aware of the violation, the maintainer edits or remove
 Maintainer violations are recorded in the same private records as other violations under §6.5, with the same details and the same 365-day period.
 
 #### §7.5.3 Repeat violations
-If a maintainer violates this Code of Conduct a second time within 365 days, the maintainer takes no enforcement action under §4 for 30 days, except hiding content that is an immediate threat or an exposure of private information, and publishes a short note saying which section was violated and what will change.
+If a maintainer violates this Code of Conduct a second time within 365 days, the maintainer takes no enforcement action under §4.1 to §4.5 for 30 days, except hiding content that is an immediate threat or an exposure of private information, and publishes a short note saying which section was violated and what will change.
 
 #### §7.5.4 Reports to GitHub
 A violation that the maintainer does not correct can be reported to GitHub under [§5.1 (Report abuse on GitHub)](#51-report-abuse-on-github), as described in §6.6.5. GitHub applies its own rules to the report and not this Code of Conduct.
 
 ### §7.6 Accusations Against Maintainers
-A claim that a maintainer violated this Code of Conduct and/or failed to follow §7 should include:
+A claim that a maintainer violated this Code of Conduct or failed to follow §7 should include:
 
-* The section(s) said to be violated
-* Links and/or screenshots of the content involved
+* The section or sectiosn said to be violated
+* Links or screenshots of the content involved
 * The date it occurred
 
 A claim without these may be closed with a request for the missing details. A claim that is denied is not a violation. A claim that relies on fabricated or altered evidence, or on content that is shown not to exist, is treated as a violation of §3.10.4. Claims repeated after a final answer may be treated as a violation of §3.9, and §6.6.6 applies to them in the same way.
