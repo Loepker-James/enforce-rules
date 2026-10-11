@@ -74,15 +74,15 @@
 This project aims to maintain a respectful, safe, and productive environment for all contributors.
 
 ### §1.2 Scope
-Every section and subsection of this Code of Conduct is equally binding, regardless of how it is formatted or numbered. Headings are for navigation only and do not limit or change the text beneath them.
+Every section and subsection of this Code of Conduct is equally binding, regardless of how it's formatted or numbered. Headings are for navigation only and don't limit or change the text beneath them.
 
 ### §1.3 Changes
-Maintainers may change this Code of Conduct. Every section that existed on the day the first contributor joined the project (not yet) has been in effect since that day. A section added after that day shows the date it was added, in the form *(Added YYYY-MM-DD)*, and a section whose meaning is changed shows *(Amended YYYY-MM-DD: a one-line summary of the change)*. A new or amended section takes effect on the date shown and applies only to behavior on or after that date. Earlier behavior is judged under the rules that were in effect when it happened. No amendment may exempt any person or role, including a maintainer, from a section of this Code of Conduct that applies to contributors; no amendment may lessen the steps in [§7.5](#75-maintainer-violations) for maintainers without a public explanation of the reason.
+Maintainers may change this Code of Conduct. Every section that existed on the day the first contributor joined the project (not yet) has been in effect since that day. A section added after that day shows the date it was added, in the form *(Added YYYY-MM-DD)*, and a section whose meaning is changed shows *(Amended YYYY-MM-DD: a one-line summary of the change)*. A new or amended section takes effect on the date shown and applies only to behavior on or after that date. Earlier behavior is judged under the rules that were in effect when it happened. No amendment may exempt any person nor role, including a maintainer, from a section of this Code of Conduct that applies to contributors; no amendment may lessen the steps in [§7.5](#75-maintainer-violations) for maintainers without a public explanation of the reason.
 
 ## §2 Expected Behavior
 
 ### §2.1 Respect
-Contributors must treat others with courtesy. Disagreements are allowed, but disrespect, hostility, or dismissive behavior is not.
+Contributors must treat others with courtesy. Disagreements are allowed, but disrespect, hostility, or dismissive behavior isn't.
 
 ### §2.2 Constructive Feedback
 Feedback should focus on improving the project. Criticism must be actionable, specific, and delivered without insults or sarcasm.
@@ -108,7 +108,7 @@ Any form of threat—technical, personal, or social—is prohibited. This includ
 Discriminatory language targeting race, gender, sexuality, nationality, disability, religion, or personal beliefs strictly forbidden.
 
 ### §3.4 Leaking Exploits
-Posting harmful code, vulnerabilities, or exploit details publicly is not allowed. Use GitHub’s private reporting tools instead.
+Posting harmful code, vulnerabilities, or exploit details publicly isn't allowed. Use GitHub’s private reporting tools instead.
 
 ### §3.5 Spam
 Spam includes irrelevant messages, repeated posts, or attempts to derail conversations. 
@@ -132,7 +132,7 @@ This Code of Conduct applies to the meaning and effect of what is said or done, 
 Synonyms, softer or indirect wording, coded language, misspellings, symbols, images, sarcasm, or "just joking" framing are treated the same as the direct version of what they say.
 
 #### §3.10.2 Splitting
-Dividing an act across several messages, posts, or accounts is treated as a single act. Maintainers consider the messages together, including the order they were posted and any pattern or patterns between them, even if no single message would violate this Code of Conduct on its own.
+Dividing an act across several messages, posts, or accounts is treated as a single act. Maintainers consider the messages together, including the order they were posted and any pattern(s) between them, even if no single message would violate this Code of Conduct on its own.
 
 #### §3.10.3 Acting Through Others
 Getting another person to act on someone's behalf, or encouraging or coordinating others to do something prohibited, is treated as doing it directly.
@@ -141,9 +141,7 @@ Getting another person to act on someone's behalf, or encouraging or coordinatin
 Altering, deleting, or fabricating content or evidence in a report, an appeal, or the project history is treated as a violation of this Code of Conduct.
 
 #### §3.10.5 Interpretation
-Maintainers decide whether behavior falls under §3.10 by considering what a reasonable reader would understand it to mean and the context in which it appeared. Following the letter of a rule while ignoring its purpose does not excuse a violation. A violation under §3.10 is treated as the same severity as the act it disguises.
-
-Maintainers decide whether behavior falls under this section by considering what a reasonable reader would understand it to mean and the context in which it appeared. Intent to follow the letter of a rule while ignoring its purpose does not excuse a violation.
+Maintainers decide whether behavior falls under §3.10 by considering what a reasonable reader would understand it to mean and the context in which it appeared. Following the letter of a rule while ignoring its purpose doesn't excuse a violation. A violation under §3.10 is treated as the same severity as the act it disguises. Intent to follow the letter of a rule while ignoring its purpose doesn't excuse a violation.
 
 ### §3.11 Evading Enforcement
 Evading or trying to evade an action taken under this Code of Conduct is prohibited. This includes:
@@ -152,7 +150,7 @@ Evading or trying to evade an action taken under this Code of Conduct is prohibi
 * Repeating removed content, or continuing a prohibited behavior in another place, such as a new issue, a discussion, or a fork
 * Timing or spacing violations to take advantage of a record reset
 
-Evasion is a violation in itself, and maintainers may treat it as a repeat violation. A record reset does not apply to a person who evaded enforcement. See [§4.6 (Limits on Record Resets)](#46-limits-on-record-resets) for limits on resets.
+Evasion is a violation in itself, and maintainers may treat it as a repeat violation. A record reset doesn't apply to a person who evaded enforcement. See [§4.6 (Limits on Record Resets)](#46-limits-on-record-resets) for limits on resets.
 
 ## §4 Enforcement
 Maintainers may take any of the following actions in §4.1 to §4.5:
@@ -161,7 +159,7 @@ Maintainers may take any of the following actions in §4.1 to §4.5:
 A maintainer may privately or publicly warn a contributor whose behavior violates this Code of Conduct.
 
 ### §4.2 Hide or delete harmful content
-Comments, issues, pull requests, or other content that is harmful or abusive may be hidden or deleted.
+Comments, issues, pull requests, or other content that is harmful or abusive may be hidden / deleted.
 
 ### §4.3 Block the user from the repository
 A user who continues to violate this Code of Conduct may be blocked from the repository. For specific numbers about blocking, see [§6.2 (Temporary or Permanent Blocking)](#62-temporary-or-permanent-blocking).
@@ -192,7 +190,7 @@ Where available, use “Report to repository admins” on the content. Otherwise
 
 Include:
 
-* The section number or numbers of this Code of Conduct that you believe were violated (for example, §2.1 if you beleive the violator was disrespectful)
+* The section(s) of this Code of Conduct that you believe were violated (for example, §2.1 if you beleive the violator was disrespectful)
 * Links or screenshots of what happened
 * The date it occurred
 * A short description of the incident
@@ -242,7 +240,7 @@ Appeals must be made within 14 days of the action, by replying where the action 
 This project has one maintainer, so appeals are reviewed by the same person who made the decision. The maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final.
 
 #### §6.6.3 Effect on records
-An overturned action is removed from the record kept under §6.5 and does not count toward the steps in §6.2. Filing an appeal does not pause the action. **ONE** appeal is allowed per action, and repeated or abusive appeals may be treated as a violation of §3.9 (Disruption).
+An overturned action is removed from the record kept under §6.5 and does not count toward the steps in §6.2. Filing an appeal doesn't pause the action. **ONE** appeal is allowed per action, and repeated or abusive appeals may be treated as a violation of §3.9 (Disruption).
 
 #### §6.6.4 Blocked users
 A blocked user cannot contact the project through GitHub. A person who has been temporarily blocked may appeal after the block ends. Permanent blocks cannot be appealed through the repository.
@@ -251,10 +249,10 @@ A blocked user cannot contact the project through GitHub. A person who has been 
 Because the maintainer is the only reviewer, concerns about the maintainer's own conduct can be reported to GitHub under [§5.1 (Report Abuse on Github)](#51-report-abuse-on-github). GitHub applies its own rules to such reports, not this Code of Conduct.
 
 #### §6.6.6 Abusive appeals
-A denied appeal is not automatically a violation. An appeal may be treated as a violation of this section (and potentially others) only if it includes insults, threats , or harassment (§3.1), repeats an argument after a final decision (§3.9), is filed through an account other than the one that received the action (§3.11), or relies on fabricated or altered evidence (§3.10.4). The maintainer may close such an appeal without further response.
+A denied appeal isn't automatically a violation. An appeal may be treated as a violation of this section (and potentially others) only if it includes insults, threats , or harassment (§3.1), repeats an argument after a final decision (§3.9), is filed through an account other than the one that received the action, or relies on fabricated or altered evidence (§3.10.4). The maintainer may close such an appeal without further response.
 
 #### §6.6.7 Review of permanent blocks
-Permanent blocks cannot be appealed as written in §6.6.4. Instead, the maintainer reviews every permanent block 365 days after it was issued, rereading the original record, and may lift the block if the record shows it was disproportionate. The review is based on the record alone, and the blocked person is not contacted. By January 31 of each year, the maintainer publishes, for the previous calendar year, the number of permanent blocks reviewed under this section in that year and the number of those lifted, without names, at [ENFORCEMENT.md](ENFORCEMENT.md). If there were none, the maintainer publishes a count of zero.
+Permanent blocks cannot be appealed. Instead, the maintainer reviews every permanent block 365 days after it was issued, rereading the original record, and may lift the block if the record shows it was disproportionate. The review is based on the record alone, and the blocked person is not contacted. By January 31 of each year, the maintainer publishes, for the previous calendar year, the number of permanent blocks reviewed under this section in that year and the number of those lifted, without names, at [ENFORCEMENT.md](ENFORCEMENT.md). If there were none, the maintainer publishes a count of zero.
 
 ## §7 Maintainer Accountability
 This Code of Conduct applies to maintainers in the same way it applies to everyone else. Maintainers hold themselves to the standards in §2 and §3 when they review contributions, answer issues, and enforce this document.
@@ -263,19 +261,19 @@ This Code of Conduct applies to maintainers in the same way it applies to everyo
 When a maintainer is personally involved in a dispute, for example as the target of an insult, they wait at least 24 hours before taking any action under §4, other than hiding content that is an immediate threat or an exposure of private information. In a dispute where the maintainer is personally involved, a warning under §4.1 is preferred over a block, unless the violation is severe according to §6.2.
 
 ### §7.2 Cite the rule
-Every enforcement action names the section or sections that were violated and links to the content involved. Maintainers do not act on a general impression of someone's attitude.
+Every enforcement action names the section(s) that were violated and links to the content involved. Maintainers don't act on a general impression of someone's attitude.
 
 ### §7.3 No Favoritism
 Maintainers apply the steps in §6.2, the record rules in §6.5, and the appeal rules in §6.6 in the same way regardless of who is involved, including friends, frequent contributors, and critics.
 
 ### §7.4 No misuse of enforcement
-Enforcement tools are not used to end technical disagreements, silence polite criticism of the project or its maintainer, or settle personal conflicts. Declining a contribution on technical grounds is a review decision and is not an action under this Code of Conduct.
+Enforcement tools aren't used to end technical disagreements, silence polite criticism of the project or its maintainer, or settle personal conflicts. Declining a contribution on technical grounds is a review decision and is not an action under this Code of Conduct.
 
 ### §7.5 Maintainer violations
 If a maintainer violates this Code of Conduct, the steps below apply.
 
 #### §7.5.1 Correction
-Within 7 days of becoming aware of the violation, the maintainer edits or removes the content and acknowledges the problem publicly, naming the section violated. Content is edited with a visible note and is not silently deleted, in line with [§3.10.4](#3104-tampering-with-evidence).
+Within 7 days of becoming aware of the violation, the maintainer edits / removes the content and acknowledges the problem publicly, naming the section violated. Content is edited with a visible note and isn't silently deleted, in line with [§3.10.4](#3104-tampering-with-evidence).
 
 #### §7.5.2 Records
 Maintainer violations are recorded in the same private records as other violations under [§6.5](#65-record-keeping), with the same details and the same 365-day period.
@@ -285,19 +283,19 @@ Maintainer violations are counted using the records and the 365-day period in [�
 
 * **Second violation:** the maintainer takes no action under §4.1 to §4.5 for 30 days, except hiding content that is an immediate threat or an exposure of private information, and publishes a short note saying which section was violated and what will change.
 * **Third violation:** the maintainer permanently stops enforcement under §4.1 to §4.5, so conduct reports go to GitHub only; publishes a statement listing the sections violated and the dates; and releases only bug fixes and security fixes for 90 days.
-* **Fourth violation:** the maintainer publishes a final notice listing the sections violated and the dates, continues to release security fixes for 90 days, and then archives the repository. The maintainer does not unarchive it and does not continue the project under the same name.
+* **Fourth violation:** the maintainer publishes a final notice listing the sections violated and the dates, continues to release security fixes for 90 days, and then publishes a final release that works as before and states that the project is no longer maintained. The maintainer then archives the repository, does not unarchive it, and does not restart or continue the project, or a substantially similar one, under any name.
 
 #### §7.5.4 Severe violations
-A violation by a maintainer under [§3.1](#31-harassment), [§3.2](#32-threats-or-intimidation), [§3.3](#33-hate-speech), or [§3.4](#34-leaking-exploits) may skip the steps in §7.5.3, in the same way as [§6.2](#62-temporary-or-permanent-blocking) for contributors.
+A violation by a maintainer under §3.1, §3.2, §3.3, or §3.4 may skip the steps in §7.5.3, in the same way as [§6.2](#62-temporary-or-permanent-blocking) for contributors.
 
 #### §7.5.5 Reports to GitHub
-A violation that the maintainer does not correct can be reported to GitHub under [§5.1 (Report abuse on GitHub)](#51-report-abuse-on-github), as described in [§6.6.5](#665-reports-about-the-maintainer). GitHub applies its own rules to the report and not this Code of Conduct.
+A violation that the maintainer doesn't correct can be reported to GitHub under [§5.1 (Report abuse on GitHub)](#51-report-abuse-on-github), as described in §6.6.5. GitHub applies its own rules to the report and not this Code of Conduct.
 
 ### §7.6 Accusations Against Maintainers
 A claim that a maintainer violated this Code of Conduct or failed to follow §7 should include:
 
-* The section or sections said to be violated
+* The section(s) said to be violated
 * Links or screenshots of the content involved
 * The date it occurred
 
-A claim without these may be closed with a request for the missing details. A claim that is denied is not a violation. A claim that relies on fabricated or altered evidence, or on content that is shown not to exist, is treated as a violation of §3.10.4. Claims repeated after a final answer may be treated as a violation of §3.9, and §6.6.6 applies to them in the same way.
+A claim without these may be closed with a request for the missing details. A claim that is denied isn't a violation. A claim that relies on fabricated or altered evidence, or on content that is shown not to exist, is treated as a violation of §3.10.4. Claims repeated after a final answer may be treated as a violation of §3.9, and §6.6.6 applies to them in the same way.
