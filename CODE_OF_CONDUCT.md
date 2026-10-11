@@ -253,7 +253,7 @@ A blocked user cannot contact the project through GitHub. A person who has been 
 Because the maintainer is the only reviewer, concerns about the maintainer's own conduct can be reported to GitHub under [§5.1 (Report Abuse on Github)](#51-report-abuse-on-github). GitHub applies its own rules to such reports, not this Code of Conduct.
 
 #### §6.6.6 Abusive appeals
-A denied appeal isn't automatically a violation. An appeal may be treated as a violation of this section (and potentially others) only if it includes insults, threats, or harassment (§3.1), repeats an argument after a final decision (§3.9), is filed through an account other than the one that received the action, or relies on fabricated or altered evidence (§3.10.4). The maintainer may close such an appeal without further response.
+A denied appeal isn't automatically a violation. An appeal may be treated as a violation of this section (and potentially others) only if it includes insults, includes threats (§3.2), includes harassment (§3.1), repeats an argument after a final decision (§3.9), is filed through an account other than the one that received the action, or relies on fabricated / altered evidence (§3.10.4). The maintainer may close such an appeal without further response.
 
 #### §6.6.7 Review of permanent blocks
 Permanent blocks cannot be appealed. Instead, the maintainer reviews every permanent block 365 days after it was issued, rereading the original record, and may lift the block if the record shows it was disproportionate. The review is based on the record alone, and the blocked person is not contacted. By January 31 of each year, the maintainer publishes, for the previous calendar year, the number of permanent blocks reviewed under this section in that year and the number of those lifted, without names, at [ENFORCEMENT.md](ENFORCEMENT.md). If there were none, the maintainer publishes a count of zero.
@@ -268,7 +268,7 @@ When a maintainer is personally involved in a dispute, for example as the target
 Every enforcement action names the section(s) that were violated and links to the content involved. Maintainers don't act on a general impression of someone's attitude.
 
 ### §7.3 No Favoritism
-Maintainers apply the steps in §6.2, the record rules in §6.5, and the appeal rules in §6.6 in the same way regardless of who is involved, including friends, frequent contributors, and critics.
+Maintainers apply the steps in §6.2, the record rules in §6.5, and the appeal rules in §6.6 in the same way regardless of who is involved, including friends, frequent contributors, themselves, and critics.
 
 ### §7.4 No misuse of enforcement
 Enforcement tools cannot be used to end technical disagreements, silence polite criticism of the project or its maintainer, or settle personal conflicts. Declining a contribution on technical grounds is a review decision and isn't an action under this Code of Conduct.
