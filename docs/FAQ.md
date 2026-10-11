@@ -13,6 +13,9 @@ See the [README](/README.md) for a full overview.
 ### How do I ask a question?
 Open an issue using this [link](https://github.com/Loepker-James/enforce-rules/issues/new?labels=question&title=Question%3A+&assignees=Loepker-James)
 
+### What does "(s)" mean in the Code of Conduct?
+It means either form applies, so "pattern(s)" means one or more patterns. See [§1.4 (Notation)](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md#14-notation).
+
 Do **NOT** change the title, labels, and assignees. **ONLY** fill out the body text.
 
 ---
