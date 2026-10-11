@@ -417,5 +417,5 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ## 3.3.8 — Created on 2026‑10-10
 ### Added
 - [.gitignore](.gitignore) in tarball
-### Changed
-- [tests/](tests/) is no longer a package but is still in tarball
+### Fixed
+- Missing table in [pyproject.toml](pyproject.toml)
