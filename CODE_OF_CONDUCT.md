@@ -272,22 +272,22 @@ Enforcement tools are not used to end technical disagreements, silence polite cr
 If a maintainer violates this Code of Conduct, the steps below apply.
 
 #### §7.5.1 Correction
-Within 7 days of becoming aware of the violation, the maintainer edits or removes the content and acknowledges the problem publicly, naming the section violated. Content is edited with a visible note and is not silently deleted, in line with [§3.10.4](#3104-tampering-with-evidence).
+Within 7 days of becoming aware of the violation, the maintainer edits or removes the content and acknowledges the problem publicly, naming the section violated. Content is edited with a visible note and is not silently deleted, in line with §3.10.4.
 
 #### §7.5.2 Records
-Maintainer violations are recorded in the same private records as other violations under [§6.5](#65-record-keeping), with the same details and the same 365-day period.
+Maintainer violations are recorded in the same private records as other violations under §6.5, with the same details and the same 365-day period.
 
 #### §7.5.3 Repeat violations
-If a maintainer violates this Code of Conduct a second time within 365 days, the maintainer takes no enforcement action under [§4](#4-enforcement) for 14 days, except hiding content that is an immediate threat or an exposure of private information, and publishes a short note saying which section was violated and what will change.
+If a maintainer violates this Code of Conduct a second time within 365 days, the maintainer takes no enforcement action under §4 for 30 days, except hiding content that is an immediate threat or an exposure of private information, and publishes a short note saying which section was violated and what will change.
 
 #### §7.5.4 Reports to GitHub
-A violation that the maintainer does not correct can be reported to GitHub under [§5.1 (Report abuse on GitHub)](#51-report-abuse-on-github), as described in [§6.6.5](#665-reports-about-the-maintainer). GitHub applies its own rules to the report and not this Code of Conduct.
+A violation that the maintainer does not correct can be reported to GitHub under [§5.1 (Report abuse on GitHub)](#51-report-abuse-on-github), as described in §6.6.5. GitHub applies its own rules to the report and not this Code of Conduct.
 
 ### §7.6 Accusations Against Maintainers
 A claim that a maintainer violated this Code of Conduct and/or failed to follow §7 should include:
 
 * The section(s) said to be violated
-* Links or screenshots of the content involved
+* Links and/or screenshots of the content involved
 * The date it occurred
 
 A claim without these may be closed with a request for the missing details. A claim that is denied is not a violation. A claim that relies on fabricated or altered evidence, or on content that is shown not to exist, is treated as a violation of §3.10.4. Claims repeated after a final answer may be treated as a violation of §3.9, and §6.6.6 applies to them in the same way.
