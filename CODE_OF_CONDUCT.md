@@ -60,6 +60,10 @@
   - [§7.3 Same process for everyone](#73-no-favoritism)
   - [§7.4 No misuse of enforcement](#74-no-misuse-of-enforcement)
   - [§7.5 Maintainer violations](#75-maintainer-violations)
+    - [§7.5.1 Correction](#751-correction)
+    - [§7.5.2 Records](#752-records)
+    - [§7.5.3 Repeat Violations](#753-repeat-violations)
+    - [§7.5.4 Reports to GitHub](#754-reports-to-github)
   - [§7.6 Accusations Against Maintainers](#76-accusations-against-maintainers)
 
 ## §1 General
@@ -253,7 +257,7 @@ A denied appeal is not automatically a violation. An appeal may be treated as a 
 This Code of Conduct applies to maintainers in the same way it applies to everyone else. Maintainers hold themselves to the standards in §2 and §3 when they review contributions, answer issues, and enforce this document.
 
 ### §7.1 Pause before enforcing
-When a maintainer is personally involved in a dispute, for example as the target of an insult, they wait at least 24 hours before taking any action under §4 other than hiding content that is an immediate threat or an exposure of private information. In those cases, a warning under §4.1 is preferred over a block.
+When a maintainer is personally involved in a dispute, for example as the target of an insult, they wait at least 24 hours before taking any action under §4, other than hiding content that is an immediate threat or an exposure of private information. In a dispute where the maintainer is personally involved, a warning under §4.1 is preferred over a block, unless the violation is severe according to §6.2.
 
 ### §7.2 Cite the rule
 Every enforcement action names the section or sections that were violated and links to the content involved. Maintainers do not act on a general impression of someone's attitude.
@@ -265,7 +269,19 @@ Maintainers apply the steps in §6.2, the record rules in §6.5, and the appeal 
 Enforcement tools are not used to end technical disagreements, silence polite criticism of the project or its maintainer, or settle personal conflicts. Declining a contribution on technical grounds is a review decision and is not an action under this Code of Conduct.
 
 ### §7.5 Maintainer violations
-If a maintainer violates this Code of Conduct, they correct it by editing or removing the content, and acknowledging the problem to the person affected. Violations that cannot be settled this way can be reported to GitHub under [§5.1 (Report abuse on GitHub](#51-report-abuse-on-github), as described in §6.6.5.
+If a maintainer violates this Code of Conduct, the steps below apply.
+
+#### §7.5.1 Correction
+Within 7 days of becoming aware of the violation, the maintainer edits or removes the content and acknowledges the problem publicly, naming the section violated. Content is edited with a visible note and is not silently deleted, in line with [§3.10.4](#3104-tampering-with-evidence).
+
+#### §7.5.2 Records
+Maintainer violations are recorded in the same private records as other violations under [§6.5](#65-record-keeping), with the same details and the same 365-day period.
+
+#### §7.5.3 Repeat violations
+If a maintainer violates this Code of Conduct a second time within 365 days, the maintainer takes no enforcement action under [§4](#4-enforcement) for 14 days, except hiding content that is an immediate threat or an exposure of private information, and publishes a short note saying which section was violated and what will change.
+
+#### §7.5.4 Reports to GitHub
+A violation that the maintainer does not correct can be reported to GitHub under [§5.1 (Report abuse on GitHub)](#51-report-abuse-on-github), as described in [§6.6.5](#665-reports-about-the-maintainer). GitHub applies its own rules to the report and not this Code of Conduct.
 
 ### §7.6 Accusations Against Maintainers
 A claim that a maintainer violated this Code of Conduct and/or failed to follow §7 should include:
