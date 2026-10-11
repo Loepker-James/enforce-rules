@@ -57,13 +57,14 @@
 - [§7 Maintainer Accountability](#7-maintainer-accountability)
   - [§7.1 Pause before enforcing](#71-pause-before-enforcing)
   - [§7.2 Cite the rule](#72-cite-the-rule)
-  - [§7.3 Same process for everyone](#73-no-favoritism)
+  - [§7.3 No Favoritism](#73-no-favoritism)
   - [§7.4 No misuse of enforcement](#74-no-misuse-of-enforcement)
   - [§7.5 Maintainer violations](#75-maintainer-violations)
     - [§7.5.1 Correction](#751-correction)
     - [§7.5.2 Records](#752-records)
-    - [§7.5.3 Repeat Violations](#753-repeat-violations)
-    - [§7.5.4 Reports to GitHub](#754-reports-to-github)
+    - [§7.5.3 Repeat violations](#753-repeat-violations)
+    - [§7.5.4 Severe violations](#754-severe-violations)
+    - [§7.5.5 Reports to GitHub](#755-reports-to-github)
   - [§7.6 Accusations Against Maintainers](#76-accusations-against-maintainers)
 
 ## §1 General
@@ -270,21 +271,28 @@ Enforcement tools are not used to end technical disagreements, silence polite cr
 If a maintainer violates this Code of Conduct, the steps below apply.
 
 #### §7.5.1 Correction
-Within 7 days of becoming aware of the violation, the maintainer edits or removes the content and acknowledges the problem publicly, naming the section violated. Content is edited with a visible note and is not silently deleted, in line with §3.10.4.
+Within 7 days of becoming aware of the violation, the maintainer edits or removes the content and acknowledges the problem publicly, naming the section violated. Content is edited with a visible note and is not silently deleted, in line with [§3.10.4](#3104-tampering-with-evidence).
 
 #### §7.5.2 Records
-Maintainer violations are recorded in the same private records as other violations under §6.5, with the same details and the same 365-day period.
+Maintainer violations are recorded in the same private records as other violations under [§6.5](#65-record-keeping), with the same details and the same 365-day period.
 
 #### §7.5.3 Repeat violations
-If a maintainer violates this Code of Conduct a second time within 365 days, the maintainer takes no enforcement action under §4.1 to §4.5 for 30 days, except hiding content that is an immediate threat or an exposure of private information, and publishes a short note saying which section was violated and what will change.
+Maintainer violations are counted using the records and the 365-day period in [§6.5](#65-record-keeping), the same way as for contributors.
 
-#### §7.5.4 Reports to GitHub
-A violation that the maintainer does not correct can be reported to GitHub under [§5.1 (Report abuse on GitHub)](#51-report-abuse-on-github), as described in §6.6.5. GitHub applies its own rules to the report and not this Code of Conduct.
+* **Second violation:** the maintainer takes no action under §4.1 to §4.5 for 30 days, except hiding content that is an immediate threat or an exposure of private information, and publishes a short note saying which section was violated and what will change.
+* **Third violation:** the maintainer permanently stops enforcement under §4.1 to §4.5, so conduct reports go to GitHub only; publishes a statement listing the sections violated and the dates; and releases only bug fixes and security fixes for 90 days.
+* **Fourth violation:** the maintainer publishes a final notice listing the sections violated and the dates, continues to release security fixes for 90 days, and then archives the repository. The maintainer does not unarchive it and does not continue the project under the same name.
+
+#### §7.5.4 Severe violations
+A violation by a maintainer under [§3.1](#31-harassment), [§3.2](#32-threats-or-intimidation), [§3.3](#33-hate-speech), or [§3.4](#34-leaking-exploits) may skip the steps in §7.5.3, in the same way as [§6.2](#62-temporary-or-permanent-blocking) for contributors.
+
+#### §7.5.5 Reports to GitHub
+A violation that the maintainer does not correct can be reported to GitHub under [§5.1 (Report abuse on GitHub)](#51-report-abuse-on-github), as described in [§6.6.5](#665-reports-about-the-maintainer). GitHub applies its own rules to the report and not this Code of Conduct.
 
 ### §7.6 Accusations Against Maintainers
 A claim that a maintainer violated this Code of Conduct or failed to follow §7 should include:
 
-* The section or sectiosn said to be violated
+* The section or sections said to be violated
 * Links or screenshots of the content involved
 * The date it occurred
 
