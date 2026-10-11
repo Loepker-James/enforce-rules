@@ -276,17 +276,17 @@ If a maintainer violates this Code of Conduct, the steps below apply.
 Within 7 days of becoming aware of the violation, the maintainer edits / removes the content and acknowledges the problem publicly, naming the section violated. Content is edited with a visible note and isn't silently deleted, in line with [§3.10.4](#3104-tampering-with-evidence).
 
 #### §7.5.2 Records
-Maintainer violations are recorded in the same private records as other violations under [§6.5](#65-record-keeping), with the same details and the same 365-day period.
+Maintainer violations are recorded in the same private records as other violations under §6.5, with the same details and the same 365-day period.
 
 #### §7.5.3 Repeat violations
-Maintainer violations are counted using the records and the 365-day period in [§6.5](#65-record-keeping), the same way as for contributors.
+Maintainer violations are counted using the records and the 365-day period in §6.5, the same way as for contributors.
 
 * **Second violation:** the maintainer takes no action under §4.1 to §4.5 for 30 days, except hiding content that is an immediate threat or an exposure of private information, and publishes a short note saying which section was violated and what will change.
 * **Third violation:** the maintainer permanently stops enforcement under §4.1 to §4.5, so conduct reports go to GitHub only; publishes a statement listing the sections violated and the dates; and releases only bug fixes and security fixes for 90 days.
 * **Fourth violation:** the maintainer publishes a final notice listing the sections violated and the dates, continues to release security fixes for 90 days, and then publishes a final release that works as before and states that the project is no longer maintained. The maintainer then archives the repository, does not unarchive it, and does not restart or continue the project, or a substantially similar one, under any name.
 
 #### §7.5.4 Severe violations
-A violation by a maintainer under §3.1, §3.2, §3.3, or §3.4 may skip the steps in §7.5.3, in the same way as [§6.2](#62-temporary-or-permanent-blocking) for contributors.
+A violation by a maintainer under §3.1 to §3.4 may skip the steps in §7.5.3, in the same way as §6.2 for contributors.
 
 #### §7.5.5 Reports to GitHub
 A violation that the maintainer doesn't correct can be reported to GitHub under [§5.1 (Report abuse on GitHub)](#51-report-abuse-on-github), as described in §6.6.5. GitHub applies its own rules to the report and not this Code of Conduct.
