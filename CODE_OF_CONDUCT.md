@@ -54,6 +54,7 @@
     - [§6.6.4 Blocked users](#664-blocked-users)
     - [§6.6.5 Reports about the maintainer](#665-reports-about-the-maintainer)
     - [§6.6.6 Abusive appeals](#666-abusive-appeals)
+    - [§6.6.7 Review of permanent blocks](#667-review-of-permanent-blocks)
 - [§7 Maintainer Accountability](#7-maintainer-accountability)
   - [§7.1 Pause before enforcing](#71-pause-before-enforcing)
   - [§7.2 Cite the rule](#72-cite-the-rule)
@@ -251,6 +252,9 @@ Because the maintainer is the only reviewer, concerns about the maintainer's own
 
 #### §6.6.6 Abusive appeals
 A denied appeal is not automatically a violation. An appeal may be treated as a violation of this section (and potentially others) only if it includes insults, threats , or harassment (§3.1), repeats an argument after a final decision (§3.9), is filed through an account other than the one that received the action (§3.11), or relies on fabricated or altered evidence (§3.10.4). The maintainer may close such an appeal without further response.
+
+#### §6.6.7 Review of permanent blocks
+Permanent blocks cannot be appealed as written in §6.6.4. Instead, the maintainer reviews every permanent block 365 days after it was issued, rereading the original record, and may lift the block if the record shows it was disproportionate. The review is based on the record alone, and the blocked person is not contacted. By January 31 of each year, the maintainer publishes, for the previous calendar year, the number of permanent blocks reviewed under this section in that year and the number of those lifted, without names, at [ENFORCEMENT.md](ENFORCEMENT.md). If there were none, the maintainer publishes a count of zero.
 
 ## §7 Maintainer Accountability
 This Code of Conduct applies to maintainers in the same way it applies to everyone else. Maintainers hold themselves to the standards in §2 and §3 when they review contributions, answer issues, and enforce this document.
