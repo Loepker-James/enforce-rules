@@ -182,6 +182,19 @@ Users upgrading to this version will encounter immediate crashes, making migrati
 * No rule changes are required — the issue is internal, not user-facing.
 * After upgrading to version 3.3.6, validation will work normally again.
 
+## Warning -- Any version before 3.3.8 could be broken
+
+This table got deleted in one version:
+```toml
+[tool.setuptools.packages.find]
+where = ["src"]
+```
+
+This was re-added in **3.3.8**. If your version is broken, please install **3.3.8**.
+
+### Required user actions
+* Install **3.3.8** if your current version before it is broken.
+
 ### Summary
 3.3.1-3.3.5 contains a broken [enforce_rules.pyi](/src/enforce_rules/enforce_rules.pyi) that prevents mypy/pyright from running properly.
 Skip this version and upgrade directly to 3.3.6.
