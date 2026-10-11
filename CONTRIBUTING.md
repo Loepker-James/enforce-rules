@@ -34,7 +34,7 @@ This ensures alignment with PER’s design philosophy.
 
 ## What's in the release tarball (3.2.26+)
 
-The PyPI tarball (.tar.gz) contains (excluding build metadata) the [source (src/)](src/), [README.md](README.md), [LICENSE](LICENSE), [CHANGELOG.md](CHANGELOG.md), [.gitignore](.gitignore), and [requirements.txt](requirements.txt). Tests, CI config, and other repo files are on GitHub only.
+The PyPI tarball (.tar.gz) contains (excluding build metadata) the [source (src/)](src/), [tests (tests/)](tests/), [README.md](README.md), [LICENSE](LICENSE), [.gitignore](.gitignore), and [requirements.txt](requirements.txt). Tests, CI config, and other repo files are on GitHub only.
 
 ---
 
