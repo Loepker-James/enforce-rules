@@ -81,7 +81,7 @@ Every section and subsection of this Code of Conduct is equally binding, regardl
 Maintainers may change this Code of Conduct. Every section that existed on the day the first contributor joined the project (not yet) has been in effect since that day. A section added after that day shows the date it was added, in the form *(Added YYYY-MM-DD)*, and a section whose meaning is changed shows *(Amended YYYY-MM-DD: a one-line summary of the change)*. A new or amended section takes effect on the date shown and applies only to behavior on or after that date. Earlier behavior is judged under the rules that were in effect when it happened. No amendment may exempt any person nor role, including a maintainer, from a section of this Code of Conduct that applies to contributors; no amendment may lessen the steps in [§7.5](#75-maintainer-violations) for maintainers without a public explanation of the reason.
 
 ### §1.4 Notation
-In this Code of Conduct, letters in parentheses attached to a word without a space mean that either form applies. "Pattern(s)" means one or more patterns, and "a(n)" means "a" or "an." Parentheses that are preceded by a space, such as an example or a section title, are ordinary asides and do not change the rule.
+In this Code of Conduct, letters in parentheses attached to a word without a space mean that either form applies. "Pattern(s)" means one or more patterns, and "a(n)" means "a" or "an." Parentheses that are preceded by a space are ordinary punctuation, and what they contain is part of the text.
 
 ## §2 Expected Behavior
 
@@ -212,21 +212,21 @@ Blocking is applied in steps, depending on severity and history:
 
 * **First violation:** a warning, or a temporary block of up to 7 days.
 * **Second violation:** a temporary block of 30 days.
-* **Third violation:** a permanent block.
+* **Third violation:** a temporary block of 365 days.
 
-Severe violations are those under §3.1 to §3.4 and any other violation maintainers judge to cause serious harm. These may skip the steps above and result in an immediate permanent block.
+Severe violations are those under §3.1 to §3.4 and any other violation maintainers judge to cause serious harm. These may skip the steps above and result in an immediate 365 day block.
 
 ### §6.3 Escalation to GitHub Trust & Safety
 Serious violations may be [escalated to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
 
 ### §6.4 Removal of contributions
-Contributions that violate project rules may be removed.
+Contributions that violate this Code of Conduct may be removed.
 
 ### §6.5 Record keeping
 Maintainers keep private records of Code of Conduct violations, including the date, what happened, and the action taken. These records are used to apply the steps in §6.2 consistently. They are not published, and they are shared only with other maintainers, GitHub, or as required by law.
 
 #### §6.5.1 Reset Period
-The 365 days are counted from the date the most recent violation occurred. If maintainers learn of it later, the date it occurred still controls, not the date it was found.
+The 365 days are counted from the date the most recent violation occurred, or from the date a block ends, whichever is later. If maintainers learn of it later, the date it occurred still controls, not the date it was found.
 
 #### §6.5.2 Cleaning A Record
 A person's earlier warnings and temporary blocks are reset only after 365 days with **NO NEW VIOLATION**. A new violation restarts the 365 days for the whole record, and all earlier violations count toward the steps in §6.2 until a full year passes without another.
@@ -238,10 +238,10 @@ Records of severe violations and permanent blocks are never reset. See [§4.6 (L
 A person who receives a warning, content removal, or block under this Code of Conduct may ask the maintainer to reconsider it.
 
 #### §6.6.1 How to appeal
-Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in [§5.2 (Report to The Maintainers)](#52-report-to-the-maintainers). An appeal should name the section or sections involved and explain why the action was mistaken or too severe.
+Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in [§5.2 (Report to The Maintainers)](#52-report-to-the-maintainers). An appeal should name the section(s) involved and explain why the action was mistaken or too severe.
 
 #### §6.6.2 Review
-This project has one maintainer, so appeals are reviewed by the same person who made the decision. The maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final.
+This project has one maintainer, so appeals are reviewed by the same person who made the decision. The maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final. A violation by a person returning from a block of 365 days results in another block of 365 days, and may be reported to GitHub under [§4.4](#44-report-violations-to-github-trust--safety).
 
 #### §6.6.3 Effect on records
 An overturned action is removed from the record kept under §6.5 and does not count toward the steps in §6.2. Filing an appeal doesn't pause the action. **ONE** appeal is allowed per action, and repeated or abusive appeals may be treated as a violation of §3.9 (Disruption).
@@ -253,7 +253,7 @@ A blocked user cannot contact the project through GitHub. A person who has been 
 Because the maintainer is the only reviewer, concerns about the maintainer's own conduct can be reported to GitHub under [§5.1 (Report Abuse on Github)](#51-report-abuse-on-github). GitHub applies its own rules to such reports, not this Code of Conduct.
 
 #### §6.6.6 Abusive appeals
-A denied appeal isn't automatically a violation. An appeal may be treated as a violation of this section (and potentially others) only if it includes insults, threats , or harassment (§3.1), repeats an argument after a final decision (§3.9), is filed through an account other than the one that received the action, or relies on fabricated or altered evidence (§3.10.4). The maintainer may close such an appeal without further response.
+A denied appeal isn't automatically a violation. An appeal may be treated as a violation of this section (and potentially others) only if it includes insults, threats, or harassment (§3.1), repeats an argument after a final decision (§3.9), is filed through an account other than the one that received the action, or relies on fabricated or altered evidence (§3.10.4). The maintainer may close such an appeal without further response.
 
 #### §6.6.7 Review of permanent blocks
 Permanent blocks cannot be appealed. Instead, the maintainer reviews every permanent block 365 days after it was issued, rereading the original record, and may lift the block if the record shows it was disproportionate. The review is based on the record alone, and the blocked person is not contacted. By January 31 of each year, the maintainer publishes, for the previous calendar year, the number of permanent blocks reviewed under this section in that year and the number of those lifted, without names, at [ENFORCEMENT.md](ENFORCEMENT.md). If there were none, the maintainer publishes a count of zero.
