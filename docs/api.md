@@ -1,4 +1,4 @@
-# ```validate(value, rules)```
+# `validate(value, rules)`
 
 This is the main function of the library. I will list what each keyword does, allowed types, and version it was created in (if I didn't specify one, 
 then 1.0.0 is default).
@@ -15,7 +15,7 @@ Allowed types: anything that has a length
 
 Parameter: integer length
 
-Example: ```{"length": 5}```
+Example: `validate("abcde", {"length": 5})`
 
 ### min_length:
 
@@ -23,7 +23,7 @@ Allowed types: anything that has a length
 
 Parameter: integer length
 
-Example: ```{"min_length": 3}```
+Example: `validate("abcde", {"min_length": 3})`
 
 ### max_length:
 
@@ -31,7 +31,7 @@ Allowed types: anything that has a length
 
 Parameter: integer length
 
-Example: ```{"max_length": 7}```
+Example: `validate("abcde", {"max_length": 7})`
 
 ### min:
 
@@ -39,7 +39,7 @@ Allowed types: a number
 
 Parameter: a number
 
-Example: ```{"min": 0}```
+Example: `validate(5, {"min": 0})`
 
 ### max:
 
@@ -47,7 +47,7 @@ Allowed types: float or int
 
 Parameter: a number
 
-Example: ```{"max": 10}```
+Example: `validate(5, {"max": 10})`
 
 ### allowed_values:
 
@@ -55,7 +55,7 @@ Allowed types: All
 
 Parameter: A list of any python objects.
 
-Example: ```{"allowed_values": ("a", "b", "c", "d")}```
+Example: `validate("b", {"allowed_values": ("a", "b", "c", "d")})`
 
 ### invariant:
 
@@ -63,7 +63,7 @@ Allowed types: bool
 
 Parameter: A boolean stating whether or not the condition should activate
 
-Example: ```{"invariant": True}```
+Example: `validate(True, {"invariant": True})`
 
 ### all_same:
 
@@ -71,7 +71,7 @@ Allowed types: List/tuple/set (preferribly)
 
 Parameter: A boolean stating whether or not the condition should activate
 
-Example: ```{"all_same": True}```
+Example: `validate([1, 1, 1, 1, 1], {"all_same": True})`
 
 ### all_unique:
 
@@ -79,7 +79,7 @@ Allowed types: List/tuple/set (preferribly)
 
 Parameter: A boolean stating whether or not the condition should activate
 
-Example: ```{"all_same": True}```
+Example: `validate([1, 3, 6, 10, 15], {"all_unique": True})`
 
 ### non_empty:
 
@@ -87,7 +87,7 @@ Allowed types: Anything with a length
 
 Parameter: a boolean stating whether or not the condition should activate
 
-Example: ```{"non_empty": True}```
+Example: `validate(["a", "b", "c"], {"non_empty": True})`
 
 ### no_nulls:
 
@@ -95,7 +95,7 @@ Allowed types: Any collection
 
 Parameter: a boolean stating whether or not the condition should activate
 
-Example: ```{"no_nulls": True}```
+Example: `validate([1, "a", 2, "b", 3, "c"], {"no_nulls": True})`
 
 ### sorted:
 
@@ -103,7 +103,7 @@ Allowed types: A Sequence
 
 Parameter: A boolean stating whether or not the condition should activate
 
-Example: ```{"sorted": True}```
+Example: `validate([10, 20, 30, 40, 50], {"sorted": True})`
 
 ### increasing:
 
@@ -111,7 +111,7 @@ Allowed types: A Sequence
 
 Parameter: A boolean stating whether or not the condition should activate
 
-Example: ```{"increasing": True}```
+Example: `validate([10, 20, 30, 40, 50], {"increasing": True})`
 
 ### decreasing:
 
@@ -119,7 +119,7 @@ Allowed types: A Sequence
 
 Parameter: A boolean stating whether or not the condition should activate
 
-Example: ```{"decreasing": True}```
+Example: `validate([50, 40, 30, 20, 10], {"decreasing": True})`
 
 ### sum_min:
 
@@ -127,7 +127,7 @@ Allowed types: Anything with a sum
 
 Parameter: A number
 
-Example: ```{"sum_min": 0}```
+Example: `validate([10, -5], {"sum_min": 0})`
 
 ### sum_max:
 
@@ -135,7 +135,7 @@ Allowed types: Anything with a sum
 
 Parameter: A number
 
-Example: ```{"sum_max": 100}```
+Example: `validate([10, 20, 50], {"sum_max": 100})`
 
 ### element_min:
 
@@ -143,7 +143,7 @@ Allowed types: Any collection of numbers
 
 Parameter: A number
 
-Example: ```{"element_min": 0}```
+Example: `validate([1, 2, 3], {"element_min": 0})`
 
 ### element_max:
 
@@ -151,7 +151,7 @@ Allowed types: Any collection of numbers
 
 Parameter: A number
 
-Example: ```{"element_max": 50}```
+Example: `validate([10, 20, 30, 40, 45], {"element_max": 50})`
 
 ### regex:
 
@@ -159,7 +159,7 @@ Allowed types: string
 
 Parameter: The regex pattern (string)
 
-Example: ```{"regex": "abc"}```
+Example: `validate("abc", {"regex": "^abc$"})`
 
 ### regex_flags:
 
@@ -170,18 +170,18 @@ Parameter: The regex flags
 Example: 
 ```python
 import re
-{"regex": "abc", "regex_flags": re.I | re.M | re.X}
+validate("aBc", {"regex": "abc", "regex_flags": re.I})
 ```
 
 ### must_be_true:
 
 Allowed types: Any
 
-Parameter: A function whose signature is ```Callable[[object], bool]```.
+Parameter: A function whose signature is `Callable[[object], bool]`.
 
-Example: ```{"must_be_true": lambda x: x % 2 == 0}```
+Example: `validate(8, {"must_be_true": lambda x: x % 2 == 0})`
 
-### before_date (Created in 2):
+### before_date (Created in 2.0.0):
 
 Allowed types: datetime object
 
@@ -190,7 +190,7 @@ Parameter: a datetime object
 Example: 
 ```python
 from datetime import datetime
-{"before_date": datetime(2000, 1, 1)}
+validate(datetime(1999, 8, 29), {"before_date": datetime(2000, 1, 1)})
 ```
 
 ### after_date (Created in 2.0.0):
@@ -202,7 +202,7 @@ Parameter: a datetime object
 Example: 
 ```python
 from datetime import datetime
-{"after_date": datetime(2000, 1, 1)}
+validate(datetime(2001, 8, 29), {"after_date": datetime(2000, 1, 1)})
 ```
 
 ### piece_color (Created in 3.0.0):
@@ -214,7 +214,7 @@ Parameter: chess.WHITE or chess.BLACK
 Example: 
 ```python
 import chess
-{"piece_color": chess.WHITE}
+validate(chess.Piece(chess.PAWN, chess.WHITE), {"piece_color": chess.WHITE})
 ```
 
 ### piece_type (Created in 3.0.0):
@@ -225,7 +225,7 @@ Parameter: Chess.PAWN, chess.KNIGHT, chess.BISHOP, chess.ROOK, chess.QUEEN, or c
 Example: 
 ```python
 import chess
-{"piece_type": chess.KNIGHT}
+validate(chess.Piece(chess.KNIGHT, chess.BLACK), {"piece_type": chess.KNIGHT})
 ```
 
 ### chess_symbol (Created in 3.0.0):
@@ -234,7 +234,11 @@ Allowed types: Piece object
 
 Parameter: a string representing the piece's symbol
 
-Example: ```{"chess_symbol": "r"})```
+Example: 
+```python
+import chess
+validate(chess.Piece(chess.ROOK, chess.BLACK), {"chess_symbol": "r"})
+```
 
 ### is_password (Created in 3.1.0):
 
@@ -242,21 +246,21 @@ Allowed types: string
 
 Parameter: a boolean stating whether or not the condition will activate
 
-Example: ```{"is_password": True}```
+Example: `validate("A6(dEfGhI", {"is_password": True})`
 
 
 
-# is_valid(value, rules) (Created in 3.2.0):
+# ```is_valid(value, rules)``` (Created in 3.2.0):
 is_valid is a simple helper function added in version 3.2.0.
 It provides a boolean‑based interface for validation by wrapping the main validate() function.
 
 ```python
-def is_valid(value: object, rules: Dict[str, object]) -> bool:
+def is_valid(value: T, rules: ValidateDict) -> bool:
     try:
         validate(value, rules)
         return True
-    except:
+    except Exception:
         return False
 ```
-This function returns True when validation succeeds and False when any rule fails.
+This function returns `True` when validation succeeds and `False` when any rule fails.
 It does not introduce new rule logic; it simply offers an alternative interface for users who prefer boolean validation instead of catching exceptions.
