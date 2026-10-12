@@ -420,3 +420,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 - [.gitignore](.gitignore) in tarball
 ### Fixed
 - Missing table in [pyproject.toml](pyproject.toml)
+
+## 3.4.0 — Created on 2026‑10-12
+### Changed
+- _ValidateDict to ValidateDict in [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi)
