@@ -55,7 +55,7 @@
     - [§6.6.4 Blocked users](#664-blocked-users)
     - [§6.6.5 Reports about the maintainer](#665-reports-about-the-maintainer)
     - [§6.6.6 Abusive appeals](#666-abusive-appeals)
-    - [§6.6.7 Review of permanent blocks](#667-review-of-permanent-blocks)
+    - [§6.6.7 Review of the uh-oh](#667-review-of-the-uh-oh)
 - [§7 Maintainer Accountability](#7-maintainer-accountability)
   - [§7.1 Pause before enforcing](#71-pause-before-enforcing)
   - [§7.2 Cite the rule](#72-cite-the-rule)
@@ -178,7 +178,7 @@ Contributions that violate this Code of Conduct may be removed.
 A record reset under §6.5 clears warnings and temporary blocks from the count in §6.2, but it does not erase the history. Maintainers may take a reset into account in the following cases:
 
 * **Pattern of behavior:** repeating a violation shortly after a reset, or spacing violations so that each falls in a different year, may be treated as a repeat violation instead of a first one.
-* **Severe violations:** records of severe violations, and of permanent blocks, are never reset.
+* **Severe violations:** records of severe violations, uh-oh blocks, and permanent blocks are never reset.
 * **Evasion:** a reset does not apply to a person who evaded enforcement under §3.11, such as by using another account during a block.
 
 Maintainers decide whether a pattern exists and may apply any action in §4.1 to §4.5.
@@ -212,9 +212,13 @@ Blocking is applied in steps, depending on severity and history:
 
 * **First violation:** a warning, or a temporary block of up to 7 days.
 * **Second violation:** a temporary block of 30 days.
-* **Third violation:** a temporary block of 365 days.
+* **Third violation:** a serious block.
 
-Severe violations are those under §3.1 to §3.4 and any other violation maintainers judge to cause serious harm. These may skip the steps above and result in an immediate 365 day block.
+Severe violations are those under [§3.1 (Harassment)](#31-harassment), [§3.2 (Threats or Intimidation)](#32-threats-or-intimidation), [§3.3 (Hate Speech)](#33-hate-speech), [§3.4 (Leaking Exploits)](#34-leaking-exploits), and any other violation maintainers judge to cause serious harm. These may skip the steps above and result in a serious block.
+
+A **serious block** is a block of 365 days. A violation by a person returning from a serious block, within the period in [§6.5](#65-record-keeping), results in another serious block. The first four serious blocks may be appealed after they end, under [§6.6.1](#661-how-to-appeal). The fifth serious block is called the "uh-oh". When an uh-oh ends, it is reviewed under [§6.6.7](#667-review-of-the-uh-oh), and the review ends in either reinstatement or a permanent block. A permanent block is issued only through that review.
+
+A serious block that is overturned on appeal does not count toward the five. An uh-oh is not issued while an appeal of an earlier serious block is pending or the 14-day period to file one is open.
 
 ### §6.3 Escalation to GitHub Trust & Safety
 Serious violations may be [escalated to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
@@ -232,7 +236,7 @@ The 365 days are counted from the date the most recent violation occurred, or fr
 A person's earlier warnings and temporary blocks are reset only after 365 days with **NO NEW VIOLATION**. A new violation restarts the 365 days for the whole record, and all earlier violations count toward the steps in §6.2 until a full year passes without another.
 
 #### §6.5.3 Exceptions
-Records of severe violations and permanent blocks are never reset. See [§4.6 (Limits on Record Resets)](#46-limits-on-record-resets) for limits on resets.
+Records of severe violations, uh-oh blocks, and permanent blocks are never reset. See [§4.6](#46-limits-on-record-resets) for limits on resets.
 
 ### §6.6 Appeals
 A person who receives a warning, content removal, or block under this Code of Conduct may ask the maintainer to reconsider it.
@@ -247,7 +251,7 @@ This project has one maintainer, so appeals are reviewed by the same person who 
 An overturned action is removed from the record kept under §6.5 and does not count toward the steps in §6.2. Filing an appeal doesn't pause the action. **ONE** appeal is allowed per action, and repeated or abusive appeals may be treated as a violation of §3.9 (Disruption).
 
 #### §6.6.4 Blocked users
-A blocked user cannot contact the project through GitHub. A person who has been temporarily blocked may appeal after the block ends. Permanent blocks cannot be appealed through the repository.
+A blocked user cannot contact the project through GitHub. A person who has been temporarily blocked, or given one of the first four serious blocks, may appeal after the block ends. An uh-oh is reviewed under [§6.6.7](#667-review-of-the-uh-oh). A permanent block cannot be appealed.
 
 #### §6.6.5 Reports about the maintainer
 Because the maintainer is the only reviewer, concerns about the maintainer's own conduct can be reported to GitHub under [§5.1 (Report Abuse on Github)](#51-report-abuse-on-github). GitHub applies its own rules to such reports, not this Code of Conduct.
@@ -255,23 +259,31 @@ Because the maintainer is the only reviewer, concerns about the maintainer's own
 #### §6.6.6 Abusive appeals
 A denied appeal isn't automatically a violation. An appeal may be treated as a violation of this section (and potentially others) only if it includes insults, includes threats (§3.2), includes harassment (§3.1), repeats an argument after a final decision (§3.9), is filed through an account other than the one that received the action, or relies on fabricated / altered evidence (§3.10.4). The maintainer may close such an appeal without further response.
 
-#### §6.6.7 Review of permanent blocks
-Permanent blocks cannot be appealed. Instead, the maintainer reviews every permanent block 365 days after it was issued, rereading the original record, and may lift the block if the record shows it was disproportionate. The review is based on the record alone, and the blocked person is not contacted. By January 31 of each year, the maintainer publishes, for the previous calendar year, the number of permanent blocks reviewed under this section in that year and the number of those lifted, without names, at [ENFORCEMENT.md](ENFORCEMENT.md). If there were none, the maintainer publishes a count of zero.
+#### §6.6.7 Review of the uh-oh
+This section applies to an uh-oh in place of [§6.6.1](#661-how-to-appeal) to [§6.6.3](#663-effect-on-records). When the 365 days of an uh-oh end, the blocked account is unblocked for the sole purpose of appealing.
+
+* **Window:** opens at 19:00 CT on the day the block ends and closes at 19:00 CT the next day. The notice of the block states both times. If the account is unblocked later than the opening time, the closing time moves later by the same amount.
+* **How:** one issue titled "Appeal," opened in this repository. The account posts nothing else during the window.
+* **Other content:** anything else the account posts during the window is hidden, and a private copy is kept under [§6.5](#65-record-keeping). The copy may be used in the review only if it violates this Code of Conduct or contradicts the appeal.
+* **Decision:** the account is blocked again when the window closes. The maintainer waits at least 14 days, rereads the record, and either lifts the uh-oh and lets the person back in, or issues a permanent block. The decision is final.
+* **If no appeal is filed:** permanent block.
+* **If lifted:** the record stays, and any new violation results in a permanent block without the earlier steps.
+* **Counts:** by January 31 of each year, the maintainer publishes, for the previous calendar year, the number of uh-oh blocks issued, uh-oh reviews decided, and uh-oh blocks lifted, without names, at [ENFORCEMENT.md](ENFORCEMENT.md).
 
 ## §7 Maintainer Accountability
 This Code of Conduct applies to maintainers in the same way it applies to everyone else. Maintainers hold themselves to the standards in §2 and §3 when they review contributions, answer issues, and enforce this document.
 
 ### §7.1 Pause before enforcing
-When a maintainer is personally involved in a dispute, for example as the target of an insult, they wait at least 24 hours before taking any action under §4, other than hiding content that is an immediate threat or an exposure of private information. In a dispute where the maintainer is personally involved, a warning under §4.1 is preferred over a block, unless the violation is severe according to §6.2.
+When a maintainer is personally involved in a dispute, e.g. as the target of an insult, they wait at least 24 hours before taking any action under §4, other than hiding content that is an immediate threat or an exposure of private information. In a dispute where the maintainer is personally involved, a warning under §4.1 is preferred over a block, unless the violation is severe according to §6.2.
 
 ### §7.2 Cite the rule
-Every enforcement action names the section(s) that were violated and links to the content involved. Maintainers don't act on a general impression of someone's attitude.
+Every enforcement action names the section(s) that were violated and links to / screenshots of the content involved. Maintainers don't act on a general impression of someone's attitude.
 
 ### §7.3 No Favoritism
 Maintainers apply the steps in §6.2, the record rules in §6.5, and the appeal rules in §6.6 in the same way regardless of who is involved, including friends, frequent contributors, themselves, and critics.
 
 ### §7.4 No misuse of enforcement
-Enforcement tools cannot be used to end technical disagreements, silence polite criticism of the project or its maintainer, or settle personal conflicts. Declining a contribution on technical grounds is a review decision and isn't an action under this Code of Conduct.
+Enforcement tools can't be used to end technical disagreements, silence polite criticism of the project or its maintainer, or settle personal conflicts. Declining a contribution on technical grounds is a review decision and isn't an action under this Code of Conduct.
 
 ### §7.5 Maintainer violations
 If a maintainer violates this Code of Conduct, the steps below apply.
@@ -302,4 +314,4 @@ A claim that a maintainer violated this Code of Conduct or failed to follow §7 
 * Links or screenshots of the content involved
 * The date it occurred
 
-A claim without these may be closed with a request for the missing details. A claim that is denied isn't automatically a violation. A claim that relies on fabricated or altered evidence, or on content that is shown not to exist, is treated as a violation of §3.10.4. Claims repeated after a final answer may be treated as a violation of §3.9, and §6.6.6 applies to them in the same way.
+A claim without these may be closed with a request for the missing details. A claim that is denied isn't automatically a violation. A claim that relies on fabricated or altered evidence or on content that is shown not to exist is treated as a violation of §3.10.4. Claims repeated after a final answer may be treated as a violation of §3.9, and §6.6.6 applies to them in the same way.
