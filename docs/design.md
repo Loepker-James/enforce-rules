@@ -77,9 +77,18 @@ match key:
 ## Convenience Wrapper (Version 3.2)
 Version 3.2 introduces ```is_valid()```, a boolean wrapper around ```validate()```:
 
-[See is_valid() wrapper](/src/enforce_rules/enforce_rules.py#L277-L282)
+```python
+def is_valid(value: T, rules: ValidateDict) -> bool:
+    try:
+        validate(value, rules)
+        return True
+    except Exception:
+        return False
+```
 
-This wrapper does not modify rule logic. It simply converts exceptions into boolean results.
+[See is_valid() wrapper in code](/src/enforce_rules/enforce_rules.py#L277-L282)
+
+This wrapper doesn't modify rule logic. It simply converts exceptions into boolean results.
 
 ## Rule Categories
 Rules are grouped by behavior:
