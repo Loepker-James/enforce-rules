@@ -6,14 +6,14 @@ It is published by January 31 of each year and covers the calendar year that jus
 
 ## Counts
 
-| Year | Permanent blocks issued | Permanent blocks reviewed | Permanent blocks lifted |
-|------|-------------------------|---------------------------|-------------------------|
+| Year | Uh-oh blocks issued | Uh-oh reviews decided | Uh-oh blocks lifted |
+|------|---------------------|-----------------------|---------------------|
 
 ## How the counts work
 
 * **Year:** the calendar year the counts cover. The first row covers the part of the year after the first contributor joined.
 * **Issued:** permanent blocks the maintainer issued during that year.
-* **Reviewed:** permanent blocks the maintainer reviewed during that year under §6.6.7, whenever they were issued. A block is first reviewed 365 days after it was issued, so the earliest rows will show zero.
+* **Reviewed:** permanent blocks the maintainer reviewed during that year under §6.6.7, whenever they were issued. A block is first reviewed 365 days after it was issued, so the earliest rows will show 0.
 * **Lifted:** the blocks among those reviewed that the maintainer lifted.
-* **Zero counts are published.** A row of zeros means the maintainer checked and there was nothing to report.
-* **Counts are exact.** Small numbers are not rounded or hidden.
+* **Zero counts are published.** A row of 0s means the maintainer checked and there was nothing to report.
+* **Counts are exact.** Small numbers aren't rounded or hidden.
