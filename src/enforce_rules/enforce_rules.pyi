@@ -4,7 +4,7 @@ from datetime import datetime
 
 _T = TypeVar("_T")
 
-class _ValidateDict(TypedDict, total=False):
+class ValidateDict(TypedDict, total=False):
     length: int
     min_length: int
     max_length: int
@@ -33,5 +33,5 @@ class _ValidateDict(TypedDict, total=False):
     chess_symbol: Literal["p", "n", "b", "r", "q", "k", "P", "N", "B", "R", "Q", "K"]
     is_password: bool
 
-def validate(value: _T, rules: _ValidateDict) -> _T: ...
-def is_valid(value: _T, rules: _ValidateDict) -> _T: ...
+def validate(value: _T, rules: ValidateDict) -> _T: ...
+def is_valid(value: _T, rules: ValidateDict) -> _T: ...
