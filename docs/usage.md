@@ -43,7 +43,7 @@ validate("cat", {"min_length": 3})
 
 The regex rule checks whether a pattern appears in the value.
 
-Version 1.1+ uses ```re.search``` instead of ```re.fullmatch```.
+Version 1.1+ uses `re.search` instead of `re.fullmatch`.
 
 ```python
 validate("xabc", {"regex": "abc"})
@@ -53,7 +53,7 @@ This passes (in version 1.1+) because "abc" appears anywhere in the string.
 
 ## What Happens When Validation Fails
 
-If the value does not meet the rules, ```validate()``` raises a ```ValueError```.
+If the value does not meet the rules, `validate()` raises a `ValueError`.
 This prevents invalid data from silently passing through your program.
 
 Example:
