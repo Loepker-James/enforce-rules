@@ -81,7 +81,7 @@ Every section and subsection of this Code of Conduct is equally binding, regardl
 Maintainers may change this Code of Conduct. Every section that existed on the day the first contributor joined the project (not yet) has been in effect since that day. A section added after that day shows the date it was added, in the form *(Added YYYY-MM-DD)*, and a section whose meaning is changed shows *(Amended YYYY-MM-DD: a one-line summary of the change)*. A new or amended section takes effect on the date shown and applies only to behavior on or after that date. Earlier behavior is judged under the rules that were in effect when it happened. No amendment may exempt any person nor role, including a maintainer, from a section of this Code of Conduct that applies to contributors nor may any amendment lessen the steps in [§7.5](#75-maintainer-violations) for maintainers without a public explanation of the reason.
 
 ### §1.4 Notation
-In this Code of Conduct, letters in parentheses attached to a word without a space mean that either form applies. "Pattern(s)" means one or more patterns, and "a(n)" means "a" or "an." Parentheses that are preceded by a space are ordinary punctuation, and what they contain is part of the text.
+In this Code of Conduct, letters in parentheses attached to a word without a space mean that either form applies. "Pattern(s)" means one or more patterns, and "a(n)" means "a" or "an." Parentheses that are preceded by a space are ordinary punctuation, and what they contain is part of the text. A forward slash (/) between words means "or" unless the sentence says otherwise.
 
 ## §2 Expected Behavior
 
@@ -130,7 +130,7 @@ Creating new accounts to bypass moderation is prohibited.
 Actions intended to sabotage development—such as derailing issues, spreading misinformation, or intentionally breaking workflows—are not allowed.
 
 ### §3.10 Rewording and Workarounds
-This Code of Conduct applies to the meaning and effect of what is said / done, not only to the exact words used. Doing (or not doing) anything that any section of this Code of Conduct requires, prohibits, or limits is treated the same whether it is done directly or indirectly.
+This Code of Conduct applies to the meaning and effect of what is said / done, not only to the exact words used. Doing (or not doing) anything that any section of this Code of Conduct requires, prohibits, or limits is treated the same whether done directly or indirectly.
 
 #### §3.10.1 Rewording
 Synonyms, euphemism, coded language, misspellings, symbols, images, sarcasm, or "just joking" framing are treated the same as the direct version of what they say.
