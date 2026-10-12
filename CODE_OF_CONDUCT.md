@@ -245,7 +245,7 @@ A person who receives a warning, content removal, or block under this Code of Co
 Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in [§5.2 (Report to The Maintainers)](#52-report-to-the-maintainers). For a block, the 14 days start on the day the block ends. An appeal should name the section(s) involved and explain why the action was mistaken or too severe.
 
 #### §6.6.2 Review
-This project has one maintainer, so appeals are reviewed by the same person who made the decision. The maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final. A violation by a person returning from a block of 365 days results in another block of 365 days, and may be reported to GitHub under [§4.4](#44-report-violations-to-github-trust--safety).
+This project has one maintainer, so appeals are reviewed by the same person who made the decision. The maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final.
 
 #### §6.6.3 Effect on records
 An overturned action is removed from the record kept under §6.5 and does not count toward the steps in §6.2. Filing an appeal doesn't pause the action. **ONE** appeal is allowed per action, and repeated or abusive appeals may be treated as a violation of §3.9 (Disruption).
@@ -265,7 +265,7 @@ This section applies to an uh-oh in place of [§6.6.1](#661-how-to-appeal) to [�
 * **Window:** opens at 19:00 CT on the day the block ends and closes at 19:00 CT the next day. The notice of the block states both times. If the account is unblocked later than the opening time, the closing time moves later by the same amount.
 * * **Schedule:** the notice of the block links to the appeal schedule at [ENFORCEMENT.md](ENFORCEMENT.md#appeal-windows).
 * **Postponement:** if the maintainer is unavailable, the maintainer may move the window to a later day, by up to 7 days. The new opening and closing times are posted in the appeal schedule, without names, before the original opening time. If the maintainer cannot post before then, the window opens when the maintainer posts and lasts 24 hours. A window is never moved earlier. A postponement is not counted against the person, and the 365 days in [§6.5.1](#651-reset-period) are counted from the original end date of the block.
-* **How:** one issue titled "Appeal," opened in this repository. The account posts nothing else during the window.
+* **How:** one issue titled "Appeal" opened in this repository. The account posts nothing else during the window.
 * **Other content:** anything else the account posts during the window is hidden, and a private copy is kept under [§6.5](#65-record-keeping). The copy may be used in the review only if it violates this Code of Conduct or contradicts the appeal.
 * **Decision:** the account is blocked again when the window closes. The maintainer waits at least 14 days, rereads the record, and either lifts the uh-oh and lets the person back in, or issues a permanent block. The decision is final.
 * **If no appeal is filed:** permanent block.
