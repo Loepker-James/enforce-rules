@@ -214,11 +214,11 @@ Blocking is applied in steps, depending on severity and history:
 * **Second violation:** a temporary block of 30 days.
 * **Third violation:** a serious block.
 
-Severe violations are those under [§3.1 (Harassment)](#31-harassment), [§3.2 (Threats or Intimidation)](#32-threats-or-intimidation), [§3.3 (Hate Speech)](#33-hate-speech), [§3.4 (Leaking Exploits)](#34-leaking-exploits), and any other violation maintainers judge to cause serious harm. These may skip the steps above and result in a serious block.
+Severe violations are those under §3.1 to §3.4, and any other violation maintainers judge to cause serious harm. These may skip the steps above and result in 2 serious blocks.
 
-A **serious block** is a block of 365 days. A violation by a person returning from a serious block, within the period in [§6.5](#65-record-keeping), results in another serious block. The first four serious blocks may be appealed after they end, under [§6.6.1](#661-how-to-appeal). The fifth serious block is called the "uh-oh". When an uh-oh ends, it is reviewed under [§6.6.7](#667-review-of-the-uh-oh), and the review ends in either reinstatement or a permanent block. A permanent block is issued only through that review.
+A **serious block** is a block of 365 days. A violation by a person returning from a serious block, within the period in §6.5, results in another serious block. The first four serious blocks may be appealed after they end, under §6.6.1. The 5<sup>th</sup> serious block is called the "uh-oh". When an uh-oh ends, it is reviewed under §6.6.7, and the review ends in either reinstatement or a permanent block. A permanent block is issued only through that review.
 
-A serious block that is overturned on appeal does not count toward the five. An uh-oh is not issued while an appeal of an earlier serious block is pending or the 14-day period to file one is open.
+A serious block that is overturned on appeal does not count toward the 5. An uh-oh isn't issued while an appeal of an earlier serious block is pending or the 14-day period to file one is open.
 
 ### §6.3 Escalation to GitHub Trust & Safety
 Serious violations may be [escalated to GitHub](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam).
@@ -236,13 +236,13 @@ The 365 days are counted from the date the most recent violation occurred, or fr
 A person's earlier warnings and temporary blocks are reset only after 365 days with **NO NEW VIOLATION**. A new violation restarts the 365 days for the whole record, and all earlier violations count toward the steps in §6.2 until a full year passes without another.
 
 #### §6.5.3 Exceptions
-Records of severe violations, uh-oh blocks, and permanent blocks are never reset. See [§4.6](#46-limits-on-record-resets) for limits on resets.
+Records of severe violations, uh-oh blocks, serious blocks, and permanent blocks are never reset. See [§4.6](#46-limits-on-record-resets) for limits on resets.
 
 ### §6.6 Appeals
 A person who receives a warning, content removal, or block under this Code of Conduct may ask the maintainer to reconsider it.
 
 #### §6.6.1 How to appeal
-Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in [§5.2 (Report to The Maintainers)](#52-report-to-the-maintainers). For a block, the 14 days start on the day the block ends. An appeal should name the section(s) involved and explain why the action was mistaken or too severe.
+Appeals must be made within 14 days of the action, by replying where the action was announced (for example, in the same issue or pull request) or through the channel in [§5.2](#52-report-to-the-maintainers). For a block, the 14 days start on the day the block ends. An appeal should name the section(s) involved and explain why the action was mistaken / too severe.
 
 #### §6.6.2 Review
 This project has one maintainer, so appeals are reviewed by the same person who made the decision. The maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final.
@@ -264,9 +264,9 @@ This section applies to an uh-oh in place of [§6.6.1](#661-how-to-appeal) to [�
 
 * **Window:** opens at 19:00 CT on the day the block ends and closes at 19:00 CT the next day. The notice of the block states both times. If the account is unblocked later than the opening time, the closing time moves later by the same amount.
 * * **Schedule:** the notice of the block links to the appeal schedule at [ENFORCEMENT.md](ENFORCEMENT.md#appeal-windows).
-* **Postponement:** if the maintainer is unavailable, the maintainer may move the window to a later day, by up to 7 days. The new opening and closing times are posted in the appeal schedule, without names, before the original opening time. If the maintainer cannot post before then, the window opens when the maintainer posts and lasts 24 hours. A window is never moved earlier. A postponement is not counted against the person, and the 365 days in [§6.5.1](#651-reset-period) are counted from the original end date of the block.
-* **How:** one issue titled "Appeal" opened in this repository. The account posts nothing else during the window.
-* **Other content:** anything else the account posts during the window is hidden, and a private copy is kept under [§6.5](#65-record-keeping). The copy may be used in the review only if it violates this Code of Conduct or contradicts the appeal.
+* **Postponement:** if the maintainer is unavailable, the maintainer may move the window to a later day, by up to 7 days. The new opening and closing times are posted in the appeal schedule, without names, before the original opening time. If the maintainer cannot post before then, the window opens when the maintainer posts and lasts 24 hours. A window is never moved earlier. A postponement is not counted against the person, and the 365 days in §6.5.1 are counted from the original end date of the block.
+* **How:** one issue titled "Appeal" opened in this repository. The account posts **NOTHING** else during the window.
+* **Other content:** anything else the account posts during the window is hidden, and a private copy is kept under §6.5. The copy may be used in the review only if it violates this Code of Conduct or contradicts the appeal.
 * **Decision:** the account is blocked again when the window closes. The maintainer waits at least 14 days, rereads the record, and either lifts the uh-oh and lets the person back in, or issues a permanent block. The decision is final.
 * **If no appeal is filed:** permanent block.
 * **If lifted:** the record stays, and any new violation results in a permanent block without the earlier steps.
@@ -279,7 +279,7 @@ This Code of Conduct applies to maintainers in the same way it applies to everyo
 When a maintainer is personally involved in a dispute, e.g. as the target of an insult, they wait at least 24 hours before taking any action under §4, other than hiding content that is an immediate threat or an exposure of private information. In a dispute where the maintainer is personally involved, a warning under §4.1 is preferred over a block, unless the violation is severe according to §6.2.
 
 ### §7.2 Cite the rule
-Every enforcement action names the section(s) that were violated and links to / screenshots of the content involved. Maintainers don't act on a general impression of someone's attitude.
+Every enforcement action names the section(s) that were violated and links to or screenshots of the content involved. Maintainers don't act on a general impression of someone's attitude.
 
 ### §7.3 No Favoritism
 Maintainers apply the steps in §6.2, the record rules in §6.5, and the appeal rules in §6.6 in the same way regardless of who is involved, including friends, frequent contributors, themselves, and critics.
@@ -291,7 +291,7 @@ Enforcement tools can't be used to end technical disagreements, silence polite c
 If a maintainer violates this Code of Conduct, the steps below apply.
 
 #### §7.5.1 Correction
-Within 7 days of becoming aware of the violation, the maintainer edits / removes the content and acknowledges the problem publicly, naming the section violated. Content is edited with a visible note and isn't silently deleted, in line with [§3.10.4](#3104-tampering-with-evidence).
+Within 7 days of becoming aware of the violation, the maintainer edits / removes the content and publicly acknowledges the problem, naming the section violated. Content is edited with a visible note and isn't silently deleted, in line with §3.10.4.
 
 #### §7.5.2 Records
 Maintainer violations are recorded in the same private records as other violations under §6.5, with the same details and the same 365-day period.
