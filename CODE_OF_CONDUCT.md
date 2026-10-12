@@ -56,6 +56,14 @@
     - [§6.6.5 Reports about the maintainer](#665-reports-about-the-maintainer)
     - [§6.6.6 Abusive appeals](#666-abusive-appeals)
     - [§6.6.7 Review of the uh-oh](#667-review-of-the-uh-oh)
+      - [§6.6.7.1 Window](#6671-window)
+      - [§6.6.7.2 Postponement](#6672-postponement)
+      - [§6.6.7.3 How to appeal](#6673-how-to-appeal)
+      - [§6.6.7.4 Other content](#6674-other-content)
+      - [§6.6.7.5 Decision](#6675-decision)
+      - [§6.6.7.6 If no appeal is filed](#6676-if-no-appeal-is-filed)
+      - [§6.6.7.7 If lifted](#6677-if-lifted)
+      - [§6.6.7.8 Counts](#6678-counts)
 - [§7 Maintainer Accountability](#7-maintainer-accountability)
   - [§7.1 Pause before enforcing](#71-pause-before-enforcing)
   - [§7.2 Cite the rule](#72-cite-the-rule)
@@ -262,15 +270,32 @@ A denied appeal isn't automatically a violation. An appeal may be treated as a v
 #### §6.6.7 Review of the uh-oh
 This section applies to an uh-oh in place of [§6.6.1](#661-how-to-appeal) to [§6.6.3](#663-effect-on-records). When the 365 days of an uh-oh end, the blocked account is unblocked for the sole purpose of appealing.
 
-* **Window:** opens at 19:00 CT on the day the block ends and closes at 19:00 CT the next day. The notice of the block states both times. If the account is unblocked later than the opening time, the closing time moves later by the same amount.
-* * **Schedule:** the notice of the block links to the appeal schedule at [ENFORCEMENT.md](ENFORCEMENT.md#appeal-windows).
-* **Postponement:** if the maintainer is unavailable, the maintainer may move the window to a later day, by up to 7 days. The new opening and closing times are posted in the appeal schedule, without names, before the original opening time. If the maintainer cannot post before then, the window opens when the maintainer posts and lasts 24 hours. A window is never moved earlier. A postponement is not counted against the person, and the 365 days in §6.5.1 are counted from the original end date of the block.
-* **How:** one issue titled "Appeal" opened in this repository. The account posts **NOTHING** else during the window.
-* **Other content:** anything else the account posts during the window is hidden, and a private copy is kept under §6.5. The copy may be used in the review only if it violates this Code of Conduct or contradicts the appeal.
-* **Decision:** the account is blocked again when the window closes. The maintainer waits at least 14 days, rereads the record, and either lifts the uh-oh and lets the person back in, or issues a permanent block. The decision is final.
-* **If no appeal is filed:** permanent block.
-* **If lifted:** the record stays, and any new violation results in a permanent block without the earlier steps.
-* **Counts:** by January 31 of each year, the maintainer publishes, for the previous calendar year, the number of uh-oh blocks issued, uh-oh reviews decided, and uh-oh blocks lifted, without names, at [ENFORCEMENT.md](ENFORCEMENT.md).
+#### §6.6.7 Review of the uh-oh
+This section applies to an uh-oh in place of §6.6.1 to §6.6.3. When the 365 days of an uh-oh end, the blocked account is unblocked for the sole purpose of appealing.
+
+##### §6.6.7.1 Window
+The window opens at 19:00 CT on the day the block ends and closes at 19:00 CT the next day. The notice of the block states both times and links to the appeal schedule at [ENFORCEMENT.md](ENFORCEMENT.md#appeal-windows). If the account is unblocked later than the opening time, the closing time moves later by the same amount.
+
+##### §6.6.7.2 Postponement
+If the maintainer is unavailable, the maintainer may move the window to a later day, by up to 7 days. The new opening and closing times are posted in the appeal schedule, without names, before the original opening time. If the maintainer cannot post before then, the window opens when the maintainer posts and lasts 24 hours. A window is never moved earlier. A postponement is not counted against the person, and the 365 days in §6.5.1 are counted from the original end date of the block.
+
+##### §6.6.7.3 How to appeal
+One issue titled "Appeal" opened in this repository. The account posts **NOTHING** else during the window.
+
+##### §6.6.7.4 Other content
+Anything else the account posts during the window is hidden, and a private copy is kept under §6.5. The copy may be used in the review only if it violates this Code of Conduct or contradicts the appeal.
+
+##### §6.6.7.5 Decision
+The account is blocked again when the window closes. The maintainer waits at least 14 days, rereads the record, and either lifts the uh-oh and lets the person back in, or issues a permanent block. The decision is final.
+
+##### §6.6.7.6 If no appeal is filed
+If no appeal is filed, a permanent block is issued.
+
+##### §6.6.7.7 If lifted
+The record stays, and any new violation results in a permanent block without the earlier steps.
+
+##### §6.6.7.8 Counts
+By January 31 of each year, the maintainer publishes, for the previous calendar year, the number of uh-oh blocks issued, uh-oh reviews decided, and uh-oh blocks lifted, without names, at [ENFORCEMENT.md](ENFORCEMENT.md#counts).
 
 ## §7 Maintainer Accountability
 This Code of Conduct applies to maintainers in the same way it applies to everyone else. Maintainers hold themselves to the standards in §2 and §3 when they review contributions, answer issues, and enforce this document.
