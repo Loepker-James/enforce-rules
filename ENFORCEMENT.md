@@ -22,5 +22,5 @@ It is published by January 31 of each year and covers the calendar year that jus
 
 Windows for reviews under §6.6.7 of the Code of Conduct are posted here. Entries contain no names. An entry is never edited or removed. A postponement is added as a new line below the original.
 
-| Date posted | Original window | New window (if postponed) | Reason |
-|-------------|-----------------|---------------------------|--------|
+| Date posted | Original window | New window (if postponed) |
+|-------------|-----------------|---------------------------|
