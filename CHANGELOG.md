@@ -341,6 +341,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 - Added header in [README](README.md)
 
 ## 3.2.23 — Created on 2026‑10-04
+**Note: Versions 3.2.23 - 3.4.1 are broken**
 ### Added
 - [\_\_all\_\_](src/enforce_rules/__init__.py#L2)
 - .pyi files
