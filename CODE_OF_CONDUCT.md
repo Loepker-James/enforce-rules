@@ -218,9 +218,9 @@ Content that violates this Code of Conduct may be removed.
 ### §6.2 Temporary or permanent blocking
 Blocking is applied in steps, depending on severity and history:
 
-* **First violation:** a warning, or a temporary block of up to 7 days.
-* **Second violation:** a temporary block of 30 days.
-* **Third violation:** a serious block.
+* **1<sup>st</sup> violation:** a warning, or a temporary block of up to 7 days.
+* **2<sup>nd</sup> violation:** a temporary block of 30 days.
+* **3<sup>th</sup> violation:** a serious block.
 
 Severe violations are those under §3.1 to §3.4, and any other violation maintainers judge to cause serious harm. These may skip the steps above and result in 2 serious blocks.
 
@@ -324,9 +324,9 @@ Maintainer violations are recorded in the same private records as other violatio
 #### §7.5.3 Repeat violations
 Maintainer violations are counted using the records and the 365-day period in §6.5, the same way as for contributors.
 
-* **Second violation:** the maintainer takes no action under §4.1 to §4.5 for 30 days, except hiding content that is an immediate threat or an exposure of private information, and publishes a short note saying which section was violated and what will change.
-* **Third violation:** the maintainer permanently stops enforcement under §4.1 to §4.5, so conduct reports go to GitHub only; publishes a statement listing the sections violated and the dates; and releases only bug fixes and security fixes for 90 days.
-* **Fourth violation:** the maintainer publishes a final notice listing the section(s) violated and the dates, continues to release security fixes for 90 days, and then publishes a final release that works as before and states that the project is no longer maintained. The maintainer then archives the repository, does not unarchive it, and does not restart or continue the project, or a substantially similar one, under any name.
+* **2<sup>nd</sup> violation:** the maintainer takes no action under §4.1 to §4.5 for 30 days, except hiding content that is an immediate threat or an exposure of private information, and publishes a short note saying which section was violated and what will change.
+* **3<sup>rd</sup> violation:** the maintainer permanently stops enforcement under §4.1 to §4.5, so conduct reports go to GitHub only; publishes a statement listing the sections violated and the dates; and releases only bug fixes and security fixes for 90 days.
+* **4<sup>th</sup> violation:** the maintainer publishes a final notice listing the section(s) violated and the dates, continues to release security fixes for 90 days, and then publishes a final release that works as before and states that the project is no longer maintained. The maintainer then archives the repository, does not unarchive it, and does not restart or continue the project, or a substantially similar one, under any name.
 
 #### §7.5.4 Severe violations
 A violation by a maintainer under §3.1 to §3.4 may skip the steps in §7.5.3, in the same way as §6.2 for contributors.
