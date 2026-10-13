@@ -13,6 +13,9 @@
 /pyproject.toml            @Loepker-James
 /MANIFEST.in               @Loepker-James
 
+# Protect legal files
+/LICENSE                   @Loepker-James
+
 # Protect all python code
 *.py                   @Loepker-James
 
