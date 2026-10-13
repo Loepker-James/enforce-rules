@@ -199,4 +199,25 @@ This was re-added in **3.3.8**. If your version is broken, please install **3.3.
 3.3.1-3.3.5 contains a broken [enforce_rules.pyi](/src/enforce_rules/enforce_rules.pyi) that prevents mypy/pyright from running properly.
 Skip this version and upgrade directly to 3.3.6.
 
+## Upgrading/Downgrading to 3.2.12-3.4.0 --- DONT
+Versions 3.2.12 to 3.14.0 should be skipped.
+
+These releases shipped with an incorrect [enforce_rules.pyi](/src/enforce_rules/enforce_rules.pyi), which causes mypy/pyright to raise an error immediately on startup or not function properly. Because the module cannot fully load, no rules validate at all.
+
+### What went wrong
+* A required internal import was accidentally removed.
+* The validator fails during initialization.
+* Any call to ```validate()``` never occurs because Python raises an error before the function is reached.
+* No rules are parsed nor executed.
+
+### Why this matters
+Since mypy/pyright will be wrong, 3.2.12 to 3.4.0 is unusable.
+Users upgrading to this version will encounter immediate crashes, making migration impossible.
+
+### Required user actions
+* Do not install any version in this range.
+* If you already installed it, upgrade to **3.4.1**.  
+  This version has the same working validator code.
+* No rule changes are required — the issue is internal, not user-facing.
+* After upgrading to version 3.4.1, validation will work normally again.
  
