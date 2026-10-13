@@ -424,3 +424,9 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ## 3.4.0 — Created on 2026‑10-12
 ### Changed
 - _ValidateDict to ValidateDict in [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi)
+
+## 3.4.1 — Created on 2026‑10-13
+### Added
+- docstring in `is_valid`
+### Fixed
+- is_valid type hints in [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi)
