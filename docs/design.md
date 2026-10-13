@@ -75,10 +75,15 @@ match key:
 
 
 ## Convenience Wrapper (Version 3.2)
-Version 3.2 introduces `is_valid()`, a boolean wrapper around `validate()`:
+Version 3.2 introduces `is_valid()`, a boolean wrapper around `validate()` (snippet shows latest version of is_valid):
 
 ```python
 def is_valid(value: T, rules: ValidateDict) -> bool:
+    """Return True if value passes every rule, otherwise False.
+
+    Any exception raised while checking counts as a failure, including
+    wrong-type values and misspelled rule names. Use validate() to see why.
+    """
     try:
         validate(value, rules)
         return True
@@ -87,6 +92,8 @@ def is_valid(value: T, rules: ValidateDict) -> bool:
 ```
 
 This wrapper doesn't modify rule logic. It simply converts exceptions into boolean results.
+
+**WARNING**: It never raises any error while checking, including a wrong-type value or a misspelled rule name, returns `False`. Use `validate()` when you need to know why a check failed.
 
 ## Rule Categories
 Rules are grouped by behavior:
