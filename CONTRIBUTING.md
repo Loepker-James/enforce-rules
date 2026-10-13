@@ -100,12 +100,15 @@ Major bumps do **not** imply breaking changes.
 
 You should **only** bump a version **if** you are changing one of these files:
 
-- `README.md`  
-- `LICENSE` (which you should never change)
-- `pyproject.toml`  
-- `src/enforce_rules/**`
+- [`README.md`](README.md)  
+- [`LICENSE`](LICENSE) (which you should never change)
+- [`requirements.txt`](requirements.txt) (which you should never change)
+- [`MANIFEST.in`](MANIFEST.in) (which you should never change)
+- [`.gitignore`](.gitignore) (which you should never change)
+- [`pyproject.toml`](pyproject.toml)
+- [`src/enforce_rules/**`](/src/enforce_rules/)
   
-Pull requests that add `__version__`, `--version` flags, or any version-exposing code will not be accepted.  
+Pull requests that add `__version__`, `--version` flags, or any version-exposing code won't be accepted.  
 This project uses metadata-based versioning only.
 
 ---
