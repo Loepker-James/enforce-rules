@@ -141,7 +141,7 @@ Actions intended to sabotage development—such as derailing issues, spreading m
 This Code of Conduct applies to the meaning and effect of what is said / done, not only to the exact words used. Doing (or not doing) anything that any section of this Code of Conduct requires, prohibits, or limits is treated the same whether done directly or indirectly.
 
 #### §3.10.1 Rewording
-Synonyms, euphemism, coded language, misspellings, symbols, images, sarcasm, or "just joking" framing are treated the same as the direct version of what they say.
+Synonyms, euphemism (softer or indirect wording), coded language, misspellings, symbols, images, sarcasm, or "just joking" framing are treated the same as the direct version of what they say.
 
 #### §3.10.2 Splitting
 Dividing an act across several messages, posts, or accounts is treated as a single act. Maintainers consider the messages together, including the order they were posted and any pattern(s) between them, even if no single message would violate this Code of Conduct on its own.
