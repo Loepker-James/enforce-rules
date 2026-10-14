@@ -30,7 +30,10 @@ body:
     id: alternatives
     attributes:
       label: What do you do today instead?
-      description: For example, a `must_be_true` function you wrote yourself.
+      description: Paste the code you use today, such as a `must_be_true` function. If you have no workaround, write `# none`.
+      render: python
+    validations:
+      required: true
   - type: checkboxes
     id: compatibility
     attributes:
