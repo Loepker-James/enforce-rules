@@ -1,0 +1,25 @@
+name: Question
+description: Ask how to use enforce-rules
+title: "Question: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check the README first. Each keyword has an example there.
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: Your code
+      description: What you have so far, if anything.
+      render: python
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
