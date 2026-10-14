@@ -256,19 +256,16 @@ Appeals must be made within 14 days of the action, by replying where the action 
 This project has one maintainer, so appeals are reviewed by the same person who made the decision. The maintainer waits at least 14 days before deciding and rereads the original record. The maintainer may uphold, reduce, or overturn the action, and the decision is final.
 
 #### §6.6.3 Effect on records
-An overturned action is removed from the record kept under §6.5 and does not count toward the steps in §6.2. Filing an appeal doesn't pause the action. **ONE** appeal is allowed per action, and repeated or abusive appeals may be treated as a violation of §3.9 (Disruption).
+An overturned action is removed from the record kept under §6.5 and doesn't count toward the steps in §6.2. Filing an appeal doesn't pause the action. **ONE** appeal is allowed per action, and repeated or abusive appeals may be treated as a violation of §3.9 (Disruption).
 
 #### §6.6.4 Blocked users
-A blocked user cannot contact the project through GitHub. A person who has been temporarily blocked, or given one of the first four serious blocks, may appeal after the block ends. An uh-oh is reviewed under [§6.6.7](#667-review-of-the-uh-oh). A permanent block cannot be appealed.
+A blocked user cannot contact the project through GitHub. A person who has been temporarily blocked, or given one of the first four serious blocks, may appeal after the block ends. An uh-oh is reviewed under §6.6.7. A permanent block cannot be appealed.
 
 #### §6.6.5 Reports about the maintainer
 Because the maintainer is the only reviewer, concerns about the maintainer's own conduct can be reported to GitHub under [§5.1 (Report Abuse on Github)](#51-report-abuse-on-github). GitHub applies its own rules to such reports, not this Code of Conduct.
 
 #### §6.6.6 Abusive appeals
 A denied appeal isn't automatically a violation. An appeal may be treated as a violation of this section (and potentially others) only if it includes insults, includes threats (§3.2), includes harassment (§3.1), repeats an argument after a final decision (§3.9), is filed through an account other than the one that received the action, or relies on fabricated / altered evidence (§3.10.4). The maintainer may close such an appeal without further response.
-
-#### §6.6.7 Review of the uh-oh
-This section applies to an uh-oh in place of [§6.6.1](#661-how-to-appeal) to [§6.6.3](#663-effect-on-records). When the 365 days of an uh-oh end, the blocked account is unblocked for the sole purpose of appealing.
 
 #### §6.6.7 Review of the uh-oh
 This section applies to an uh-oh in place of §6.6.1 to §6.6.3. When the 365 days of an uh-oh end, the blocked account is unblocked for the sole purpose of appealing.
