@@ -129,7 +129,7 @@ Spam includes irrelevant messages, repeated posts, or attempts to derail convers
 Trolling includes baiting, antagonizing, or intentionally causing conflict.
 
 ### §3.7 Impersonation
-Pretending to be another contributor / maintainer is prohibited.
+Pretending to be another contributor or maintainer is prohibited.
 
 ### §3.8 Sockpuppeting
 Creating new accounts to bypass moderation is prohibited.
