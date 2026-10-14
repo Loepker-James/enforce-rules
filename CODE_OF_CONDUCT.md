@@ -220,7 +220,7 @@ Blocking is applied in steps, depending on severity and history:
 
 * **1<sup>st</sup> violation:** a warning, or a temporary block of up to 7 days.
 * **2<sup>nd</sup> violation:** a temporary block of 30 days.
-* **3<sup>th</sup> violation:** a serious block.
+* **3<sup>rd</sup> violation:** a serious block.
 
 Severe violations are those under §3.1 to §3.4, and any other violation maintainers judge to cause serious harm. These may skip the steps above and result in 2 serious blocks.
 
