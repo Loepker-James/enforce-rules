@@ -10,11 +10,11 @@
 /.gitignore            @Loepker-James
 
 # Protect build files
-/pyproject.toml            @Loepker-James
-/MANIFEST.in               @Loepker-James
+/pyproject.toml        @Loepker-James
+/MANIFEST.in           @Loepker-James
 
 # Protect legal files
-/LICENSE                   @Loepker-James
+/LICENSE               @Loepker-James
 
 # Protect all python code
 *.py                   @Loepker-James
@@ -24,7 +24,7 @@
 qlpack.yml             @Loepker-James
 
 # Freeze GitHub configuration files
-/.github/**                @Loepker-James
+/.github/**            @Loepker-James
 
 # Protect typing metadata
 /src/enforce_rules/py.typed            @Loepker-James
