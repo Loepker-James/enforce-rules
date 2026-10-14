@@ -24,7 +24,7 @@ body:
     id: example
     attributes:
       label: Example usage
-      description: How you would call it.
+      description: How you would use it.
       render: python
   - type: textarea
     id: alternatives
