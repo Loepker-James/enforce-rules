@@ -12,7 +12,7 @@ body:
     attributes:
       label: enforce-rules version
       description: "Run `pip show enforce-rules` to find it."
-      placeholder: "3.3.8"
+      placeholder: "MAJOR.MINOR.PATCH"
     validations:
       required: true
   - type: input
