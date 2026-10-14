@@ -89,7 +89,7 @@ Every section and subsection of this Code of Conduct is equally binding, regardl
 Maintainers may change this Code of Conduct. Every section that existed on the day the first contributor joined the project (not yet) has been in effect since that day. A section added after that day shows the date it was added, in the form *(Added YYYY-MM-DD)*, and a section whose meaning is changed shows *(Amended YYYY-MM-DD: a one-line summary of the change)*. A new or amended section takes effect on the date shown and applies only to behavior on or after that date. Earlier behavior is judged under the rules that were in effect when it happened. No amendment may exempt any person nor role, including a maintainer, from a section of this Code of Conduct that applies to contributors nor may any amendment lessen the steps in [§7.5](#75-maintainer-violations) for maintainers without a public explanation of the reason.
 
 ### §1.4 Notation
-In this Code of Conduct, letters in parentheses attached to a word without a space mean that either form applies. "Pattern(s)" means one or more patterns, and "a(n)" means "a" or "an." Parentheses that are preceded by a space are ordinary punctuation, and what they contain is part of the text. A forward slash (/) between words means "or" unless the sentence says otherwise.
+In this Code of Conduct, letters in parentheses attached to a word without a space mean that either form applies. "Pattern(s)" means one or more patterns, and "a(n)" means "a" or "an." Parentheses that are preceded by a space are ordinary punctuation, and what they contain is part of the text. A forward slash (/) between words means "or" unless the sentence says otherwise. Please make sure to read this Code of Conduct slowly enough to understand the details and not skim it.
 
 ## §2 Expected Behavior
 
@@ -159,7 +159,7 @@ Maintainers decide whether behavior falls under §3.10 by considering what a rea
 Evading or trying to evade an action taken under this Code of Conduct is prohibited. This includes:
 
 * Returning through another account after a block, or continuing behavior that was warned about (This means a violation of §3.8 is a violation of §3.11)
-* Repeating removed content, or continuing a prohibited behavior in another place, such as a new issue, a discussion, or a fork
+* Repeating removed content or continuing a prohibited behavior in another place such as a new issue, a discussion, or a fork
 * Timing or spacing violations to take advantage of a record reset
 
 Evasion is a violation in itself, and maintainers may treat it as a repeat violation. A record reset doesn't apply to a person who evaded enforcement. See [§4.6 (Limits on Record Resets)](#46-limits-on-record-resets) for limits on resets.
