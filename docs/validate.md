@@ -9,7 +9,7 @@ The validator does these steps for each rule.
 3. The helper may raise a ```ValueError```
 4. If none of the helpers raise errors, return the value.
 
-## Keywords:
+# Keywords:
 
 ### length
 
@@ -167,7 +167,7 @@ Checks that the string meets password requirements when activated.
 
 Failure means the string does not meet one or more password criteria.
 
-#### Password Requirements
+### Password Requirements
 
 When ```{"is_password": True}``` is enabled, the validator enforces the following criteria:
 
