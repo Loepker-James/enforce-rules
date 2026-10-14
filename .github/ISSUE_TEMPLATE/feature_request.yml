@@ -1,0 +1,40 @@
+name: New keyword or feature
+description: Suggest a new rule keyword or an improvement
+title: "Feature: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This project only adds to existing behavior. A suggestion cannot remove or change what an existing keyword does.
+  - type: input
+    id: keyword
+    attributes:
+      label: Proposed keyword name
+      description: Leave blank if this is not a new keyword.
+      placeholder: "no_whitespace"
+  - type: textarea
+    id: what
+    attributes:
+      label: What should it do?
+      description: Describe what it checks and when it should fail.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example usage
+      description: How you would call it.
+      render: python
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What do you do today instead?
+      description: For example, a `must_be_true` function you wrote yourself.
+  - type: checkboxes
+    id: compatibility
+    attributes:
+      label: Backward compatibility
+      options:
+        - label: This would only add something. It would not remove or change an existing keyword or behavior.
+          required: true
