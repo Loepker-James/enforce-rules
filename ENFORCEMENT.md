@@ -16,7 +16,7 @@ It is published by January 31 of each year and covers the calendar year that jus
 * **Reviewed:** permanent blocks the maintainer reviewed during that year under §6.6.7, whenever they were issued. A block is first reviewed 365 days after it was issued, so the earliest rows will show zero.
 * **Lifted:** the blocks among those reviewed that the maintainer lifted.
 * **Zero counts are published.** A row of zeros means the maintainer checked and there was nothing to report.
-* **Counts are exact.** Small numbers aren't rounded or hidden.
+* **Counts are exact.** Small numbers aren't rounded nor hidden.
 
 ## Appeal windows
 
