@@ -1,6 +1,6 @@
 # Enforcement counts
 
-This file lists yearly counts of permanent blocks, as required by [§6.6.7 of the Code of Conduct](CODE_OF_CONDUCT.md#667-review-of-permanent-blocks). 
+This file lists yearly counts of permanent blocks, as required by [§6.6.7 of the Code of Conduct](CODE_OF_CONDUCT.md#667-review-of-the-uh-oh). 
 
 It is published by January 31 of each year and covers the calendar year that just ended. Counts contain no names nor details about individual cases.
 
