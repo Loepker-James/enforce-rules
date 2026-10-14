@@ -1,0 +1,47 @@
+name: Bug report
+description: Something does not work the way the README says it should
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please check the README and the migration guide first, since the behavior may be documented there.
+  - type: input
+    id: version
+    attributes:
+      label: enforce-rules version
+      description: "Run `pip show enforce-rules` to find it."
+      placeholder: "3.3.8"
+    validations:
+      required: true
+  - type: input
+    id: python-version
+    attributes:
+      label: Python version
+      placeholder: "3.12"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe what you did and what went wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Minimal example
+      description: The smallest code that shows the problem.
+      render: python
+  - type: textarea
+    id: output
+    attributes:
+      label: Error output
+      description: Paste the full traceback, if there is one.
+      render: text
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
