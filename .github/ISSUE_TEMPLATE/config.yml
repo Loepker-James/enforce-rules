@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Report a security vulnerability
+  - name: Open A Private Security Advisory
     url: https://github.com/Loepker-James/enforce-rules/security/advisories/new
-    about: Report security problems privately here. Please do not open a public issue.
+    about: Report security problems privately here. Opening a public issue to report a vulnerability is forbidden according to §3.4 of the Code of Conduct
