@@ -2,7 +2,7 @@
 
 Changes that break backwards compatibility and bugged versions go here, so you can update your code before you download it.
 
-Syntax deprecations are [here](deprecations.md).
+See the [syntax deprecations](deprecations.md).
 
 ## Upgrading from 1.1- to 1.1+
 
