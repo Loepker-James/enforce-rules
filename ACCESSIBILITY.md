@@ -20,7 +20,7 @@ Changes to documentation should follow these points:
 * Add a text description for any image.
 * Put code and error output in text, not screenshots.
 
-The project does not run automated accessibility checks. When you change something that readers see, describe how you looked at the rendered result in your pull request.
+The project doesn't run automated accessibility checks. When you change something that readers see, describe how you looked at the rendered result in your pull request.
 
 ## Reporting accessibility issues
 
