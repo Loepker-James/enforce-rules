@@ -431,3 +431,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 - docstring in `is_valid`
 ### Fixed
 - is_valid type hints in [enforce_rules.pyi](src/enforce_rules/enforce_rules.pyi)
+
+## 3.4.2 — Created on 2026‑10-14
+### Fixed
+- Improved [README](README.md)'s accesibility
