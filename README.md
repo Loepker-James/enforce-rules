@@ -1,4 +1,5 @@
 Project Enforce Rules
+
 Project Enforce Rules (or PER for short) expands the Python type system to allow more constraints.
 
 Version #
@@ -7,11 +8,11 @@ MAJOR: 3
 
 MINOR: 4
 
-PATCH: 1
+PATCH: 2
 
-If you need to catch up, you can see the full version history in the [CHANGELOG](CHANGELOG.md).
+If you need to catch up, you can see the full version history in the [CHANGELOG](https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md).
 
-Documentation can be found [here](docs/).
+Read the [documentation](https://github.com/Loepker-James/enforce-rules/tree/main/docs).
 
 It exists to let you use features Python doesn't already provide in the typing system — things you probably want, like min, max, length, all_same, and many more.
 
