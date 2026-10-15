@@ -29,6 +29,7 @@
     - [§3.10.4 Tampering with Evidence](#3104-tampering-with-evidence)
     - [§3.10.5 Interpretation](#3105-interpretation)
   - [§3.11 Evading Enforcement](#311-evading-enforcement)
+  - [§3.12 Closing and Reopening Issues](#312-closing-and-reopening-issues)
 - [§4 Enforcement](#4-enforcement)
   - [§4.1 Issue a warning](#41-issue-a-warning)
   - [§4.2 Hide or delete harmful content](#42-hide-or-delete-harmful-content)
@@ -163,6 +164,16 @@ Evading or trying to evade an action taken under this Code of Conduct is prohibi
 * Timing or spacing violations to take advantage of a record reset
 
 Evasion is a violation in itself, and maintainers may treat it as a repeat violation. A record reset doesn't apply to a person who evaded enforcement. See [§4.6 (Limits on Record Resets)](#46-limits-on-record-resets) for limits on resets.
+
+### §3.12 Closing and Reopening Issues
+A maintainer may close an issue in either of the cases below. Closing is a review decision under §7.4 and is not an action under this Code of Conduct.
+
+* **Invalid:** a required field in the issue's template is empty or filled with text that does not answer it, such as "n/a." The maintainer labels the issue "invalid." Fields that are not required may be left empty.
+* **Duplicate:** another issue already covers the same problem or request. The maintainer labels the issue "duplicate" and links to the original issue in the closing comment. A person with more information can add it to the original issue.
+
+The closing comment cites this section. A person who thinks the decision was wrong may say why in a comment on the closed issue instead of reopening it, and the maintainer reads the comment and may reopen the issue. Reports of security vulnerabilities and accessibility problems are not closed as invalid. A duplicate of one of them is closed only after the maintainer replies and links to the original.
+
+Reopening an issue closed this way, without changing it to fix the reason it was closed, is a violation of §3.9 The first time, the maintainer closes it again with a comment that cites this section. Repeating it after that comment is handled under §6.2.
 
 ## §4 Enforcement
 Maintainers may take any of the following actions in §4.1 to §4.5:
