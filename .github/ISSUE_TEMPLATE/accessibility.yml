@@ -26,7 +26,7 @@ body:
     id: where
     attributes:
       label: Where did it happen?
-      description: A link to the page or file, if you have one.
+      description: A link to the page or file, or anything else that shows where the accessibility problem happened. Leave this empty if you do not have one.
   - type: input
     id: environment
     attributes:
