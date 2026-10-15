@@ -8,7 +8,7 @@ enforce-rules is a Python library, and people who read its documentation or cont
 * **Clear structure.** Documents use headings in order, and rules in the Code of Conduct have numbered sections that can be linked to.
 * **Text, not images.** Code examples and error messages are written as text so they can be read aloud, copied, and translated.
 
-We do not claim that the documentation meets any accessibility standard. Nobody has evaluated it against one.
+We don't claim that the documentation meets any accessibility standard. Nobody has evaluated it against one.
 
 ## Contributor expectations
 
@@ -16,7 +16,7 @@ Changes to documentation should follow these points:
 
 * Use headings in order and do not skip levels.
 * Use link text that describes where the link goes, not "click here."
-* Do not use color alone to carry meaning.
+* Don't use color alone to carry meaning.
 * Add a text description for any image.
 * Put code and error output in text, not screenshots.
 
