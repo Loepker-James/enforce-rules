@@ -157,6 +157,11 @@ In short: the banner is harmless. Everything is working correctly.
 
 ---
 
+## Issue templates
+Please fill in every required field. A required field that is empty or answered with text like "n/a" will be closed as invalid, and you are welcome to open a new issue with the details. See [§3.12 of the Code of Conduct](CODE_OF_CONDUCT.md#312-reopening-closed-issues) about reopening a closed issue.
+
+---
+
 ## Maintainer Notes
 
 This section documents internal decisions and guidelines for future maintainers.
