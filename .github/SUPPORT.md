@@ -4,10 +4,10 @@ Thank you for using this project. This document explains where to get help and w
 
 ## Asking Questions
 This project does not use GitHub Discussions.  
-For general questions, please follow the guidelines for [opening questions in FAQ.md](/docs/FAQ.md#how-do-i-ask-a-question)
+For general questions, please follow the guidelines for open an issue with the question template.
 
 ## Reporting Bugs
-If you believe you have found a bug, please open an Issue through this [link](https://github.com/Loepker-James/enforce-rules/issues/new?template=bug_report.yml) and include:
+If you believe you have found a bug, please open an issue with the bug report template and include:
 - a clear description of the problem
 - steps to reproduce it
 - expected behavior
