@@ -1,5 +1,5 @@
-name: Uh-oh appeal
-description: Only for an account whose uh-oh block has just ended. Opens one appeal under §6.6.7.
+name: "Uh-oh appeal"
+description: "Only for an account whose uh-oh block has just ended. Opens one appeal under §6.6.7."
 title: "Appeal"
 labels: "appeal"
 assignees: "Loepker-James"
