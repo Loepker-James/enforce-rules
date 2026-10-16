@@ -8,7 +8,7 @@ MAJOR: 3
 
 MINOR: 4
 
-PATCH: 2
+PATCH: 3
 
 If you need to catch up, you can see the full version history in the [CHANGELOG](https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md).
 
@@ -39,6 +39,13 @@ Install it with pip:
 ```bash
 pip install enforce-rules
 ```
+
+or
+
+```bash
+python -m pip install enforce-rules
+```
+
 Then use it like:
 
 ```python
@@ -51,7 +58,15 @@ When installed with pip, dependencies are installed automatically in 3.2.15+.
 
 If you are using an earlier version, or running from the source tarball, install them with:
 
+```bash
 pip install "python-chess>=1.11" "pydantic>=2"
+```
+
+or
+
+```bash
+python -m pip install "python-chess>=1.11" "pydantic>=2"
+```
 
 Features
 1. Runtime enforcement of rule dictionaries
@@ -292,6 +307,7 @@ is_even(8)
 If enough people use a must_be_true lambda, it may become an added keyword in a later version
 
 Contributing
+------------
 Contributions are welcome. Please open an issue or pull request.
 When contributing, ensure backwards compatibility (you cannot remove keywords and/or features).
 
@@ -333,19 +349,16 @@ Minor Version Bumps
 -------------------
 Minor bumps occur when adding small keywords. Examples include:
 
-min_inclusive
-
-max_inclusive
-
-trim_whitespace
-
-pattern_flags
+- min_inclusive
+- max_inclusive
+- trim_whitespace
+- pattern_flags
 
 These additions do not change the meaning of existing keywords, do not require users to modify rule files, and do not alter validator behavior. They are classified as minor updates.
 
 Minor bumps always reset PATCH to 0
 
-Credits:
+## Credits:
 * Copilot
 * Dad
 * Claude
