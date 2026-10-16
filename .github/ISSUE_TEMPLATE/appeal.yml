@@ -1,0 +1,54 @@
+name: Uh-oh appeal
+description: Only for an account whose uh-oh block has just ended. Opens one appeal under §6.6.7.
+title: "Appeal"
+labels: ["appeal"]
+assignees: ["Loepker-James"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Only use this form to appeal an uh-oh block.** An uh-oh is the fifth serious block. It is reviewed under [§6.6.7 of the Code of Conduct](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md#667-review-of-the-uh-oh).
+
+        **This issue is public.** Do not include private information about yourself or anyone else. You never need to share anything about your health, identity, or personal life.
+
+        **The window is short.** It opens at 19:00 CT on the day your block ends and closes at 19:00 CT the next day. The current schedule is in [ENFORCEMENT.md](https://github.com/Loepker-James/enforce-rules/blob/main/ENFORCEMENT.md#appeal-windows). Open one issue only, and do not post anywhere else in this repository during the window.
+  - type: textarea
+    id: sections
+    attributes:
+      label: Which sections of the Code of Conduct were involved?
+      description: "List the section numbers, for example §3.1. If you are not sure, write what you think you were blocked for."
+    validations:
+      required: true
+  - type: textarea
+    id: changed
+    attributes:
+      label: What has changed since you were blocked, and how will you follow the Code of Conduct?
+    validations:
+      required: true
+  - type: textarea
+    id: mistaken
+    attributes:
+      label: Do you think any of your blocks were mistaken or too severe? Why?
+      description: Optional. Say which block, and what you think the maintainer got wrong.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Links or screenshots
+      description: Optional. Anything that supports your appeal. Do not include private information.
+  - type: textarea
+    id: other
+    attributes:
+      label: Anything else you want the maintainer to know
+      description: Optional.
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Please confirm
+      options:
+        - label: This is the account that was blocked, and this is the only appeal I am opening.
+          required: true
+        - label: I understand that this issue is public.
+          required: true
+        - label: I understand that anything else this account posts during the window will be hidden and kept privately, and may be used in the review only if it breaks the Code of Conduct or contradicts this appeal.
+          required: true
+        
