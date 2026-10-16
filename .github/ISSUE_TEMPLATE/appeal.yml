@@ -7,11 +7,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Only use this form to appeal an uh-oh block.** An uh-oh is the fifth serious block. It is reviewed under [§6.6.7 of the Code of Conduct](/CODE_OF_CONDUCT.md#667-review-of-the-uh-oh).
+        **Only use this form to appeal an uh-oh block.** An uh-oh is the fifth serious block. It is reviewed under [§6.6.7 of the Code of Conduct](https://github.com/Loepker-James/enforce-rules/blob/main/CODE_OF_CONDUCT.md#667-review-of-the-uh-oh).
 
         **This issue is public.** Do not include private information about yourself or anyone else. You never need to share anything about your health, identity, or personal life.
 
-        **The window is short.** It opens at 19:00 CT on the day your block ends and closes at 19:00 CT the next day. The current schedule is in [ENFORCEMENT.md](/ENFORCEMENT.md#appeal-windows). Open one issue only, and do not post anywhere else in this repository during the window.
+        **The window is short.** It opens at 19:00 CT on the day your block ends and closes at 19:00 CT the next day. The current schedule is in [ENFORCEMENT.md](https://github.com/Loepker-James/enforce-rules/blob/main//ENFORCEMENT.md#appeal-windows). Open one issue only, and do not post anywhere else in this repository during the window.
   - type: textarea
     id: sections
     attributes:
