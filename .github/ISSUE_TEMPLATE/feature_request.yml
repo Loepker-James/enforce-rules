@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        This project only adds to existing behavior. A suggestion cannot remove or change what an existing keyword does.
+        Thanks for trying to contribute to PER! All contributions are welcome.
   - type: input
     id: keyword
     attributes:
