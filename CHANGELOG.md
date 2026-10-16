@@ -435,3 +435,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ## 3.4.2 — Created on 2026‑10-14
 ### Fixed
 - Improved [README](README.md)'s accesibility
+
+## 3.4.3 — Created on 2026‑10-15
+### Changed
+- Improved [README](README.md)
