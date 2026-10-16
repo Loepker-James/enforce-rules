@@ -1,12 +1,14 @@
 name: New keyword or feature
 description: Suggest a new rule keyword or an improvement
 title: "Feature: "
-labels: "enhancement"
+labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for trying to contribute to PER! All contributions are welcome.
+
+        Existing keywords keep behaving exactly as they do now. If you want different behavior, propose a new keyword and explain how it differs from the existing one, e.g. `min_inclusive`.
   - type: input
     id: keyword
     attributes:
@@ -30,14 +32,12 @@ body:
     id: alternatives
     attributes:
       label: What do you do today instead?
-      description: Paste the code you use today, such as a `must_be_true` function. If you have no workaround, write `# none`.
+      description: Paste the code you use today, such as a `must_be_true` function. If you have no workaround, leave this field blank.
       render: python
-    validations:
-      required: true
   - type: checkboxes
     id: compatibility
     attributes:
       label: Backward compatibility
       options:
-        - label: This would only add something. It would not remove or change an existing keyword or behavior.
+        - label: This would not change what any existing keyword does or how it behaves. If its purpose is different behavior (e.g. `min_inclusive`), it would be a new keyword.
           required: true
