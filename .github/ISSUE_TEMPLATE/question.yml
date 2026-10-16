@@ -1,5 +1,5 @@
-name: Question
-description: Ask how to use enforce-rules
+name: "Question"
+description: "Ask how to use enforce-rules"
 title: "Question: "
 labels: "question"
 assignees: "Loepker-James"
