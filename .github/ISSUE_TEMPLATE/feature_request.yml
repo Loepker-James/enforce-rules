@@ -8,7 +8,7 @@ body:
       value: |
         Thanks for trying to contribute to PER! All contributions are welcome.
 
-        Existing keywords keep behaving exactly as they do now. If you want different behavior, propose a new keyword and explain how it differs from the existing one, e.g. `min_inclusive`.
+        Existing keywords keep behaving exactly as they do now. If you want different behavior, propose a new keyword and explain how it differs from the existing one, e.g. `min_exclusive`.
   - type: input
     id: keyword
     attributes:
@@ -39,5 +39,5 @@ body:
     attributes:
       label: Backward compatibility
       options:
-        - label: This would not change what any existing keyword does or how it behaves. If its purpose is different behavior (e.g. `min_inclusive`), it would be a new keyword.
-          required: true
+        - label: This would not change what any existing keyword does or how it behaves. If its purpose is different behavior when ticked (e.g. `min_exclusive`), it would be a new keyword and backwards compatible.
+        required: true
