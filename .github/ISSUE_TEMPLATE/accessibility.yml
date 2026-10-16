@@ -1,7 +1,7 @@
 name: Accessibility problem
 description: Report something that is hard to read, navigate, or use
 title: "Accessibility: "
-labels: ["accessibility"]
+labels: "accessibility"
 assignees: "Loepker-James"
 body:
   - type: markdown
