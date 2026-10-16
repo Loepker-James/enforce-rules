@@ -20,7 +20,7 @@ It is published by January 31 of each year and covers the calendar year that jus
 
 ## Appeal windows
 
-Windows for reviews under §6.6.7 of the Code of Conduct are posted here. Entries contain no names. An entry is never edited or removed. A postponement is added as a new line below the original.
+Windows for reviews under §6.6.7 of the Code of Conduct are posted here. Entries contain no names. An entry is never edited or removed. A postponement is added as a new line below the entry it replaces, and the new entry controls. The **Action** column has only two values: **Scheduled**, for a new window, and **Postponed**, for a window that replaces an earlier one. Any other entry is a mistake.
 
-| Date posted | Original window | New window (if postponed) |
-|-------------|-----------------|---------------------------|
+| Date posted | Action    | Window                                      | Replaces                |
+|-------------|-----------|---------------------------------------------|-------------------------|
