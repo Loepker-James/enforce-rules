@@ -182,6 +182,10 @@ Users upgrading to this version will encounter immediate crashes, making migrati
 * No rule changes are required — the issue is internal, not user-facing.
 * After upgrading to version 3.3.6, validation will work normally again.
 
+### Summary
+3.3.1-3.3.5 contains a broken [enforce_rules.pyi](/src/enforce_rules/enforce_rules.pyi) that prevents mypy/pyright from running properly.
+Skip this version and upgrade directly to 3.3.6.
+
 ## Warning -- Any version before 3.3.8 could be broken
 
 This table got deleted in one version:
@@ -220,4 +224,12 @@ Users upgrading to this version will encounter immediate crashes, making migrati
   This version has the same working validator code.
 * No rule changes are required — the issue is internal, not user-facing.
 * After upgrading to version 3.4.1, validation will work normally again.
- 
+
+ ## Warning -- Any version in 3.2.0 - 3.5.0 could be broken
+
+There was an import error in the is_password function.
+
+This was re-added in **3.5.1**. If your version is broken, please install **3.5.1**.
+
+### Required user actions
+* Install **3.5.1** if your current version before it is broken.
