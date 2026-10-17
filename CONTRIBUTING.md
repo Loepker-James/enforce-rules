@@ -157,6 +157,28 @@ In short: the banner is harmless. Everything is working correctly.
 
 ---
 
+## What happens to an issue
+
+Every issue is either open or closed. A closed issue has one of two reasons, and GitHub shows it next to the title.
+
+### Closed as completed
+The work is done. The bug is fixed, the feature is added, or the question is answered.
+
+### Closed as not planned
+The issue will not be worked on. This does not mean the report was unwelcome. It means one of these:
+
+* **It cannot be fixed.** The cause is outside this project, such as a bug in another library, or the problem cannot be reproduced with the information given.
+* **It will not be fixed.** The change doesn't fit the project. For example, it would change what an existing keyword does without explicit permission, which this project doesn't do (see the versioning policy in the [README](README.md)).
+* **It is invalid.** A required field in the issue form was empty or didn't answer the question, so there wasn't enough to act on.
+* **It is a duplicate.** The same problem is already reported. The closing comment links to the original issue, and you are welcome to add what you know there.
+
+The closing comment always says which one applies. If you think the decision was wrong, add a comment on the closed issue saying why, and it will be read. Please do not reopen it without changing something, since a reopened issue with no new information is closed again. See [§3.12 of the Code of Conduct](CODE_OF_CONDUCT.md#312-closing-and-reopening-issues).
+
+### Left open
+A problem that is real but cannot be fixed right now stays open, usually with the `help wanted` label. This means a fix from you would be welcome.
+
+---
+
 ## Issue templates
 Please fill in every required field. A required field that is empty or answered with text like "n/a" will be closed as invalid, and you are welcome to open a new issue with the details. See [§3.12 of the Code of Conduct](CODE_OF_CONDUCT.md#312-reopening-closed-issues) about reopening a closed issue.
 
