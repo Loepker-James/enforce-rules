@@ -6,9 +6,9 @@ Version #
 ----------------
 MAJOR: 3
 
-MINOR: 4
+MINOR: 5
 
-PATCH: 3
+PATCH: 0
 
 If you need to catch up, you can see the full version history in the [CHANGELOG](https://github.com/Loepker-James/enforce-rules/blob/main/CHANGELOG.md).
 
@@ -304,7 +304,30 @@ This calls:
 ```python
 is_even(8)
 ```
-If enough people use a must_be_true lambda, it may become an added keyword in a later version
+If enough people use a must_be_true lambda, it may become an added keyword in a later version.
+
+## is_valid
+`is_valid()` is a boolean wrapper around `validate()` (snippet shows latest version of is_valid):
+
+```python
+def is_valid(value: T, rules: ValidateDict) -> bool:
+    """Return True if value passes every rule, otherwise False.
+
+    Any exception raised while checking counts as a failure, including
+    wrong-type values and misspelled rule names. Use validate() to see why.
+    """
+    try:
+        validate(value, rules)
+        return True
+    except Exception:
+        return False
+```
+
+This wrapper doesn't modify rule logic. It simply converts exceptions into boolean results.
+
+**WARNING**: It never raises any error while checking, including a wrong-type value or a misspelled rule name, returns `False`. Use `validate()` when you need to know why a check failed.
+
+
 
 Contributing
 ------------
