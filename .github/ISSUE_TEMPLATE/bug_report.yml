@@ -1,5 +1,5 @@
 name: "Bug report"
-description: "Something does not work the way the README says it should"
+description: "Something doesn't work the way the README says it should"
 title: "Bug: "
 labels: "bug"
 body:
