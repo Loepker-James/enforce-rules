@@ -167,12 +167,16 @@ Evading or trying to evade an action taken under this Code of Conduct is prohibi
 Evasion is a violation in itself, and maintainers may treat it as a repeat violation. A record reset doesn't apply to a person who evaded enforcement. See [§4.6 (Limits on Record Resets)](#46-limits-on-record-resets) for limits on resets.
 
 ### §3.12 Closing and Reopening Issues
-A maintainer may close an issue in either of the cases below. Closing is a review decision under §7.4 and is not an action under this Code of Conduct.
+A maintainer may close an issue in either of the cases below. Closing is a review decision under [§7.4](#74-no-misuse-of-enforcement) and is not an action under this Code of Conduct.
 
 * **Invalid:** a required field in the issue's template is empty or filled with text that does not answer it, such as "n/a." The maintainer labels the issue "invalid." Fields that are not required may be left empty.
 * **Duplicate:** another issue already covers the same problem or request. The maintainer labels the issue "duplicate" and links to the original issue in the closing comment. A person with more information can add it to the original issue.
 
-The closing comment cites this section. A person who thinks the decision was wrong may say why in a comment on the closed issue instead of reopening it, and the maintainer reads the comment and may reopen the issue. Reports of security vulnerabilities and accessibility problems are not closed as invalid. A duplicate of one of them is closed only after the maintainer replies and links to the original.
+The closing comment cites this section. A person who thinks the decision was wrong may say why in a comment on the closed issue instead of reopening it, and the maintainer reads the comment and may reopen the issue.
+
+Reports of security vulnerabilities, accessibility problems, and appeals under [§6.6.7](#667-review-of-the-uh-oh) are not closed as invalid. A duplicate of a security or accessibility report is closed only after the maintainer replies and links to the original. A second appeal from the same account in the same window is closed as a duplicate of the first, with a link, and the first stays open as the appeal. An appeal from an account that didn't receive the uh-oh is not a duplicate. It is handled under [§6.6.7.9](#6679-misuse-of-the-appeal-form).
+
+Reopening an issue closed under this section, without changing it to fix the reason it was closed, is a violation of [§3.9](#39-disruption). The first time, the maintainer closes it again with a comment that cites this section. Repeating it after that comment is handled under [§6.2](#62-temporary-or-permanent-blocking).
 
 Reopening an issue closed this way, without changing it to fix the reason it was closed, is a violation of §3.9 The first time, the maintainer closes it again with a comment that cites this section. Repeating it after that comment is handled under §6.2.
 
