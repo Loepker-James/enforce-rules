@@ -120,6 +120,16 @@ Existing rule dictionaries, keyword meanings, and validator behaviors must never
 
 ---
 
+## Linking to code
+
+You do not need to link to old versions of the code, and you do not need a commit hash or a SHA. Please do this instead:
+
+* **Give the version.** Say which version of enforce-rules you are using. `pip show enforce-rules` prints it.
+* **Paste the code.** Put the lines you are talking about in a code block in your issue or pull request. Pasted code stays readable if the file changes or moves, and a link to an old commit can break or show something different from what you meant.
+* **Link to the current file if it helps.** A link to a file on the `main` branch, such as ```[`enforce_rules.py`](https://github.com/Loepker-James/enforce-rules/blob/main/src/enforce_rules/enforce_rules.py)```, is fine. Tell us the function name as well, since line numbers move.
+
+---
+
 ## Adding New Keywords
 
 New keywords must:
