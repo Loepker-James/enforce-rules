@@ -225,11 +225,11 @@ Users upgrading to this version will encounter immediate crashes, making migrati
 * No rule changes are required — the issue is internal, not user-facing.
 * After upgrading to version 3.4.1, validation will work normally again.
 
- ## Warning -- Any version in 3.2.0 - 3.5.0 could be broken
+ ## Warning -- Any version in 3.1.0 - 3.5.0 could be broken
 
-There was an import error in the is_password function.
+There was an import error in the _validate_is_password function.
 
-This was re-added in **3.5.1**. If your version is broken, please install **3.5.1**.
+This was fixed in **3.5.1**. If your version is broken, please install **3.5.1**.
 
 ### Required user actions
 * Install **3.5.1** if your current version before it is broken.
