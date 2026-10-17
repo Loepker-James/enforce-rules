@@ -440,6 +440,10 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ### Changed
 - Improved [README](README.md)
 
-## 3.5.0  — Created on 2026‑10-17
+## 3.5.0 — Created on 2026‑10-17
 ### Changed
 - Added is_valid to [README](README.md)
+
+## 3.5.1 — Created on 2026‑10-17
+### Fixed
+- is_password
