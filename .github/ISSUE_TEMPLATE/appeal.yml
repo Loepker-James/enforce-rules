@@ -51,4 +51,3 @@ body:
           required: true
         - label: I understand that anything else this account posts during the window will be hidden and kept privately, and may be used in the review only if it breaks the Code of Conduct or contradicts this appeal.
           required: true
-        
