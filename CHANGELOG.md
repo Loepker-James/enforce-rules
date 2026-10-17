@@ -439,3 +439,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ## 3.4.3 — Created on 2026‑10-15
 ### Changed
 - Improved [README](README.md)
+
+## 3.5.0  — Created on 2026‑10-17
+### Changed
+- Added is_valid to [README](README.md)
