@@ -65,6 +65,7 @@
       - [§6.6.7.6 If no appeal is filed](#6676-if-no-appeal-is-filed)
       - [§6.6.7.7 If lifted](#6677-if-lifted)
       - [§6.6.7.8 Counts](#6678-counts)
+      - [§6.6.7.9 Misuse of the appeal form](#6679-misuse-of-the-appeal-form)
 - [§7 Maintainer Accountability](#7-maintainer-accountability)
   - [§7.1 Pause before enforcing](#71-pause-before-enforcing)
   - [§7.2 Cite the rule](#72-cite-the-rule)
@@ -304,6 +305,11 @@ The record stays, and any new violation results in a permanent block without the
 
 ##### §6.6.7.8 Counts
 By January 31 of each year, the maintainer publishes, for the previous calendar year, the number of uh-oh blocks issued, uh-oh reviews decided, and uh-oh blocks lifted, without names, at [ENFORCEMENT.md](ENFORCEMENT.md#counts).
+
+##### §6.6.7.9 Misuse of the appeal form
+The appeal form, and any issue titled "Appeal," are only for an uh-oh appeal made during its window by the account that received the uh-oh. Using them for anything else is misuse. This includes opening one from an account that did not receive an uh-oh, opening one on behalf of another person, opening more than one in a window, and giving an issue the title "Appeal" for a different purpose.
+
+An issue opened by mistake is closed with a comment that cites this section and says how to open the right kind of issue. That is not a violation. Misuse done on purpose, or repeated after that comment, is a violation of [§3.9](#39-disruption) and is handled under [§6.2](#62-temporary-or-permanent-blocking). An appeal made by the account that received the uh-oh, within its window, is never closed under this section, even if it is short or badly written.
 
 ## §7 Maintainer Accountability
 This Code of Conduct applies to maintainers in the same way it applies to everyone else. Maintainers hold themselves to the standards in §2 and §3 when they review contributions, answer issues, and enforce this document.
