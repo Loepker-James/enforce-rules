@@ -4,8 +4,8 @@ import re
 from datetime import datetime
 from chess import Piece
 from pydantic import Field, validate_call
-from string import punctuation
 from itertools import pairwise
+import string
 
 Number: TypeAlias = int | float
 LengthType: TypeAlias = Annotated[int, Field(ge=0)]
@@ -275,6 +275,11 @@ def validate(value: T, rules: ValidateDict) -> T:
     return value
 
 def is_valid(value: T, rules: ValidateDict) -> bool:
+    """Return True if value passes every rule, otherwise False.
+
+    Any exception raised while checking counts as a failure, including
+    wrong-type values and misspelled rule names. Use validate() to see why.
+    """
     try:
         validate(value, rules)
         return True
