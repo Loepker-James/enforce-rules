@@ -250,17 +250,16 @@ Example: `validate("A6(dEfGhI", {"is_password": True})`
 
 
 
-# ```is_valid(value, rules)``` (Created in 3.2.0):
-is_valid is a simple helper function added in version 3.2.0.
-It provides a boolean‑based interface for validation by wrapping the main validate() function.
+# `is_valid(value, rules)` (created in 3.2.0)
+`is_valid` is a helper added in version 3.2.0. It wraps `validate()` and answers yes or no instead of raising an error.
 
 ```python
-def is_valid(value: T, rules: ValidateDict) -> bool:
-    try:
-        validate(value, rules)
-        return True
-    except Exception:
-        return False
+from enforce_rules import is_valid
+
+is_valid(10, {"min": 0})   # True
+is_valid(-1, {"min": 0})   # False
 ```
-This function returns `True` when validation succeeds and `False` when any rule fails.
-It does not introduce new rule logic; it simply offers an alternative interface for users who prefer boolean validation instead of catching exceptions.
+
+It returns `True` when every rule passes and `False` when anything goes wrong while checking, including a failed rule, a value of the wrong type, or a misspelled rule name. Use `validate()` to find out why. It adds no rule logic of its own, and it is for people who prefer a boolean to catching exceptions.
+
+The current source is in [`enforce_rules.py`](src/enforce_rules/enforce_rules.py), where you can search for `def is_valid`.
