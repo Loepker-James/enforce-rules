@@ -8,7 +8,7 @@ from itertools import pairwise
 import string
 
 Number: TypeAlias = int | float
-LengthType: TypeAlias = Annotated[int, Field(ge=0)]
+LengthType: TypeAlias = int
 
 _PIECE_NAMES = ("pawn", "knight", "bishop", "rook", "queen", "king")
 
