@@ -453,3 +453,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 - compile_rules(rules)
 ### Fixed
 - typing stubs (.pyi files)
+
+## 3.7.0 — Created on 2026‑10-18
+### Added
+- [tests/\_\_init\_\_.py](tests/__init__.py)
