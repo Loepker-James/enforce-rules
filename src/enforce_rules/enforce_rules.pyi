@@ -1,15 +1,20 @@
 from collections.abc import Iterable
 from datetime import datetime
-from typing import Any, Callable, Literal, TypedDict, TypeVar
+from typing import Any, Callable, Literal, TypedDict, TypeVar, Annotated
+from pydantic import Field
 
 _T = TypeVar("_T")
+Number = int | float
+LengthType = int
+
+T = object() #Ignore this
 
 class ValidateDict(TypedDict, total=False):
-    length: int
-    min_length: int
-    max_length: int
-    min: int | float
-    max: int | float
+    length: LengthType
+    min_length: LengthType
+    max_length: LengthType
+    min: Number
+    max: Number
     allowed_values: Iterable[object]
     invariant: bool
     all_same: bool
@@ -19,10 +24,10 @@ class ValidateDict(TypedDict, total=False):
     sorted: bool
     increasing: bool
     decreasing: bool
-    sum_min: int | float
-    sum_max: int | float
-    element_min: int | float
-    element_max: int | float
+    sum_min: Number
+    sum_max: Number
+    element_min: Number
+    element_max: Number
     regex: str
     regex_flags: object
     must_be_true: Callable[[Any], bool]
