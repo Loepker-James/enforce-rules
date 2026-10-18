@@ -4,5 +4,6 @@ from .enforce_rules import (
     ValidateDict as ValidateDict,
     compile_rules as compile_rules
 )
+from typing import Final, List
 
-__all__ = ["validate", "is_valid", "ValidateDict", "compile_rules"]
+__all__: Final[List[str]] = ["validate", "is_valid", "ValidateDict", "compile_rules"]
