@@ -447,3 +447,7 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ## 3.5.1 — Created on 2026‑10-17
 ### Fixed
 - is_password
+
+## 3.6.0 — Created on 2026‑10-18
+### Added
+- compile_rules(rules)
