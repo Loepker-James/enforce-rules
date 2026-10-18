@@ -1,6 +1,6 @@
-from typing import TypeVar, Dict, TypedDict, Callable, Literal
 from collections.abc import Iterable
 from datetime import datetime
+from typing import Any, Callable, Literal, TypedDict, TypeVar
 
 _T = TypeVar("_T")
 
@@ -10,7 +10,7 @@ class ValidateDict(TypedDict, total=False):
     max_length: int
     min: int | float
     max: int | float
-    allowed_values: Iterable
+    allowed_values: Iterable[object]
     invariant: bool
     all_same: bool
     all_unique: bool
@@ -25,7 +25,7 @@ class ValidateDict(TypedDict, total=False):
     element_max: int | float
     regex: str
     regex_flags: object
-    must_be_true: Callable[[_T], bool]
+    must_be_true: Callable[[Any], bool]
     before_date: datetime
     after_date: datetime
     piece_color: bool
@@ -35,3 +35,4 @@ class ValidateDict(TypedDict, total=False):
 
 def validate(value: _T, rules: ValidateDict) -> _T: ...
 def is_valid(value: _T, rules: ValidateDict) -> bool: ...
+def compile_rules(rules: ValidateDict) -> Callable[[_T], _T]: ...
