@@ -1,6 +1,6 @@
-from unittest import TestCase, main
+from unittest import TestCase
 from typing import Any, Dict
-from enforce_rules import validate
+from enforce_rules import validate, compile_rules
 import re
 
 
@@ -361,6 +361,86 @@ class TestValidate(TestCase):
         with self.assertRaises(ValueError):
             validate(7, {"must_be_true": is_even})
 
+    # ------------------------------
+    # COMPILE RULES
+    # ------------------------------
+    def test_compile_rules_returns_a_working_checker(self):
+        check = compile_rules({"min": 0, "max": 10})
+        self.assertEqual(check(5), 5)
+
+    def test_compile_rules_checker_returns_the_original_object(self):
+        data = [1, 2, 3]
+        check = compile_rules({"min_length": 2})
+        self.assertIs(check(data), data)
+
+    def test_compile_rules_checker_rejects_bad_values(self):
+        check = compile_rules({"max": 10})
+        with self.assertRaises(ValueError):
+            check(50)
+
+    def test_compile_rules_checker_can_be_reused(self):
+        check = compile_rules({"min": 0})
+        self.assertEqual(check(1), 1)
+        self.assertEqual(check(2), 2)
+        with self.assertRaises(ValueError):
+            check(-1)
+
+    def test_compile_rules_unknown_rule_raises_at_compile_time(self):
+        with self.assertRaises(ValueError) as context:
+            compile_rules({"mni": 0})
+        self.assertIn("mni", str(context.exception))
+
+    def test_compile_rules_invalid_regex_raises_at_compile_time(self):
+        with self.assertRaises(ValueError) as context:
+            compile_rules({"regex": "("})
+        self.assertIn("regex", str(context.exception))
+
+    def test_compile_rules_reports_every_problem(self):
+        with self.assertRaises(ValueError) as context:
+            compile_rules({"mni": 0, "regex": "("})
+        message = str(context.exception)
+        self.assertIn("mni", message)
+        self.assertIn("regex", message)
+
+    def test_compile_rules_ignores_later_changes_to_the_dictionary(self):
+        rules = {"min": 0}
+        check = compile_rules(rules)
+        rules["min"] = 100
+        self.assertEqual(check(5), 5)
+
+    def test_compile_rules_empty_rules_accept_anything(self):
+        check = compile_rules({})
+        self.assertEqual(check("anything"), "anything")
+
+    def test_compile_rules_uses_regex_flags(self):
+        check = compile_rules({"regex": "cat", "regex_flags": re.I})
+        self.assertEqual(check("CAT"), "CAT")
+
+    def test_compile_rules_does_not_run_must_be_true_at_compile_time(self):
+        calls = []
+
+        def record(value):
+            calls.append(value)
+            return True
+
+        check = compile_rules({"must_be_true": record})
+        self.assertEqual(calls, [])
+        check(1)
+        self.assertEqual(calls, [1])
+
+    def test_compile_rules_accepts_every_documented_keyword(self):
+        keywords = (
+            "length", "min_length", "max_length", "min", "max", "allowed_values",
+            "invariant", "all_same", "all_unique", "non_empty", "no_nulls",
+            "sorted", "increasing", "decreasing", "sum_min", "sum_max",
+            "element_min", "element_max", "regex", "regex_flags", "must_be_true",
+            "before_date", "after_date", "piece_color", "piece_type",
+            "chess_symbol", "is_password",
+        )
+        for keyword in keywords:
+            with self.subTest(keyword=keyword):
+                compile_rules({keyword: True})
+
 
 if __name__ == "__main__":
-    main()
+    unittest.main()
