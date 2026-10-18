@@ -233,3 +233,12 @@ Most users won't need to do anything, but if you use the is_password keyword, pl
 
 ### Required user actions
 * Install **3.5.1** if your current version before it uses is_password
+
+ ## Warning -- Any version in 3.4.1 - 3.5.0 could have a broken is_password
+
+There was an error in the .pyi files.
+
+Please upgrade to **3.5.1** if your version is broken.
+
+### Required user actions
+* Install **3.5.1** if you are using **3.4.1** to **3.5.0** and it is broken
