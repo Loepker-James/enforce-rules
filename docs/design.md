@@ -91,6 +91,30 @@ def is_valid(value: T, rules: ValidateDict) -> bool:
         return False
 ```
 
+## compile_rules (version 3.6)
+
+`compile_rules(rules)` checks a rule dictionary once, before any value is checked, and returns a function that validates values against it. (Added in <version>.)
+
+```python
+from enforce_rules import compile_rules
+
+check_age = compile_rules({"min": 0, "max": 120})
+
+age = check_age(30)   # returns 30
+check_age(200)        # raises ValueError
+```
+
+If the rules themselves are wrong, `compile_rules` raises `ValueError` right away and lists every problem it finds:
+
+```python
+compile_rules({"mni": 0, "regex": "("})
+# ValueError: Invalid rules: unknown rule 'mni'; invalid regex: ...
+```
+
+It checks that every key is a known keyword and that a `regex` pattern compiles. It does not check whether the values of the other rules have the right type, so a rule like `{"min": "five"}` is only caught when a value is checked. The returned function behaves like `validate(value, rules)`, and later changes to the original dictionary do not affect it.
+
+Use `compile_rules` when the same rules are used many times, or when you want a mistake in the rules to fail early. `is_valid` would hide a misspelled rule name behind a plain `False`.
+
 This wrapper doesn't modify rule logic. It simply converts exceptions into boolean results.
 
 **WARNING**: It never raises any error while checking, including a wrong-type value or a misspelled rule name, returns `False`. Use `validate()` when you need to know why a check failed.
