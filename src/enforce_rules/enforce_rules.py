@@ -285,3 +285,31 @@ def is_valid(value: T, rules: ValidateDict) -> bool:
         return True
     except Exception:
         return False
+
+_KNOWN_RULES: frozenset[str] = frozenset({
+    "length", "min_length", "max_length", "min", "max", "allowed_values",
+    "invariant", "all_same", "all_unique", "non_empty", "no_nulls", "sorted",
+    "increasing", "decreasing", "sum_min", "sum_max", "element_min",
+    "element_max", "regex", "regex_flags", "must_be_true", "before_date",
+    "after_date", "piece_color", "piece_type", "chess_symbol", "is_password",
+})
+
+
+def compile_rules(rules: ValidateDict) -> Callable[[T], T]:
+    frozen = dict(rules)
+    problems = []
+    for key in frozen:
+        if key not in _KNOWN_RULES:
+            problems.append(f"unknown rule {key!r}")
+    if "regex" in frozen:
+        try:
+            re.compile(str(frozen["regex"]), frozen.get("regex_flags") or 0)
+        except re.error as error:
+            problems.append(f"invalid regex: {error}")
+    if problems:
+        raise ValueError("Invalid rules: " + "; ".join(problems))
+
+    def check(value: T) -> T:
+        return validate(value, frozen)
+
+    return check
