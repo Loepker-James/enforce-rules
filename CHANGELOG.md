@@ -451,3 +451,5 @@ Nothing. I wanted to add something but it turns out I didn't add it.
 ## 3.6.0 — Created on 2026‑10-18
 ### Added
 - compile_rules(rules)
+### Fixed
+- typing stubs (.pyi files)
