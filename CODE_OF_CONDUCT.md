@@ -218,7 +218,7 @@ Where available, use “Report to repository admins” on the content. Otherwise
 
 Include:
 
-* The section(s) of this Code of Conduct that you believe were violated (for example, §2.1 if you beleive the violator was disrespectful)
+* The section(s) of this Code of Conduct that you believe were violated (for example, §2.1 if you believe the violator was disrespectful)
 * Links or screenshots of what happened
 * The date it occurred
 * A short description of the incident
