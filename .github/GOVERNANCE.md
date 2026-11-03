@@ -20,14 +20,14 @@ Decisions are made by the maintainer. Feedback from contributors is welcome. The
 - setting project direction
 - changing governance or policies
 
-These decisions are limited by the Code of Conduct. [§7](/CODE_OF_CONDUCT.md#7-maintainer-accountability) holds the maintainer to the same standards as everyone else, and [§1.3](/CODE_OF_CONDUCT.md#13-changes) says how changes are dated and what cannot be amended. Actions taken under the Code of Conduct can be appealed under [§6.6](/CODE_OF_CONDUCT.md#66-appeals), and a decision to close an issue can be questioned in a comment under [§3.12](/CODE_OF_CONDUCT.md#312-closing-and-reopening-issues).
+These decisions are limited by the Code of Conduct. §7 holds the maintainer to the same standards as everyone else, and §1.3 says how changes are dated and what cannot be amended. Actions taken under the Code of Conduct can be appealed under §6.6, and a decision to close an issue can be questioned in a comment under §3.12.
 
 ## Maintainer Responsibilities
 Maintainers are expected to:
 - review pull requests
 - ensure code quality
 - maintain documentation
-- enforce the Code of Conduct, following [§7](/CODE_OF_CONDUCT.md#7-maintainer-accountability)
+- enforce the Code of Conduct, following §7
 - manage releases
 - respond to security reports
 - respond to accessibility reports, as described in [ACCESSIBILITY.md](/ACCESSIBILITY.md)
